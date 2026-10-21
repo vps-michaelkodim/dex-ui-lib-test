@@ -22,20 +22,27 @@ Stack: React 19, Base UI, Tailwind v4 (nur Token-Klassen), Storybook 10. Themes:
 - Checkbox: Figma: `03 Components / Form – Checkbox`. Props: checked, children, className, defaultChecked, disabled, helperText, indeterminate, name, nativeButton, onCheckedChange, parent, readOnly, required, status, value
 - CheckboxGroup: Mehrere Checkboxen mit gemeinsamer Überschrift (`<fieldset>` + `<legend>`) und Hinweis. Props: allValues, className, defaultValue, disabled, helperText, label, name, onValueChange, orientation, required, status, value
 - Chip: Figma: `03 Components / Chip`. Props: children, className, color, deleteLabel, disabled, endIcon, onClick, onDelete, size, startIcon, variant
+- Dialog: Figma: `03 Components / Dialog` (Container, Header, Actions, Slot). Props: title, actions, children, className, closeLabel, defaultOpen, fullHeight, icon, onOpenChange, open, padded, secondaryActions, showCloseButton, size, trigger
+- DialogClose: Schließt den umgebenden Dialog — z.B. `<DialogClose render={<Button variant="text">Abbrechen</Button>} />`. Props: className, nativeButton, render, style
 - Form: `<form>` mit einheitlichem Feld-Layout und Abständen. Props: className, layout
 - FormField: Figma: `Form Layout 1 Col` / `Form Layout 2 Cols` mit Slot. Für Inhalte ohne eigenes Label Props: children, className, helperText, label, labelAlign, layout, required, status
 - FormDivider: Figma: `Form divider`. Trennt Abschnitte eines Formulars. Props: className
 - FormHelperText: Figma: `03 Components / Form / Form Helper Text`. Props: children, className, count, render, style, type
 - FormLabel: Figma: `03 Components / Form / Form Label`. Props: children, className, error, helperIcon, mandatory, render, style
-- formLabelClasses: Klassen des Form Labels — auch für `<legend>` von Checkbox-/Radio-Gruppen.
 - IconButton: Figma: `03 Components / Icon Button`. Gleiche Farb-Tokens wie Button. Props: aria-label, children, className, color, disabled, focusableWhenDisabled, loading, nativeButton, render, size, style, variant
 - Input: Figma: `03 Components / Form – Input` (+ Form Label, Form Helper Text). Props: className, disabled, endAdornment, helperText, label, layout, loading, readOnly, render, required, showCount, startAdornment, status, style, wrapperClassName
+- MainNavigation: Main Navigation — Figma: `03 Components / Main navigation` (Item + Menu Section Header). Props: aria-label
+- NavSection: Abschnitt mit Überschrift (Figma: Menu Section Header). Props: title, addLabel, className, defaultOpen, expandable, onAdd
+- NavItem: Ein Navigationspunkt (Figma: Main Navigation Item). Ebene ergibt sich aus der Verschachtelung. Props: label, active, children, className, defaultOpen, href, icon, onClick, render
 - Radio: Radio Button — Figma: `03 Components / Form – Radiobutton`. Immer in einer `RadioGroup`. Props: value, children, className, disabled, nativeButton, required
 - RadioGroup: Radio Buttons mit gemeinsamer Überschrift (`<fieldset>` + `<legend>`) und Hinweis. Props: className, defaultValue, disabled, helperText, label, name, onValueChange, orientation, readOnly, required, status, value
 - Search: Figma: `03 Components / Form – Search`. Suchfeld mit Lupe, Leeren-Button (sobald Text da ist) Props: className, clearLabel, defaultValue, disabled, helperText, label, layout, loading, onValueChange, placeholder, render, style, value, wrapperClassName
 - Select: Figma: `03 Components / Form – Select` (+ Select Menu, Select Option). Props: options, aria-label, className, defaultValue, disabled, helperText, label, layout, loading, name, onValueChange, placeholder, readOnly, required, status, value, wrapperClassName
+- Snackbar: Figma: `03 Components / Snackbar`. Statische Darstellung (z.B. in Doku/Prototypen). Props: children, action, className, closeLabel, color, onClose, title
+- SnackbarProvider: Einmal um die App legen, dann überall `useSnackbar().show(...)`. Props: closeLabel, limit
 - Spinner: Lade-Indikator, Farbe = Textfarbe. Figma: „Spinner“ (vorerst vereinfachte Umsetzung). Props: label, size
 - Switch: Figma: `03 Components / Form – Switch`. Für Einstellungen, die sofort wirken. Props: checked, children, className, defaultChecked, disabled, helperText, name, nativeButton, onCheckedChange, readOnly, required, value
+- Text: Figma: `03 Components / Typography`. Setzt die Figma-Text-Styles (`typo-*`) mit passendem Element. Props: as, className, color, size, variant, weight
 - Tooltip: Figma: `03 Components / Tooltip`. Auf Base UI Tooltip (Hover + Tastaturfokus, Escape schließt). Props: children, content, align, className, color, defaultOpen, delay, onOpenChange, open, side, title
 - TooltipProvider: Teilt Öffnungs-Verzögerung zwischen benachbarten Tooltips (z.B. in Toolbars).
 

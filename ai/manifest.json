@@ -534,6 +534,166 @@
       ]
     },
     {
+      "name": "Dialog",
+      "import": "import { Dialog } from '@dextinity/ui';",
+      "summary": "Figma: `03 Components / Dialog` (Container, Header, Actions, Slot).\nFür Entscheidungen und kurze Aufgaben, die den Rest der Seite blockieren. Fokus bleibt im Dialog,\nEscape schließt.",
+      "figma": {
+        "node": "829:4250",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=829-4250"
+      },
+      "source": "packages/ui/src/components/dialog/Dialog.tsx",
+      "storybook": {
+        "title": "Components/Dialog",
+        "stories": [
+          "Playground",
+          "Open",
+          "WithoutIcon"
+        ]
+      },
+      "props": [
+        {
+          "name": "title",
+          "type": "ReactNode",
+          "required": true,
+          "description": "Figma: Dialog Header › Title."
+        },
+        {
+          "name": "actions",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Dialog Actions, rechts (z.B. Speichern)."
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Slot — Inhalt des Dialogs."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "closeLabel",
+          "type": "string",
+          "required": false,
+          "default": "Schließen",
+          "description": "Zugänglicher Name des Schließen-Buttons."
+        },
+        {
+          "name": "defaultOpen",
+          "type": "boolean",
+          "required": false,
+          "description": "Anfangs offen."
+        },
+        {
+          "name": "fullHeight",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Full Height / Fill Height — Dialog nutzt die ganze Höhe."
+        },
+        {
+          "name": "icon",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Icon im Kreis vor dem Titel (Figma: Dialog Header › Icon)."
+        },
+        {
+          "name": "onOpenChange",
+          "type": "((open: boolean) => void)",
+          "required": false,
+          "description": "Wird beim Öffnen/Schließen aufgerufen (Escape, Klick daneben, Schließen-Button)."
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "required": false,
+          "description": "Offen (kontrolliert)."
+        },
+        {
+          "name": "padded",
+          "type": "boolean",
+          "required": false,
+          "default": "true",
+          "description": "Inhalt bekommt die Abstände des Headers. `false` für randlose Inhalte (Tabelle, Bild)."
+        },
+        {
+          "name": "secondaryActions",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Dialog Actions, links (z.B. Abbrechen)."
+        },
+        {
+          "name": "showCloseButton",
+          "type": "boolean",
+          "required": false,
+          "default": "true",
+          "description": "Figma: Show Close Button."
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg",
+            "xl"
+          ],
+          "required": false,
+          "default": "sm",
+          "description": "Figma: Dialog Container › Size. SM 640px, MD 1024px, LG 1280px, XL volle Breite."
+        },
+        {
+          "name": "trigger",
+          "type": "ReactElement<unknown, string | JSXElementConstructor<any>>",
+          "required": false,
+          "description": "Element, das den Dialog öffnet (z.B. `<Button>`)."
+        }
+      ],
+      "examples": [
+        "<Dialog\n  trigger={<Button>Bearbeiten</Button>}\n  title=\"Benutzer bearbeiten\"\n  icon={<EditIcon />}\n  secondaryActions={<Button variant=\"text\" onClick={close}>Abbrechen</Button>}\n  actions={<Button onClick={save}>Speichern</Button>}\n>\n  <Input label=\"Name\" />\n</Dialog>"
+      ]
+    },
+    {
+      "name": "DialogClose",
+      "import": "import { DialogClose } from '@dextinity/ui';",
+      "summary": "Schließt den umgebenden Dialog — z.B. `<DialogClose render={<Button variant=\"text\">Abbrechen</Button>} />`.",
+      "figma": null,
+      "source": "packages/ui/src/components/dialog/Dialog.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "className",
+          "type": "string | ((state: DialogCloseState) => string)",
+          "required": false,
+          "description": "CSS class applied to the element, or a function that\nreturns a class based on the component's state."
+        },
+        {
+          "name": "nativeButton",
+          "type": "boolean",
+          "required": false,
+          "default": "true",
+          "description": "Whether the component renders a native `<button>` element when replacing it\nvia the `render` prop.\nSet to `false` if the rendered element is not a button (for example, `<div>`)."
+        },
+        {
+          "name": "render",
+          "type": "ReactElement<unknown, string | JSXElementConstructor<any>> | ComponentRenderFn<HTMLProps, DialogCloseState>",
+          "required": false,
+          "description": "Allows you to replace the component's HTML element\nwith a different tag, or compose it with another component.\n\nAccepts a `ReactElement` or a function that returns the element to render."
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties | ((state: DialogCloseState) => CSSProperties)",
+          "required": false,
+          "description": "Style applied to the element, or a function that\nreturns a style object based on the component's state."
+        }
+      ],
+      "examples": []
+    },
+    {
       "name": "Form",
       "import": "import { Form } from '@dextinity/ui';",
       "summary": "`<form>` mit einheitlichem Feld-Layout und Abständen.",
@@ -777,16 +937,6 @@
           "description": "Style applied to the element, or a function that\nreturns a style object based on the component's state."
         }
       ],
-      "examples": []
-    },
-    {
-      "name": "formLabelClasses",
-      "import": "import { formLabelClasses } from '@dextinity/ui';",
-      "summary": "Klassen des Form Labels — auch für `<legend>` von Checkbox-/Radio-Gruppen.",
-      "figma": null,
-      "source": "packages/ui/src/components/form-label/FormLabel.tsx",
-      "storybook": null,
-      "props": [],
       "examples": []
     },
     {
@@ -1038,6 +1188,157 @@
       "examples": [
         "<Input label=\"E-Mail\" type=\"email\" required helperText=\"Wir schicken dir einen Link.\" />\n<Input label=\"Betrag\" startAdornment=\"€\" endAdornment=\"netto\" />\n<Input label=\"Name\" status=\"error\" helperText=\"Bitte ausfüllen.\" />\n<Input aria-label=\"Suche\" startAdornment={<SearchIcon />} />"
       ]
+    },
+    {
+      "name": "MainNavigation",
+      "import": "import { MainNavigation } from '@dextinity/ui';",
+      "summary": "Main Navigation — Figma: `03 Components / Main navigation` (Item + Menu Section Header).",
+      "figma": {
+        "node": "301:58",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=301-58"
+      },
+      "source": "packages/ui/src/components/main-navigation/MainNavigation.tsx",
+      "storybook": {
+        "title": "Components/Main Navigation",
+        "stories": [
+          "Default",
+          "Sections"
+        ]
+      },
+      "props": [
+        {
+          "name": "aria-label",
+          "type": "string",
+          "required": false,
+          "default": "Hauptnavigation",
+          "description": "Zugänglicher Name."
+        }
+      ],
+      "examples": [
+        "<MainNavigation>\n  <NavSection title=\"Main\">\n    <NavItem icon={<DashboardIcon />} label=\"Dashboard\" href=\"/\" active />\n    <NavItem icon={<FilterIcon />} label=\"Filter\" defaultOpen>\n      <NavItem label=\"Kategorien\" href=\"/filter/kategorien\" />\n    </NavItem>\n  </NavSection>\n</MainNavigation>"
+      ]
+    },
+    {
+      "name": "NavSection",
+      "import": "import { NavSection } from '@dextinity/ui';",
+      "summary": "Abschnitt mit Überschrift (Figma: Menu Section Header).",
+      "figma": {
+        "node": "548:7693",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=548-7693"
+      },
+      "source": "packages/ui/src/components/main-navigation/MainNavigation.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "title",
+          "type": "ReactNode",
+          "required": true,
+          "description": "Figma: Menu Section Header › Text."
+        },
+        {
+          "name": "addLabel",
+          "type": "string",
+          "required": false,
+          "default": "Hinzufügen",
+          "description": "Zugänglicher Name des „+“-Buttons."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "defaultOpen",
+          "type": "boolean",
+          "required": false,
+          "default": "true",
+          "description": "Anfangs offen (nur mit `expandable`)."
+        },
+        {
+          "name": "expandable",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Expandable — Abschnitt auf-/zuklappbar."
+        },
+        {
+          "name": "onAdd",
+          "type": "((event: MouseEvent<HTMLButtonElement, MouseEvent>) => void)",
+          "required": false,
+          "description": "Figma: Show Add Icon — „+“-Button rechts (z.B. „Neuer Bereich“)."
+        }
+      ],
+      "examples": []
+    },
+    {
+      "name": "NavItem",
+      "import": "import { NavItem } from '@dextinity/ui';",
+      "summary": "Ein Navigationspunkt (Figma: Main Navigation Item). Ebene ergibt sich aus der Verschachtelung.",
+      "figma": {
+        "node": "301:58",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=301-58"
+      },
+      "source": "packages/ui/src/components/main-navigation/MainNavigation.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "label",
+          "type": "ReactNode",
+          "required": true,
+          "description": "Figma: Text."
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Active — aktuelle Seite (`aria-current=\"page\"`)."
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Unterpunkte (Figma: Expandable = Yes, Level 2/3). Dann wird der Punkt zum Auf-/Zuklapp-Button."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "defaultOpen",
+          "type": "boolean",
+          "required": false,
+          "description": "Unterpunkte anfangs offen."
+        },
+        {
+          "name": "href",
+          "type": "string",
+          "required": false,
+          "description": "Ziel-URL. Für Router-Links `render={<Link to=\"…\" />}` verwenden."
+        },
+        {
+          "name": "icon",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Choose Icon (Show Icon = Icon gesetzt)."
+        },
+        {
+          "name": "onClick",
+          "type": "((event: MouseEvent<HTMLElement, MouseEvent>) => void)",
+          "required": false,
+          "description": "Klick (z.B. für Navigation ohne `href`)."
+        },
+        {
+          "name": "render",
+          "type": "ReactElement<unknown, string | JSXElementConstructor<any>>",
+          "required": false,
+          "description": "Eigenes Link-Element (z.B. React-Router `<Link>`)."
+        }
+      ],
+      "examples": []
     },
     {
       "name": "Radio",
@@ -1449,6 +1750,105 @@
       ]
     },
     {
+      "name": "Snackbar",
+      "import": "import { Snackbar } from '@dextinity/ui';",
+      "summary": "Figma: `03 Components / Snackbar`. Statische Darstellung (z.B. in Doku/Prototypen).\nFür echte Meldungen `SnackbarProvider` + `useSnackbar()` verwenden.",
+      "figma": {
+        "node": "1428:163",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1428-163"
+      },
+      "source": "packages/ui/src/components/snackbar/Snackbar.tsx",
+      "storybook": {
+        "title": "Components/Snackbar",
+        "stories": [
+          "Playground",
+          "Colors",
+          "WithProvider"
+        ]
+      },
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "description": "Figma: Children — die Nachricht."
+        },
+        {
+          "name": "action",
+          "type": "{ label: ReactNode; onClick: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void; }",
+          "required": false,
+          "description": "Figma: Action — z.B. `<Button>Rückgängig</Button>` (wird als Text-Button klein gesetzt)."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "closeLabel",
+          "type": "string",
+          "required": false,
+          "default": "Schließen",
+          "description": ""
+        },
+        {
+          "name": "color",
+          "type": "enum",
+          "values": [
+            "default",
+            "info",
+            "success",
+            "warning",
+            "error"
+          ],
+          "required": false,
+          "default": "default",
+          "description": "Figma: Color — Bedeutung der Meldung."
+        },
+        {
+          "name": "onClose",
+          "type": "(() => void)",
+          "required": false,
+          "description": "Figma: Close — zeigt den Schließen-Button."
+        },
+        {
+          "name": "title",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Title (optional, fett über der Nachricht)."
+        }
+      ],
+      "examples": []
+    },
+    {
+      "name": "SnackbarProvider",
+      "import": "import { SnackbarProvider } from '@dextinity/ui';",
+      "summary": "Einmal um die App legen, dann überall `useSnackbar().show(...)`.",
+      "figma": null,
+      "source": "packages/ui/src/components/snackbar/Snackbar.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "closeLabel",
+          "type": "string",
+          "required": false,
+          "default": "Schließen",
+          "description": ""
+        },
+        {
+          "name": "limit",
+          "type": "number",
+          "required": false,
+          "default": "3",
+          "description": "Wie viele Meldungen gleichzeitig sichtbar sind."
+        }
+      ],
+      "examples": [
+        "<SnackbarProvider><App /></SnackbarProvider>\n\nconst snackbar = useSnackbar();\nsnackbar.show({ color: 'success', message: 'Gespeichert.', action: { label: 'Rückgängig', onClick: undo } });"
+      ]
+    },
+    {
       "name": "Spinner",
       "import": "import { Spinner } from '@dextinity/ui';",
       "summary": "Lade-Indikator, Farbe = Textfarbe. Figma: „Spinner“ (vorerst vereinfachte Umsetzung).\nRespektiert prefers-reduced-motion (langsamer statt aus).",
@@ -1573,6 +1973,94 @@
       ],
       "examples": [
         "<Switch defaultChecked>Benachrichtigungen</Switch>\n<Switch checked={dark} onCheckedChange={setDark}>Dunkles Design</Switch>"
+      ]
+    },
+    {
+      "name": "Text",
+      "import": "import { Text } from '@dextinity/ui';",
+      "summary": "Figma: `03 Components / Typography`. Setzt die Figma-Text-Styles (`typo-*`) mit passendem Element.",
+      "figma": {
+        "node": "1088:30",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1088-30"
+      },
+      "source": "packages/ui/src/components/text/Text.tsx",
+      "storybook": {
+        "title": "Components/Text",
+        "stories": [
+          "Playground",
+          "Variants"
+        ]
+      },
+      "props": [
+        {
+          "name": "as",
+          "type": "ElementType",
+          "required": false,
+          "description": "Anderes HTML-Element (z.B. `h3` mit Optik von H2). Standard: passend zur Variante."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "color",
+          "type": "enum",
+          "values": [
+            "default",
+            "muted",
+            "subtle",
+            "inherit"
+          ],
+          "required": false,
+          "description": "Textfarbe. Standard: Caption `muted`, sonst `default`."
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "large",
+            "medium",
+            "small",
+            "x-small"
+          ],
+          "required": false,
+          "description": "Figma: Size. Heading: `h1`–`h4` (Standard `h2`). Body: `large` | `medium` | `small` | `x-small`\n(Standard `medium`). Label: `medium` | `small` | `x-small`. Data: `medium` | `small`. Display/Caption: ohne."
+        },
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "display",
+            "heading",
+            "body",
+            "caption",
+            "label",
+            "data"
+          ],
+          "required": false,
+          "default": "body",
+          "description": "Figma: Variant."
+        },
+        {
+          "name": "weight",
+          "type": "enum",
+          "values": [
+            "normal",
+            "bold"
+          ],
+          "required": false,
+          "default": "normal",
+          "description": "Normal oder Bold (Bold-Text-Styles aus Figma). Label hat nur ein Gewicht."
+        }
+      ],
+      "examples": [
+        "<Text variant=\"heading\" size=\"h2\" weight=\"bold\">Benutzer</Text>\n<Text>Verwalte, wer Zugriff auf deinen Workspace hat.</Text>\n<Text variant=\"caption\">Zuletzt geändert vor 2 Tagen</Text>\n<Text variant=\"data\" size=\"small\">1.284,50 €</Text>"
       ]
     },
     {

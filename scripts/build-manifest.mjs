@@ -60,6 +60,8 @@ const FIGMA_NODES = {
   Spinner: '783:1598',
   FormField: '1175:26023',
   FormDivider: '1208:30200',
+  NavSection: '548:7693',
+  NavItem: '301:58',
 };
 
 const components = [];
@@ -70,6 +72,8 @@ for (const dir of readdirSync(join(ROOT, COMPONENTS_DIR)).sort()) {
   for (const file of files) {
     const path = join(ROOT, COMPONENTS_DIR, dir, file);
     for (const doc of parser.parse(path)) {
+      // Nur Komponenten (Großbuchstabe), keine Hooks/Konstanten wie useSnackbar, formLabelClasses
+      if (!/^[A-Z]/.test(doc.displayName)) continue;
       const storiesPath = join(ROOT, COMPONENTS_DIR, dir, `${doc.displayName}.stories.tsx`);
       const stories = existsSync(storiesPath) ? readFileSync(storiesPath, 'utf8') : '';
       const figmaNode =

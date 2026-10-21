@@ -20,6 +20,7 @@
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "@base-ui/react": "^1.9.0",
     "@storybook/addon-a11y": "^10.6.3",
     "@storybook/addon-designs": "~11.1.4",
     "@storybook/addon-docs": "^10.6.3",
