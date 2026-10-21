@@ -10,3 +10,5 @@ test-results/
 __screenshots__/diff/
 .vite/
 debug-storybook.log
+# Vitest: Diff-/Ist-Bilder fehlgeschlagener Screenshot-Tests (Referenzbilder in __screenshots__ werden committet)
+.vitest/

@@ -5,9 +5,11 @@
   },
   "include": [
     "src",
+    "visual",
     ".storybook",
     "vite.config.ts",
     "vitest.config.ts",
+    "vitest.visual.config.ts",
     "../../packages/*/src/**/*.ts",
     "../../packages/*/src/**/*.tsx"
   ]
