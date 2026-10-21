@@ -55,6 +55,16 @@ Noch nicht umgesetzt (in Figma vorhanden): Select, Search, Typography, Main Navi
 Komponenten-Änderungen (neue Props, Varianten, neue Komponenten) werden von Hand im Code nachgezogen — dafür
 sind die Figma-Property-Namen 1:1 die Prop-Namen.
 
+**Warum ein eigenes Figma-Plugin?** „DDS Export“ ist der offizielle Sync-Weg fürs Team:
+
+- **Unabhängig:** Jede:r kann den Sync machen, ohne Claude, Figma-MCP oder Enterprise-Plan
+  (die Figma-REST-API liefert Variablen nur mit Enterprise).
+- **Vollständig:** Ein Klick exportiert alle Variablen, Styles und die 286 Icons.
+- **Nachvollziehbar:** Die Export-Datei ist ein fester Stand; der Import zeigt, was sich seit dem letzten Sync geändert hat.
+
+Claude kann über den Figma-Zugang auch direkt einzelne Tokens übernehmen — eine Abkürzung, kein Ersatz.
+Installation und Bedienung: [Plugin-README](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/tools/figma-plugin/README.md).
+
 ### Was Figma noch „schuldet“
 
 Der [Gap-Report](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/docs/figma-gap-report.md) listet alles,
