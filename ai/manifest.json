@@ -4,6 +4,7 @@
   "description": "React-Komponenten, Design Tokens und Icons für Dextinity (Admin + Chatbot), generiert aus dem Figma-Design-System „DDS – Dextinity Admin UI“. Das Repo ist die Quelle; dieses Manifest wird aus dem Code erzeugt.",
   "repository": "https://github.com/vps-michaelkodim/dex-ui-lib-test",
   "figma": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1",
+  "figmaVersion": "DDS v0.1.1",
   "packages": {
     "@dextinity/ui": {
       "version": "0.1.0",

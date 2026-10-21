@@ -20,6 +20,10 @@ const FIGMA_FILE =
 const read = (p) => readFileSync(join(ROOT, p), 'utf8');
 const json = (p) => JSON.parse(read(p));
 const pkg = (p) => json(`${p}/package.json`);
+const DDS_VERSION =
+  json('packages/tokens/figma/raw/primitives.json').variables.find(
+    (r) => r[0] === 'version',
+  )?.[2][0] ?? 'unbekannt';
 
 /** Props aus Base UI, die bewusst dokumentiert werden (z.B. Button als Link: render + nativeButton). */
 const BASE_UI_PROPS = ['render', 'nativeButton', 'focusableWhenDisabled'];
@@ -190,6 +194,8 @@ const manifest = {
     'React-Komponenten, Design Tokens und Icons für Dextinity (Admin + Chatbot), generiert aus dem Figma-Design-System „DDS – Dextinity Admin UI“. Das Repo ist die Quelle; dieses Manifest wird aus dem Code erzeugt.',
   repository: REPO,
   figma: FIGMA_FILE,
+  /** Stand des Figma-Files (Variable `version` in Primitives), mit dem zuletzt synchronisiert wurde. */
+  figmaVersion: DDS_VERSION,
   packages: Object.fromEntries(
     ['packages/ui', 'packages/tokens', 'packages/icons'].map((p) => [
       pkg(p).name,
@@ -268,6 +274,8 @@ const blob = (p) => `${REPO}/blob/main/${p}`;
 const llms = `# Dextinity UI
 
 > ${manifest.description}
+
+Version: Code ${manifest.packages['@dextinity/ui'].version} · Stand Figma: ${DDS_VERSION}
 
 Stack: React 19, Base UI, Tailwind v4 (nur Token-Klassen), Storybook 10. Themes: ${manifest.setup.themes.join(', ')} · Brands: ${manifest.setup.brands.join(', ')} (\`data-theme\`, \`data-brand\` am \`<html>\`).
 
