@@ -103,13 +103,42 @@ Komplette Liste: `packages/tokens/tokens.meta.json` oder Storybook → Foundatio
 - Das Claude Design System ist ein **Abbild** des Repos und liest dieses Manifest. Komponenten entstehen nur im Repo.
 - Claude-Skill für das Team: `ai/skills/dextinity-ui/SKILL.md` (Installation: `ai/skills/README.md`).
 
+## Versionen & Changesets
+
+DDS hat **eine** Versionsnummer für Figma, Storybook, Code, Tokens und das Claude Design System (SemVer, Lockstep).
+Im Repo laufen alle `@dextinity/*`-Packages über [Changesets](https://changesets.dev) mit gleicher Nummer (`.changeset/config.json` → `fixed`).
+
+**Agents schreiben Changesets selbst** — im selben Commit wie die Änderung, ohne Nachfrage:
+
+- Pflicht bei allem, was Nutzer:innen der Library merken: Komponenten, Props, Verhalten, Styles, Tokens (auch nach `pnpm figma:import`), Icons.
+- Kein Changeset bei: reinen Docs, Tests/Stories, Playground-Prototypen, Tooling/CI, Refactorings ohne sichtbare Wirkung.
+- Datei: `.changeset/<kurzer-slug>.md` (z. B. `button-loading.md`), ein Changeset pro inhaltlicher Änderung:
+
+  ```md
+  ---
+  '@dextinity/ui': minor
+  ---
+
+  Button: `loading` als eigene Property (zeigt Spinner, blockiert Klicks).
+  ```
+
+- Stufe — **vor 1.0.0** (aktuell): Breaking → `minor`, alles andere → `patch`. Nie `major` (das wäre der Sprung auf 1.0.0, den gibt Mitch frei).
+- Stufe — **ab 1.0.0**: Breaking (umbenannt, entfernt, anderes Verhalten) → `major`, Neues → `minor`, Fixes → `patch`.
+- Text: Deutsch, ein bis zwei Sätze, aus Sicht der Nutzer:innen, beginnt mit Komponente bzw. Bereich (`Button:`, `Tokens:`, `Icons:`).
+  Bei Breaking zusätzlich: was man anpassen muss.
+- Nur das betroffene Package eintragen — die anderen ziehen durch `fixed` automatisch mit.
+
+**Release** (macht Mitch): `pnpm changeset:status` → `pnpm release:version` (Versionen, `CHANGELOG.md`, Manifest) → prüfen → committen → Tag `vX.Y.Z`.
+Danach dieselbe Nummer in Figma (Variable `dds/version`, Changelog-Seite, Library-Publish) und im Claude Design System setzen.
+
 ## Befehle
 
 ```bash
-pnpm storybook | pnpm playground | pnpm test | pnpm test:visual | pnpm manifest | pnpm contrast | pnpm typecheck | pnpm lint | pnpm format
+pnpm storybook | pnpm playground | pnpm changeset | pnpm test | pnpm test:visual | pnpm manifest | pnpm contrast | pnpm typecheck | pnpm lint | pnpm format
 ```
 
 ## Git
 
 - Feature-Branch pro Phase/Komponente, PR auf `main`.
 - Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:` …).
+- Änderung an Packages → Changeset im selben Commit (siehe oben).

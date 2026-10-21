@@ -1,6 +1,6 @@
 {
   "name": "@dextinity/playground",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "Prototyping-Spielwiese: Screens mit Dextinity UI vibe-coden",
   "type": "module",
