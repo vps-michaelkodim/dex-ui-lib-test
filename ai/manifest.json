@@ -133,11 +133,25 @@
           "description": "Figma: End Icon."
         },
         {
+          "name": "focusableWhenDisabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Whether the button should be focusable when disabled."
+        },
+        {
           "name": "loading",
           "type": "boolean",
           "required": false,
           "default": "false",
           "description": "Figma: Loading. Zeigt einen Spinner, blockiert Klicks, bleibt fokussierbar (aria-busy)."
+        },
+        {
+          "name": "nativeButton",
+          "type": "boolean",
+          "required": false,
+          "default": "true",
+          "description": "Whether the component renders a native `<button>` element when replacing it\nvia the `render` prop.\nSet to `false` if the rendered element is not a button (for example, `<div>`)."
         },
         {
           "name": "render",
@@ -468,11 +482,25 @@
           "description": "Figma: Disabled."
         },
         {
+          "name": "focusableWhenDisabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Whether the button should be focusable when disabled."
+        },
+        {
           "name": "loading",
           "type": "boolean",
           "required": false,
           "default": "false",
           "description": "Figma: Loading. Ersetzt das Icon durch einen Spinner."
+        },
+        {
+          "name": "nativeButton",
+          "type": "boolean",
+          "required": false,
+          "default": "true",
+          "description": "Whether the component renders a native `<button>` element when replacing it\nvia the `render` prop.\nSet to `false` if the rendered element is not a button (for example, `<div>`)."
         },
         {
           "name": "render",
@@ -1943,6 +1971,28 @@
           "light/crimson": "#417da6",
           "dark/crimson": "#73c1f2",
           "high-contrast/crimson": "#73c1f2"
+        }
+      }
+    ],
+    "semanticOther": [
+      {
+        "name": "focus-ring/width",
+        "cssVar": "--dx-focus-ring-width",
+        "type": "dimension",
+        "values": {
+          "light": "2px",
+          "dark": "2px",
+          "high-contrast": "3px"
+        }
+      },
+      {
+        "name": "focus-ring/offset",
+        "cssVar": "--dx-focus-ring-offset",
+        "type": "dimension",
+        "values": {
+          "light": "2px",
+          "dark": "2px",
+          "high-contrast": "2px"
         }
       }
     ],

@@ -21,13 +21,18 @@ const read = (p) => readFileSync(join(ROOT, p), 'utf8');
 const json = (p) => JSON.parse(read(p));
 const pkg = (p) => json(`${p}/package.json`);
 
+/** Props aus Base UI, die bewusst dokumentiert werden (z.B. Button als Link: render + nativeButton). */
+const BASE_UI_PROPS = ['render', 'nativeButton', 'focusableWhenDisabled'];
+
 // ─── Komponenten ───────────────────────────────────────────────────────────────────────────
 const COMPONENTS_DIR = 'packages/ui/src/components';
 const parser = docgen.withCustomConfig(join(ROOT, 'apps/storybook/tsconfig.json'), {
   shouldExtractLiteralValuesFromEnum: true,
   shouldRemoveUndefinedFromOptional: true,
   savePropValueAsString: true,
-  propFilter: (prop) => !prop.parent || !/node_modules/.test(prop.parent.fileName),
+  // Eigene Props + ausgewählte Base-UI-Props, die man im Alltag braucht
+  propFilter: (prop) =>
+    !prop.parent || !/node_modules/.test(prop.parent.fileName) || BASE_UI_PROPS.includes(prop.name),
 });
 
 /** Figma-Nodes für Komponenten ohne eigene Stories (sonst aus parameters.design der Stories). */
@@ -134,6 +139,15 @@ const semanticColors = meta.tokens
       ),
     ),
   }));
+/** Semantic-Tokens ohne Farbe (z.B. focus-ring/width), je Theme. */
+const semanticOther = meta.tokens
+  .filter((t) => t.collection === 'Semantic' && t.type !== 'color')
+  .map((t) => ({
+    name: t.name,
+    cssVar: t.cssVar,
+    type: t.type,
+    values: Object.fromEntries(THEMES.map((th) => [slug(th), t.values[th]])),
+  }));
 const tokenList = (collection) =>
   meta.tokens
     .filter((t) => t.collection === collection && t.cssVar)
@@ -202,6 +216,7 @@ const manifest = {
   components,
   tokens: {
     semanticColors,
+    semanticOther,
     brand: tokenList('Brand'),
     responsive: tokenList('Responsive'),
     primitives: tokenList('Primitives'),

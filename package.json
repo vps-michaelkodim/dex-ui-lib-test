@@ -15,6 +15,7 @@
     "tokens:build": "pnpm --filter @dextinity/tokens build",
     "tokens:check": "pnpm --filter @dextinity/tokens check",
     "manifest": "node scripts/build-manifest.mjs",
+    "contrast": "node scripts/contrast-audit.mjs",
     "test": "pnpm --filter @dextinity/storybook test",
     "test:setup": "pnpm --filter @dextinity/storybook exec playwright install chromium",
     "test:visual": "pnpm --filter @dextinity/storybook test:visual",

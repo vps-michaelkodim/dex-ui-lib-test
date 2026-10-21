@@ -27,7 +27,10 @@ const config: StorybookConfig = {
       include: ['src/**/*.tsx', '../../packages/*/src/**/*.tsx'],
       shouldExtractLiteralValuesFromEnum: true,
       shouldRemoveUndefinedFromOptional: true,
-      propFilter: (prop) => !prop.parent || !/node_modules/.test(prop.parent.fileName),
+      propFilter: (prop) =>
+        !prop.parent ||
+        !/node_modules/.test(prop.parent.fileName) ||
+        ['render', 'nativeButton', 'focusableWhenDisabled'].includes(prop.name),
     },
   },
   core: {

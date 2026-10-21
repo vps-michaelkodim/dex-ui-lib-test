@@ -38,7 +38,7 @@ Priorität: 🔴 wirkt sich sichtbar aus · 🟡 Konsistenz/Wartbarkeit · ⚪ k
 
 ## Kontrast (Phase 3, gefunden durch den a11y-Test der Button-Stories)
 
-Text/Hintergrund im Default-State unter **WCAG AA 4,5:1**. Prüfskript: `packages/tokens/scripts/contrast-buttons.mjs`.
+Text/Hintergrund im Default-State unter **WCAG AA 4,5:1**. Vollständige, generierte Liste aller Komponenten: `pnpm contrast` → [`docs/reports/contrast.md`](./reports/contrast.md).
 Im Code unverändert übernommen (Figma ist die Quelle). Stories mit diesen Kombis laufen mit `a11y.test: 'todo'`.
 
 | #   | Prio | Brand · Theme               | Button                              | Kontrast        | Farben                                                          |
@@ -80,3 +80,14 @@ Vorschlag: `action/success/default` (Light) auf `success/700`, Crimson `primary`
 | 31  | 🟡   | Chip › Clear Hit Area    | Entfernen-Fläche 16px, kein Token. WCAG 2.2 Target Size empfiehlt ≥ 24px.                                                                               | 16px + 2px Padding                                   | prüfen |
 | 32  | 🟡   | Tooltip                  | Keine Component-Tokens; Breite fix 200px (kein Token); Color=Error nutzt `action/error/subtle`, die anderen `feedback/*/subtle`.                        | Semantic-Tokens direkt, `max-w-50` (200px)           | offen  |
 | 33  | ⚪   | Tooltip › Default        | Standardvariante ist „Light“ — auf weißem Grund nur durch Schatten abgegrenzt. Für Icon-Labels ist „Dark“ üblicher.                                     | Default `light` (wie Figma), Beispiele nutzen `dark` | prüfen |
+
+## Kontrast — weitere Befunde (Kontrast-Audit aller Component-Tokens)
+
+Gefunden beim Abgleich mit dem Claude Design System und bestätigt mit `pnpm contrast`
+(prüft alle Text-/Hintergrund-Paare der Component-Tokens in allen 6 Theme × Brand-Kombinationen).
+
+| #   | Prio | Brand · Theme                     | Token                                               | Kontrast                | Ursache                                                                                                                                                                           | Status                               |
+| --- | ---- | --------------------------------- | --------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| 34  | 🔴   | beide · High Contrast             | `chip/variant/contained/secondary/hover/*`          | **1:1** (Weiß auf Weiß) | Hover-Hintergrund = `color/border/default`, in HC weiß; Text = `foreground/default`, ebenfalls weiß. **Betrifft die gebaute Chip-Komponente** (klickbarer Secondary-Chip, Hover). | offen                                |
+| 35  | 🔴   | Crimson · Light, Dextinity · Dark | `main-navigation/item/active/foreground`            | 2,86:1                  | `action/primary/default` auf `action/primary/subtle`                                                                                                                              | offen (Komponente noch nicht gebaut) |
+| 36  | 🟡   | alle                              | `main-navigation/section-header/default/foreground` | 3,26:1 (Dark)           | `foreground/subtle` als Textfarbe für Überschriften                                                                                                                               | offen                                |

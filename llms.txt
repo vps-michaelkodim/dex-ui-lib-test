@@ -16,11 +16,11 @@ Stack: React 19, Base UI, Tailwind v4 (nur Token-Klassen), Storybook 10. Themes:
 
 ## Komponenten (`@dextinity/ui`)
 
-- Button: Figma: `03 Components / Button`. Props: children, className, color, disabled, endIcon, loading, render, size, startIcon, style, variant
+- Button: Figma: `03 Components / Button`. Props: children, className, color, disabled, endIcon, focusableWhenDisabled, loading, nativeButton, render, size, startIcon, style, variant
 - Chip: Figma: `03 Components / Chip`. Props: children, className, color, deleteLabel, disabled, endIcon, onClick, onDelete, size, startIcon, variant
 - FormHelperText: Figma: `03 Components / Form / Form Helper Text`. Props: children, className, count, render, style, type
 - FormLabel: Figma: `03 Components / Form / Form Label`. Props: children, className, error, helperIcon, mandatory, render, style
-- IconButton: Figma: `03 Components / Icon Button`. Gleiche Farb-Tokens wie Button. Props: aria-label, children, className, color, disabled, loading, render, size, style, variant
+- IconButton: Figma: `03 Components / Icon Button`. Gleiche Farb-Tokens wie Button. Props: aria-label, children, className, color, disabled, focusableWhenDisabled, loading, nativeButton, render, size, style, variant
 - Input: Figma: `03 Components / Form – Input` (+ Form Label, Form Helper Text). Props: className, disabled, endAdornment, helperText, label, loading, readOnly, render, required, showCount, startAdornment, status, style, wrapperClassName
 - Spinner: Lade-Indikator, Farbe = Textfarbe. Figma: „Spinner“ (vorerst vereinfachte Umsetzung). Props: label, size
 - Tooltip: Figma: `03 Components / Tooltip`. Auf Base UI Tooltip (Hover + Tastaturfokus, Escape schließt). Props: children, content, align, className, color, defaultOpen, delay, onOpenChange, open, side, title

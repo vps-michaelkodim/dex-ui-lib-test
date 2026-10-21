@@ -112,12 +112,13 @@ import { EditIcon } from '@dextinity/icons';
 
 ### Qualität
 
-| Prüfung             | Befehl                                               | Was                                              |
-| ------------------- | ---------------------------------------------------- | ------------------------------------------------ |
-| Interaktion + a11y  | `pnpm test`                                          | jede Story ist ein Test (Klick, Tastatur, axe)   |
-| Screenshots         | `pnpm test:visual`                                   | 36 Screenshots (4 Themes/Brands), Referenz = Mac |
-| Typen, Lint, Format | `pnpm typecheck` · `pnpm lint` · `pnpm format:check` |                                                  |
-| Tokens aktuell      | `pnpm tokens:check`                                  | generierte Dateien passen zum Figma-Export       |
+| Prüfung             | Befehl                                               | Was                                                                                   |
+| ------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Interaktion + a11y  | `pnpm test`                                          | jede Story ist ein Test (Klick, Tastatur, axe)                                        |
+| Screenshots         | `pnpm test:visual`                                   | 36 Screenshots (4 Themes/Brands), Referenz = Mac                                      |
+| Typen, Lint, Format | `pnpm typecheck` · `pnpm lint` · `pnpm format:check` |                                                                                       |
+| Tokens aktuell      | `pnpm tokens:check`                                  | generierte Dateien passen zum Figma-Export                                            |
+| Kontrast            | `pnpm contrast`                                      | alle Text/Hintergrund-Paare der Component-Tokens, 6 Modi → `docs/reports/contrast.md` |
 
 ### Für AI-Tools
 
