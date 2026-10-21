@@ -1,7 +1,9 @@
 /**
- * Beispiel-Prototyp. Vorlage für neue Screens:
+ * Beispiel-Prototyp. Neue Datei hier = neuer Eintrag im Playground (kein Registrieren nötig).
  * nur Komponenten aus @dextinity/ui + Token-basierte Tailwind-Klassen verwenden.
  */
+export const title = 'Hello Dextinity';
+
 export function HelloDextinity() {
   return (
     <div className="p-8">

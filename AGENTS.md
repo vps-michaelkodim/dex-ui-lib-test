@@ -90,7 +90,8 @@ Komplette Liste: `packages/tokens/tokens.meta.json` oder Storybook → Foundatio
 
 ## Prototypen (Playground)
 
-- Neue Datei `apps/playground/src/prototypes/<Name>.tsx`, Eintrag in `prototypes/index.ts`.
+- Neue Datei `apps/playground/src/prototypes/<Name>.tsx` = neuer Prototyp (registriert sich selbst).
+  Komponente exportieren, optional `export const title = 'Anzeigename'`. Link: `localhost:5173/#<name>`.
 - Nur Komponenten aus `@dextinity/ui` + Token-Klassen. Fehlt eine Komponente: im Prototyp lokal bauen
   und als Kandidat notieren, nicht in `packages/ui` hacken.
 
