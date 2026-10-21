@@ -251,6 +251,7 @@
   --dx-primitive-color-forest-800: #224326;
   --dx-primitive-color-forest-900: #162a19;
   --dx-primitive-color-forest-950: #09150a;
+  --dx-primitive-version: DDS v0.1.1;
   --dx-primitive-unit-0: 0px;
   --dx-primitive-unit-1: 4px;
   --dx-primitive-unit-2: 8px;
@@ -896,6 +897,12 @@
   --dx-switch-track-height: 20px;
   --dx-switch-thumb-size: 16px;
   --dx-switch-thumb-inset: 2px;
+  --dx-dialog-size-sm-width: 640px; /** Breite Size=SM */
+  --dx-dialog-size-md-width: 1024px; /** Breite Size=MD */
+  --dx-dialog-size-lg-width: 1280px; /** Breite Size=LG (XL = volle Breite) */
+  --dx-snackbar-min-width: 320px;
+  --dx-snackbar-max-width: 560px;
+  --dx-snackbar-border-width: 1px;
   --dx-button-type-button-default-padding-horizontal: var(--dx-primitive-unit-4);
   --dx-button-type-button-default-padding-vertical: var(--dx-primitive-unit-2);
   --dx-button-type-button-default-gap: var(--dx-primitive-unit-2);
@@ -1075,6 +1082,20 @@
   --dx-switch-label-font-size: var(--dx-typography-body-md-size);
   --dx-switch-label-font-line-height: var(--dx-typography-body-md-line-height);
   --dx-switch-label-font-weight: var(--dx-primitive-font-weight-regular);
+  --dx-dialog-overlay: var(--dx-color-background-overlay); /** Abdunkelung hinter dem Dialog */
+  --dx-dialog-overlay-padding: var(--dx-primitive-unit-12); /** Mindestabstand Dialog ↔ Viewport */
+  --dx-dialog-header-padding-horizontal: var(--dx-primitive-unit-8);
+  --dx-dialog-header-padding-vertical: var(--dx-primitive-unit-5);
+  --dx-dialog-header-gap: var(--dx-primitive-unit-3);
+  --dx-dialog-actions-padding-horizontal: var(--dx-primitive-unit-8);
+  --dx-dialog-actions-padding-vertical: var(--dx-primitive-unit-6);
+  --dx-dialog-actions-gap: var(--dx-primitive-unit-4);
+  --dx-snackbar-padding-horizontal: var(--dx-primitive-unit-4);
+  --dx-snackbar-padding-vertical: var(--dx-primitive-unit-3);
+  --dx-snackbar-gap: var(--dx-primitive-unit-3); /** Abstand Icon ↔ Text ↔ Aktionen */
+  --dx-snackbar-content-gap: var(--dx-primitive-unit-1); /** Abstand Titel ↔ Nachricht */
+  --dx-snackbar-actions-gap: var(--dx-primitive-unit-1); /** Abstand Aktion ↔ Schließen */
+  --dx-snackbar-icon-size: var(--dx-primitive-unit-4);
   --dx-button-type-button-default-radius: var(--dx-brand-radius-control);
   --dx-button-type-button-small-radius: var(--dx-brand-radius-control-small);
   --dx-button-type-icon-button-default-radius: var(--dx-brand-radius-control);
@@ -1144,6 +1165,13 @@
   --dx-switch-off-hover-thumb: var(--dx-color-background-default);
   --dx-switch-on-default-thumb: var(--dx-color-action-primary-foreground);
   --dx-switch-on-hover-thumb: var(--dx-color-action-primary-foreground);
+  --dx-dialog-background: var(--dx-color-background-default); /** Fläche des Dialogs */
+  --dx-dialog-radius: var(--dx-brand-radius-modal); /** Eckenradius des Dialogs (je Brand) */
+  --dx-dialog-header-icon-background: var(--dx-brand-color-primary-400); /** Icon-Kreis innen */
+  --dx-dialog-header-icon-ring: var(--dx-brand-color-primary-300); /** Icon-Kreis außen */
+  --dx-dialog-header-icon-foreground: var(--dx-color-foreground-on-accent); /** Icon im Kreis */
+  --dx-snackbar-radius: var(--dx-brand-radius-surface);
+  --dx-snackbar-color-default-background: var(--dx-color-background-default);
   --dx-button-color-primary-contained-default-background: var(--dx-color-action-primary-default);
   --dx-button-color-primary-contained-default-border: var(--dx-color-action-primary-default);
   --dx-button-color-primary-contained-hover-background: var(--dx-color-action-primary-hover);
@@ -1572,4 +1600,22 @@
   --dx-switch-on-read-only-thumb: var(--dx-color-background-subtle);
   --dx-switch-label-foreground-default: var(--dx-color-foreground-default);
   --dx-switch-label-foreground-disabled: var(--dx-color-foreground-subtle);
+  --dx-dialog-border: var(--dx-color-border-default); /** Rahmen des Dialogs */
+  --dx-dialog-divider: var(--dx-color-border-subtle); /** Trennlinie unter Header / über Actions */
+  --dx-dialog-header-title-color: var(--dx-color-foreground-default); /** Titel (Text-Style Body/LG – Bold) */
+  --dx-snackbar-foreground: var(--dx-color-foreground-default); /** Titel + Nachricht (alle Farben) */
+  --dx-snackbar-color-default-border: var(--dx-color-border-default);
+  --dx-snackbar-color-default-icon: var(--dx-color-foreground-muted);
+  --dx-snackbar-color-info-background: var(--dx-color-feedback-info-subtle);
+  --dx-snackbar-color-info-border: var(--dx-color-feedback-info-border);
+  --dx-snackbar-color-info-icon: var(--dx-color-feedback-info-default);
+  --dx-snackbar-color-success-background: var(--dx-color-feedback-success-subtle);
+  --dx-snackbar-color-success-border: var(--dx-color-feedback-success-border);
+  --dx-snackbar-color-success-icon: var(--dx-color-feedback-success-default);
+  --dx-snackbar-color-warning-background: var(--dx-color-feedback-warning-subtle);
+  --dx-snackbar-color-warning-border: var(--dx-color-feedback-warning-border);
+  --dx-snackbar-color-warning-icon: var(--dx-color-feedback-warning-default);
+  --dx-snackbar-color-error-background: var(--dx-color-feedback-danger-subtle);
+  --dx-snackbar-color-error-border: var(--dx-color-feedback-danger-border);
+  --dx-snackbar-color-error-icon: var(--dx-color-feedback-danger-default);
 }

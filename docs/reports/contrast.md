@@ -1,14 +1,15 @@
 # Kontrast-Audit Component-Tokens
 
 > GENERIERT mit `pnpm contrast` aus `packages/tokens/figma/raw` — nicht von Hand ändern.
-> Prüft Text-/Icon-Farbe gegen Hintergrund für alle 150 Paare × 6 Modi
+> Prüft Text-/Icon-Farbe gegen Hintergrund für alle 152 Paare × 6 Modi
 > (Themes Light, Dark, High Contrast × Brands Dextinity, Crimson). Schwelle WCAG AA 4.5:1, Disabled ausgenommen.
 
-**49 Token-Paare unter 4.5:1** (84 Fälle). Ursache und Status: [Gap-Report](../figma-gap-report.md).
+**50 Token-Paare unter 4.5:1** (85 Fälle). Ursache und Status: [Gap-Report](../figma-gap-report.md).
 
 | Komponente | Vordergrund-Token | schlechtester Wert | Farben | betroffene Modi |
 | --- | --- | --- | --- | --- |
 | chip | `chip/variant/contained/secondary/hover/foreground` | 1.00:1 (High Contrast/Dextinity) | `#ffffff` auf `#ffffff` | High Contrast/Dextinity, High Contrast/Crimson |
+| dialog | `dialog/header/icon/foreground` | 2.27:1 (Light/Crimson) | `#ffffff` auf `#5cb4f0` | Light/Crimson |
 | main-navigation | `main-navigation/item/active/foreground` | 2.86:1 (Light/Crimson) | `#4a98ce` auf `#eaf6fd` | Dark/Dextinity, Light/Crimson |
 | button | `button/color/success/contained/default/foreground` | 2.94:1 (Light/Dextinity) | `#ffffff` auf `#55a943` | Light/Dextinity, Light/Crimson |
 | button | `button/color/success/contained/focus/foreground` | 2.94:1 (Light/Dextinity) | `#ffffff` auf `#55a943` | Light/Dextinity, Light/Crimson |
