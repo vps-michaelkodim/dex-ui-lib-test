@@ -12011,6 +12011,422 @@
           "Default": "#f5f6f7"
         },
         "alias": "Semantic::color/background/subtle"
+      },
+      {
+        "name": "dialog/background",
+        "cssVar": "--dx-dialog-background",
+        "type": "color",
+        "values": {
+          "Default": "#ffffff"
+        },
+        "alias": "Semantic::color/background/default",
+        "description": "Fläche des Dialogs"
+      },
+      {
+        "name": "dialog/border",
+        "cssVar": "--dx-dialog-border",
+        "type": "color",
+        "values": {
+          "Default": "#caccd1"
+        },
+        "alias": "Semantic::color/border/default",
+        "description": "Rahmen des Dialogs"
+      },
+      {
+        "name": "dialog/radius",
+        "cssVar": "--dx-dialog-radius",
+        "type": "dimension",
+        "values": {
+          "Default": "24px"
+        },
+        "alias": "Brand::brand/radius/modal",
+        "description": "Eckenradius des Dialogs (je Brand)"
+      },
+      {
+        "name": "dialog/overlay",
+        "cssVar": "--dx-dialog-overlay",
+        "type": "color",
+        "values": {
+          "Default": "#14151780"
+        },
+        "alias": "Semantic::color/background/overlay",
+        "description": "Abdunkelung hinter dem Dialog"
+      },
+      {
+        "name": "dialog/overlay-padding",
+        "cssVar": "--dx-dialog-overlay-padding",
+        "type": "dimension",
+        "values": {
+          "Default": "48px"
+        },
+        "alias": "Primitives::unit/12",
+        "description": "Mindestabstand Dialog ↔ Viewport"
+      },
+      {
+        "name": "dialog/divider",
+        "cssVar": "--dx-dialog-divider",
+        "type": "color",
+        "values": {
+          "Default": "#e5e6e8"
+        },
+        "alias": "Semantic::color/border/subtle",
+        "description": "Trennlinie unter Header / über Actions"
+      },
+      {
+        "name": "dialog/header/padding-horizontal",
+        "cssVar": "--dx-dialog-header-padding-horizontal",
+        "type": "dimension",
+        "values": {
+          "Default": "32px"
+        },
+        "alias": "Primitives::unit/8"
+      },
+      {
+        "name": "dialog/header/padding-vertical",
+        "cssVar": "--dx-dialog-header-padding-vertical",
+        "type": "dimension",
+        "values": {
+          "Default": "20px"
+        },
+        "alias": "Primitives::unit/5"
+      },
+      {
+        "name": "dialog/header/gap",
+        "cssVar": "--dx-dialog-header-gap",
+        "type": "dimension",
+        "values": {
+          "Default": "12px"
+        },
+        "alias": "Primitives::unit/3"
+      },
+      {
+        "name": "dialog/header/title-color",
+        "cssVar": "--dx-dialog-header-title-color",
+        "type": "color",
+        "values": {
+          "Default": "#27292e"
+        },
+        "alias": "Semantic::color/foreground/default",
+        "description": "Titel (Text-Style Body/LG – Bold)"
+      },
+      {
+        "name": "dialog/header/icon/background",
+        "cssVar": "--dx-dialog-header-icon-background",
+        "type": "color",
+        "values": {
+          "Default": "#6662f5"
+        },
+        "alias": "Brand::brand/color/primary/400",
+        "description": "Icon-Kreis innen"
+      },
+      {
+        "name": "dialog/header/icon/ring",
+        "cssVar": "--dx-dialog-header-icon-ring",
+        "type": "color",
+        "values": {
+          "Default": "#8d89f7"
+        },
+        "alias": "Brand::brand/color/primary/300",
+        "description": "Icon-Kreis außen"
+      },
+      {
+        "name": "dialog/header/icon/foreground",
+        "cssVar": "--dx-dialog-header-icon-foreground",
+        "type": "color",
+        "values": {
+          "Default": "#ffffff"
+        },
+        "alias": "Semantic::color/foreground/on-accent",
+        "description": "Icon im Kreis"
+      },
+      {
+        "name": "dialog/actions/padding-horizontal",
+        "cssVar": "--dx-dialog-actions-padding-horizontal",
+        "type": "dimension",
+        "values": {
+          "Default": "32px"
+        },
+        "alias": "Primitives::unit/8"
+      },
+      {
+        "name": "dialog/actions/padding-vertical",
+        "cssVar": "--dx-dialog-actions-padding-vertical",
+        "type": "dimension",
+        "values": {
+          "Default": "24px"
+        },
+        "alias": "Primitives::unit/6"
+      },
+      {
+        "name": "dialog/actions/gap",
+        "cssVar": "--dx-dialog-actions-gap",
+        "type": "dimension",
+        "values": {
+          "Default": "16px"
+        },
+        "alias": "Primitives::unit/4"
+      },
+      {
+        "name": "dialog/size/sm/width",
+        "cssVar": "--dx-dialog-size-sm-width",
+        "type": "dimension",
+        "values": {
+          "Default": "640px"
+        },
+        "description": "Breite Size=SM"
+      },
+      {
+        "name": "dialog/size/md/width",
+        "cssVar": "--dx-dialog-size-md-width",
+        "type": "dimension",
+        "values": {
+          "Default": "1024px"
+        },
+        "description": "Breite Size=MD"
+      },
+      {
+        "name": "dialog/size/lg/width",
+        "cssVar": "--dx-dialog-size-lg-width",
+        "type": "dimension",
+        "values": {
+          "Default": "1280px"
+        },
+        "description": "Breite Size=LG (XL = volle Breite)"
+      },
+      {
+        "name": "snackbar/radius",
+        "cssVar": "--dx-snackbar-radius",
+        "type": "dimension",
+        "values": {
+          "Default": "12px"
+        },
+        "alias": "Brand::brand/radius/surface"
+      },
+      {
+        "name": "snackbar/padding-horizontal",
+        "cssVar": "--dx-snackbar-padding-horizontal",
+        "type": "dimension",
+        "values": {
+          "Default": "16px"
+        },
+        "alias": "Primitives::unit/4"
+      },
+      {
+        "name": "snackbar/padding-vertical",
+        "cssVar": "--dx-snackbar-padding-vertical",
+        "type": "dimension",
+        "values": {
+          "Default": "12px"
+        },
+        "alias": "Primitives::unit/3"
+      },
+      {
+        "name": "snackbar/gap",
+        "cssVar": "--dx-snackbar-gap",
+        "type": "dimension",
+        "values": {
+          "Default": "12px"
+        },
+        "alias": "Primitives::unit/3",
+        "description": "Abstand Icon ↔ Text ↔ Aktionen"
+      },
+      {
+        "name": "snackbar/content-gap",
+        "cssVar": "--dx-snackbar-content-gap",
+        "type": "dimension",
+        "values": {
+          "Default": "4px"
+        },
+        "alias": "Primitives::unit/1",
+        "description": "Abstand Titel ↔ Nachricht"
+      },
+      {
+        "name": "snackbar/actions-gap",
+        "cssVar": "--dx-snackbar-actions-gap",
+        "type": "dimension",
+        "values": {
+          "Default": "4px"
+        },
+        "alias": "Primitives::unit/1",
+        "description": "Abstand Aktion ↔ Schließen"
+      },
+      {
+        "name": "snackbar/icon-size",
+        "cssVar": "--dx-snackbar-icon-size",
+        "type": "dimension",
+        "values": {
+          "Default": "16px"
+        },
+        "alias": "Primitives::unit/4"
+      },
+      {
+        "name": "snackbar/min-width",
+        "cssVar": "--dx-snackbar-min-width",
+        "type": "dimension",
+        "values": {
+          "Default": "320px"
+        }
+      },
+      {
+        "name": "snackbar/max-width",
+        "cssVar": "--dx-snackbar-max-width",
+        "type": "dimension",
+        "values": {
+          "Default": "560px"
+        }
+      },
+      {
+        "name": "snackbar/border-width",
+        "cssVar": "--dx-snackbar-border-width",
+        "type": "dimension",
+        "values": {
+          "Default": "1px"
+        }
+      },
+      {
+        "name": "snackbar/foreground",
+        "cssVar": "--dx-snackbar-foreground",
+        "type": "color",
+        "values": {
+          "Default": "#27292e"
+        },
+        "alias": "Semantic::color/foreground/default",
+        "description": "Titel + Nachricht (alle Farben)"
+      },
+      {
+        "name": "snackbar/color/default/background",
+        "cssVar": "--dx-snackbar-color-default-background",
+        "type": "color",
+        "values": {
+          "Default": "#ffffff"
+        },
+        "alias": "Semantic::color/background/default"
+      },
+      {
+        "name": "snackbar/color/default/border",
+        "cssVar": "--dx-snackbar-color-default-border",
+        "type": "color",
+        "values": {
+          "Default": "#caccd1"
+        },
+        "alias": "Semantic::color/border/default"
+      },
+      {
+        "name": "snackbar/color/default/icon",
+        "cssVar": "--dx-snackbar-color-default-icon",
+        "type": "color",
+        "values": {
+          "Default": "#4e535c"
+        },
+        "alias": "Semantic::color/foreground/muted"
+      },
+      {
+        "name": "snackbar/color/info/background",
+        "cssVar": "--dx-snackbar-color-info-background",
+        "type": "color",
+        "values": {
+          "Default": "#e6f4fc"
+        },
+        "alias": "Semantic::color/feedback/info/subtle"
+      },
+      {
+        "name": "snackbar/color/info/border",
+        "cssVar": "--dx-snackbar-color-info-border",
+        "type": "color",
+        "values": {
+          "Default": "#90d0f1"
+        },
+        "alias": "Semantic::color/feedback/info/border"
+      },
+      {
+        "name": "snackbar/color/info/icon",
+        "cssVar": "--dx-snackbar-color-info-icon",
+        "type": "color",
+        "values": {
+          "Default": "#0ba6de"
+        },
+        "alias": "Semantic::color/feedback/info/default"
+      },
+      {
+        "name": "snackbar/color/success/background",
+        "cssVar": "--dx-snackbar-color-success-background",
+        "type": "color",
+        "values": {
+          "Default": "#eef7ea"
+        },
+        "alias": "Semantic::color/feedback/success/subtle"
+      },
+      {
+        "name": "snackbar/color/success/border",
+        "cssVar": "--dx-snackbar-color-success-border",
+        "type": "color",
+        "values": {
+          "Default": "#a6d79a"
+        },
+        "alias": "Semantic::color/feedback/success/border"
+      },
+      {
+        "name": "snackbar/color/success/icon",
+        "cssVar": "--dx-snackbar-color-success-icon",
+        "type": "color",
+        "values": {
+          "Default": "#66c54f"
+        },
+        "alias": "Semantic::color/feedback/success/default"
+      },
+      {
+        "name": "snackbar/color/warning/background",
+        "cssVar": "--dx-snackbar-color-warning-background",
+        "type": "color",
+        "values": {
+          "Default": "#fef6e5"
+        },
+        "alias": "Semantic::color/feedback/warning/subtle"
+      },
+      {
+        "name": "snackbar/color/warning/border",
+        "cssVar": "--dx-snackbar-color-warning-border",
+        "type": "color",
+        "values": {
+          "Default": "#f8d584"
+        },
+        "alias": "Semantic::color/feedback/warning/border"
+      },
+      {
+        "name": "snackbar/color/warning/icon",
+        "cssVar": "--dx-snackbar-color-warning-icon",
+        "type": "color",
+        "values": {
+          "Default": "#f3b346"
+        },
+        "alias": "Semantic::color/feedback/warning/default"
+      },
+      {
+        "name": "snackbar/color/error/background",
+        "cssVar": "--dx-snackbar-color-error-background",
+        "type": "color",
+        "values": {
+          "Default": "#fcebe8"
+        },
+        "alias": "Semantic::color/feedback/danger/subtle"
+      },
+      {
+        "name": "snackbar/color/error/border",
+        "cssVar": "--dx-snackbar-color-error-border",
+        "type": "color",
+        "values": {
+          "Default": "#efa39a"
+        },
+        "alias": "Semantic::color/feedback/danger/border"
+      },
+      {
+        "name": "snackbar/color/error/icon",
+        "cssVar": "--dx-snackbar-color-error-icon",
+        "type": "color",
+        "values": {
+          "Default": "#c6523f"
+        },
+        "alias": "Semantic::color/feedback/danger/default"
       }
     ]
   },

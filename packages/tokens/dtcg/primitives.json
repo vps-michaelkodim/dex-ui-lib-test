@@ -3765,6 +3765,20 @@
         }
       }
     },
+    "version": {
+      "$type": "string",
+      "$value": "DDS v0.1.1",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Primitives",
+          "mode": "Default",
+          "name": "version",
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      }
+    },
     "unit": {
       "0": {
         "$type": "dimension",

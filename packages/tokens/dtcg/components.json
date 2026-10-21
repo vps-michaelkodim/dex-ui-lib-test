@@ -11095,5 +11095,709 @@
         }
       }
     }
+  },
+  "dialog": {
+    "background": {
+      "$type": "color",
+      "$value": "{color.background.default}",
+      "$description": "Fläche des Dialogs",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "dialog/background",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        }
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{color.border.default}",
+      "$description": "Rahmen des Dialogs",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "dialog/border",
+          "scopes": [
+            "STROKE_COLOR"
+          ]
+        }
+      }
+    },
+    "radius": {
+      "$type": "dimension",
+      "$value": "{brand.radius.modal}",
+      "$description": "Eckenradius des Dialogs (je Brand)",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "dialog/radius",
+          "scopes": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
+    "overlay": {
+      "$type": "color",
+      "$value": "{color.background.overlay}",
+      "$description": "Abdunkelung hinter dem Dialog",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "dialog/overlay",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        }
+      }
+    },
+    "overlay-padding": {
+      "$type": "dimension",
+      "$value": "{primitive.unit.12}",
+      "$description": "Mindestabstand Dialog ↔ Viewport",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "dialog/overlay-padding",
+          "scopes": [
+            "WIDTH_HEIGHT",
+            "GAP"
+          ]
+        }
+      }
+    },
+    "divider": {
+      "$type": "color",
+      "$value": "{color.border.subtle}",
+      "$description": "Trennlinie unter Header / über Actions",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "dialog/divider",
+          "scopes": [
+            "STROKE_COLOR"
+          ]
+        }
+      }
+    },
+    "header": {
+      "padding-horizontal": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.8}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Components",
+            "mode": "Default",
+            "name": "dialog/header/padding-horizontal",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "padding-vertical": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.5}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Components",
+            "mode": "Default",
+            "name": "dialog/header/padding-vertical",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.3}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Components",
+            "mode": "Default",
+            "name": "dialog/header/gap",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "title-color": {
+        "$type": "color",
+        "$value": "{color.foreground.default}",
+        "$description": "Titel (Text-Style Body/LG – Bold)",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Components",
+            "mode": "Default",
+            "name": "dialog/header/title-color",
+            "scopes": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "background": {
+          "$type": "color",
+          "$value": "{brand.color.primary.400}",
+          "$description": "Icon-Kreis innen",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "dialog/header/icon/background",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "ring": {
+          "$type": "color",
+          "$value": "{brand.color.primary.300}",
+          "$description": "Icon-Kreis außen",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "dialog/header/icon/ring",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "{color.foreground.on-accent}",
+          "$description": "Icon im Kreis",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "dialog/header/icon/foreground",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "actions": {
+      "padding-horizontal": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.8}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Components",
+            "mode": "Default",
+            "name": "dialog/actions/padding-horizontal",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "padding-vertical": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.6}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Components",
+            "mode": "Default",
+            "name": "dialog/actions/padding-vertical",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.4}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Components",
+            "mode": "Default",
+            "name": "dialog/actions/gap",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      }
+    },
+    "size": {
+      "sm": {
+        "width": {
+          "$type": "dimension",
+          "$value": "640px",
+          "$description": "Breite Size=SM",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "dialog/size/sm/width",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ]
+            }
+          }
+        }
+      },
+      "md": {
+        "width": {
+          "$type": "dimension",
+          "$value": "1024px",
+          "$description": "Breite Size=MD",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "dialog/size/md/width",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ]
+            }
+          }
+        }
+      },
+      "lg": {
+        "width": {
+          "$type": "dimension",
+          "$value": "1280px",
+          "$description": "Breite Size=LG (XL = volle Breite)",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "dialog/size/lg/width",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "snackbar": {
+    "radius": {
+      "$type": "dimension",
+      "$value": "{brand.radius.surface}",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/radius",
+          "scopes": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
+    "padding-horizontal": {
+      "$type": "dimension",
+      "$value": "{primitive.unit.4}",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/padding-horizontal",
+          "scopes": [
+            "WIDTH_HEIGHT",
+            "GAP"
+          ]
+        }
+      }
+    },
+    "padding-vertical": {
+      "$type": "dimension",
+      "$value": "{primitive.unit.3}",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/padding-vertical",
+          "scopes": [
+            "WIDTH_HEIGHT",
+            "GAP"
+          ]
+        }
+      }
+    },
+    "gap": {
+      "$type": "dimension",
+      "$value": "{primitive.unit.3}",
+      "$description": "Abstand Icon ↔ Text ↔ Aktionen",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/gap",
+          "scopes": [
+            "WIDTH_HEIGHT",
+            "GAP"
+          ]
+        }
+      }
+    },
+    "content-gap": {
+      "$type": "dimension",
+      "$value": "{primitive.unit.1}",
+      "$description": "Abstand Titel ↔ Nachricht",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/content-gap",
+          "scopes": [
+            "WIDTH_HEIGHT",
+            "GAP"
+          ]
+        }
+      }
+    },
+    "actions-gap": {
+      "$type": "dimension",
+      "$value": "{primitive.unit.1}",
+      "$description": "Abstand Aktion ↔ Schließen",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/actions-gap",
+          "scopes": [
+            "WIDTH_HEIGHT",
+            "GAP"
+          ]
+        }
+      }
+    },
+    "icon-size": {
+      "$type": "dimension",
+      "$value": "{primitive.unit.4}",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/icon-size",
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
+    "min-width": {
+      "$type": "dimension",
+      "$value": "320px",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/min-width",
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
+    "max-width": {
+      "$type": "dimension",
+      "$value": "560px",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/max-width",
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
+    "border-width": {
+      "$type": "dimension",
+      "$value": "1px",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/border-width",
+          "scopes": [
+            "STROKE_FLOAT"
+          ]
+        }
+      }
+    },
+    "foreground": {
+      "$type": "color",
+      "$value": "{color.foreground.default}",
+      "$description": "Titel + Nachricht (alle Farben)",
+      "$extensions": {
+        "com.figma": {
+          "collection": "Components",
+          "mode": "Default",
+          "name": "snackbar/foreground",
+          "scopes": [
+            "TEXT_FILL"
+          ]
+        }
+      }
+    },
+    "color": {
+      "default": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.background.default}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/default/background",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.border.default}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/default/border",
+              "scopes": [
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{color.foreground.muted}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/default/icon",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "info": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.feedback.info.subtle}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/info/background",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.feedback.info.border}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/info/border",
+              "scopes": [
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{color.feedback.info.default}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/info/icon",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "success": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.feedback.success.subtle}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/success/background",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.feedback.success.border}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/success/border",
+              "scopes": [
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{color.feedback.success.default}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/success/icon",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "warning": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.feedback.warning.subtle}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/warning/background",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.feedback.warning.border}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/warning/border",
+              "scopes": [
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{color.feedback.warning.default}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/warning/icon",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "error": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.feedback.danger.subtle}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/error/background",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.feedback.danger.border}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/error/border",
+              "scopes": [
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{color.feedback.danger.default}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Components",
+              "mode": "Default",
+              "name": "snackbar/color/error/icon",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      }
+    }
   }
 }
