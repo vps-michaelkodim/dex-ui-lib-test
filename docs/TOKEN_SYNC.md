@@ -61,6 +61,7 @@ Token-Gruppen abweichen, ohne kompletten Export.
 ## Figma-Version
 
 Das Figma-File führt seinen Stand in der Variable `version` (Collection Primitives, z. B. „DDS v0.1.1“).
-Der Import zeigt Änderungen daran an und schreibt sie ins Changeset; Storybook (Introduction), `ai/manifest.json`
-(`figmaVersion`) und `llms.txt` zeigen den zuletzt synchronisierten Stand. Die Paketversion (Changesets) ist davon
-unabhängig: Code-Releases gibt es auch ohne Figma-Änderung.
+Der Import zeigt Änderungen daran an und legt ein Changeset an (Stufe nach `AGENTS.md` → „Versionen & Changesets“);
+Storybook (Introduction), `ai/manifest.json` (`figmaVersion`) und `llms.txt` zeigen den zuletzt synchronisierten Stand.
+DDS hat **eine** Versionsnummer für Figma und Code: Nach einem Release (`pnpm release:version`) dieselbe Nummer in
+Figma setzen. Weichen „Code“ und „Stand Figma“ in Storybook ab, ist eins von beiden noch nicht nachgezogen.

@@ -1,5 +1,5 @@
 ---
-'@dextinity/tokens': minor
+'@dextinity/tokens': patch
 ---
 
 Neue Component-Tokens aus Figma: `dialog/*` (19) und `snackbar/*` (26), dazu `--dx-primitive-version`.

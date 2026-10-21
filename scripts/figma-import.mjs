@@ -205,10 +205,25 @@ if (changes) {
     summary.icons && `${summary.icons} Icon-Änderungen`,
   ].filter(Boolean);
   const from = oldVersion && oldVersion !== newVersion ? ` (vorher ${oldVersion})` : '';
+  // Stufe nach AGENTS.md → „Versionen & Changesets“: vor 1.0 Breaking (entfernt) → minor, sonst patch;
+  // ab 1.0 entfernt → major, neu → minor, nur geändert → patch.
+  const current = JSON.parse(
+    readFileSync(join(ROOT, 'packages/tokens/package.json'), 'utf8'),
+  ).version;
+  const preRelease = Number(current.split('.')[0]) < 1;
+  const bump = preRelease
+    ? summary.removed
+      ? 'minor'
+      : 'patch'
+    : summary.removed
+      ? 'major'
+      : summary.added || summary.icons
+        ? 'minor'
+        : 'patch';
   const file = join(ROOT, '.changeset', `figma-sync-${new Date().toISOString().slice(0, 10)}.md`);
   writeFileSync(
     file,
-    `---\n${pkgs.map((p) => `'${p}': ${summary.removed ? 'major' : 'minor'}`).join('\n')}\n---\n\nSync mit Figma ${newVersion ?? ''}${from}: ${parts.join(' · ')}.\n`,
+    `---\n${pkgs.map((p) => `'${p}': ${bump}`).join('\n')}\n---\n\nSync mit Figma ${newVersion ?? ''}${from}: ${parts.join(' · ')}.\n`,
   );
   console.log(
     c.y(`\nChangeset angelegt: ${file.replace(ROOT + '/', '')} — Text und Stufe prüfen.`),
