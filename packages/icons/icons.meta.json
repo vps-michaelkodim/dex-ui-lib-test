@@ -1,0 +1,110 @@
+[
+  {
+    "name": "AcceptIcon",
+    "figma": "Accept_Check_Correct",
+    "keywords": ["Check", "Correct"],
+    "colored": false
+  },
+  {
+    "name": "AddNoCircleIcon",
+    "figma": "AddNoCircle_Plus",
+    "keywords": ["Plus"],
+    "colored": false
+  },
+  {
+    "name": "ArtificialIntelligenceIcon",
+    "figma": "ArtificialIntelligence_Wizzard_MagicWand",
+    "keywords": ["Wizzard", "Magic", "Wand"],
+    "colored": false
+  },
+  {
+    "name": "CheckIcon",
+    "figma": "Check_Correct_Done",
+    "keywords": ["Correct", "Done"],
+    "colored": false
+  },
+  {
+    "name": "ChevronDownIcon",
+    "figma": "ChevronDown_ArrowDown",
+    "keywords": ["Arrow", "Down"],
+    "colored": false
+  },
+  {
+    "name": "ChevronRightIcon",
+    "figma": "ChevronRight_ArrowNext",
+    "keywords": ["Arrow", "Next"],
+    "colored": false
+  },
+  {
+    "name": "ClearIcon",
+    "figma": "Clear_Cancel_CloseFilled_Cross",
+    "keywords": ["Cancel", "Close", "Filled", "Cross"],
+    "colored": false
+  },
+  {
+    "name": "CloseIcon",
+    "figma": "Close_Cancel_Clear_Cross",
+    "keywords": ["Cancel", "Clear", "Cross"],
+    "colored": false
+  },
+  {
+    "name": "CrossCircleIcon",
+    "figma": "CrossCircle_Close",
+    "keywords": ["Close"],
+    "colored": false
+  },
+  {
+    "name": "DeleteIcon",
+    "figma": "Delete_WasteBin_Trash_Erase",
+    "keywords": ["Waste", "Bin", "Trash", "Erase"],
+    "colored": false
+  },
+  {
+    "name": "EditIcon",
+    "figma": "Edit_Pencil_Write",
+    "keywords": ["Pencil", "Write"],
+    "colored": false
+  },
+  {
+    "name": "ErrorIcon",
+    "figma": "Error_Alert_Warning",
+    "keywords": ["Alert", "Warning"],
+    "colored": false
+  },
+  {
+    "name": "InfoIcon",
+    "figma": "Info_MoreAbout_Circle",
+    "keywords": ["More", "About", "Circle"],
+    "colored": false
+  },
+  {
+    "name": "InvisibleIcon",
+    "figma": "Invisible_Unseen",
+    "keywords": ["Unseen"],
+    "colored": false
+  },
+  {
+    "name": "MoreVerticalIcon",
+    "figma": "MoreVertical_ThreeDotMenu_SmallNavigation",
+    "keywords": ["Three", "Dot", "Menu", "Small", "Navigation"],
+    "colored": false
+  },
+  {
+    "name": "SearchIcon",
+    "figma": "Search_Finding_Loupe",
+    "keywords": ["Finding", "Loupe"],
+    "colored": false
+  },
+  {
+    "name": "SettingsIcon",
+    "figma": "Settings_Adjustments_Configurations",
+    "keywords": ["Adjustments", "Configurations"],
+    "colored": false
+  },
+  {
+    "name": "VisibleIcon",
+    "figma": "Visible_EyeOpen_Seeing",
+    "keywords": ["Eye", "Open", "Seeing"],
+    "colored": false
+  }
+]

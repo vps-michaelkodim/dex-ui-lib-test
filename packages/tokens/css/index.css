@@ -1,0 +1,3 @@
+/* @dextinity/tokens — Einstieg. Beide Dateien sind generiert (pnpm --filter @dextinity/tokens build). */
+@import './tokens.css';
+@import './theme.css';

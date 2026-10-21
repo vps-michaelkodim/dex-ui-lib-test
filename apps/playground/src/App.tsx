@@ -17,16 +17,18 @@ export function App() {
 
   return (
     <div className="flex min-h-screen">
-      <nav className="w-60 shrink-0 border-r border-black/10 p-4">
-        <h1 className="mb-4 text-sm font-semibold">Prototypes</h1>
+      <nav className="w-60 shrink-0 border-r border-border bg-background-subtle p-4">
+        <h1 className="mb-4 typo-label-sm">Prototypes</h1>
         <ul className="space-y-1">
           {prototypes.map((p) => (
             <li key={p.id}>
               <button
                 type="button"
                 onClick={() => setActiveId(p.id)}
-                className={`w-full rounded px-2 py-1 text-left text-sm ${
-                  p.id === activeId ? 'bg-black/10 font-medium' : 'hover:bg-black/5'
+                className={`w-full rounded-sm px-2 py-1 text-left typo-body-sm-normal ${
+                  p.id === activeId
+                    ? 'bg-action-primary-subtle text-action-primary'
+                    : 'hover:bg-background-muted'
                 }`}
               >
                 {p.title}
@@ -34,10 +36,10 @@ export function App() {
             </li>
           ))}
         </ul>
-        <label className="mt-6 block text-xs">
+        <label className="mt-6 block typo-label-xs">
           Theme
           <select
-            className="mt-1 block w-full rounded border border-black/20 p-1"
+            className="mt-1 block w-full rounded-forms border border-border-field bg-background p-1"
             value={theme}
             onChange={(e) => switchTheme(e.target.value)}
           >

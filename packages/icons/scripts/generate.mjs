@@ -1,0 +1,122 @@
+/**
+ * @dextinity/icons — Generator
+ *
+ *   svg/<FigmaName>.svg  ──►  src/generated/<Name>Icon.tsx + src/generated/index.ts + icons.meta.json
+ *
+ * Figma-Name "Search_Finding_Loupe" → Komponente SearchIcon, Suchbegriffe ["Finding", "Loupe"].
+ * Namen mit "_"-Prefix (Figma-Konvention: intern/Entwurf) werden übersprungen.
+ * Monochrome Icons: black → currentColor. Icons mit "Color" im Namen behalten ihre Farben.
+ *
+ * Aufruf: pnpm --filter @dextinity/icons generate
+ */
+import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { basename, dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const SVG_DIR = join(ROOT, 'svg');
+const OUT = join(ROOT, 'src', 'generated');
+
+const pascal = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+const splitWords = (s) =>
+  s
+    .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+    .split(/\s+/)
+    .filter(Boolean);
+const MONO = /^(black|#000|#000000|#242424)$/i;
+
+function toJsx(svg, { colored }) {
+  let inner = svg
+    .replace(/\r?\n/g, '')
+    .replace(/^.*?<svg[^>]*>/, '')
+    .replace(/<\/svg>\s*$/, '');
+  if (!colored)
+    inner = inner.replace(/(fill|stroke)="([^"]+)"/g, (m, a, v) =>
+      MONO.test(v) ? `${a}="currentColor"` : m,
+    );
+  // Attribute → JSX (fill-rule → fillRule, …)
+  inner = inner.replace(
+    /\s([a-z]+(?:-[a-z]+)+)=/g,
+    (_, a) => ' ' + a.replace(/-([a-z])/g, (_, c) => c.toUpperCase()) + '=',
+  );
+  inner = inner.replace(/\sclass=/g, ' className=').replace(/\sxlink:href=/g, ' href=');
+  // IDs eindeutig machen (mehrere gleiche Icons auf einer Seite)
+  const hasIds = /\sid="/.test(inner);
+  if (hasIds) {
+    inner = inner
+      .replace(/\sid="([^"]+)"/g, (_, i) => ` id={\`\${uid}${i}\`}`)
+      .replace(/(\w+)="url\(#([^)]+)\)"/g, (_, a, i) => `${a}={\`url(#\${uid}${i})\`}`);
+  }
+  return { inner, hasIds };
+}
+
+const files = readdirSync(SVG_DIR)
+  .filter((f) => f.endsWith('.svg'))
+  .sort();
+const icons = [];
+const seen = new Map();
+const skipped = [];
+
+for (const file of files) {
+  const figma = basename(file, '.svg');
+  if (figma.startsWith('_')) {
+    skipped.push(figma);
+    continue;
+  }
+  const [first, ...rest] = figma.split('_').filter(Boolean);
+  const name = `${pascal(first)}Icon`;
+  if (seen.has(name)) throw new Error(`Namenskollision: ${figma} und ${seen.get(name)} → ${name}`);
+  seen.set(name, figma);
+  const colored = /Color/.test(figma);
+  const svg = readFileSync(join(SVG_DIR, file), 'utf8');
+  const { inner, hasIds } = toJsx(svg, { colored });
+  icons.push({
+    name,
+    figma,
+    keywords: [...new Set(rest.flatMap(splitWords))],
+    colored,
+    inner,
+    hasIds,
+  });
+}
+
+rmSync(OUT, { recursive: true, force: true });
+mkdirSync(OUT, { recursive: true });
+const HEADER = '// GENERIERT von packages/icons/scripts/generate.mjs — nicht von Hand ändern.\n';
+
+for (const i of icons) {
+  const body = i.hasIds
+    ? `  const uid = useId().replace(/[^a-zA-Z0-9_-]/g, '');\n  return (\n    <Icon {...props}>${i.inner}</Icon>\n  );`
+    : `  return <Icon {...props}>${i.inner}</Icon>;`;
+  writeFileSync(
+    join(OUT, `${i.name}.tsx`),
+    `${HEADER}${i.hasIds ? "import { useId } from 'react';\n" : ''}import { Icon, type IconProps } from '../Icon';
+
+/** Figma: \`${i.figma}\`${i.keywords.length ? ` · ${i.keywords.join(', ')}` : ''} */
+export function ${i.name}(props: IconProps) {
+${body}
+}
+`,
+  );
+}
+
+writeFileSync(
+  join(OUT, 'index.ts'),
+  `${HEADER}${icons.map((i) => `export { ${i.name} } from './${i.name}';`).join('\n')}\n`,
+);
+
+const meta = icons.map(({ name, figma, keywords, colored }) => ({
+  name,
+  figma,
+  keywords,
+  colored,
+}));
+writeFileSync(
+  join(OUT, 'meta.ts'),
+  `${HEADER}export const iconsMeta = ${JSON.stringify(meta, null, 2)} as const;\n`,
+);
+writeFileSync(join(ROOT, 'icons.meta.json'), JSON.stringify(meta, null, 2) + '\n');
+
+console.log(
+  `✓ ${icons.length} Icons generiert${skipped.length ? ` · ${skipped.length} übersprungen (_-Prefix)` : ''}`,
+);

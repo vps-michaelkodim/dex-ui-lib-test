@@ -1,0 +1,14 @@
+// GENERIERT von packages/icons/scripts/generate.mjs — nicht von Hand ändern.
+import { Icon, type IconProps } from '../Icon';
+
+/** Figma: `Edit_Pencil_Write` · Pencil, Write */
+export function EditIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path
+        d="M13.5 15C13.7761 15 14 15.2238 14 15.5C14 15.7761 13.7761 16 13.5 16H2.5C2.22386 16 2 15.7761 2 15.5C2 15.2238 2.22386 15 2.5 15H13.5ZM11.6465 0.646447C11.8417 0.451185 12.1583 0.451184 12.3535 0.646447L14.3535 2.64645C14.5487 2.84171 14.5488 3.15823 14.3535 3.35348L4.20703 13.5H1.5V10.7929L11.6465 0.646447ZM2.5 11.206V12.5H3.79199L4.29199 11.999L2.99902 10.706L2.5 11.206ZM3.70605 9.99899L4.99902 11.292L13.293 2.99996L12 1.70699L3.70605 9.99899Z"
+        fill="currentColor"
+      />
+    </Icon>
+  );
+}

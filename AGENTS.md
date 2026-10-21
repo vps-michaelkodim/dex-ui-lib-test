@@ -25,7 +25,8 @@ Code-Umsetzung des Figma-Design-Systems **DDS – Dextinity Admin UI**
 ## Komponenten bauen
 
 1. Basis ist eine Base-UI-Primitive (`@base-ui/react`), wenn es eine passende gibt.
-2. Styling nur mit Tailwind-Klassen, die auf **Token-Variablen** zeigen. Keine Hex-Werte, keine px-Magic-Numbers.
+2. Styling nur mit Token-Klassen (siehe unten). Keine Hex-Werte, keine px-Magic-Numbers.
+   Komponenten-spezifische Werte über ihre Component-Tokens: `px-(--dx-button-type-button-default-padding-horizontal)`.
 3. Varianten mit `cva`, Klassen mergen mit `cn()` aus `src/lib/cn.ts`.
 4. Datei-Layout pro Komponente:
    ```
@@ -49,12 +50,32 @@ Code-Umsetzung des Figma-Design-Systems **DDS – Dextinity Admin UI**
 
 Zusätzlich immer: `className` und `ref` durchreichen, restliche native Props spreaden.
 
+## Tokens & Tailwind
+
+Tokens kommen aus `@dextinity/tokens` (generiert aus Figma, siehe `packages/tokens/README.md`).
+Tailwind ist auf die Tokens gemappt; die Default-Palette von Tailwind ist **deaktiviert**.
+
+| Was         | Tailwind-Klassen (Beispiele)                                                           | Figma-Token                  |
+| ----------- | -------------------------------------------------------------------------------------- | ---------------------------- |
+| Hintergrund | `bg-background`, `bg-background-subtle`, `bg-background-muted`                         | `color/background/*`         |
+| Text        | `text-foreground`, `text-foreground-muted`, `text-foreground-subtle`                   | `color/foreground/*`         |
+| Rahmen      | `border-border`, `border-border-strong`, `border-border-field`                         | `color/border/*`             |
+| Aktionen    | `bg-action-primary`, `hover:bg-action-primary-hover`, `text-action-primary-foreground` | `color/action/*`             |
+| Feedback    | `bg-feedback-danger-subtle`, `text-feedback-success-foreground`                        | `color/feedback/*`           |
+| Typo        | `typo-heading-h1-bold`, `typo-body-md-normal`, `typo-label-sm` (= Figma Text-Styles)   | Text-Styles                  |
+| Größen      | `text-h1`, `text-body-sm` …                                                            | `typography/*` (responsive)  |
+| Spacing     | `p-4` (=16px = `unit/4`), `gap-layout-md`                                              | `unit/*`, `space/layout/*`   |
+| Radius      | `rounded-control`, `rounded-forms`, `rounded-surface`, `rounded-pill`, `rounded-md`    | `brand/radius/*`, `radius/*` |
+| Schatten    | `shadow-sm` … `shadow-xl`                                                              | Effect Styles                |
+| Komponenten | `h-(--dx-button-type-button-default-height)`, `bg-(--dx-chip-…)`                       | `Components/*`               |
+
+Komplette Liste: `packages/tokens/tokens.meta.json` oder Storybook → Foundations.
+
 ## Theming
 
-- Theme am `<html>`: `data-theme="light" | "dark" | "high-contrast"`
-- Brand am `<html>`: `data-brand="default" | …`
-- Tailwind-Varianten: `dark:` und `hc:` (definiert in `packages/ui/src/styles.css`).
-- Komponenten nutzen nur semantische Tokens, nie Primitives.
+- Theme: `data-theme="light" | "dark" | "high-contrast"`, Brand: `data-brand="dextinity" | "crimson"`
+- Am `<html>`, oder an einem Container — dann **beide** Attribute setzen.
+- Tailwind-Varianten `dark:` / `hc:` gibt es, werden aber selten gebraucht: die Tokens wechseln selbst.
 
 ## Stories & Tests
 

@@ -1,0 +1,606 @@
+{
+  "collection": "Brand",
+  "modes": ["Dextinity", "Crimson"],
+  "variables": [
+    [
+      "brand/radius/control",
+      "F",
+      ["@Primitives::radius/lg", "@Primitives::radius/full"],
+      "CORNER_RADIUS"
+    ],
+    [
+      "brand/radius/control-small",
+      "F",
+      ["@Primitives::radius/md", "@Primitives::radius/full"],
+      "CORNER_RADIUS"
+    ],
+    [
+      "brand/radius/forms",
+      "F",
+      ["@Primitives::radius/md", "@Primitives::radius/xs"],
+      "CORNER_RADIUS"
+    ],
+    [
+      "brand/radius/surface",
+      "F",
+      ["@Primitives::radius/lg", "@Primitives::radius/sm"],
+      "CORNER_RADIUS"
+    ],
+    [
+      "brand/radius/card",
+      "F",
+      ["@Brand::brand/radius/surface", "@Brand::brand/radius/surface"],
+      "CORNER_RADIUS"
+    ],
+    [
+      "brand/radius/modal",
+      "F",
+      ["@Primitives::radius/2xl", "@Primitives::radius/md"],
+      "CORNER_RADIUS"
+    ],
+    [
+      "brand/radius/drawer",
+      "F",
+      ["@Brand::brand/radius/surface", "@Brand::brand/radius/surface"],
+      "CORNER_RADIUS"
+    ],
+    [
+      "brand/radius/table",
+      "F",
+      ["@Brand::brand/radius/surface", "@Brand::brand/radius/surface"],
+      "CORNER_RADIUS"
+    ],
+    [
+      "brand/radius/tooltip",
+      "F",
+      ["@Primitives::radius/sm", "@Primitives::radius/xs"],
+      "CORNER_RADIUS"
+    ],
+    [
+      "brand/radius/pill",
+      "F",
+      ["@Primitives::radius/full", "@Primitives::radius/full"],
+      "CORNER_RADIUS"
+    ],
+    [
+      "brand/font/family/sans",
+      "S",
+      ["@Primitives::font/family/inter", "@Primitives::font/family/source-sans-pro"],
+      "FONT_FAMILY"
+    ],
+    [
+      "brand/font/family/mono",
+      "S",
+      ["@Primitives::font/family/mono", "@Primitives::font/family/mono"],
+      "FONT_FAMILY"
+    ],
+    [
+      "brand/color/primary/50",
+      "C",
+      ["@Primitives::color/indigo/50", "@Primitives::color/sky/50"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/primary/100",
+      "C",
+      ["@Primitives::color/indigo/100", "@Primitives::color/sky/100"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/primary/200",
+      "C",
+      ["@Primitives::color/indigo/200", "@Primitives::color/sky/200"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/primary/300",
+      "C",
+      ["@Primitives::color/indigo/300", "@Primitives::color/sky/300"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/primary/400",
+      "C",
+      ["@Primitives::color/indigo/400", "@Primitives::color/sky/400"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/primary/500",
+      "C",
+      ["@Primitives::color/indigo/500", "@Primitives::color/sky/500"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/primary/600",
+      "C",
+      ["@Primitives::color/indigo/600", "@Primitives::color/sky/600"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/primary/700",
+      "C",
+      ["@Primitives::color/indigo/700", "@Primitives::color/sky/700"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/primary/800",
+      "C",
+      ["@Primitives::color/indigo/800", "@Primitives::color/sky/800"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/primary/900",
+      "C",
+      ["@Primitives::color/indigo/900", "@Primitives::color/sky/900"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/primary/950",
+      "C",
+      ["@Primitives::color/indigo/950", "@Primitives::color/sky/950"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/50",
+      "C",
+      ["@Primitives::color/grey/50", "@Primitives::color/grey/50"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/100",
+      "C",
+      ["@Primitives::color/grey/100", "@Primitives::color/grey/100"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/200",
+      "C",
+      ["@Primitives::color/grey/200", "@Primitives::color/grey/200"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/300",
+      "C",
+      ["@Primitives::color/grey/300", "@Primitives::color/grey/300"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/400",
+      "C",
+      ["@Primitives::color/grey/400", "@Primitives::color/grey/400"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/500",
+      "C",
+      ["@Primitives::color/grey/500", "@Primitives::color/grey/500"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/600",
+      "C",
+      ["@Primitives::color/grey/600", "@Primitives::color/grey/600"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/700",
+      "C",
+      ["@Primitives::color/grey/700", "@Primitives::color/grey/700"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/800",
+      "C",
+      ["@Primitives::color/grey/800", "@Primitives::color/grey/800"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/900",
+      "C",
+      ["@Primitives::color/grey/900", "@Primitives::color/grey/900"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/secondary/950",
+      "C",
+      ["@Primitives::color/grey/950", "@Primitives::color/grey/950"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/50",
+      "C",
+      ["@Primitives::color/grey/50", "@Primitives::color/grey/50"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/100",
+      "C",
+      ["@Primitives::color/grey/100", "@Primitives::color/grey/100"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/200",
+      "C",
+      ["@Primitives::color/grey/200", "@Primitives::color/grey/200"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/300",
+      "C",
+      ["@Primitives::color/grey/300", "@Primitives::color/grey/300"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/400",
+      "C",
+      ["@Primitives::color/grey/400", "@Primitives::color/grey/400"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/500",
+      "C",
+      ["@Primitives::color/grey/500", "@Primitives::color/grey/500"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/600",
+      "C",
+      ["@Primitives::color/grey/600", "@Primitives::color/grey/600"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/700",
+      "C",
+      ["@Primitives::color/grey/700", "@Primitives::color/grey/700"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/800",
+      "C",
+      ["@Primitives::color/grey/800", "@Primitives::color/grey/800"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/900",
+      "C",
+      ["@Primitives::color/grey/900", "@Primitives::color/grey/900"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral/950",
+      "C",
+      ["@Primitives::color/grey/950", "@Primitives::color/grey/950"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/50",
+      "C",
+      ["@Primitives::color/midnight/50", "@Primitives::color/midnight/50"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/100",
+      "C",
+      ["@Primitives::color/midnight/100", "@Primitives::color/midnight/100"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/200",
+      "C",
+      ["@Primitives::color/midnight/200", "@Primitives::color/midnight/200"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/300",
+      "C",
+      ["@Primitives::color/midnight/300", "@Primitives::color/midnight/300"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/400",
+      "C",
+      ["@Primitives::color/midnight/400", "@Primitives::color/midnight/400"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/500",
+      "C",
+      ["@Primitives::color/midnight/500", "@Primitives::color/midnight/500"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/600",
+      "C",
+      ["@Primitives::color/midnight/600", "@Primitives::color/midnight/600"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/700",
+      "C",
+      ["@Primitives::color/midnight/700", "@Primitives::color/midnight/700"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/800",
+      "C",
+      ["@Primitives::color/midnight/800", "@Primitives::color/midnight/800"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/900",
+      "C",
+      ["@Primitives::color/midnight/900", "@Primitives::color/midnight/900"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/neutral-tinted/950",
+      "C",
+      ["@Primitives::color/midnight/950", "@Primitives::color/midnight/950"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/50",
+      "C",
+      ["@Primitives::color/green/50", "@Primitives::color/green/50"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/100",
+      "C",
+      ["@Primitives::color/green/100", "@Primitives::color/green/100"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/200",
+      "C",
+      ["@Primitives::color/green/200", "@Primitives::color/green/200"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/300",
+      "C",
+      ["@Primitives::color/green/300", "@Primitives::color/green/300"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/400",
+      "C",
+      ["@Primitives::color/green/400", "@Primitives::color/green/400"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/500",
+      "C",
+      ["@Primitives::color/green/500", "@Primitives::color/green/500"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/600",
+      "C",
+      ["@Primitives::color/green/600", "@Primitives::color/green/600"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/700",
+      "C",
+      ["@Primitives::color/green/700", "@Primitives::color/green/700"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/800",
+      "C",
+      ["@Primitives::color/green/800", "@Primitives::color/green/800"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/900",
+      "C",
+      ["@Primitives::color/green/900", "@Primitives::color/green/900"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/success/950",
+      "C",
+      ["@Primitives::color/green/950", "@Primitives::color/green/950"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/50",
+      "C",
+      ["@Primitives::color/amber/50", "@Primitives::color/amber/50"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/100",
+      "C",
+      ["@Primitives::color/amber/100", "@Primitives::color/amber/100"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/200",
+      "C",
+      ["@Primitives::color/amber/200", "@Primitives::color/amber/200"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/300",
+      "C",
+      ["@Primitives::color/amber/300", "@Primitives::color/amber/300"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/400",
+      "C",
+      ["@Primitives::color/amber/400", "@Primitives::color/amber/400"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/500",
+      "C",
+      ["@Primitives::color/amber/500", "@Primitives::color/amber/500"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/600",
+      "C",
+      ["@Primitives::color/amber/600", "@Primitives::color/amber/600"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/700",
+      "C",
+      ["@Primitives::color/amber/700", "@Primitives::color/amber/700"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/800",
+      "C",
+      ["@Primitives::color/amber/800", "@Primitives::color/amber/800"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/900",
+      "C",
+      ["@Primitives::color/amber/900", "@Primitives::color/amber/900"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/warning/950",
+      "C",
+      ["@Primitives::color/amber/950", "@Primitives::color/amber/950"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/50",
+      "C",
+      ["@Primitives::color/red/50", "@Primitives::color/coral/50"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/100",
+      "C",
+      ["@Primitives::color/red/100", "@Primitives::color/coral/100"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/200",
+      "C",
+      ["@Primitives::color/red/200", "@Primitives::color/coral/200"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/300",
+      "C",
+      ["@Primitives::color/red/300", "@Primitives::color/coral/300"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/400",
+      "C",
+      ["@Primitives::color/red/400", "@Primitives::color/coral/400"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/500",
+      "C",
+      ["@Primitives::color/red/500", "@Primitives::color/coral/500"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/600",
+      "C",
+      ["@Primitives::color/red/600", "@Primitives::color/coral/600"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/700",
+      "C",
+      ["@Primitives::color/red/700", "@Primitives::color/coral/700"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/800",
+      "C",
+      ["@Primitives::color/red/800", "@Primitives::color/coral/800"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/900",
+      "C",
+      ["@Primitives::color/red/900", "@Primitives::color/coral/900"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/danger/950",
+      "C",
+      ["@Primitives::color/red/950", "@Primitives::color/coral/950"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/50",
+      "C",
+      ["@Primitives::color/ocean/50", "@Primitives::color/sky/50"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/100",
+      "C",
+      ["@Primitives::color/ocean/100", "@Primitives::color/sky/100"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/200",
+      "C",
+      ["@Primitives::color/ocean/200", "@Primitives::color/sky/200"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/300",
+      "C",
+      ["@Primitives::color/ocean/300", "@Primitives::color/sky/300"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/400",
+      "C",
+      ["@Primitives::color/ocean/400", "@Primitives::color/sky/400"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/500",
+      "C",
+      ["@Primitives::color/ocean/500", "@Primitives::color/sky/500"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/600",
+      "C",
+      ["@Primitives::color/ocean/600", "@Primitives::color/sky/600"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/700",
+      "C",
+      ["@Primitives::color/ocean/700", "@Primitives::color/sky/700"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/800",
+      "C",
+      ["@Primitives::color/ocean/800", "@Primitives::color/sky/800"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/900",
+      "C",
+      ["@Primitives::color/ocean/900", "@Primitives::color/sky/900"],
+      "ALL_FILLS,STROKE_COLOR"
+    ],
+    [
+      "brand/color/info/950",
+      "C",
+      ["@Primitives::color/ocean/950", "@Primitives::color/sky/950"],
+      "ALL_FILLS,STROKE_COLOR"
+    ]
+  ]
+}

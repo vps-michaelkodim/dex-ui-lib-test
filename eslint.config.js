@@ -5,7 +5,16 @@ import storybook from 'eslint-plugin-storybook';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['**/dist', '**/storybook-static', '**/node_modules', '**/build'] },
+  {
+    ignores: [
+      '**/dist',
+      '**/storybook-static',
+      '**/node_modules',
+      '**/build',
+      // Figma-Plugin-Scripts: top-level return/await, laufen in Figma, nicht in Node
+      '**/*.figma.js',
+    ],
+  },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
@@ -18,7 +27,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ['scripts/**', '**/*.config.{js,ts,mjs}', '**/.storybook/**'],
+    files: ['**/scripts/**', '**/*.mjs', '**/*.config.{js,ts,mjs}', '**/.storybook/**'],
     languageOptions: { globals: { ...globals.node } },
   },
   ...storybook.configs['flat/recommended'],

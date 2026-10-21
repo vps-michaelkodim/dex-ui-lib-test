@@ -1,2 +1,3 @@
-// Wird in Phase 2 aus der Figma-Page "Iconography" generiert (SVGR).
-export {};
+export { Icon, type IconProps } from './Icon';
+export * from './generated';
+export { iconsMeta } from './generated/meta';

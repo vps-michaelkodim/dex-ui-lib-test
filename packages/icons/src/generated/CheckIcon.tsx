@@ -1,0 +1,16 @@
+// GENERIERT von packages/icons/scripts/generate.mjs — nicht von Hand ändern.
+import { Icon, type IconProps } from '../Icon';
+
+/** Figma: `Check_Correct_Done` · Correct, Done */
+export function CheckIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M0.146447 8.14645C0.320013 7.97288 0.589437 7.9536 0.784306 8.08859L0.853553 8.14645L5 12.293L15.1464 2.14645C15.32 1.97288 15.5894 1.9536 15.7843 2.08859L15.8536 2.14645C16.0271 2.32001 16.0464 2.58944 15.9114 2.78431L15.8536 2.85355L5.35355 13.3536C5.17999 13.5271 4.91056 13.5464 4.71569 13.4114L4.64645 13.3536L0.146447 8.85355C-0.0488155 8.65829 -0.0488155 8.34171 0.146447 8.14645Z"
+        fill="currentColor"
+      />
+    </Icon>
+  );
+}
