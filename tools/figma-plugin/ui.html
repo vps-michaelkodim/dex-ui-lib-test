@@ -1,0 +1,82 @@
+<style>
+  body {
+    font:
+      13px/1.4 Inter,
+      system-ui,
+      sans-serif;
+    margin: 16px;
+    color: #27292e;
+  }
+  h1 {
+    font-size: 14px;
+    margin: 0 0 8px;
+  }
+  p {
+    margin: 0 0 12px;
+    color: #4e535c;
+  }
+  label {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  button {
+    background: #403af2;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font: inherit;
+    cursor: pointer;
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: wait;
+  }
+  #status {
+    margin-top: 12px;
+    color: #4e535c;
+  }
+  code {
+    background: #f5f6f7;
+    padding: 1px 4px;
+    border-radius: 4px;
+  }
+</style>
+<h1>DDS Export</h1>
+<p>Exportiert Variablen, Styles und Icons als JSON für <code>pnpm figma:import</code>.</p>
+<label><input type="checkbox" id="icons" checked /> Icons mit exportieren</label>
+<button id="go">Export</button>
+<div id="status"></div>
+<script>
+  const status = document.getElementById('status');
+  const go = document.getElementById('go');
+  go.onclick = () => {
+    go.disabled = true;
+    status.textContent = 'Starte …';
+    parent.postMessage(
+      { pluginMessage: { type: 'export', icons: document.getElementById('icons').checked } },
+      '*',
+    );
+  };
+  onmessage = (event) => {
+    const msg = event.data.pluginMessage;
+    if (!msg) return;
+    if (msg.type === 'progress') status.textContent = msg.text;
+    if (msg.type === 'error') {
+      status.textContent = 'Fehler: ' + msg.text;
+      go.disabled = false;
+    }
+    if (msg.type === 'done') {
+      const blob = new Blob([msg.json], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'dds-export.json';
+      a.click();
+      status.textContent =
+        'Fertig — dds-export.json gespeichert. Jetzt im Repo: pnpm figma:import <datei>';
+      go.disabled = false;
+    }
+  };
+</script>

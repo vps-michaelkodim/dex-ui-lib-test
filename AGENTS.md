@@ -18,7 +18,8 @@ Code-Umsetzung des Figma-Design-Systems **DDS – Dextinity Admin UI**
 ## Source of Truth
 
 - **Initial: Figma ist die Wahrheit.** Werte, Props, Varianten kommen aus Figma.
-- Danach werden Figma und Code synchron gehalten (Token-Sync mit Diff-Report).
+- Danach werden Figma und Code synchron gehalten: Figma-Plugin „DDS Export“ → `pnpm figma:import` (siehe `docs/TOKEN_SYNC.md`).
+  Generierte Dateien (`packages/tokens/css|dtcg`, `packages/icons/src/generated`) nie von Hand ändern.
 - Ist Figma inkonsistent (hardcodierte Werte, fehlende Variablen, Props entgegen Conventions):
   im Code sauber lösen **und** in `docs/figma-gap-report.md` eintragen. Nicht stillschweigend abweichen.
 

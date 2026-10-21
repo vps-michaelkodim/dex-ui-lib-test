@@ -16,11 +16,6 @@ Figma-Name `Search_Finding_Loupe` → `SearchIcon` (erstes Segment), Rest = Such
 
 ## Neue / geänderte Icons aus Figma
 
-1. In Figma auf der Page „Iconography“ die Icon-Components auswählen →
-   Export-Einstellung **SVG** → **Export** in den Ordner `packages/icons/svg/`
-   (Dateiname = Layer-Name, bestehende Dateien überschreiben).
-2. `pnpm --filter @dextinity/icons generate`
-3. `git diff` prüfen, PR.
-
-Status: aktuell 18 von 300 Icons im Repo (die, die die Pilot-Komponenten brauchen).
-Der Voll-Export erfolgt einmalig per Schritt 1.
+Über den Figma-Sync: Plugin **DDS Export** → `pnpm figma:import` (siehe `docs/TOKEN_SYNC.md`).
+Der Import schreibt `svg/*.svg` (Dateiname = Figma-Layer-Name), entfernt gelöschte Icons und
+ruft den Generator auf. Manuell: `pnpm --filter @dextinity/icons generate`.
