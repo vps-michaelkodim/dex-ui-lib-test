@@ -85,6 +85,7 @@ Komplette Liste: `packages/tokens/tokens.meta.json` oder Storybook → Foundatio
 - Titel-Schema: `Foundations/<Name>`, `Components/<Name>`, `Patterns/<Name>`.
 - Neue Komponente → Matrix-/States-Story in `apps/storybook/visual/visual.test.tsx` (`CASES`) aufnehmen.
   Gewollte optische Änderung → `pnpm test:visual:update` (auf dem Mac) und Bilder committen. Siehe `docs/VISUAL_TESTS.md`.
+- Kontrast aller Component-Tokens: `pnpm contrast` → `docs/reports/contrast.md` (nach Token-Sync laufen lassen, neue Befunde in den Gap-Report).
 - Story-Exports nie `Error` nennen (überschreibt das globale `Error` im Test) → `WithError` + `name: 'Error'`.
 
 ## Prototypen (Playground)
@@ -104,7 +105,7 @@ Komplette Liste: `packages/tokens/tokens.meta.json` oder Storybook → Foundatio
 ## Befehle
 
 ```bash
-pnpm storybook | pnpm playground | pnpm test | pnpm test:visual | pnpm manifest | pnpm typecheck | pnpm lint | pnpm format
+pnpm storybook | pnpm playground | pnpm test | pnpm test:visual | pnpm manifest | pnpm contrast | pnpm typecheck | pnpm lint | pnpm format
 ```
 
 ## Git

@@ -28,6 +28,8 @@ git diff --stat
 pnpm typecheck           # z.B. wenn ein benutztes Icon in Figma gelöscht/umbenannt wurde
 pnpm test                # Interaktion + a11y
 pnpm test:visual         # optische Auswirkungen; gewollt → pnpm test:visual:update
+pnpm contrast            # Kontrast-Audit → docs/reports/contrast.md (neue Befunde → Gap-Report)
+pnpm manifest            # ai/manifest.json + llms.txt aktualisieren
 
 # 6. PR mit dem Diff (+ ggf. neuen Referenzbildern)
 ```

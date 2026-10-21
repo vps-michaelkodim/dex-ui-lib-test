@@ -13,3 +13,4 @@ packages/icons/icons.meta.json
 # generiert: pnpm manifest
 ai/manifest.json
 llms.txt
+docs/reports/contrast.md
