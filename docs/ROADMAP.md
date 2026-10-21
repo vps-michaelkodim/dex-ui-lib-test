@@ -11,7 +11,7 @@ Stand: 2026-10-21
 | 4     | Input (Field-Architektur: Label, Helper, Error)                                                                                                                | ✅                          |
 | 5     | Chip + Tooltip                                                                                                                                                 | ✅                          |
 | 6     | Visual Regression (Screenshot-Baselines) + Figma-vs-Code-Diff fertig verdrahten                                                                                | ✅                          |
-| 7     | AI-Schicht: `llms.txt`, Component-Manifest / Storybook MCP, Claude-Skill „Dextinity UI“                                                                        |                             |
+| 7     | AI-Schicht: `llms.txt`, Component-Manifest / Storybook MCP, Claude-Skill „Dextinity UI“                                                                        | 🟡 1/3                      |
 
 **Phase 2 (später):** Distribution (npm-Package + shadcn-Registry), Storybook-Hosting, weitere Komponenten
 (Dialog, Form-Familie, Main Navigation, Snackbar, Spinner, Typography), Chatbot-Komponenten.

@@ -14,6 +14,7 @@
     "figma:import": "node scripts/figma-import.mjs",
     "tokens:build": "pnpm --filter @dextinity/tokens build",
     "tokens:check": "pnpm --filter @dextinity/tokens check",
+    "manifest": "node scripts/build-manifest.mjs",
     "test": "pnpm --filter @dextinity/storybook test",
     "test:setup": "pnpm --filter @dextinity/storybook exec playwright install chromium",
     "test:visual": "pnpm --filter @dextinity/storybook test:visual",
@@ -31,6 +32,7 @@
     "globals": "^17.13.0",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
+    "react-docgen-typescript": "^2.4.0",
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.72.0"
   }

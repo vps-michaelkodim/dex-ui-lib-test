@@ -93,10 +93,17 @@ Komplette Liste: `packages/tokens/tokens.meta.json` oder Storybook → Foundatio
 - Nur Komponenten aus `@dextinity/ui` + Token-Klassen. Fehlt eine Komponente: im Prototyp lokal bauen
   und als Kandidat notieren, nicht in `packages/ui` hacken.
 
+## Manifest für AI-Tools / Claude Design System
+
+- `ai/manifest.json` + `llms.txt` beschreiben die Library maschinenlesbar (Komponenten, Props, Figma-Nodes,
+  Tokens je Theme × Brand, Icons). Generiert mit `pnpm manifest` — nie von Hand ändern.
+- Nach Änderungen an Komponenten, Props, Tokens oder Icons: `pnpm manifest` laufen lassen und mitcommitten.
+- Das Claude Design System ist ein **Abbild** des Repos und liest dieses Manifest. Komponenten entstehen nur im Repo.
+
 ## Befehle
 
 ```bash
-pnpm storybook | pnpm playground | pnpm test | pnpm test:visual | pnpm typecheck | pnpm lint | pnpm format
+pnpm storybook | pnpm playground | pnpm test | pnpm test:visual | pnpm manifest | pnpm typecheck | pnpm lint | pnpm format
 ```
 
 ## Git

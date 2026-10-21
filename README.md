@@ -17,6 +17,7 @@ pnpm playground     # http://localhost:5173 — Prototypen bauen
 pnpm test           # alle Stories als Tests (Interaction + a11y)
 pnpm test:visual    # Screenshot-Vergleich (siehe docs/VISUAL_TESTS.md)
 pnpm figma:import <dds-export.json>   # Sync aus Figma (siehe docs/TOKEN_SYNC.md)
+pnpm manifest       # ai/manifest.json + llms.txt für AI-Tools neu erzeugen
 ```
 
 Node ≥ 22 (`.nvmrc`).
