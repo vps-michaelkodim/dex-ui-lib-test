@@ -24,3 +24,14 @@ Priorität: 🔴 wirkt sich sichtbar aus · 🟡 Konsistenz/Wartbarkeit · ⚪ k
 | 14  | ⚪   | Components | `chip/size/*/padding-horizontal`, `chip/size/*/gap`                                                                                     | Scope `GAP` für Padding.                                                                                                                                    | ohne Auswirkung                                                                     | offen  |
 | 15  | ⚪   | Primitives | `breakpoint/desktop`                                                                                                                    | Einziger Breakpoint (1024). Mobile = alles darunter.                                                                                                        | `@media (max-width: 1023.98px)` für Responsive-Mode „Mobile“.                       | info   |
 | 16  | ⚪   | Brand      | `brand/color/secondary/*` und `brand/color/neutral/*`                                                                                   | Beide zeigen in beiden Brands auf `grey` → aktuell identisch.                                                                                               | ok, nur Hinweis                                                                     | info   |
+
+## Icons (Phase 2)
+
+| # | Prio | Figma-Ort | Problem | Lösung im Code | Status |
+| - | ---- | --------- | ------- | -------------- | ------ |
+| I1 | 🟡 | Iconography › `Comet_DXP`, `CometOutline_DXP` | Alter Produktname (COMET → Dextinity). | Wird zu `CometIcon` — nach Umbenennung in Figma automatisch `DextinityIcon`. | offen |
+| I2 | 🟡 | `lightMode`, `darkMode`, `highContrastMode` | Kleingeschrieben, weicht vom PascalCase-Schema ab. | Generator macht `LightModeIcon` etc. | offen |
+| I3 | ⚪ | `HamburgerClose_Menu_Navigation_`, `DevicePhone_SmallDevice_MiniScreen_` | Unterstrich am Ende. | wird ignoriert | offen |
+| I4 | ⚪ | diverse | Tippfehler in Suchbegriffen: Wizzard, Savety, Allert, Corect, Invisble, Buidling, WasterBin, ChangePostion, Atlassin | landen so in der Icon-Suche | offen |
+| I5 | 🟡 | `_New_* 1` (14 Stück) | Entwürfe/Duplikate auf der Iconography-Page. | übersprungen (`_`-Prefix) | prüfen |
+| I6 | ⚪ | alle | Icons liegen lose in „Frame 1“, ohne Kategorien. Monochrome Icons haben `fill="black"` statt einer Variable. | `black` → `currentColor` im Generator | info |
