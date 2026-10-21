@@ -1,0 +1,7 @@
+// GENERIERT von packages/icons/scripts/generate.mjs — nicht von Hand ändern.
+import { Icon, type IconProps } from '../Icon';
+
+/** Figma: `Hamburger_Menu_Navigation` · Menu, Navigation */
+export function HamburgerIcon(props: IconProps) {
+  return <Icon {...props}><path d="M12.5 13C12.7761 13 13 13.2239 13 13.5C13 13.7761 12.7761 14 12.5 14H0.5C0.223858 14 0 13.7761 0 13.5C0 13.2239 0.223858 13 0.5 13H12.5ZM15.5 7.5C15.7761 7.5 16 7.72386 16 8C16 8.27614 15.7761 8.5 15.5 8.5H0.5C0.223858 8.5 0 8.27614 0 8C0 7.72386 0.223858 7.5 0.5 7.5H15.5ZM15.5 2C15.7761 2 16 2.22386 16 2.5C16 2.77614 15.7761 3 15.5 3H0.5C0.223858 3 0 2.77614 0 2.5C0 2.22386 0.223858 2 0.5 2H15.5Z" fillRule="evenodd" clipRule="evenodd" fill="currentColor"/></Icon>;
+}

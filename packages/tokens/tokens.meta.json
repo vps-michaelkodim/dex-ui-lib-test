@@ -6134,6 +6134,1953 @@
     },
     {
       "collection": "Components",
+      "name": "chip/border-width",
+      "type": "dimension",
+      "cssVar": "--dx-chip-border-width",
+      "values": {
+        "Default": "1px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-default-background",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-default-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-default-border",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-hover-background",
+      "values": {
+        "Default": "#332fc2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-hover-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-hover-border",
+      "values": {
+        "Default": "#332fc2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-focus-background",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-focus-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-focus-border",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-disabled-background",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/disabled"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/primary/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-primary-disabled-border",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/disabled"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-default-background",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-default-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-default-border",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-hover-background",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-hover-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-hover-border",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-focus-background",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-focus-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-focus-border",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-disabled-background",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/secondary/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-secondary-disabled-border",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-default-background",
+      "values": {
+        "Default": "#bc3520"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-default-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-default-border",
+      "values": {
+        "Default": "#bc3520"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-hover-background",
+      "values": {
+        "Default": "#9d2c1b"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/strong-hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-hover-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-hover-border",
+      "values": {
+        "Default": "#9d2c1b"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/strong-hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-focus-background",
+      "values": {
+        "Default": "#bc3520"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-focus-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-focus-border",
+      "values": {
+        "Default": "#bc3520"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-disabled-background",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/error/disabled"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/error/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-error-disabled-border",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/error/disabled"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-default-background",
+      "values": {
+        "Default": "#0067a8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-default-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-default-border",
+      "values": {
+        "Default": "#0067a8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-hover-background",
+      "values": {
+        "Default": "#004a90"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/strong-hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-hover-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-hover-border",
+      "values": {
+        "Default": "#004a90"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/strong-hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-focus-background",
+      "values": {
+        "Default": "#0067a8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-focus-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-focus-border",
+      "values": {
+        "Default": "#0067a8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-disabled-background",
+      "values": {
+        "Default": "#e6f4fc"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/info/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-info-disabled-border",
+      "values": {
+        "Default": "#e6f4fc"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-default-background",
+      "values": {
+        "Default": "#386b2c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-default-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-default-border",
+      "values": {
+        "Default": "#386b2c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-hover-background",
+      "values": {
+        "Default": "#274b1f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/strong-hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-hover-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-hover-border",
+      "values": {
+        "Default": "#274b1f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/strong-hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-focus-background",
+      "values": {
+        "Default": "#386b2c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-focus-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-focus-border",
+      "values": {
+        "Default": "#386b2c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-disabled-background",
+      "values": {
+        "Default": "#eef7ea"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/success/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-success-disabled-border",
+      "values": {
+        "Default": "#eef7ea"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-default-background",
+      "values": {
+        "Default": "#f3b346"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-default-foreground",
+      "values": {
+        "Default": "#08090a"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-default-border",
+      "values": {
+        "Default": "#f3b346"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-hover-background",
+      "values": {
+        "Default": "#d89a36"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/strong-hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-hover-foreground",
+      "values": {
+        "Default": "#08090a"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-hover-border",
+      "values": {
+        "Default": "#d89a36"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/strong-hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-focus-background",
+      "values": {
+        "Default": "#f3b346"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-focus-foreground",
+      "values": {
+        "Default": "#08090a"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-focus-border",
+      "values": {
+        "Default": "#f3b346"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-disabled-background",
+      "values": {
+        "Default": "#fef6e5"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/contained/warning/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-contained-warning-disabled-border",
+      "values": {
+        "Default": "#fef6e5"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-default-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-default-foreground",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/standalone"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-default-border",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-hover-background",
+      "values": {
+        "Default": "#ecebfe"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-hover-foreground",
+      "values": {
+        "Default": "#332fc2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-hover-border",
+      "values": {
+        "Default": "#332fc2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-focus-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-focus-foreground",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/standalone"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-focus-border",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-disabled-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/primary/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-primary-disabled-border",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/disabled"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-default-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-default-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-default-border",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-hover-background",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-hover-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-hover-border",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-focus-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-focus-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-focus-border",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-disabled-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/secondary/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-secondary-disabled-border",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-default-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-default-foreground",
+      "values": {
+        "Default": "#832617"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-default-border",
+      "values": {
+        "Default": "#efa39a"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/border"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-hover-background",
+      "values": {
+        "Default": "#fcebe8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-hover-foreground",
+      "values": {
+        "Default": "#832617"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-hover-border",
+      "values": {
+        "Default": "#c6523f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-focus-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-focus-foreground",
+      "values": {
+        "Default": "#832617"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-focus-border",
+      "values": {
+        "Default": "#efa39a"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/border"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-disabled-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/error/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-error-disabled-border",
+      "values": {
+        "Default": "#fcebe8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-default-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-default-foreground",
+      "values": {
+        "Default": "#004a90"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-default-border",
+      "values": {
+        "Default": "#90d0f1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/border"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-hover-background",
+      "values": {
+        "Default": "#e6f4fc"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-hover-foreground",
+      "values": {
+        "Default": "#004a90"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-hover-border",
+      "values": {
+        "Default": "#0ba6de"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-focus-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-focus-foreground",
+      "values": {
+        "Default": "#004a90"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-focus-border",
+      "values": {
+        "Default": "#90d0f1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/border"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-disabled-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/info/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-info-disabled-border",
+      "values": {
+        "Default": "#e6f4fc"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/info/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-default-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-default-foreground",
+      "values": {
+        "Default": "#386b2c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-default-border",
+      "values": {
+        "Default": "#a6d79a"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/border"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-hover-background",
+      "values": {
+        "Default": "#eef7ea"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-hover-foreground",
+      "values": {
+        "Default": "#386b2c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-hover-border",
+      "values": {
+        "Default": "#66c54f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-focus-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-focus-foreground",
+      "values": {
+        "Default": "#386b2c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-focus-border",
+      "values": {
+        "Default": "#a6d79a"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/border"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-disabled-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/success/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-success-disabled-border",
+      "values": {
+        "Default": "#eef7ea"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/success/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/default/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-default-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-default-foreground",
+      "values": {
+        "Default": "#825f26"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/default/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-default-border",
+      "values": {
+        "Default": "#f8d584"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/border"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/hover/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-hover-background",
+      "values": {
+        "Default": "#fef6e5"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-hover-foreground",
+      "values": {
+        "Default": "#825f26"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/hover/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-hover-border",
+      "values": {
+        "Default": "#f3b346"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/focus/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-focus-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-focus-foreground",
+      "values": {
+        "Default": "#825f26"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/focus/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-focus-border",
+      "values": {
+        "Default": "#f8d584"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/border"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-disabled-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/variant/outlined/warning/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-chip-variant-outlined-warning-disabled-border",
+      "values": {
+        "Default": "#fef6e5"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/warning/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/default/height",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-default-height",
+      "values": {
+        "Default": "32px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/8"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/default/radius",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-default-radius",
+      "values": {
+        "Default": "9999px"
+      },
+      "aliases": {
+        "Default": "Brand::brand/radius/pill"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/default/padding-horizontal",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-default-padding-horizontal",
+      "values": {
+        "Default": "12px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/3"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/default/gap",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-default-gap",
+      "values": {
+        "Default": "6px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/1,5"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/default/icon-size",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-default-icon-size",
+      "values": {
+        "Default": "16px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/default/font/size",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-default-font-size",
+      "values": {
+        "Default": "14px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-sm/size"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/default/font/line-height",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-default-font-line-height",
+      "values": {
+        "Default": "20px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-sm/line-height"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/default/font/weight",
+      "type": "fontWeight",
+      "cssVar": "--dx-chip-size-default-font-weight",
+      "values": {
+        "Default": 500
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/medium"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/default/font/weight-style",
+      "type": "string",
+      "cssVar": null,
+      "values": {
+        "Default": "Medium"
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/medium-style"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/small/height",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-small-height",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/6"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/small/radius",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-small-radius",
+      "values": {
+        "Default": "9999px"
+      },
+      "aliases": {
+        "Default": "Brand::brand/radius/pill"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/small/padding-horizontal",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-small-padding-horizontal",
+      "values": {
+        "Default": "8px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/2"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/small/gap",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-small-gap",
+      "values": {
+        "Default": "4px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/1"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/small/icon-size",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-small-icon-size",
+      "values": {
+        "Default": "14px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/small/font/size",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-small-font-size",
+      "values": {
+        "Default": "12px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-xs/size"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/small/font/line-height",
+      "type": "dimension",
+      "cssVar": "--dx-chip-size-small-font-line-height",
+      "values": {
+        "Default": "16px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-xs/line-height"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/small/font/weight",
+      "type": "fontWeight",
+      "cssVar": "--dx-chip-size-small-font-weight",
+      "values": {
+        "Default": 500
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/medium"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "chip/size/small/font/weight-style",
+      "type": "string",
+      "cssVar": null,
+      "values": {
+        "Default": "Medium"
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/medium-style"
+      }
+    },
+    {
+      "collection": "Components",
       "name": "main-navigation/item/padding-horizontal",
       "type": "dimension",
       "cssVar": "--dx-main-navigation-item-padding-horizontal",
@@ -6593,18 +8540,6 @@
     },
     {
       "collection": "Components",
-      "name": "button/type/button/small/font/weight-style",
-      "type": "string",
-      "cssVar": null,
-      "values": {
-        "Default": "Medium"
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/medium-style"
-      }
-    },
-    {
-      "collection": "Components",
       "name": "button/type/button/small/gap",
       "type": "dimension",
       "cssVar": "--dx-button-type-button-small-gap",
@@ -6613,6 +8548,18 @@
       },
       "aliases": {
         "Default": "Primitives::unit/1"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "button/type/button/small/font/weight-style",
+      "type": "string",
+      "cssVar": null,
+      "values": {
+        "Default": "Medium"
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/medium-style"
       }
     },
     {
@@ -9337,1953 +11284,6 @@
       },
       "aliases": {
         "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/border-width",
-      "type": "dimension",
-      "cssVar": "--dx-chip-border-width",
-      "values": {
-        "Default": "1px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-default-background",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-default-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-default-border",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-hover-background",
-      "values": {
-        "Default": "#332fc2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-hover-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-hover-border",
-      "values": {
-        "Default": "#332fc2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-focus-background",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-focus-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-focus-border",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-disabled-background",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/disabled"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/primary/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-primary-disabled-border",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/disabled"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-default-background",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-default-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-default-border",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-hover-background",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-hover-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-hover-border",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-focus-background",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-focus-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-focus-border",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-disabled-background",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/secondary/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-secondary-disabled-border",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-default-background",
-      "values": {
-        "Default": "#bc3520"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-default-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-default-border",
-      "values": {
-        "Default": "#bc3520"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-hover-background",
-      "values": {
-        "Default": "#9d2c1b"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/strong-hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-hover-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-hover-border",
-      "values": {
-        "Default": "#9d2c1b"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/strong-hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-focus-background",
-      "values": {
-        "Default": "#bc3520"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-focus-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-focus-border",
-      "values": {
-        "Default": "#bc3520"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-disabled-background",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/error/disabled"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/error/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-error-disabled-border",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/error/disabled"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-default-background",
-      "values": {
-        "Default": "#0067a8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-default-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-default-border",
-      "values": {
-        "Default": "#0067a8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-hover-background",
-      "values": {
-        "Default": "#004a90"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/strong-hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-hover-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-hover-border",
-      "values": {
-        "Default": "#004a90"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/strong-hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-focus-background",
-      "values": {
-        "Default": "#0067a8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-focus-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-focus-border",
-      "values": {
-        "Default": "#0067a8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-disabled-background",
-      "values": {
-        "Default": "#e6f4fc"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/info/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-info-disabled-border",
-      "values": {
-        "Default": "#e6f4fc"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-default-background",
-      "values": {
-        "Default": "#386b2c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-default-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-default-border",
-      "values": {
-        "Default": "#386b2c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-hover-background",
-      "values": {
-        "Default": "#274b1f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/strong-hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-hover-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-hover-border",
-      "values": {
-        "Default": "#274b1f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/strong-hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-focus-background",
-      "values": {
-        "Default": "#386b2c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-focus-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-focus-border",
-      "values": {
-        "Default": "#386b2c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-disabled-background",
-      "values": {
-        "Default": "#eef7ea"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/success/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-success-disabled-border",
-      "values": {
-        "Default": "#eef7ea"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-default-background",
-      "values": {
-        "Default": "#f3b346"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-default-foreground",
-      "values": {
-        "Default": "#08090a"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-default-border",
-      "values": {
-        "Default": "#f3b346"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-hover-background",
-      "values": {
-        "Default": "#d89a36"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/strong-hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-hover-foreground",
-      "values": {
-        "Default": "#08090a"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-hover-border",
-      "values": {
-        "Default": "#d89a36"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/strong-hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-focus-background",
-      "values": {
-        "Default": "#f3b346"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-focus-foreground",
-      "values": {
-        "Default": "#08090a"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-focus-border",
-      "values": {
-        "Default": "#f3b346"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-disabled-background",
-      "values": {
-        "Default": "#fef6e5"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/contained/warning/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-contained-warning-disabled-border",
-      "values": {
-        "Default": "#fef6e5"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-default-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-default-foreground",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/standalone"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-default-border",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-hover-background",
-      "values": {
-        "Default": "#ecebfe"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-hover-foreground",
-      "values": {
-        "Default": "#332fc2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-hover-border",
-      "values": {
-        "Default": "#332fc2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-focus-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-focus-foreground",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/standalone"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-focus-border",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-disabled-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/primary/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-primary-disabled-border",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/disabled"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-default-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-default-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-default-border",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-hover-background",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-hover-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-hover-border",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-focus-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-focus-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-focus-border",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-disabled-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/secondary/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-secondary-disabled-border",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-default-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-default-foreground",
-      "values": {
-        "Default": "#832617"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-default-border",
-      "values": {
-        "Default": "#efa39a"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/border"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-hover-background",
-      "values": {
-        "Default": "#fcebe8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-hover-foreground",
-      "values": {
-        "Default": "#832617"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-hover-border",
-      "values": {
-        "Default": "#c6523f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-focus-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-focus-foreground",
-      "values": {
-        "Default": "#832617"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-focus-border",
-      "values": {
-        "Default": "#efa39a"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/border"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-disabled-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/error/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-error-disabled-border",
-      "values": {
-        "Default": "#fcebe8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-default-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-default-foreground",
-      "values": {
-        "Default": "#004a90"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-default-border",
-      "values": {
-        "Default": "#90d0f1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/border"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-hover-background",
-      "values": {
-        "Default": "#e6f4fc"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-hover-foreground",
-      "values": {
-        "Default": "#004a90"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-hover-border",
-      "values": {
-        "Default": "#0ba6de"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-focus-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-focus-foreground",
-      "values": {
-        "Default": "#004a90"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-focus-border",
-      "values": {
-        "Default": "#90d0f1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/border"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-disabled-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/info/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-info-disabled-border",
-      "values": {
-        "Default": "#e6f4fc"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/info/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-default-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-default-foreground",
-      "values": {
-        "Default": "#386b2c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-default-border",
-      "values": {
-        "Default": "#a6d79a"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/border"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-hover-background",
-      "values": {
-        "Default": "#eef7ea"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-hover-foreground",
-      "values": {
-        "Default": "#386b2c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-hover-border",
-      "values": {
-        "Default": "#66c54f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-focus-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-focus-foreground",
-      "values": {
-        "Default": "#386b2c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-focus-border",
-      "values": {
-        "Default": "#a6d79a"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/border"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-disabled-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/success/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-success-disabled-border",
-      "values": {
-        "Default": "#eef7ea"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/success/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/default/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-default-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-default-foreground",
-      "values": {
-        "Default": "#825f26"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/default/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-default-border",
-      "values": {
-        "Default": "#f8d584"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/border"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/hover/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-hover-background",
-      "values": {
-        "Default": "#fef6e5"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-hover-foreground",
-      "values": {
-        "Default": "#825f26"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/hover/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-hover-border",
-      "values": {
-        "Default": "#f3b346"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/focus/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-focus-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-focus-foreground",
-      "values": {
-        "Default": "#825f26"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/focus/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-focus-border",
-      "values": {
-        "Default": "#f8d584"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/border"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-disabled-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/variant/outlined/warning/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-chip-variant-outlined-warning-disabled-border",
-      "values": {
-        "Default": "#fef6e5"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/warning/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/default/height",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-default-height",
-      "values": {
-        "Default": "32px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/8"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/default/radius",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-default-radius",
-      "values": {
-        "Default": "9999px"
-      },
-      "aliases": {
-        "Default": "Brand::brand/radius/pill"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/default/padding-horizontal",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-default-padding-horizontal",
-      "values": {
-        "Default": "12px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/3"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/default/gap",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-default-gap",
-      "values": {
-        "Default": "6px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/1,5"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/default/icon-size",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-default-icon-size",
-      "values": {
-        "Default": "16px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/default/font/size",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-default-font-size",
-      "values": {
-        "Default": "14px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-sm/size"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/default/font/line-height",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-default-font-line-height",
-      "values": {
-        "Default": "20px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-sm/line-height"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/default/font/weight",
-      "type": "fontWeight",
-      "cssVar": "--dx-chip-size-default-font-weight",
-      "values": {
-        "Default": 500
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/medium"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/default/font/weight-style",
-      "type": "string",
-      "cssVar": null,
-      "values": {
-        "Default": "Medium"
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/medium-style"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/small/height",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-small-height",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/6"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/small/radius",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-small-radius",
-      "values": {
-        "Default": "9999px"
-      },
-      "aliases": {
-        "Default": "Brand::brand/radius/pill"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/small/padding-horizontal",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-small-padding-horizontal",
-      "values": {
-        "Default": "8px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/2"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/small/gap",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-small-gap",
-      "values": {
-        "Default": "4px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/1"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/small/icon-size",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-small-icon-size",
-      "values": {
-        "Default": "14px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/small/font/size",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-small-font-size",
-      "values": {
-        "Default": "12px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-xs/size"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/small/font/line-height",
-      "type": "dimension",
-      "cssVar": "--dx-chip-size-small-font-line-height",
-      "values": {
-        "Default": "16px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-xs/line-height"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/small/font/weight",
-      "type": "fontWeight",
-      "cssVar": "--dx-chip-size-small-font-weight",
-      "values": {
-        "Default": 500
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/medium"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "chip/size/small/font/weight-style",
-      "type": "string",
-      "cssVar": null,
-      "values": {
-        "Default": "Medium"
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/medium-style"
       }
     },
     {
@@ -14916,20 +14916,40 @@
         "figma": "Heading/Display/Normal"
       },
       {
+        "class": "typo-heading-display-bold",
+        "figma": "Heading/Display/Bold"
+      },
+      {
         "class": "typo-heading-h1-normal",
         "figma": "Heading/H1/Normal"
+      },
+      {
+        "class": "typo-heading-h1-bold",
+        "figma": "Heading/H1/Bold"
       },
       {
         "class": "typo-heading-h2-normal",
         "figma": "Heading/H2/Normal"
       },
       {
+        "class": "typo-heading-h2-bold",
+        "figma": "Heading/H2/Bold"
+      },
+      {
         "class": "typo-heading-h3-normal",
         "figma": "Heading/H3/Normal"
       },
       {
+        "class": "typo-heading-h3-bold",
+        "figma": "Heading/H3/Bold"
+      },
+      {
         "class": "typo-heading-h4-normal",
         "figma": "Heading/H4/Normal"
+      },
+      {
+        "class": "typo-heading-h4-bold",
+        "figma": "Heading/H4/Bold"
       },
       {
         "class": "typo-body-lg-normal",
@@ -14962,26 +14982,6 @@
       {
         "class": "typo-body-xs-bold",
         "figma": "Body/XS – Bold"
-      },
-      {
-        "class": "typo-heading-display-bold",
-        "figma": "Heading/Display/Bold"
-      },
-      {
-        "class": "typo-heading-h1-bold",
-        "figma": "Heading/H1/Bold"
-      },
-      {
-        "class": "typo-heading-h2-bold",
-        "figma": "Heading/H2/Bold"
-      },
-      {
-        "class": "typo-heading-h3-bold",
-        "figma": "Heading/H3/Bold"
-      },
-      {
-        "class": "typo-heading-h4-bold",
-        "figma": "Heading/H4/Bold"
       },
       {
         "class": "typo-label-md",
@@ -15020,189 +15020,9 @@
       "bindings": {
         "letterSpacing": "@Primitives::font/letter-spacing/normal",
         "fontSize": "@Responsive::typography/display/size",
+        "fontStyle": "@Primitives::font/weight/regular-style",
         "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/display/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Heading/H1/Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 32,
-      "lineHeight": 40,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h1/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h1/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Heading/H2/Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 24,
-      "lineHeight": 32,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h2/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h2/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Heading/H3/Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 20,
-      "lineHeight": 28,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h3/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h3/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Heading/H4/Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 18,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h4/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h4/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Body/LG – Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 18,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-lg/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-lg/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Body/LG – Bold",
-      "family": "Inter",
-      "style": "Semi Bold",
-      "fontSize": 18,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-lg/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-lg/line-height",
-        "fontStyle": "@Primitives::font/weight/semibold-style"
-      }
-    },
-    {
-      "name": "Body/MD – Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 16,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-md/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-md/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Body/MD – Bold",
-      "family": "Inter",
-      "style": "Semi Bold",
-      "fontSize": 16,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-md/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-md/line-height",
-        "fontStyle": "@Primitives::font/weight/semibold-style"
-      }
-    },
-    {
-      "name": "Body/SM – Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 14,
-      "lineHeight": 20,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-sm/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-sm/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Body/SM – Bold",
-      "family": "Inter",
-      "style": "Semi Bold",
-      "fontSize": 14,
-      "lineHeight": 20,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-sm/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-sm/line-height",
-        "fontStyle": "@Primitives::font/weight/semibold-style"
-      }
-    },
-    {
-      "name": "Body/XS – Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 12,
-      "lineHeight": 16,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-xs/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-xs/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Body/XS – Bold",
-      "family": "Inter",
-      "style": "Semi Bold",
-      "fontSize": 12,
-      "lineHeight": 16,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-xs/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-xs/line-height",
-        "fontStyle": "@Primitives::font/weight/semibold-style"
+        "lineHeight": "@Responsive::typography/display/line-height"
       }
     },
     {
@@ -15215,9 +15035,24 @@
       "bindings": {
         "letterSpacing": "@Primitives::font/letter-spacing/normal",
         "fontSize": "@Responsive::typography/display/size",
+        "fontStyle": "@Primitives::font/weight/bold-style",
         "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/display/line-height",
-        "fontStyle": "@Primitives::font/weight/bold-style"
+        "lineHeight": "@Responsive::typography/display/line-height"
+      }
+    },
+    {
+      "name": "Heading/H1/Normal",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 32,
+      "lineHeight": 40,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/h1/size",
+        "fontStyle": "@Primitives::font/weight/regular-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/h1/line-height"
       }
     },
     {
@@ -15230,9 +15065,24 @@
       "bindings": {
         "letterSpacing": "@Primitives::font/letter-spacing/normal",
         "fontSize": "@Responsive::typography/h1/size",
+        "fontStyle": "@Primitives::font/weight/bold-style",
         "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h1/line-height",
-        "fontStyle": "@Primitives::font/weight/bold-style"
+        "lineHeight": "@Responsive::typography/h1/line-height"
+      }
+    },
+    {
+      "name": "Heading/H2/Normal",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 24,
+      "lineHeight": 32,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/h2/size",
+        "fontStyle": "@Primitives::font/weight/regular-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/h2/line-height"
       }
     },
     {
@@ -15245,9 +15095,24 @@
       "bindings": {
         "letterSpacing": "@Primitives::font/letter-spacing/normal",
         "fontSize": "@Responsive::typography/h2/size",
+        "fontStyle": "@Primitives::font/weight/bold-style",
         "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h2/line-height",
-        "fontStyle": "@Primitives::font/weight/bold-style"
+        "lineHeight": "@Responsive::typography/h2/line-height"
+      }
+    },
+    {
+      "name": "Heading/H3/Normal",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 20,
+      "lineHeight": 28,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/h3/size",
+        "fontStyle": "@Primitives::font/weight/regular-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/h3/line-height"
       }
     },
     {
@@ -15260,9 +15125,24 @@
       "bindings": {
         "letterSpacing": "@Primitives::font/letter-spacing/normal",
         "fontSize": "@Responsive::typography/h3/size",
+        "fontStyle": "@Primitives::font/weight/bold-style",
         "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h3/line-height",
-        "fontStyle": "@Primitives::font/weight/bold-style"
+        "lineHeight": "@Responsive::typography/h3/line-height"
+      }
+    },
+    {
+      "name": "Heading/H4/Normal",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 18,
+      "lineHeight": 24,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/h4/size",
+        "fontStyle": "@Primitives::font/weight/regular-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/h4/line-height"
       }
     },
     {
@@ -15275,9 +15155,129 @@
       "bindings": {
         "letterSpacing": "@Primitives::font/letter-spacing/normal",
         "fontSize": "@Responsive::typography/h4/size",
+        "fontStyle": "@Primitives::font/weight/bold-style",
         "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h4/line-height",
-        "fontStyle": "@Primitives::font/weight/bold-style"
+        "lineHeight": "@Responsive::typography/h4/line-height"
+      }
+    },
+    {
+      "name": "Body/LG – Normal",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 18,
+      "lineHeight": 24,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/body-lg/size",
+        "fontStyle": "@Primitives::font/weight/regular-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/body-lg/line-height"
+      }
+    },
+    {
+      "name": "Body/LG – Bold",
+      "family": "Inter",
+      "style": "Semi Bold",
+      "fontSize": 18,
+      "lineHeight": 24,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/body-lg/size",
+        "fontStyle": "@Primitives::font/weight/semibold-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/body-lg/line-height"
+      }
+    },
+    {
+      "name": "Body/MD – Normal",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 16,
+      "lineHeight": 24,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/body-md/size",
+        "fontStyle": "@Primitives::font/weight/regular-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/body-md/line-height"
+      }
+    },
+    {
+      "name": "Body/MD – Bold",
+      "family": "Inter",
+      "style": "Semi Bold",
+      "fontSize": 16,
+      "lineHeight": 24,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/body-md/size",
+        "fontStyle": "@Primitives::font/weight/semibold-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/body-md/line-height"
+      }
+    },
+    {
+      "name": "Body/SM – Normal",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 14,
+      "lineHeight": 20,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/body-sm/size",
+        "fontStyle": "@Primitives::font/weight/regular-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/body-sm/line-height"
+      }
+    },
+    {
+      "name": "Body/SM – Bold",
+      "family": "Inter",
+      "style": "Semi Bold",
+      "fontSize": 14,
+      "lineHeight": 20,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/body-sm/size",
+        "fontStyle": "@Primitives::font/weight/semibold-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/body-sm/line-height"
+      }
+    },
+    {
+      "name": "Body/XS – Normal",
+      "family": "Inter",
+      "style": "Regular",
+      "fontSize": 12,
+      "lineHeight": 16,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/body-xs/size",
+        "fontStyle": "@Primitives::font/weight/regular-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/body-xs/line-height"
+      }
+    },
+    {
+      "name": "Body/XS – Bold",
+      "family": "Inter",
+      "style": "Semi Bold",
+      "fontSize": 12,
+      "lineHeight": 16,
+      "letterSpacing": 0,
+      "bindings": {
+        "letterSpacing": "@Primitives::font/letter-spacing/normal",
+        "fontSize": "@Responsive::typography/body-xs/size",
+        "fontStyle": "@Primitives::font/weight/semibold-style",
+        "fontFamily": "@Brand::brand/font/family/sans",
+        "lineHeight": "@Responsive::typography/body-xs/line-height"
       }
     },
     {
@@ -15335,9 +15335,9 @@
       "bindings": {
         "letterSpacing": "@Primitives::font/letter-spacing/normal",
         "fontSize": "@Responsive::typography/body-md/size",
+        "fontStyle": "@Primitives::font/weight/medium-style",
         "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-md/line-height",
-        "fontStyle": "@Primitives::font/weight/medium-style"
+        "lineHeight": "@Responsive::typography/body-md/line-height"
       }
     },
     {

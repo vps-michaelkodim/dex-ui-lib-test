@@ -1,0 +1,11 @@
+// GENERIERT von packages/icons/scripts/generate.mjs — nicht von Hand ändern.
+import { useId } from 'react';
+import { Icon, type IconProps } from '../Icon';
+
+/** Figma: `ImageRaster` */
+export function ImageRasterIcon(props: IconProps) {
+  const uid = useId().replace(/[^a-zA-Z0-9_-]/g, '');
+  return (
+    <Icon {...props}><g clipPath={`url(#${uid}clip0_542_4101)`}><path d="M2 14V16H0V14H2ZM6 14V16H4V14H6ZM10 14V16H8V14H10ZM14 14V16H12V14H14ZM4 12V14H2V12H4ZM8 12V14H6V12H8ZM12 12V14H10V12H12ZM16 12V14H14V12H16ZM6 10V12H4V10H6ZM10 10V12H8V10H10ZM14 10V12H12V10H14ZM8 8V10H6V8H8ZM12 8V10H10V8H12ZM16 8V10H14V8H16ZM10 6V8H8V6H10ZM14 6V8H12V6H14ZM12 4V6H10V4H12ZM16 4V6H14V4H16ZM14 2V4H12V2H14ZM16 0V2H14V0H16Z" fillRule="evenodd" clipRule="evenodd" fill="currentColor"/></g><defs><clipPath id={`${uid}clip0_542_4101`}><rect width="16" height="16" fill="white"/></clipPath></defs></Icon>
+  );
+}

@@ -1,0 +1,7 @@
+// GENERIERT von packages/icons/scripts/generate.mjs — nicht von Hand ändern.
+import { Icon, type IconProps } from '../Icon';
+
+/** Figma: `FocusPointNorth_Top` · Top */
+export function FocusPointNorthIcon(props: IconProps) {
+  return <Icon {...props}><path d="M12.5 2C12.7761 2 13 2.22386 13 2.5C13 2.74546 12.8231 2.94961 12.5899 2.99194L12.5 3H1V13H15V2.5C15 2.25454 15.1769 2.05039 15.4101 2.00806L15.5 2C15.7455 2 15.9496 2.17688 15.9919 2.41012L16 2.5V13.5C16 13.7455 15.8231 13.9496 15.5899 13.9919L15.5 14H0.5C0.25454 14 0.0503916 13.8231 0.00805567 13.5899L0 13.5V2.5C0 2.25454 0.176875 2.05039 0.410124 2.00806L0.5 2H12.5ZM8 4C9.10457 4 10 4.89543 10 6C10 7.10457 9.10457 8 8 8C6.89543 8 6 7.10457 6 6C6 4.89543 6.89543 4 8 4Z" fillRule="evenodd" clipRule="evenodd" fill="currentColor"/></Icon>;
+}
