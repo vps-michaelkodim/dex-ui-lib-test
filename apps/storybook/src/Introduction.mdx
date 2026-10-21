@@ -4,16 +4,130 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # Dextinity UI
 
-React-Komponenten, Tokens und Icons — gebaut aus dem Figma-File
-**DDS – Dextinity Admin UI**.
+Die Code-Umsetzung des Figma-Design-Systems **DDS – Dextinity Admin UI**: Tokens, Icons und
+React-Komponenten aus **einer** Quelle, für Admin, AI Hub und Chatbot.
 
-| Bereich     | Package             | Status   |
-| ----------- | ------------------- | -------- |
-| Tokens      | `@dextinity/tokens` | Phase 1  |
-| Icons       | `@dextinity/icons`  | Phase 2  |
-| Komponenten | `@dextinity/ui`     | Phase 3+ |
+**Figma ist die Quelle.** Was dort als Variable, Style, Icon oder Komponente existiert, kommt per Sync ins Repo.
+Abweichungen und Fehler in Figma landen im [Gap-Report](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/docs/figma-gap-report.md),
+statt im Code still „korrigiert“ zu werden.
 
-**Theme / Brand** oben in der Toolbar umschalten. Der **Accessibility**-Tab
-prüft jede Story mit axe.
+[GitHub-Repo](https://github.com/vps-michaelkodim/dex-ui-lib-test) ·
+[Figma-File](https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1) ·
+[Roadmap](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/docs/ROADMAP.md)
 
-Für AI-Tools und Devs: Regeln stehen in `AGENTS.md` im Repo-Root.
+---
+
+## Was drin ist
+
+| Bereich                       | Umfang                                                                                      | Wo ansehen                                                                                               |
+| ----------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Tokens**                    | 1.239 Figma-Variablen in 5 Ebenen (Primitives → Brand → Semantic → Responsive → Components) | [Foundations / Colors](?path=/story/foundations-colors--semantic)                                        |
+| **Themes & Brands**           | Light, Dark, High Contrast × Dextinity, Crimson — umschaltbar per Attribut                  | Toolbar oben: **Theme** / **Brand**                                                                      |
+| **Typografie**                | 24 Figma-Text-Styles, responsive (Mobile < 1024px)                                          | [Foundations / Typography](?path=/story/foundations-typography--styles)                                  |
+| **Spacing, Radius, Schatten** | 4px-Raster, Layout-Abstände, Radius-Rollen je Brand, 5 Schatten                             | [Foundations / Spacing, Radius & Elevation](?path=/story/foundations-spacing-radius-elevation--overview) |
+| **Icons**                     | 286 Icons aus der Page „Iconography“, mit Suche                                             | [Foundations / Icons](?path=/story/foundations-icons--gallery)                                           |
+| **Komponenten**               | Button, IconButton, Input (+ FormLabel, FormHelperText), Chip, Tooltip, Spinner             | links unter **Components**                                                                               |
+
+Noch nicht umgesetzt (in Figma vorhanden): Select, Checkbox, Radio, Switch, Search, Main Navigation, Dialog, Snackbar.
+
+---
+
+## Für Designer:innen
+
+### Storybook benutzen
+
+- **Theme / Brand** (Toolbar oben): jede Seite zeigt sofort Dark, High Contrast oder Crimson — mit den echten Werten aus Figma.
+- **Docs**-Seite je Komponente: alle Props mit ihrer Figma-Property („Figma: Variant“), live ausprobierbar.
+- **Controls** (unten): Props einer Story ändern, ohne Code.
+- **Design** (unten): der passende Figma-Frame direkt neben der Code-Version — zum Vergleichen (bei Figma eingeloggt sein).
+- **Accessibility** (unten): automatische a11y-Prüfung der Story (Kontrast, Labels, Rollen).
+
+### Figma → Code
+
+1. In Figma ändern (Variablen, Styles, Icons).
+2. Plugin **DDS Export** ausführen → `dds-export.json`.
+3. Ein Dev (oder Claude) übernimmt sie mit `pnpm figma:import` — der Import zeigt genau, was sich geändert hat.
+4. Im Pull Request sieht man die Änderungen als Diff, inkl. **Vorher/Nachher-Screenshots** der Komponenten.
+
+Komponenten-Änderungen (neue Props, Varianten, neue Komponenten) werden von Hand im Code nachgezogen — dafür
+sind die Figma-Property-Namen 1:1 die Prop-Namen.
+
+### Was Figma noch „schuldet“
+
+Der [Gap-Report](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/docs/figma-gap-report.md) listet alles,
+was beim Übernehmen aufgefallen ist — z.B. Farbkombinationen unter WCAG AA, Text-Styles mit falscher Schrift-Bindung,
+fehlende Tokens. Nach dem Fix in Figma: Export + Import, Zeile abhaken.
+
+### Mit AI gestalten
+
+- **Claude-Skill „dextinity-ui“**: Claude baut Screens und Prototypen mit genau dieser Library
+  (Komponenten, Token-Klassen, Regeln). Beispiel: „Bau mir im Dextinity-Playground eine Einstellungsseite mit Formular.“
+- **Playground**: dort entstehen Prototypen als echte, klickbare Seiten — mit Theme-Umschalter.
+- **Claude Design System**: ein Abbild dieses Repos (liest das Manifest), nie eine eigene Version.
+
+---
+
+## Für Devs
+
+### Setup
+
+```bash
+corepack enable && pnpm install
+pnpm storybook                 # diese Doku, http://localhost:6006
+pnpm playground                # Prototypen, http://localhost:5173
+pnpm test:setup                # einmalig: Chromium für Tests
+```
+
+### Verwenden
+
+```css
+@import '@dextinity/ui/fonts.css'; /* Inter, Source Sans Pro */
+@import '@dextinity/ui/styles.css'; /* Tailwind v4 + Tokens */
+```
+
+```tsx
+// <html data-theme="light" data-brand="dextinity">
+import { Button, Input, Tooltip, IconButton } from '@dextinity/ui';
+import { EditIcon } from '@dextinity/icons';
+
+<Input label="E-Mail" type="email" required helperText="Wir schicken dir einen Link." />
+<Tooltip content="Bearbeiten" color="dark">
+  <IconButton aria-label="Bearbeiten" variant="text" color="secondary"><EditIcon /></IconButton>
+</Tooltip>
+<Button className="mt-layout-md">Speichern</Button>
+```
+
+- Styling nur mit Token-Klassen: `bg-background-subtle`, `text-foreground-muted`, `border-border`, `typo-heading-h2-bold`,
+  `rounded-surface`, `shadow-md` … Tailwinds Default-Palette ist **aus**.
+- Props = Figma-Properties in camelCase; `_State` (Hover/Focus) ist kein Prop.
+- Basis: React 19, [Base UI](https://base-ui.com) (Tastatur, Fokus, ARIA), Tailwind v4.
+
+### Packages
+
+| Package             | Inhalt                                                                |
+| ------------------- | --------------------------------------------------------------------- |
+| `@dextinity/tokens` | CSS-Variablen `--dx-*`, Tailwind-Theme, DTCG-JSON, `tokens.meta.json` |
+| `@dextinity/icons`  | 286 React-Icons (`size`, `title`, `currentColor`)                     |
+| `@dextinity/ui`     | Komponenten + `styles.css` / `fonts.css`                              |
+
+### Qualität
+
+| Prüfung             | Befehl                                               | Was                                              |
+| ------------------- | ---------------------------------------------------- | ------------------------------------------------ |
+| Interaktion + a11y  | `pnpm test`                                          | jede Story ist ein Test (Klick, Tastatur, axe)   |
+| Screenshots         | `pnpm test:visual`                                   | 36 Screenshots (4 Themes/Brands), Referenz = Mac |
+| Typen, Lint, Format | `pnpm typecheck` · `pnpm lint` · `pnpm format:check` |                                                  |
+| Tokens aktuell      | `pnpm tokens:check`                                  | generierte Dateien passen zum Figma-Export       |
+
+### Für AI-Tools
+
+- [`AGENTS.md`](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/AGENTS.md): Regeln (gilt auch für Claude Code via `CLAUDE.md`)
+- [`llms.txt`](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/llms.txt) + [`ai/manifest.json`](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/ai/manifest.json): alles maschinenlesbar, generiert mit `pnpm manifest`
+- [`ai/skills/`](https://github.com/vps-michaelkodim/dex-ui-lib-test/tree/main/ai/skills): Claude-Skill „dextinity-ui“ zum Installieren
+
+### Mitarbeiten
+
+Branch von `main` → Änderung → `pnpm typecheck && pnpm lint && pnpm test` (bei Optik: `pnpm test:visual`) →
+bei Komponenten/Tokens/Icons `pnpm manifest` → Pull Request. Details: [`AGENTS.md`](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/AGENTS.md),
+[Figma-Sync](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/docs/TOKEN_SYNC.md),
+[Screenshot-Tests](https://github.com/vps-michaelkodim/dex-ui-lib-test/blob/main/docs/VISUAL_TESTS.md).

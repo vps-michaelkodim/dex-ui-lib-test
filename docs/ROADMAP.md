@@ -2,18 +2,18 @@
 
 Stand: 2026-10-21
 
-| Phase | Inhalt                                                                                                                                                         | Status                      |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| 0     | Monorepo, TypeScript, Lint/Format, Storybook (a11y + Vitest), Playground, AGENTS.md                                                                            | ✅                          |
-| 1     | Tokens: Figma-Export → DTCG → Style Dictionary → CSS-Vars + Tailwind-`@theme`; Light/Dark/HC + Multi-Brand; Foundations-Stories; Fingerprint-Check; Gap-Report | ✅                          |
-| 2     | Icons: Export aus „Iconography“ → SVGR → `@dextinity/icons`, Icon-Galerie                                                                                      | ✅ (Voll-Export per Plugin) |
-| 3     | Button + Icon Button                                                                                                                                           | ✅                          |
-| 4     | Input (Field-Architektur: Label, Helper, Error)                                                                                                                | ✅                          |
-| 5     | Chip + Tooltip                                                                                                                                                 | ✅                          |
-| 6     | Visual Regression (Screenshot-Baselines) + Figma-vs-Code-Diff fertig verdrahten                                                                                | ✅                          |
-| 7     | AI-Schicht: `llms.txt`, Component-Manifest / Storybook MCP, Claude-Skill „Dextinity UI“                                                                        | 🟡 1/3                      |
+| Phase | Inhalt                                                                                                                                                         | Status                                         |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| 0     | Monorepo, TypeScript, Lint/Format, Storybook (a11y + Vitest), Playground, AGENTS.md                                                                            | ✅                                             |
+| 1     | Tokens: Figma-Export → DTCG → Style Dictionary → CSS-Vars + Tailwind-`@theme`; Light/Dark/HC + Multi-Brand; Foundations-Stories; Fingerprint-Check; Gap-Report | ✅                                             |
+| 2     | Icons: Export aus „Iconography“ → SVGR → `@dextinity/icons`, Icon-Galerie                                                                                      | ✅ (Voll-Export per Plugin)                    |
+| 3     | Button + Icon Button                                                                                                                                           | ✅                                             |
+| 4     | Input (Field-Architektur: Label, Helper, Error)                                                                                                                | ✅                                             |
+| 5     | Chip + Tooltip                                                                                                                                                 | ✅                                             |
+| 6     | Visual Regression (Screenshot-Baselines) + Figma-vs-Code-Diff fertig verdrahten                                                                                | ✅                                             |
+| 7     | AI-Schicht: `llms.txt`, Component-Manifest / Storybook MCP, Claude-Skill „Dextinity UI“                                                                        | ✅ (Manifest, llms.txt, Skill; MCP verschoben) |
 
-**Phase 2 (später):** Distribution (npm-Package + shadcn-Registry), Storybook-Hosting, weitere Komponenten
+**Später:** Storybook MCP (bewusst verschoben: experimentell, nur für lokale Agents), Distribution (npm-Package + shadcn-Registry), Storybook-Hosting, weitere Komponenten
 (Dialog, Form-Familie, Main Navigation, Snackbar, Spinner, Typography), Chatbot-Komponenten.
 
 ## Entscheidungen
