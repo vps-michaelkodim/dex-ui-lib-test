@@ -1,7 +1,7 @@
-import { Field } from '@base-ui/react/field';
 import { Input as BaseInput } from '@base-ui/react/input';
 import { useState, type ReactNode } from 'react';
 import { cn } from '../../lib/cn';
+import { FieldShell, useFieldLayout, type FieldLayout } from '../../lib/field-shell';
 import { FormHelperText } from '../form-helper-text';
 import { FormLabel } from '../form-label';
 import { Spinner } from '../spinner';
@@ -33,6 +33,8 @@ export interface InputProps extends Omit<BaseInput.Props, 'className' | 'size' |
   className?: string;
   /** Klassen für den äußeren Wrapper (Label + Feld + Helper). */
   wrapperClassName?: string;
+  /** Figma: Form Layout 1 Col (`stacked`) / 2 Cols (`inline`, Label links). Standard: vom `<Form>`, sonst `stacked`. */
+  layout?: FieldLayout;
 }
 
 const container = [
@@ -88,6 +90,7 @@ export function Input({
   maxLength,
   className,
   wrapperClassName,
+  layout,
   value,
   defaultValue,
   onChange,
@@ -100,51 +103,57 @@ export function Input({
   const isError = status === 'error';
 
   return (
-    <Field.Root
+    <FieldShell
+      layout={useFieldLayout(layout)}
       invalid={isError}
       disabled={disabled}
-      className={cn('flex w-full flex-col gap-1', wrapperClassName)}
-    >
-      {label ? (
-        <FormLabel mandatory={required} error={isError}>
-          {label}
-        </FormLabel>
-      ) : null}
-      <div
-        className={cn(container, className)}
-        data-status={status}
-        data-disabled={disabled ? '' : undefined}
-        data-readonly={readOnly ? '' : undefined}
-        data-loading={loading ? '' : undefined}
-      >
-        {startAdornment ? <span className={adornment}>{startAdornment}</span> : null}
-        <BaseInput
-          {...props}
-          value={value}
-          defaultValue={defaultValue}
-          maxLength={maxLength}
-          required={required}
-          readOnly={readOnly}
-          aria-busy={loading || undefined}
-          onChange={(event) => {
-            if (!isControlled) setInnerLength(event.target.value.length);
-            onChange?.(event);
-          }}
-          className={field}
-        />
-        {loading ? (
-          <span className={cn(adornment, 'text-(color:--dx-input-state-loading-spinner)')}>
-            <Spinner />
-          </span>
-        ) : endAdornment ? (
-          <span className={adornment}>{endAdornment}</span>
-        ) : null}
-      </div>
-      {helperText || count ? (
-        <FormHelperText type={isError ? 'error' : 'hint'} count={count}>
-          {helperText}
-        </FormHelperText>
-      ) : null}
-    </Field.Root>
+      className={wrapperClassName}
+      label={
+        label ? (
+          <FormLabel mandatory={required} error={isError}>
+            {label}
+          </FormLabel>
+        ) : undefined
+      }
+      control={
+        <div
+          className={cn(container, className)}
+          data-status={status}
+          data-disabled={disabled ? '' : undefined}
+          data-readonly={readOnly ? '' : undefined}
+          data-loading={loading ? '' : undefined}
+        >
+          {startAdornment ? <span className={adornment}>{startAdornment}</span> : null}
+          <BaseInput
+            {...props}
+            value={value}
+            defaultValue={defaultValue}
+            maxLength={maxLength}
+            required={required}
+            readOnly={readOnly}
+            aria-busy={loading || undefined}
+            onChange={(event) => {
+              if (!isControlled) setInnerLength(event.target.value.length);
+              onChange?.(event);
+            }}
+            className={field}
+          />
+          {loading ? (
+            <span className={cn(adornment, 'text-(color:--dx-input-state-loading-spinner)')}>
+              <Spinner />
+            </span>
+          ) : endAdornment ? (
+            <span className={adornment}>{endAdornment}</span>
+          ) : null}
+        </div>
+      }
+      helper={
+        helperText || count ? (
+          <FormHelperText type={isError ? 'error' : 'hint'} count={count}>
+            {helperText}
+          </FormHelperText>
+        ) : undefined
+      }
+    />
   );
 }

@@ -534,6 +534,141 @@
       ]
     },
     {
+      "name": "Form",
+      "import": "import { Form } from '@dextinity/ui';",
+      "summary": "`<form>` mit einheitlichem Feld-Layout und Abständen.",
+      "figma": {
+        "node": "1157:25413",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1157-25413"
+      },
+      "source": "packages/ui/src/components/form/Form.tsx",
+      "storybook": {
+        "title": "Components/Form",
+        "stories": [
+          "Stacked",
+          "Inline",
+          "FieldError",
+          "WithSearch"
+        ]
+      },
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "layout",
+          "type": "enum",
+          "values": [
+            "stacked",
+            "inline"
+          ],
+          "required": false,
+          "default": "stacked",
+          "description": "Figma: Form Layout 1 Col (`stacked`, Label über dem Feld) / 2 Cols (`inline`, Label links).\nGilt für alle Felder darin (Input, Select, Search, FormField), die keine eigene `layout`-Prop haben."
+        }
+      ],
+      "examples": [
+        "<Form layout=\"inline\" onSubmit={save}>\n  <Input label=\"Name\" required />\n  <Select label=\"Rolle\" options={roles} />\n  <FormDivider />\n  <FormField label=\"Benachrichtigungen\"><Switch>E-Mail</Switch></FormField>\n  <Button type=\"submit\">Speichern</Button>\n</Form>"
+      ]
+    },
+    {
+      "name": "FormField",
+      "import": "import { FormField } from '@dextinity/ui';",
+      "summary": "Figma: `Form Layout 1 Col` / `Form Layout 2 Cols` mit Slot. Für Inhalte ohne eigenes Label\n(z.B. Switch-Liste, eigene Steuerelemente). `Input`, `Select` und `Search` haben `label` + `layout` selbst.",
+      "figma": {
+        "node": "1175:26023",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1175-26023"
+      },
+      "source": "packages/ui/src/components/form/Form.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "description": "Figma: Slot — beliebiger Inhalt (Switch, eigene Steuerelemente, Text …)."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "helperText",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Hinweistext (Figma: Helper Text). Bei `status=\"error\"` als Fehlertext."
+        },
+        {
+          "name": "label",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Form Label."
+        },
+        {
+          "name": "labelAlign",
+          "type": "enum",
+          "values": [
+            "field",
+            "choice"
+          ],
+          "required": false,
+          "default": "choice",
+          "description": "Woran das Label im `inline`-Layout ausgerichtet wird: `choice` für Checkbox/Radio/Switch (24px),\n`field` für Eingabefelder (40px)."
+        },
+        {
+          "name": "layout",
+          "type": "enum",
+          "values": [
+            "stacked",
+            "inline"
+          ],
+          "required": false,
+          "description": "Figma: Form Layout 1 Col / 2 Cols. Standard: vom `<Form>`, sonst `stacked`."
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "description": "Pflichtfeld: „*“ am Label."
+        },
+        {
+          "name": "status",
+          "type": "enum",
+          "values": [
+            "error"
+          ],
+          "required": false,
+          "description": "Figma: `_State` Error."
+        }
+      ],
+      "examples": []
+    },
+    {
+      "name": "FormDivider",
+      "import": "import { FormDivider } from '@dextinity/ui';",
+      "summary": "Figma: `Form divider`. Trennt Abschnitte eines Formulars.",
+      "figma": {
+        "node": "1208:30200",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1208-30200"
+      },
+      "source": "packages/ui/src/components/form/Form.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "examples": []
+    },
+    {
       "name": "FormHelperText",
       "import": "import { FormHelperText } from '@dextinity/ui';",
       "summary": "Figma: `03 Components / Form / Form Helper Text`.\nWird per `aria-describedby` mit dem Feld verknüpft (innerhalb von `Field.Root`).",
@@ -828,6 +963,16 @@
           "description": "Sichtbares Label (Figma: Form Label). Ohne Label → `aria-label` setzen."
         },
         {
+          "name": "layout",
+          "type": "enum",
+          "values": [
+            "stacked",
+            "inline"
+          ],
+          "required": false,
+          "description": "Figma: Form Layout 1 Col (`stacked`) / 2 Cols (`inline`, Label links). Standard: vom `<Form>`, sonst `stacked`."
+        },
+        {
           "name": "loading",
           "type": "boolean",
           "required": false,
@@ -1047,6 +1192,261 @@
         }
       ],
       "examples": []
+    },
+    {
+      "name": "Search",
+      "import": "import { Search } from '@dextinity/ui';",
+      "summary": "Figma: `03 Components / Form – Search`. Suchfeld mit Lupe, Leeren-Button (sobald Text da ist)\nund Loading. Escape leert das Feld.",
+      "figma": {
+        "node": "1190:18720",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1190-18720"
+      },
+      "source": "packages/ui/src/components/search/Search.tsx",
+      "storybook": {
+        "title": "Components/Search",
+        "stories": [
+          "Playground",
+          "States",
+          "WithLabel"
+        ]
+      },
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "clearLabel",
+          "type": "string",
+          "required": false,
+          "default": "Suche leeren",
+          "description": "Zugänglicher Name des Leeren-Buttons."
+        },
+        {
+          "name": "defaultValue",
+          "type": "string",
+          "required": false,
+          "default": "",
+          "description": "Anfangs-Suchbegriff."
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Disabled."
+        },
+        {
+          "name": "helperText",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Helper Text."
+        },
+        {
+          "name": "label",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Optionales sichtbares Label. Sonst `aria-label` (Standard: Platzhalter)."
+        },
+        {
+          "name": "layout",
+          "type": "enum",
+          "values": [
+            "stacked",
+            "inline"
+          ],
+          "required": false,
+          "description": "Figma: Form Layout 1 Col (`stacked`) / 2 Cols (`inline`)."
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Loading — Spinner, `aria-busy` (z.B. während Ergebnisse laden)."
+        },
+        {
+          "name": "onValueChange",
+          "type": "((value: string) => void)",
+          "required": false,
+          "description": "Wird bei jeder Eingabe und beim Leeren mit dem neuen Begriff aufgerufen."
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "required": false,
+          "default": "Suchen",
+          "description": "Figma: Children (Platzhalter)."
+        },
+        {
+          "name": "render",
+          "type": "ReactElement<unknown, string | JSXElementConstructor<any>> | ComponentRenderFn<HTMLProps, InputState>",
+          "required": false,
+          "description": "Allows you to replace the component's HTML element\nwith a different tag, or compose it with another component.\n\nAccepts a `ReactElement` or a function that returns the element to render."
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties | ((state: InputState) => CSSProperties)",
+          "required": false,
+          "description": "Style applied to the element, or a function that\nreturns a style object based on the component's state."
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": false,
+          "description": "Suchbegriff (kontrolliert)."
+        },
+        {
+          "name": "wrapperClassName",
+          "type": "string",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "examples": [
+        "<Search placeholder=\"Benutzer suchen\" value={query} onValueChange={setQuery} />\n<Search loading={isFetching} onValueChange={search} helperText=\"Name oder E-Mail\" />"
+      ]
+    },
+    {
+      "name": "Select",
+      "import": "import { Select } from '@dextinity/ui';",
+      "summary": "Figma: `03 Components / Form – Select` (+ Select Menu, Select Option).\nAuswahl aus einer Liste; Tastatur: Pfeiltasten, Enter, Tippen springt zum Eintrag.",
+      "figma": {
+        "node": "1194:18744",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1194-18744"
+      },
+      "source": "packages/ui/src/components/select/Select.tsx",
+      "storybook": {
+        "title": "Components/Select",
+        "stories": [
+          "Playground",
+          "States",
+          "Open",
+          "ReadOnly"
+        ]
+      },
+      "props": [
+        {
+          "name": "options",
+          "type": "SelectOption[]",
+          "required": true,
+          "description": "Die Optionen (Figma: Select Option)."
+        },
+        {
+          "name": "aria-label",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Klassen für das Feld (Trigger)."
+        },
+        {
+          "name": "defaultValue",
+          "type": "string | null",
+          "required": false,
+          "description": "Anfangs ausgewählter Wert."
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Disabled."
+        },
+        {
+          "name": "helperText",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Hinweistext unter dem Feld (Figma: Helper Text). Bei `status=\"error\"` als Fehlertext."
+        },
+        {
+          "name": "label",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Sichtbares Label (Figma: Form Label). Ohne Label → `aria-label` setzen."
+        },
+        {
+          "name": "layout",
+          "type": "enum",
+          "values": [
+            "stacked",
+            "inline"
+          ],
+          "required": false,
+          "description": "Figma: Form Layout 1 Col (`stacked`) / 2 Cols (`inline`). Standard: vom `<Form>`, sonst `stacked`."
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Loading — Spinner neben dem Pfeil, `aria-busy`."
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "description": "Name fürs Formular."
+        },
+        {
+          "name": "onValueChange",
+          "type": "((value: string | null) => void)",
+          "required": false,
+          "description": "Wird bei Auswahl mit dem neuen Wert aufgerufen."
+        },
+        {
+          "name": "placeholder",
+          "type": "ReactNode",
+          "required": false,
+          "default": "Auswählen …",
+          "description": "Text, solange nichts ausgewählt ist."
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: `_State` Read-only — Wert sichtbar, Menü öffnet nicht."
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "description": "Pflichtfeld: „*“ am Label."
+        },
+        {
+          "name": "status",
+          "type": "enum",
+          "values": [
+            "error",
+            "success",
+            "warning"
+          ],
+          "required": false,
+          "description": "Validierungsstatus (Figma: `_State` Error/Success/Warning)."
+        },
+        {
+          "name": "value",
+          "type": "string | null",
+          "required": false,
+          "description": "Ausgewählter Wert (kontrolliert). `null` = nichts ausgewählt."
+        },
+        {
+          "name": "wrapperClassName",
+          "type": "string",
+          "required": false,
+          "description": "Klassen für den äußeren Wrapper (Label + Feld + Helper)."
+        }
+      ],
+      "examples": [
+        "<Select\n  label=\"Rolle\"\n  placeholder=\"Rolle wählen\"\n  options={[\n    { value: 'admin', label: 'Admin' },\n    { value: 'editor', label: 'Redakteur:in' },\n  ]}\n  onValueChange={setRole}\n/>"
+      ]
     },
     {
       "name": "Spinner",
