@@ -1,10 +1,10 @@
 import { useState, type FormEvent, type ReactNode } from 'react';
-import { Button, Input } from '@dextinity/ui';
+import { Button, Input, Switch } from '@dextinity/ui';
 import { LetterIcon, ResetIcon, SaveIcon, StatusSuccessSolidIcon } from '@dextinity/icons';
 
 /**
  * Prototyp: Einstellungsseite mit Formular + Speichern.
- * Nur @dextinity/ui + Token-Klassen. Switch fehlt noch in der Library → lokaler Platzhalter unten.
+ * Nur @dextinity/ui + Token-Klassen.
  */
 
 interface SettingsValues {
@@ -185,18 +185,20 @@ export function Settings() {
             description="Wähle, worüber wir dich per E-Mail informieren."
           >
             <div className="flex flex-col gap-4">
-              <SwitchPlaceholder
-                label="Neue Kommentare"
-                description="Wenn jemand auf deine Inhalte antwortet."
+              <Switch
+                helperText="Wenn jemand auf deine Inhalte antwortet."
                 checked={values.notifyComments}
                 onCheckedChange={(checked) => set('notifyComments', checked)}
-              />
-              <SwitchPlaceholder
-                label="Wöchentliche Zusammenfassung"
-                description="Jeden Montag ein Überblick über deinen Workspace."
+              >
+                Neue Kommentare
+              </Switch>
+              <Switch
+                helperText="Jeden Montag ein Überblick über deinen Workspace."
                 checked={values.weeklyDigest}
                 onCheckedChange={(checked) => set('weeklyDigest', checked)}
-              />
+              >
+                Wöchentliche Zusammenfassung
+              </Switch>
             </div>
           </Section>
         </div>
@@ -243,45 +245,5 @@ function Section({
       <p className="mt-1 mb-5 typo-body-sm-normal text-foreground-muted">{description}</p>
       {children}
     </section>
-  );
-}
-
-// TODO(@dextinity/ui): Kandidat für die Library — Figma: 03 Components / Switch
-// Platzhalter nur für diesen Prototyp. Die echte Komponente entsteht zuerst im Repo (aus Figma, Base UI Switch).
-function SwitchPlaceholder({
-  label,
-  description,
-  checked,
-  onCheckedChange,
-}: {
-  label: string;
-  description?: string;
-  checked: boolean;
-  onCheckedChange: (checked: boolean) => void;
-}) {
-  return (
-    <label className="flex cursor-pointer items-start justify-between gap-(--dx-switch-gap)">
-      <span className="flex flex-col">
-        <span className="[font-size:var(--dx-switch-label-font-size)] [line-height:var(--dx-switch-label-font-line-height)] [font-weight:var(--dx-switch-label-font-weight)] text-(color:--dx-switch-label-foreground-default)">
-          {label}
-        </span>
-        {description ? (
-          <span className="typo-body-sm-normal text-foreground-muted">{description}</span>
-        ) : null}
-      </span>
-      <button
-        type="button"
-        role="switch"
-        aria-checked={checked}
-        data-checked={checked ? '' : undefined}
-        onClick={() => onCheckedChange(!checked)}
-        className="group relative h-(--dx-switch-track-height) w-(--dx-switch-track-width) shrink-0 cursor-pointer rounded-(--dx-switch-radius) bg-(--dx-switch-off-default-track) transition-colors duration-(--dx-primitive-motion-duration-sm) ease-standard hover:bg-(--dx-switch-off-hover-track) focus-visible:outline-(length:--dx-focus-ring-width) focus-visible:outline-offset-(--dx-focus-ring-offset) focus-visible:outline-border-focus focus-visible:outline-solid data-checked:bg-(--dx-switch-on-default-track) data-checked:hover:bg-(--dx-switch-on-hover-track)"
-      >
-        <span
-          aria-hidden
-          className="absolute top-(--dx-switch-thumb-inset) left-(--dx-switch-thumb-inset) size-(--dx-switch-thumb-size) rounded-full bg-(--dx-switch-off-default-thumb) transition-transform duration-(--dx-primitive-motion-duration-sm) ease-standard group-data-checked:translate-x-[calc(var(--dx-switch-track-width)-var(--dx-switch-thumb-size)-2*var(--dx-switch-thumb-inset))] group-data-checked:bg-(--dx-switch-on-default-thumb)"
-        />
-      </button>
-    </label>
   );
 }

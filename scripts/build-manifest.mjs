@@ -23,6 +23,17 @@ const pkg = (p) => json(`${p}/package.json`);
 
 /** Props aus Base UI, die bewusst dokumentiert werden (z.B. Button als Link: render + nativeButton). */
 const BASE_UI_PROPS = ['render', 'nativeButton', 'focusableWhenDisabled'];
+/** Zusätzlich bei Checkbox, Radio, Switch: Wert/Zustand kommen aus Base UI. */
+const CHOICE_PROPS = [
+  'checked',
+  'defaultChecked',
+  'onCheckedChange',
+  'value',
+  'name',
+  'required',
+  'parent',
+];
+const CHOICE_COMPONENTS = ['Checkbox', 'Radio', 'Switch'];
 
 // ─── Komponenten ───────────────────────────────────────────────────────────────────────────
 const COMPONENTS_DIR = 'packages/ui/src/components';
@@ -31,8 +42,11 @@ const parser = docgen.withCustomConfig(join(ROOT, 'apps/storybook/tsconfig.json'
   shouldRemoveUndefinedFromOptional: true,
   savePropValueAsString: true,
   // Eigene Props + ausgewählte Base-UI-Props, die man im Alltag braucht
-  propFilter: (prop) =>
-    !prop.parent || !/node_modules/.test(prop.parent.fileName) || BASE_UI_PROPS.includes(prop.name),
+  propFilter: (prop, component) =>
+    !prop.parent ||
+    !/node_modules/.test(prop.parent.fileName) ||
+    BASE_UI_PROPS.includes(prop.name) ||
+    (CHOICE_COMPONENTS.includes(component.name) && CHOICE_PROPS.includes(prop.name)),
 });
 
 /** Figma-Nodes für Komponenten ohne eigene Stories (sonst aus parameters.design der Stories). */

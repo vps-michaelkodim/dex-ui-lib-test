@@ -14,9 +14,12 @@ import { page } from 'vitest/browser';
 import { render } from 'vitest-browser-react';
 import '../src/storybook.css';
 import * as ButtonStories from '../../../packages/ui/src/components/button/Button.stories';
+import * as CheckboxStories from '../../../packages/ui/src/components/checkbox/Checkbox.stories';
 import * as ChipStories from '../../../packages/ui/src/components/chip/Chip.stories';
 import * as IconButtonStories from '../../../packages/ui/src/components/icon-button/IconButton.stories';
 import * as InputStories from '../../../packages/ui/src/components/input/Input.stories';
+import * as RadioStories from '../../../packages/ui/src/components/radio/Radio.stories';
+import * as SwitchStories from '../../../packages/ui/src/components/switch/Switch.stories';
 import * as TooltipStories from '../../../packages/ui/src/components/tooltip/Tooltip.stories';
 
 const button = composeStories(ButtonStories);
@@ -24,6 +27,9 @@ const iconButton = composeStories(IconButtonStories);
 const input = composeStories(InputStories);
 const chip = composeStories(ChipStories);
 const tooltip = composeStories(TooltipStories);
+const checkbox = composeStories(CheckboxStories);
+const radio = composeStories(RadioStories);
+const switchStories = composeStories(SwitchStories);
 
 /** Welche Stories fotografiert werden. `page: true` = ganze Seite (z.B. Tooltips im Portal). */
 const CASES: { name: string; Story: ComponentType; page?: boolean }[] = [
@@ -44,6 +50,10 @@ const CASES: { name: string; Story: ComponentType; page?: boolean }[] = [
   { name: 'chip-matrix', Story: chip.Matrix },
   { name: 'chip-sizes', Story: chip.Sizes },
   { name: 'tooltip-colors', Story: tooltip.Colors, page: true },
+  { name: 'checkbox-states', Story: checkbox.States },
+  { name: 'checkbox-group', Story: checkbox.GroupWithError },
+  { name: 'radio-states', Story: radio.States },
+  { name: 'switch-states', Story: switchStories.States },
 ];
 
 const MODES = [

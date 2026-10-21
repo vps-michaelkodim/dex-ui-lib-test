@@ -11,21 +11,21 @@ statt im Code still „korrigiert“ zu werden.
 
 ## Was das Repo kann
 
-| Bereich                       | Umfang                                                                                      |
-| ----------------------------- | ------------------------------------------------------------------------------------------- |
-| **Tokens**                    | 1.239 Figma-Variablen in 5 Ebenen (Primitives → Brand → Semantic → Responsive → Components) |
-| **Themes & Brands**           | Light, Dark, High Contrast × Dextinity, Crimson — umschaltbar per Attribut                  |
-| **Typografie**                | 24 Figma-Text-Styles als Klassen (`typo-*`), responsive (Mobile < 1024px)                   |
-| **Spacing, Radius, Schatten** | 4px-Raster, Layout-Abstände, Radius-Rollen je Brand, 5 Schatten                             |
-| **Icons**                     | 286 Icons aus Figma als React-Komponenten                                                   |
-| **Komponenten**               | Button, IconButton, Input (+ FormLabel, FormHelperText), Chip, Tooltip, Spinner             |
-| **Storybook**                 | Doku, Live-Props, Figma-Frame daneben, a11y-Check, Theme-/Brand-Umschalter                  |
-| **Playground**                | Klickbare Prototypen mit der echten Library — ein Prototyp = eine Datei                     |
-| **Figma-Sync**                | Plugin „DDS Export“ + `pnpm figma:import` mit Änderungsbericht                              |
-| **Tests**                     | Interaktion + a11y je Story, Screenshot-Vergleich, Kontrast-Audit                           |
-| **AI-ready**                  | `AGENTS.md`, `llms.txt`, `ai/manifest.json`, Claude-Skill „dextinity-ui“                    |
+| Bereich                       | Umfang                                                                                                   |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Tokens**                    | 1.239 Figma-Variablen in 5 Ebenen (Primitives → Brand → Semantic → Responsive → Components)              |
+| **Themes & Brands**           | Light, Dark, High Contrast × Dextinity, Crimson — umschaltbar per Attribut                               |
+| **Typografie**                | 24 Figma-Text-Styles als Klassen (`typo-*`), responsive (Mobile < 1024px)                                |
+| **Spacing, Radius, Schatten** | 4px-Raster, Layout-Abstände, Radius-Rollen je Brand, 5 Schatten                                          |
+| **Icons**                     | 286 Icons aus Figma als React-Komponenten                                                                |
+| **Komponenten**               | Button, IconButton, Input (+ FormLabel, FormHelperText), Checkbox, Radio, Switch, Chip, Tooltip, Spinner |
+| **Storybook**                 | Doku, Live-Props, Figma-Frame daneben, a11y-Check, Theme-/Brand-Umschalter                               |
+| **Playground**                | Klickbare Prototypen mit der echten Library — ein Prototyp = eine Datei                                  |
+| **Figma-Sync**                | Plugin „DDS Export“ + `pnpm figma:import` mit Änderungsbericht                                           |
+| **Tests**                     | Interaktion + a11y je Story, Screenshot-Vergleich, Kontrast-Audit                                        |
+| **AI-ready**                  | `AGENTS.md`, `llms.txt`, `ai/manifest.json`, Claude-Skill „dextinity-ui“                                 |
 
-Noch nicht umgesetzt (in Figma vorhanden): Select, Checkbox, Radio, Switch, Search, Main Navigation, Dialog, Snackbar.
+Noch nicht umgesetzt (in Figma vorhanden): Select, Search, Typography, Main Navigation, Dialog, Snackbar.
 Was als Nächstes kommt: [Roadmap](./docs/ROADMAP.md).
 
 ## Quick Start
