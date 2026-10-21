@@ -102,3 +102,13 @@ Gefunden beim Abgleich mit dem Claude Design System und bestätigt mit `pnpm con
 | D2  | ⚪   | Snackbar   | Komponente + 26 Tokens `snackbar/*` neu entworfen (Seite war leer). `Color` = Default/Info/Success/Warning/Error, Icon immer sichtbar.                             | ✅             |
 | D3  | ⚪   | Primitives | Neue String-Variable `version` = „DDS v0.1.1“ → `--dx-primitive-version`.                                                                                          | info           |
 | D4  | ⚪   | Typography | Komponente kennt nur `Normal`-Styles; Bold wird im Code über `weight="bold"` gelöst (Bold-Text-Styles existieren).                                                 | info (bewusst) |
+
+## Formulare (Select, Search, Form Layout · Phasen 9–11)
+
+| #   | Prio | Bereich     | Figma-Ort                    | Beobachtung                                                               | Lösung im Code                                                                                               | Status |
+| --- | ---- | ----------- | ---------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------ |
+| F1  | ⚪   | Form Layout | `Form Layout 2 Cols`         | Label-Spalte fest 200px, Spaltenabstand `unit/5` — Breite ist kein Token. | `--dx-form-label-width` (Fallback 200px), unter 768px gestapelt. Vorschlag: Token `form-layout/label-width`. | offen  |
+| F2  | ⚪   | Form Layout | `Form Layout 1 Col / 2 Cols` | Als Wrapper mit Slot gebaut.                                              | Code: `layout`-Prop an Input/Select/Search + `<Form layout>`; `FormField` für eigene Inhalte.                | info   |
+| F3  | ⚪   | Select      | `_State` Read-only           | Verhalten nicht spezifiziert.                                             | Wert sichtbar, Menü öffnet nicht.                                                                            | info   |
+| F4  | ⚪   | Search      | —                            | Kein Label vorgesehen.                                                    | Platzhalter dient als zugänglicher Name; optionales `label`. Escape leert.                                   | info   |
+| F5  | ⚪   | Select Menu | Effect Style `Shadow/MD`     | Schatten nicht als Token (siehe #4).                                      | `shadow-md`.                                                                                                 | info   |

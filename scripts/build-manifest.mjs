@@ -54,7 +54,13 @@ const parser = docgen.withCustomConfig(join(ROOT, 'apps/storybook/tsconfig.json'
 });
 
 /** Figma-Nodes für Komponenten ohne eigene Stories (sonst aus parameters.design der Stories). */
-const FIGMA_NODES = { FormLabel: '774:618', FormHelperText: '775:620', Spinner: '783:1598' };
+const FIGMA_NODES = {
+  FormLabel: '774:618',
+  FormHelperText: '775:620',
+  Spinner: '783:1598',
+  FormField: '1175:26023',
+  FormDivider: '1208:30200',
+};
 
 const components = [];
 for (const dir of readdirSync(join(ROOT, COMPONENTS_DIR)).sort()) {

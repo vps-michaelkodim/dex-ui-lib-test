@@ -1,17 +1,10 @@
 import { useMemo, useState, type ReactNode } from 'react';
-import { Button, Chip, IconButton, Input, Tooltip } from '@dextinity/ui';
-import {
-  ChevronDownIcon,
-  DeleteIcon,
-  EditIcon,
-  PlusIcon,
-  SearchIcon,
-  ResetIcon,
-} from '@dextinity/icons';
+import { Button, Chip, IconButton, Search, Select, Tooltip } from '@dextinity/ui';
+import { DeleteIcon, EditIcon, PlusIcon, ResetIcon } from '@dextinity/icons';
 
 /**
  * Prototyp: Benutzerliste mit Suche, Rollen-Filter, Status-Chips und Zeilenaktionen.
- * Nur @dextinity/ui + Token-Klassen. Select und Tabelle fehlen noch in der Library → lokale Platzhalter unten.
+ * Nur @dextinity/ui + Token-Klassen. Tabelle fehlt noch in der Library → lokaler Platzhalter unten.
  */
 
 type Status = 'aktiv' | 'eingeladen' | 'gesperrt';
@@ -147,18 +140,17 @@ export function UserList() {
       </header>
 
       <div className="mb-4 flex flex-wrap items-end gap-4">
-        <Input
-          aria-label="Benutzer suchen"
+        <Search
           placeholder="Name oder E-Mail suchen"
-          startAdornment={<SearchIcon />}
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onValueChange={setQuery}
           wrapperClassName="w-80 max-w-full"
         />
-        <PlaceholderSelect
+        <Select
           label="Rolle"
           value={role}
-          onChange={(v) => setRole(v as Role | '')}
+          onValueChange={(v) => setRole((v ?? '') as Role | '')}
+          wrapperClassName="w-48"
           options={[
             { value: '', label: 'Alle Rollen' },
             { value: 'Admin', label: 'Admin' },
@@ -278,41 +270,5 @@ function Th({ children }: { children: ReactNode }) {
     <th scope="col" className="px-4 py-3 font-medium">
       {children}
     </th>
-  );
-}
-
-/**
- * TODO(@dextinity/ui): Kandidat für die Library — Figma: 03 Components / Form – Select
- * Platzhalter: natives <select> im Look des Inputs, nur mit Token-Klassen.
- */
-function PlaceholderSelect({
-  label,
-  value,
-  onChange,
-  options,
-}: {
-  label: string;
-  value: string;
-  onChange: (value: string) => void;
-  options: { value: string; label: string }[];
-}) {
-  return (
-    <label className="flex flex-col gap-1 typo-label-sm">
-      {label}
-      <span className="relative">
-        <select
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          className="h-(--dx-input-height) w-48 appearance-none rounded-forms border border-border-field bg-background pr-9 pl-3 typo-body-md-normal text-foreground focus-visible:border-border-focus"
-        >
-          {options.map((o) => (
-            <option key={o.value} value={o.value}>
-              {o.label}
-            </option>
-          ))}
-        </select>
-        <ChevronDownIcon className="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-foreground-muted" />
-      </span>
-    </label>
   );
 }
