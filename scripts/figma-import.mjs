@@ -61,9 +61,21 @@ const list = (title, items, color) => {
   if (items.length > MAX) console.log(`    … +${items.length - MAX}`);
 };
 let changes = 0;
+const summary = { added: 0, changed: 0, removed: 0, styles: 0, icons: 0 };
 
 // ── Variablen ──────────────────────────────────────────────────────────────────────────────
 console.log(c.b(`\nFigma: ${data.file} · exportiert ${data.exportedAt}\n`));
+const versionOf = (rows) => rows?.find((r) => r[0] === 'version')?.[2][0];
+const oldPrimitives = join(RAW, 'primitives.json');
+const oldVersion = existsSync(oldPrimitives)
+  ? versionOf(JSON.parse(readFileSync(oldPrimitives, 'utf8')).variables)
+  : undefined;
+const newVersion = versionOf(data.collections.Primitives?.variables);
+console.log(
+  newVersion === oldVersion
+    ? `Figma-Version: ${newVersion ?? '–'}\n`
+    : c.y(`Figma-Version: ${oldVersion ?? '–'} → ${newVersion ?? '–'}\n`),
+);
 const writes = [];
 for (const [name, col] of Object.entries(data.collections)) {
   const slug = COLLECTION_FILES[name];
@@ -89,6 +101,9 @@ for (const [name, col] of Object.entries(data.collections)) {
   const modesChanged = JSON.stringify(old.modes) !== JSON.stringify(col.modes);
   const n = added.length + removed.length + changed.length + (modesChanged ? 1 : 0);
   changes += n;
+  summary.added += added.length;
+  summary.changed += changed.length + (modesChanged ? 1 : 0);
+  summary.removed += removed.length;
   console.log(
     `${n ? '●' : c.g('✓')} ${name}: ${col.variables.length} Variablen${n ? '' : ' — unverändert'}`,
   );
@@ -122,6 +137,7 @@ for (const [name, col] of Object.entries(data.collections)) {
     const changed = [...nw.keys()].filter((k) => o.has(k) && o.get(k) !== nw.get(k));
     const n = added.length + removed.length + changed.length;
     changes += n;
+    summary.styles += n;
     console.log(`${n ? '●' : c.g('✓')} ${kind}: ${nw.size}${n ? '' : ' — unverändert'}`);
     list('neu', added, c.g);
     list('entfernt', removed, c.r);
@@ -147,6 +163,7 @@ if (data.icons) {
   );
   const n = added.length + removed.length + changed.length;
   changes += n;
+  summary.icons += n;
   console.log(
     `${n ? '●' : c.g('✓')} Icons: ${Object.keys(incoming).length}${n ? '' : ' — unverändert'}`,
   );
@@ -168,6 +185,35 @@ if (dryRun) {
 
 for (const [path, body] of writes) writeFileSync(path, body);
 for (const path of iconDeletes) rmSync(path);
+
+// Changeset für den Changelog: „Sync mit DDS vX“ (Text und Stufe vor dem Commit prüfen/anpassen)
+if (changes) {
+  const pkgs = [
+    ...(summary.added + summary.changed + summary.removed + summary.styles
+      ? ['@dextinity/tokens']
+      : []),
+    ...(summary.icons ? ['@dextinity/icons'] : []),
+  ];
+  const vars = [
+    summary.added && `${summary.added} neu`,
+    summary.changed && `${summary.changed} geändert`,
+    summary.removed && `${summary.removed} entfernt`,
+  ].filter(Boolean);
+  const parts = [
+    vars.length && `Variablen ${vars.join(', ')}`,
+    summary.styles && `${summary.styles} Style-Änderungen`,
+    summary.icons && `${summary.icons} Icon-Änderungen`,
+  ].filter(Boolean);
+  const from = oldVersion && oldVersion !== newVersion ? ` (vorher ${oldVersion})` : '';
+  const file = join(ROOT, '.changeset', `figma-sync-${new Date().toISOString().slice(0, 10)}.md`);
+  writeFileSync(
+    file,
+    `---\n${pkgs.map((p) => `'${p}': ${summary.removed ? 'major' : 'minor'}`).join('\n')}\n---\n\nSync mit Figma ${newVersion ?? ''}${from}: ${parts.join(' · ')}.\n`,
+  );
+  console.log(
+    c.y(`\nChangeset angelegt: ${file.replace(ROOT + '/', '')} — Text und Stufe prüfen.`),
+  );
+}
 
 const run = (cwd, script) =>
   execFileSync('node', [script], { cwd: join(ROOT, cwd), stdio: 'inherit' });

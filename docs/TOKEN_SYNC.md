@@ -14,13 +14,15 @@ git checkout main && git pull && git checkout -b chore/figma-sync-<datum>
 
 # 3. Was hat sich geändert?
 pnpm figma:import ~/Downloads/dds-export.json --dry-run
+#   Figma-Version: DDS v0.1.1 → DDS v0.1.2
 #   ✓ Primitives: 300 Variablen — unverändert
 #   ● Semantic: 92 Variablen
 #     neu (1)   color/background/brand
 #   ● Icons: 286
 #     geändert (2) …
 
-# 4. Übernehmen (schreibt raw-Dateien + SVGs, baut Tokens und Icons neu)
+# 4. Übernehmen (schreibt raw-Dateien + SVGs, baut Tokens und Icons neu,
+#    legt ein Changeset „Sync mit Figma DDS vX“ an → Text/Stufe prüfen)
 pnpm figma:import ~/Downloads/dds-export.json
 
 # 5. Prüfen
@@ -55,3 +57,10 @@ bestehenden Collection brauchen einen CSS-Selektor in `build.mjs`.
 `packages/tokens/figma/fingerprint.figma.js` per `use_figma` ausführen und das Ergebnis mit
 `node packages/tokens/scripts/fingerprint.mjs <datei.json>` vergleichen → zeigt, welche
 Token-Gruppen abweichen, ohne kompletten Export.
+
+## Figma-Version
+
+Das Figma-File führt seinen Stand in der Variable `version` (Collection Primitives, z. B. „DDS v0.1.1“).
+Der Import zeigt Änderungen daran an und schreibt sie ins Changeset; Storybook (Introduction), `ai/manifest.json`
+(`figmaVersion`) und `llms.txt` zeigen den zuletzt synchronisierten Stand. Die Paketversion (Changesets) ist davon
+unabhängig: Code-Releases gibt es auch ohne Figma-Änderung.
