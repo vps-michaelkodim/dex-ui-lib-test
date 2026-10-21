@@ -44,6 +44,8 @@ function validate(v: SettingsValues): Errors {
   return errors;
 }
 
+export const title = 'Einstellungen';
+
 export function Settings() {
   const [saved, setSaved] = useState(initialValues);
   const [values, setValues] = useState(initialValues);

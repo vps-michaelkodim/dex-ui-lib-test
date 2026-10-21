@@ -149,6 +149,8 @@ function placeholderRelease(
   };
 }
 
+export const title = 'Release Notes';
+
 export function ReleaseNotes() {
   const [activeVersion, setActiveVersion] = useState(releases[0]?.version);
   const release = releases.find((r) => r.version === activeVersion);

@@ -1,19 +1,47 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { prototypes } from './prototypes';
 
 /**
- * Playground-Shell: listet alle Prototypen aus src/prototypes/.
- * Neuer Prototyp = neue Datei in src/prototypes/ + Eintrag in prototypes/index.ts.
+ * Playground-Shell: listet automatisch alle Dateien aus src/prototypes/.
+ * Auswahl steht in der URL (#settings), Theme + Brand bleiben beim Neuladen erhalten.
  */
-export function App() {
-  const [activeId, setActiveId] = useState(prototypes[0]?.id);
-  const [theme, setTheme] = useState('light');
-  const active = prototypes.find((p) => p.id === activeId);
+const THEMES = ['light', 'dark', 'high-contrast'] as const;
+const BRANDS = ['dextinity', 'crimson'] as const;
 
-  const switchTheme = (next: string) => {
-    setTheme(next);
-    document.documentElement.dataset.theme = next;
-  };
+const fromHash = () => window.location.hash.slice(1);
+const stored = (key: string, fallback: string) => {
+  try {
+    return localStorage.getItem(key) ?? fallback;
+  } catch {
+    return fallback;
+  }
+};
+
+export function App() {
+  const [activeId, setActiveId] = useState(() => fromHash() || prototypes[0]?.id);
+  const [theme, setTheme] = useState(() => stored('playground-theme', 'light'));
+  const [brand, setBrand] = useState(() => stored('playground-brand', 'dextinity'));
+  const active = prototypes.find((p) => p.id === activeId) ?? prototypes[0];
+
+  useEffect(() => {
+    const onHash = () => setActiveId(fromHash());
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.dataset.brand = brand;
+    try {
+      localStorage.setItem('playground-theme', theme);
+      localStorage.setItem('playground-brand', brand);
+    } catch {
+      /* egal */
+    }
+  }, [theme, brand]);
+
+  const selectClass =
+    'mt-1 block w-full rounded-forms border border-border-field bg-background p-1';
 
   return (
     <div className="flex min-h-screen">
@@ -22,30 +50,34 @@ export function App() {
         <ul className="space-y-1">
           {prototypes.map((p) => (
             <li key={p.id}>
-              <button
-                type="button"
-                onClick={() => setActiveId(p.id)}
-                className={`w-full rounded-sm px-2 py-1 text-left typo-body-sm-normal ${
-                  p.id === activeId
+              <a
+                href={`#${p.id}`}
+                aria-current={p.id === active?.id ? 'page' : undefined}
+                className={`block w-full rounded-sm px-2 py-1 typo-body-sm-normal ${
+                  p.id === active?.id
                     ? 'bg-action-primary-subtle text-action-primary'
                     : 'hover:bg-background-muted'
                 }`}
               >
                 {p.title}
-              </button>
+              </a>
             </li>
           ))}
         </ul>
         <label className="mt-6 block typo-label-xs">
           Theme
-          <select
-            className="mt-1 block w-full rounded-forms border border-border-field bg-background p-1"
-            value={theme}
-            onChange={(e) => switchTheme(e.target.value)}
-          >
-            <option value="light">light</option>
-            <option value="dark">dark</option>
-            <option value="high-contrast">high-contrast</option>
+          <select className={selectClass} value={theme} onChange={(e) => setTheme(e.target.value)}>
+            {THEMES.map((t) => (
+              <option key={t}>{t}</option>
+            ))}
+          </select>
+        </label>
+        <label className="mt-3 block typo-label-xs">
+          Brand
+          <select className={selectClass} value={brand} onChange={(e) => setBrand(e.target.value)}>
+            {BRANDS.map((b) => (
+              <option key={b}>{b}</option>
+            ))}
           </select>
         </label>
       </nav>
