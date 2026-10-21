@@ -16,13 +16,17 @@ import '../src/storybook.css';
 import * as ButtonStories from '../../../packages/ui/src/components/button/Button.stories';
 import * as CheckboxStories from '../../../packages/ui/src/components/checkbox/Checkbox.stories';
 import * as ChipStories from '../../../packages/ui/src/components/chip/Chip.stories';
+import * as DialogStories from '../../../packages/ui/src/components/dialog/Dialog.stories';
 import * as FormStories from '../../../packages/ui/src/components/form/Form.stories';
 import * as IconButtonStories from '../../../packages/ui/src/components/icon-button/IconButton.stories';
 import * as InputStories from '../../../packages/ui/src/components/input/Input.stories';
+import * as MainNavigationStories from '../../../packages/ui/src/components/main-navigation/MainNavigation.stories';
 import * as RadioStories from '../../../packages/ui/src/components/radio/Radio.stories';
 import * as SearchStories from '../../../packages/ui/src/components/search/Search.stories';
 import * as SelectStories from '../../../packages/ui/src/components/select/Select.stories';
+import * as SnackbarStories from '../../../packages/ui/src/components/snackbar/Snackbar.stories';
 import * as SwitchStories from '../../../packages/ui/src/components/switch/Switch.stories';
+import * as TextStories from '../../../packages/ui/src/components/text/Text.stories';
 import * as TooltipStories from '../../../packages/ui/src/components/tooltip/Tooltip.stories';
 
 const button = composeStories(ButtonStories);
@@ -36,6 +40,10 @@ const switchStories = composeStories(SwitchStories);
 const select = composeStories(SelectStories);
 const search = composeStories(SearchStories);
 const form = composeStories(FormStories);
+const text = composeStories(TextStories);
+const mainNavigation = composeStories(MainNavigationStories);
+const dialog = composeStories(DialogStories);
+const snackbar = composeStories(SnackbarStories);
 
 /** Welche Stories fotografiert werden. `page: true` = ganze Seite (z.B. Tooltips im Portal). */
 const CASES: { name: string; Story: ComponentType; page?: boolean }[] = [
@@ -63,6 +71,10 @@ const CASES: { name: string; Story: ComponentType; page?: boolean }[] = [
   { name: 'select-states', Story: select.States },
   { name: 'search-states', Story: search.States },
   { name: 'form-inline', Story: form.Inline },
+  { name: 'text-variants', Story: text.Variants },
+  { name: 'main-navigation', Story: mainNavigation.Default },
+  { name: 'dialog-open', Story: dialog.Open, page: true },
+  { name: 'snackbar-colors', Story: snackbar.Colors },
 ];
 
 const MODES = [

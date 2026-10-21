@@ -1,6 +1,18 @@
 import { useMemo, useState, type ReactNode } from 'react';
-import { Button, Chip, IconButton, Search, Select, Tooltip } from '@dextinity/ui';
-import { DeleteIcon, EditIcon, PlusIcon, ResetIcon } from '@dextinity/icons';
+import {
+  Button,
+  Chip,
+  Dialog,
+  DialogClose,
+  IconButton,
+  Input,
+  Search,
+  Select,
+  Text,
+  Tooltip,
+  useSnackbar,
+} from '@dextinity/ui';
+import { DeleteIcon, EditIcon, LetterIcon, PlusIcon } from '@dextinity/icons';
 
 /**
  * Prototyp: Benutzerliste mit Suche, Rollen-Filter, Status-Chips und Zeilenaktionen.
@@ -98,7 +110,8 @@ export function UserList() {
   const [query, setQuery] = useState('');
   const [role, setRole] = useState<Role | ''>('');
   const [status, setStatus] = useState<Status | 'alle'>('alle');
-  const [removed, setRemoved] = useState<User | null>(null);
+  const [inviteOpen, setInviteOpen] = useState(false);
+  const snackbar = useSnackbar();
 
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -112,13 +125,18 @@ export function UserList() {
 
   const remove = (user: User) => {
     setUsers((list) => list.filter((u) => u.id !== user.id));
-    setRemoved(user);
+    snackbar.show({
+      message: `${user.name} wurde entfernt.`,
+      action: {
+        label: 'Rückgängig',
+        onClick: () => setUsers((list) => [...list, user].sort((a, b) => a.id - b.id)),
+      },
+    });
   };
 
-  const undo = () => {
-    if (!removed) return;
-    setUsers((list) => [...list, removed].sort((a, b) => a.id - b.id));
-    setRemoved(null);
+  const invite = (email: string) => {
+    setInviteOpen(false);
+    snackbar.show({ color: 'success', message: `Einladung an ${email} verschickt.` });
   };
 
   const resetFilters = () => {
@@ -136,7 +154,7 @@ export function UserList() {
             Verwalte, wer Zugriff auf deinen Workspace hat.
           </p>
         </div>
-        <Button startIcon={<PlusIcon />}>Benutzer einladen</Button>
+        <InviteDialog open={inviteOpen} onOpenChange={setInviteOpen} onInvite={invite} />
       </header>
 
       <div className="mb-4 flex flex-wrap items-end gap-4">
@@ -173,18 +191,6 @@ export function UserList() {
           </Chip>
         ))}
       </div>
-
-      {removed && (
-        <div
-          role="status"
-          className="mb-4 flex items-center justify-between gap-4 rounded-surface border border-feedback-info-border bg-feedback-info-subtle px-4 py-2 typo-body-sm-normal text-feedback-info-foreground"
-        >
-          <span>{removed.name} wurde entfernt.</span>
-          <Button size="small" variant="text" startIcon={<ResetIcon />} onClick={undo}>
-            Rückgängig
-          </Button>
-        </div>
-      )}
 
       {/* TODO(@dextinity/ui): Kandidat für die Library — Figma: Table (noch nicht im DDS) */}
       <div className="overflow-x-auto rounded-surface border border-border bg-background">
@@ -270,5 +276,55 @@ function Th({ children }: { children: ReactNode }) {
     <th scope="col" className="px-4 py-3 font-medium">
       {children}
     </th>
+  );
+}
+
+function InviteDialog({
+  open,
+  onOpenChange,
+  onInvite,
+}: {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+  onInvite: (email: string) => void;
+}) {
+  const [email, setEmail] = useState('');
+  const [role, setRole] = useState<string | null>('Leser:in');
+  const valid = /^\S+@\S+\.\S+$/.test(email);
+  return (
+    <Dialog
+      open={open}
+      onOpenChange={onOpenChange}
+      trigger={<Button startIcon={<PlusIcon />}>Benutzer einladen</Button>}
+      title="Benutzer einladen"
+      icon={<LetterIcon />}
+      secondaryActions={<DialogClose render={<Button variant="text">Abbrechen</Button>} />}
+      actions={
+        <Button disabled={!valid} onClick={() => onInvite(email)}>
+          Einladung senden
+        </Button>
+      }
+    >
+      <div className="flex flex-col gap-4">
+        <Text color="muted">Wir schicken eine E-Mail mit einem Link zum Workspace.</Text>
+        <Input
+          label="E-Mail"
+          type="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <Select
+          label="Rolle"
+          value={role}
+          onValueChange={setRole}
+          options={[
+            { value: 'Admin', label: 'Admin' },
+            { value: 'Redakteur:in', label: 'Redakteur:in' },
+            { value: 'Leser:in', label: 'Leser:in' },
+          ]}
+        />
+      </div>
+    </Dialog>
   );
 }
