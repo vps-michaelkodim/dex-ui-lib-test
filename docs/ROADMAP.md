@@ -9,7 +9,7 @@ Stand: 2026-10-21
 | 2     | Icons: Export aus „Iconography“ → SVGR → `@dextinity/icons`, Icon-Galerie                                                                                      | 🟡 18/300 |
 | 3     | Button + Icon Button                                                                                                                                           | ✅        |
 | 4     | Input (Field-Architektur: Label, Helper, Error)                                                                                                                | ✅        |
-| 5     | Chip + Tooltip                                                                                                                                                 |           |
+| 5     | Chip + Tooltip                                                                                                                                                 | ✅        |
 | 6     | Visual Regression (Screenshot-Baselines) + Figma-vs-Code-Diff fertig verdrahten                                                                                |           |
 | 7     | AI-Schicht: `llms.txt`, Component-Manifest / Storybook MCP, Claude-Skill „Dextinity UI“                                                                        |           |
 
