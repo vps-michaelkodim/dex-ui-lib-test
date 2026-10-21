@@ -9,7 +9,7 @@ const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /**
  * Jede Story ist ein Test: Render + play()-Interaktionen + axe-a11y-Check.
- * Läuft headless in Chromium (einmalig: pnpm exec playwright install chromium).
+ * Läuft headless in Chromium (einmalig: pnpm test:setup).
  */
 export default mergeConfig(
   viteConfig,
