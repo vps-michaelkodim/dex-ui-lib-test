@@ -200,6 +200,226 @@
       ]
     },
     {
+      "name": "Checkbox",
+      "import": "import { Checkbox } from '@dextinity/ui';",
+      "summary": "Figma: `03 Components / Form – Checkbox`.",
+      "figma": {
+        "node": "1185:18566",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1185-18566"
+      },
+      "source": "packages/ui/src/components/checkbox/Checkbox.tsx",
+      "storybook": {
+        "title": "Components/Checkbox",
+        "stories": [
+          "Playground",
+          "States",
+          "WithError",
+          "ReadOnly",
+          "Group",
+          "GroupWithError",
+          "SelectAllParent"
+        ]
+      },
+      "props": [
+        {
+          "name": "checked",
+          "type": "boolean",
+          "required": false,
+          "default": "undefined",
+          "description": "Whether the checkbox is currently ticked.\n\nTo render an uncontrolled checkbox, use the `defaultChecked` prop instead."
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Children — das Label. Ohne Label → `aria-label` setzen."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "defaultChecked",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Whether the checkbox is initially ticked.\n\nTo render a controlled checkbox, use the `checked` prop instead."
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Disabled."
+        },
+        {
+          "name": "helperText",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Hinweistext unter der Checkbox (nur ohne Gruppe)."
+        },
+        {
+          "name": "indeterminate",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Checked = Indeterminate (z.B. „alle auswählen“, teilweise ausgewählt)."
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "default": "undefined",
+          "description": "Identifies the field when a form is submitted."
+        },
+        {
+          "name": "nativeButton",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Whether the component renders a native `<button>` element when replacing it\nvia the `render` prop.\nSet to `true` if the rendered element is a native button."
+        },
+        {
+          "name": "onCheckedChange",
+          "type": "((checked: boolean, eventDetails: { reason: \"none\"; event: Event; cancel: () => void; allowPropagation: () => void; isCanceled: boolean; isPropagationAllowed: boolean; trigger: Element; }) => void)",
+          "required": false,
+          "description": "Event handler called when the checkbox is ticked or unticked."
+        },
+        {
+          "name": "parent",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Whether the checkbox controls a group of child checkboxes.\n\nMust be used in a [Checkbox Group](https://base-ui.com/react/components/checkbox-group)."
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: `_State` Read-only."
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Whether the user must tick the checkbox before submitting a form."
+        },
+        {
+          "name": "status",
+          "type": "enum",
+          "values": [
+            "error"
+          ],
+          "required": false,
+          "description": "Figma: `_State` Error. In einer `CheckboxGroup` über die Gruppe setzen."
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": false,
+          "description": "The checkbox's value. Identifies it within a [Checkbox Group](https://base-ui.com/react/components/checkbox-group), falling back to `name` when omitted.\nWhen submitting a form, a checked box submits `value`; with no `value`, it submits the native \"on\"."
+        }
+      ],
+      "examples": [
+        "<Checkbox defaultChecked>Newsletter abonnieren</Checkbox>\n<Checkbox status=\"error\" helperText=\"Bitte bestätigen.\" required>AGB akzeptieren</Checkbox>\n<CheckboxGroup label=\"Benachrichtigungen\" defaultValue={['mail']}>\n  <Checkbox value=\"mail\">E-Mail</Checkbox>\n  <Checkbox value=\"push\">Push</Checkbox>\n</CheckboxGroup>"
+      ]
+    },
+    {
+      "name": "CheckboxGroup",
+      "import": "import { CheckboxGroup } from '@dextinity/ui';",
+      "summary": "Mehrere Checkboxen mit gemeinsamer Überschrift (`<fieldset>` + `<legend>`) und Hinweis.",
+      "figma": null,
+      "source": "packages/ui/src/components/checkbox/Checkbox.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "allValues",
+          "type": "string[]",
+          "required": false,
+          "description": "Alle möglichen Werte — nötig für eine „Alle auswählen“-Checkbox mit `parent`."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "defaultValue",
+          "type": "string[]",
+          "required": false,
+          "description": "Anfangs ausgewählte Werte."
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "description": "Ganze Gruppe deaktiviert."
+        },
+        {
+          "name": "helperText",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Hinweistext unter der Gruppe. Bei `status=\"error\"` als Fehlertext."
+        },
+        {
+          "name": "label",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Überschrift der Gruppe (`<legend>`, Figma: Form Label)."
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "description": "Name fürs Formular."
+        },
+        {
+          "name": "onValueChange",
+          "type": "((value: string[]) => void)",
+          "required": false,
+          "description": "Wird bei jeder Änderung mit allen ausgewählten Werten aufgerufen."
+        },
+        {
+          "name": "orientation",
+          "type": "enum",
+          "values": [
+            "horizontal",
+            "vertical"
+          ],
+          "required": false,
+          "default": "'vertical'",
+          "description": "Anordnung der Optionen."
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "description": "Pflichtfeld: „*“ an der Überschrift."
+        },
+        {
+          "name": "status",
+          "type": "enum",
+          "values": [
+            "error"
+          ],
+          "required": false,
+          "description": "Validierungsstatus (Figma: `_State` Error)."
+        },
+        {
+          "name": "value",
+          "type": "string[]",
+          "required": false,
+          "description": "Ausgewählte Werte (kontrolliert)."
+        }
+      ],
+      "examples": []
+    },
+    {
       "name": "Chip",
       "import": "import { Chip } from '@dextinity/ui';",
       "summary": "Figma: `03 Components / Chip`.",
@@ -421,6 +641,16 @@
           "description": "Style applied to the element, or a function that\nreturns a style object based on the component's state."
         }
       ],
+      "examples": []
+    },
+    {
+      "name": "formLabelClasses",
+      "import": "import { formLabelClasses } from '@dextinity/ui';",
+      "summary": "Klassen des Form Labels — auch für `<legend>` von Checkbox-/Radio-Gruppen.",
+      "figma": null,
+      "source": "packages/ui/src/components/form-label/FormLabel.tsx",
+      "storybook": null,
+      "props": [],
       "examples": []
     },
     {
@@ -664,6 +894,160 @@
       ]
     },
     {
+      "name": "Radio",
+      "import": "import { Radio } from '@dextinity/ui';",
+      "summary": "Radio Button — Figma: `03 Components / Form – Radiobutton`. Immer in einer `RadioGroup`.",
+      "figma": {
+        "node": "1186:18562",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1186-18562"
+      },
+      "source": "packages/ui/src/components/radio/Radio.tsx",
+      "storybook": {
+        "title": "Components/Radio",
+        "stories": [
+          "Playground",
+          "Horizontal",
+          "WithError",
+          "States",
+          "DisabledOption"
+        ]
+      },
+      "props": [
+        {
+          "name": "value",
+          "type": "string",
+          "required": true,
+          "description": "Wert dieser Option in der `RadioGroup`."
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Children — das Label. Ohne Label → `aria-label` setzen."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Disabled (einzelne Option)."
+        },
+        {
+          "name": "nativeButton",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Whether the component renders a native `<button>` element when replacing it\nvia the `render` prop.\nSet to `true` if the rendered element is a native button."
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "description": "Whether the user must choose a value before submitting a form."
+        }
+      ],
+      "examples": [
+        "<RadioGroup label=\"Sichtbarkeit\" defaultValue=\"team\">\n  <Radio value=\"private\">Nur ich</Radio>\n  <Radio value=\"team\">Mein Team</Radio>\n  <Radio value=\"all\">Alle</Radio>\n</RadioGroup>"
+      ]
+    },
+    {
+      "name": "RadioGroup",
+      "import": "import { RadioGroup } from '@dextinity/ui';",
+      "summary": "Radio Buttons mit gemeinsamer Überschrift (`<fieldset>` + `<legend>`) und Hinweis.",
+      "figma": null,
+      "source": "packages/ui/src/components/radio/Radio.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "defaultValue",
+          "type": "string",
+          "required": false,
+          "description": "Anfangs ausgewählter Wert."
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "description": "Ganze Gruppe deaktiviert."
+        },
+        {
+          "name": "helperText",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Hinweistext unter der Gruppe. Bei `status=\"error\"` als Fehlertext."
+        },
+        {
+          "name": "label",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Überschrift der Gruppe (`<legend>`, Figma: Form Label)."
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "description": "Name fürs Formular."
+        },
+        {
+          "name": "onValueChange",
+          "type": "((value: string) => void)",
+          "required": false,
+          "description": "Wird bei Auswahl mit dem neuen Wert aufgerufen."
+        },
+        {
+          "name": "orientation",
+          "type": "enum",
+          "values": [
+            "horizontal",
+            "vertical"
+          ],
+          "required": false,
+          "default": "'vertical'",
+          "description": "Anordnung der Optionen."
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "required": false,
+          "description": "Figma: `_State` Read-only — Auswahl sichtbar, aber nicht änderbar."
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "description": "Pflichtfeld: „*“ an der Überschrift."
+        },
+        {
+          "name": "status",
+          "type": "enum",
+          "values": [
+            "error"
+          ],
+          "required": false,
+          "description": "Validierungsstatus (Figma: `_State` Error)."
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": false,
+          "description": "Ausgewählter Wert (kontrolliert)."
+        }
+      ],
+      "examples": []
+    },
+    {
       "name": "Spinner",
       "import": "import { Spinner } from '@dextinity/ui';",
       "summary": "Lade-Indikator, Farbe = Textfarbe. Figma: „Spinner“ (vorerst vereinfachte Umsetzung).\nRespektiert prefers-reduced-motion (langsamer statt aus).",
@@ -689,6 +1073,106 @@
         }
       ],
       "examples": []
+    },
+    {
+      "name": "Switch",
+      "import": "import { Switch } from '@dextinity/ui';",
+      "summary": "Figma: `03 Components / Form – Switch`. Für Einstellungen, die sofort wirken.\nIn Formularen mit „Speichern“ lieber `Checkbox`.",
+      "figma": {
+        "node": "1187:18556",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1187-18556"
+      },
+      "source": "packages/ui/src/components/switch/Switch.tsx",
+      "storybook": {
+        "title": "Components/Switch",
+        "stories": [
+          "Playground",
+          "States",
+          "WithHelperText",
+          "ReadOnly"
+        ]
+      },
+      "props": [
+        {
+          "name": "checked",
+          "type": "boolean",
+          "required": false,
+          "description": "Figma: On (kontrolliert)."
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Children — das Label. Ohne Label → `aria-label` setzen."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "defaultChecked",
+          "type": "boolean",
+          "required": false,
+          "description": "Figma: On (Startwert)."
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Disabled."
+        },
+        {
+          "name": "helperText",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Hinweistext unter dem Switch."
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "description": "Identifies the field when a form is submitted."
+        },
+        {
+          "name": "nativeButton",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Whether the component renders a native `<button>` element when replacing it\nvia the `render` prop.\nSet to `true` if the rendered element is a native button."
+        },
+        {
+          "name": "onCheckedChange",
+          "type": "((checked: boolean, eventDetails: { reason: \"none\"; event: Event; cancel: () => void; allowPropagation: () => void; isCanceled: boolean; isPropagationAllowed: boolean; trigger: Element; }) => void)",
+          "required": false,
+          "description": "Event handler called when the switch is activated or deactivated."
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: `_State` Read-only."
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Whether the user must activate the switch before submitting a form."
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": false,
+          "description": "The value submitted with the form when the switch is on.\nBy default, switch submits the \"on\" value, matching native checkbox behavior."
+        }
+      ],
+      "examples": [
+        "<Switch defaultChecked>Benachrichtigungen</Switch>\n<Switch checked={dark} onCheckedChange={setDark}>Dunkles Design</Switch>"
+      ]
     },
     {
       "name": "Tooltip",

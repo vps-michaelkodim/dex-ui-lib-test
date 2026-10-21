@@ -59,7 +59,7 @@ Für einen Prototyp nie `packages/ui`, Tokens oder Icons ändern.
   `border-border`, `typo-body-md-normal`, `rounded-control` …) — Hex-Werte und Tailwind-Default-Farben gibt es nicht.
 - a11y: `IconButton` mit `aria-label`, Felder mit `label`, Fehler über `status="error"` + `helperText`.
 - UI-Texte Deutsch, „du“.
-- Fehlt eine Komponente (z. B. Select, Checkbox, Dialog): im Prototyp mit Token-Klassen nachbauen, markieren mit
+- Fehlt eine Komponente (z. B. Select, Dialog, Tabelle): im Prototyp mit Token-Klassen nachbauen, markieren mit
   `// TODO(@dextinity/ui): Kandidat — Figma: <Komponente>` und dem User sagen, dass es ein Platzhalter ist.
 - Library-Komponenten nur auf ausdrücklichen Wunsch — Ablauf steht in `AGENTS.md`.
 

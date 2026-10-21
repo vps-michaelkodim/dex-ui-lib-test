@@ -14,6 +14,13 @@ export interface FormLabelProps extends Omit<Field.Label.Props, 'className' | 'c
   className?: string;
 }
 
+/** Klassen des Form Labels — auch für `<legend>` von Checkbox-/Radio-Gruppen. */
+export const formLabelClasses = [
+  'inline-flex items-center gap-(--dx-form-label-gap) font-sans',
+  '[font-size:var(--dx-form-label-font-size)] [line-height:var(--dx-form-label-font-line-height)] [font-weight:var(--dx-form-label-font-weight)]',
+  'text-(color:--dx-form-label-default-foreground) data-error:text-(color:--dx-form-label-error-foreground)',
+].join(' ');
+
 /**
  * FormLabel — Figma: `03 Components / Form / Form Label`.
  * Muss innerhalb eines Base-UI-`Field.Root` stehen (macht `Input` mit `label` automatisch).
@@ -30,12 +37,7 @@ export function FormLabel({
     <Field.Label
       {...props}
       data-error={error ? '' : undefined}
-      className={cn(
-        'inline-flex items-center gap-(--dx-form-label-gap) font-sans',
-        '[font-size:var(--dx-form-label-font-size)] [line-height:var(--dx-form-label-font-line-height)] [font-weight:var(--dx-form-label-font-weight)]',
-        'text-(color:--dx-form-label-default-foreground) data-error:text-(color:--dx-form-label-error-foreground)',
-        className,
-      )}
+      className={cn(formLabelClasses, className)}
     >
       {children}
       {mandatory ? (

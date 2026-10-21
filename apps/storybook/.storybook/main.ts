@@ -27,10 +27,21 @@ const config: StorybookConfig = {
       include: ['src/**/*.tsx', '../../packages/*/src/**/*.tsx'],
       shouldExtractLiteralValuesFromEnum: true,
       shouldRemoveUndefinedFromOptional: true,
-      propFilter: (prop) =>
+      propFilter: (prop, component) =>
         !prop.parent ||
         !/node_modules/.test(prop.parent.fileName) ||
-        ['render', 'nativeButton', 'focusableWhenDisabled'].includes(prop.name),
+        ['render', 'nativeButton', 'focusableWhenDisabled'].includes(prop.name) ||
+        // Checkbox, Radio, Switch: Wert/Zustand kommen aus Base UI
+        (['Checkbox', 'Radio', 'Switch'].includes(component.name) &&
+          [
+            'checked',
+            'defaultChecked',
+            'onCheckedChange',
+            'value',
+            'name',
+            'required',
+            'parent',
+          ].includes(prop.name)),
     },
   },
   core: {
