@@ -99,6 +99,7 @@ Komplette Liste: `packages/tokens/tokens.meta.json` oder Storybook → Foundatio
   Tokens je Theme × Brand, Icons). Generiert mit `pnpm manifest` — nie von Hand ändern.
 - Nach Änderungen an Komponenten, Props, Tokens oder Icons: `pnpm manifest` laufen lassen und mitcommitten.
 - Das Claude Design System ist ein **Abbild** des Repos und liest dieses Manifest. Komponenten entstehen nur im Repo.
+- Claude-Skill für das Team: `ai/skills/dextinity-ui/SKILL.md` (Installation: `ai/skills/README.md`).
 
 ## Befehle
 
