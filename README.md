@@ -149,6 +149,18 @@ Nie direkt auf `main`.
 
 Gilt für Variablen, Text-/Effect-Styles und Icons — alles, was der Export automatisch erfasst.
 
+> **Warum ein eigenes Figma-Plugin?** Das Plugin [„DDS Export“](./tools/figma-plugin/README.md) ist der offizielle
+> Sync-Weg fürs Team:
+>
+> - **Unabhängig:** Jede:r kann den Sync machen, ohne Claude, Figma-MCP oder Enterprise-Plan. Die Figma-REST-API
+>   liefert Variablen nur mit Enterprise, das Plugin läuft direkt in Figma.
+> - **Vollständig:** Ein Klick exportiert alle Variablen, Styles und die 286 Icons als SVG.
+> - **Nachvollziehbar:** Die `dds-export.json` ist ein fester Stand. `pnpm figma:import` zeigt genau, was sich seit
+>   dem letzten Sync geändert hat, und das landet als Diff im PR.
+>
+> Claude kann über den Figma-Zugang auch direkt in die Datei schauen und einzelne Tokens übernehmen — eine Abkürzung,
+> kein Ersatz. Danach muss der Stand trotzdem exakt gleich sein (Fingerprint-Check, siehe [TOKEN_SYNC](./docs/TOKEN_SYNC.md)).
+
 | #   | Wer        | Schritt                                                                                                                                                 |
 | --- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | Design     | In Figma ändern. Nur Variablen/Styles verwenden, keine lokalen Werte. Hilfskomponenten mit `_` beginnen (werden ignoriert).                             |
