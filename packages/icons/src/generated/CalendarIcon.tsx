@@ -1,0 +1,7 @@
+// GENERIERT von packages/icons/scripts/generate.mjs — nicht von Hand ändern.
+import { Icon, type IconProps } from '../Icon';
+
+/** Figma: `Calendar_Date_Event` · Date, Event */
+export function CalendarIcon(props: IconProps) {
+  return <Icon {...props}><path d="M4 1C4.27614 1 4.5 1.22386 4.5 1.5V3H11.5V1.5C11.5 1.22386 11.7239 1 12 1C12.2761 1 12.5 1.22386 12.5 1.5V3H14.5C14.7761 3 15 3.22386 15 3.5V14.5C15 14.7761 14.7761 15 14.5 15H1.5C1.22386 15 1 14.7761 1 14.5V3.5C1 3.22386 1.22386 3 1.5 3H3.5V1.5C3.5 1.22386 3.72386 1 4 1ZM2 14H14V6H2V14ZM12.5 9C12.7761 9 13 9.22386 13 9.5V12.5C13 12.7761 12.7761 13 12.5 13H9.5C9.22386 13 9 12.7761 9 12.5V9.5C9 9.22386 9.22386 9 9.5 9H12.5ZM10 12H12V10H10V12Z" fill="currentColor"/></Icon>;
+}

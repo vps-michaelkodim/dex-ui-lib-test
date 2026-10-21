@@ -1,0 +1,7 @@
+// GENERIERT von packages/icons/scripts/generate.mjs — nicht von Hand ändern.
+import { Icon, type IconProps } from '../Icon';
+
+/** Figma: `RemoveNoCircle_Minus` · Minus */
+export function RemoveNoCircleIcon(props: IconProps) {
+  return <Icon {...props}><path d="M13.5 7.5C13.7761 7.5 14 7.72386 14 8C14 8.27614 13.7761 8.5 13.5 8.5H2.5C2.22386 8.5 2 8.27614 2 8C2 7.72386 2.22386 7.5 2.5 7.5H13.5Z" fill="currentColor"/></Icon>;
+}

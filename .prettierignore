@@ -8,3 +8,5 @@ packages/tokens/dtcg
 packages/tokens/tokens.meta.json
 packages/tokens/figma/raw
 packages/tokens/css/safelist.css
+packages/icons/src/generated
+packages/icons/icons.meta.json

@@ -1,463 +1,463 @@
 {
-  "textStyles": [
+ "textStyles": [
+  {
+   "name": "Heading/Display/Normal",
+   "family": "Inter",
+   "style": "Regular",
+   "fontSize": 48,
+   "lineHeight": 56,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/display/size",
+    "fontStyle": "@Primitives::font/weight/regular-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/display/line-height"
+   }
+  },
+  {
+   "name": "Heading/Display/Bold",
+   "family": "Inter",
+   "style": "Bold",
+   "fontSize": 48,
+   "lineHeight": 56,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/display/size",
+    "fontStyle": "@Primitives::font/weight/bold-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/display/line-height"
+   }
+  },
+  {
+   "name": "Heading/H1/Normal",
+   "family": "Inter",
+   "style": "Regular",
+   "fontSize": 32,
+   "lineHeight": 40,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/h1/size",
+    "fontStyle": "@Primitives::font/weight/regular-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/h1/line-height"
+   }
+  },
+  {
+   "name": "Heading/H1/Bold",
+   "family": "Inter",
+   "style": "Bold",
+   "fontSize": 32,
+   "lineHeight": 40,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/h1/size",
+    "fontStyle": "@Primitives::font/weight/bold-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/h1/line-height"
+   }
+  },
+  {
+   "name": "Heading/H2/Normal",
+   "family": "Inter",
+   "style": "Regular",
+   "fontSize": 24,
+   "lineHeight": 32,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/h2/size",
+    "fontStyle": "@Primitives::font/weight/regular-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/h2/line-height"
+   }
+  },
+  {
+   "name": "Heading/H2/Bold",
+   "family": "Inter",
+   "style": "Bold",
+   "fontSize": 24,
+   "lineHeight": 32,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/h2/size",
+    "fontStyle": "@Primitives::font/weight/bold-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/h2/line-height"
+   }
+  },
+  {
+   "name": "Heading/H3/Normal",
+   "family": "Inter",
+   "style": "Regular",
+   "fontSize": 20,
+   "lineHeight": 28,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/h3/size",
+    "fontStyle": "@Primitives::font/weight/regular-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/h3/line-height"
+   }
+  },
+  {
+   "name": "Heading/H3/Bold",
+   "family": "Inter",
+   "style": "Bold",
+   "fontSize": 20,
+   "lineHeight": 28,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/h3/size",
+    "fontStyle": "@Primitives::font/weight/bold-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/h3/line-height"
+   }
+  },
+  {
+   "name": "Heading/H4/Normal",
+   "family": "Inter",
+   "style": "Regular",
+   "fontSize": 18,
+   "lineHeight": 24,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/h4/size",
+    "fontStyle": "@Primitives::font/weight/regular-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/h4/line-height"
+   }
+  },
+  {
+   "name": "Heading/H4/Bold",
+   "family": "Inter",
+   "style": "Bold",
+   "fontSize": 18,
+   "lineHeight": 24,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/h4/size",
+    "fontStyle": "@Primitives::font/weight/bold-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/h4/line-height"
+   }
+  },
+  {
+   "name": "Body/LG – Normal",
+   "family": "Inter",
+   "style": "Regular",
+   "fontSize": 18,
+   "lineHeight": 24,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/body-lg/size",
+    "fontStyle": "@Primitives::font/weight/regular-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/body-lg/line-height"
+   }
+  },
+  {
+   "name": "Body/LG – Bold",
+   "family": "Inter",
+   "style": "Semi Bold",
+   "fontSize": 18,
+   "lineHeight": 24,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/body-lg/size",
+    "fontStyle": "@Primitives::font/weight/semibold-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/body-lg/line-height"
+   }
+  },
+  {
+   "name": "Body/MD – Normal",
+   "family": "Inter",
+   "style": "Regular",
+   "fontSize": 16,
+   "lineHeight": 24,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/body-md/size",
+    "fontStyle": "@Primitives::font/weight/regular-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/body-md/line-height"
+   }
+  },
+  {
+   "name": "Body/MD – Bold",
+   "family": "Inter",
+   "style": "Semi Bold",
+   "fontSize": 16,
+   "lineHeight": 24,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/body-md/size",
+    "fontStyle": "@Primitives::font/weight/semibold-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/body-md/line-height"
+   }
+  },
+  {
+   "name": "Body/SM – Normal",
+   "family": "Inter",
+   "style": "Regular",
+   "fontSize": 14,
+   "lineHeight": 20,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/body-sm/size",
+    "fontStyle": "@Primitives::font/weight/regular-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/body-sm/line-height"
+   }
+  },
+  {
+   "name": "Body/SM – Bold",
+   "family": "Inter",
+   "style": "Semi Bold",
+   "fontSize": 14,
+   "lineHeight": 20,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/body-sm/size",
+    "fontStyle": "@Primitives::font/weight/semibold-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/body-sm/line-height"
+   }
+  },
+  {
+   "name": "Body/XS – Normal",
+   "family": "Inter",
+   "style": "Regular",
+   "fontSize": 12,
+   "lineHeight": 16,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/body-xs/size",
+    "fontStyle": "@Primitives::font/weight/regular-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/body-xs/line-height"
+   }
+  },
+  {
+   "name": "Body/XS – Bold",
+   "family": "Inter",
+   "style": "Semi Bold",
+   "fontSize": 12,
+   "lineHeight": 16,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/body-xs/size",
+    "fontStyle": "@Primitives::font/weight/semibold-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/body-xs/line-height"
+   }
+  },
+  {
+   "name": "Label/MD",
+   "family": "Inter",
+   "style": "Medium",
+   "fontSize": 16,
+   "lineHeight": 24,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/label-md/size",
+    "fontFamily": "@Primitives::font/family/inter",
+    "lineHeight": "@Responsive::typography/label-md/line-height",
+    "fontWeight": "@Primitives::font/weight/medium"
+   }
+  },
+  {
+   "name": "Label/SM",
+   "family": "Inter",
+   "style": "Medium",
+   "fontSize": 14,
+   "lineHeight": 20,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/label-sm/size",
+    "fontFamily": "@Primitives::font/family/inter",
+    "lineHeight": "@Responsive::typography/label-sm/line-height",
+    "fontWeight": "@Primitives::font/weight/medium"
+   }
+  },
+  {
+   "name": "Label/XS",
+   "family": "Inter",
+   "style": "Medium",
+   "fontSize": 12,
+   "lineHeight": 16,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/label-xs/size",
+    "fontFamily": "@Primitives::font/family/inter",
+    "lineHeight": "@Responsive::typography/label-xs/line-height",
+    "fontWeight": "@Primitives::font/weight/medium"
+   }
+  },
+  {
+   "name": "Component/Button Label",
+   "family": "Inter",
+   "style": "Medium",
+   "fontSize": 16,
+   "lineHeight": 24,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Responsive::typography/body-md/size",
+    "fontStyle": "@Primitives::font/weight/medium-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Responsive::typography/body-md/line-height"
+   }
+  },
+  {
+   "name": "Component/Main Navigation Label",
+   "family": "Inter",
+   "style": "Medium",
+   "fontSize": 16,
+   "lineHeight": 24,
+   "letterSpacing": -0.25,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/tight",
+    "fontSize": "@Components::main-navigation/item/font/size",
+    "fontStyle": "@Components::main-navigation/item/font/weight-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Components::main-navigation/item/font/line-height"
+   }
+  },
+  {
+   "name": "Component/Main Navigation Section Header",
+   "family": "Inter",
+   "style": "Bold",
+   "fontSize": 14,
+   "lineHeight": 20,
+   "letterSpacing": 0,
+   "bindings": {
+    "letterSpacing": "@Primitives::font/letter-spacing/normal",
+    "fontSize": "@Components::main-navigation/section-header/font/size",
+    "fontStyle": "@Components::main-navigation/section-header/font/weight-style",
+    "fontFamily": "@Brand::brand/font/family/sans",
+    "lineHeight": "@Components::main-navigation/section-header/font/line-height"
+   }
+  }
+ ],
+ "effectStyles": [
+  {
+   "name": "Shadow/XS",
+   "layers": [
     {
-      "name": "Heading/Display/Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 48,
-      "lineHeight": 56,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/display/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/display/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Heading/H1/Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 32,
-      "lineHeight": 40,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h1/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h1/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Heading/H2/Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 24,
-      "lineHeight": 32,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h2/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h2/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Heading/H3/Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 20,
-      "lineHeight": 28,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h3/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h3/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Heading/H4/Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 18,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h4/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h4/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Body/LG – Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 18,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-lg/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-lg/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Body/LG – Bold",
-      "family": "Inter",
-      "style": "Semi Bold",
-      "fontSize": 18,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-lg/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-lg/line-height",
-        "fontStyle": "@Primitives::font/weight/semibold-style"
-      }
-    },
-    {
-      "name": "Body/MD – Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 16,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-md/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-md/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Body/MD – Bold",
-      "family": "Inter",
-      "style": "Semi Bold",
-      "fontSize": 16,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-md/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-md/line-height",
-        "fontStyle": "@Primitives::font/weight/semibold-style"
-      }
-    },
-    {
-      "name": "Body/SM – Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 14,
-      "lineHeight": 20,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-sm/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-sm/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Body/SM – Bold",
-      "family": "Inter",
-      "style": "Semi Bold",
-      "fontSize": 14,
-      "lineHeight": 20,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-sm/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-sm/line-height",
-        "fontStyle": "@Primitives::font/weight/semibold-style"
-      }
-    },
-    {
-      "name": "Body/XS – Normal",
-      "family": "Inter",
-      "style": "Regular",
-      "fontSize": 12,
-      "lineHeight": 16,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-xs/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-xs/line-height",
-        "fontStyle": "@Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "name": "Body/XS – Bold",
-      "family": "Inter",
-      "style": "Semi Bold",
-      "fontSize": 12,
-      "lineHeight": 16,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-xs/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-xs/line-height",
-        "fontStyle": "@Primitives::font/weight/semibold-style"
-      }
-    },
-    {
-      "name": "Heading/Display/Bold",
-      "family": "Inter",
-      "style": "Bold",
-      "fontSize": 48,
-      "lineHeight": 56,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/display/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/display/line-height",
-        "fontStyle": "@Primitives::font/weight/bold-style"
-      }
-    },
-    {
-      "name": "Heading/H1/Bold",
-      "family": "Inter",
-      "style": "Bold",
-      "fontSize": 32,
-      "lineHeight": 40,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h1/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h1/line-height",
-        "fontStyle": "@Primitives::font/weight/bold-style"
-      }
-    },
-    {
-      "name": "Heading/H2/Bold",
-      "family": "Inter",
-      "style": "Bold",
-      "fontSize": 24,
-      "lineHeight": 32,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h2/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h2/line-height",
-        "fontStyle": "@Primitives::font/weight/bold-style"
-      }
-    },
-    {
-      "name": "Heading/H3/Bold",
-      "family": "Inter",
-      "style": "Bold",
-      "fontSize": 20,
-      "lineHeight": 28,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h3/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h3/line-height",
-        "fontStyle": "@Primitives::font/weight/bold-style"
-      }
-    },
-    {
-      "name": "Heading/H4/Bold",
-      "family": "Inter",
-      "style": "Bold",
-      "fontSize": 18,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/h4/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/h4/line-height",
-        "fontStyle": "@Primitives::font/weight/bold-style"
-      }
-    },
-    {
-      "name": "Label/MD",
-      "family": "Inter",
-      "style": "Medium",
-      "fontSize": 16,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/label-md/size",
-        "fontFamily": "@Primitives::font/family/inter",
-        "lineHeight": "@Responsive::typography/label-md/line-height",
-        "fontWeight": "@Primitives::font/weight/medium"
-      }
-    },
-    {
-      "name": "Label/SM",
-      "family": "Inter",
-      "style": "Medium",
-      "fontSize": 14,
-      "lineHeight": 20,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/label-sm/size",
-        "fontFamily": "@Primitives::font/family/inter",
-        "lineHeight": "@Responsive::typography/label-sm/line-height",
-        "fontWeight": "@Primitives::font/weight/medium"
-      }
-    },
-    {
-      "name": "Label/XS",
-      "family": "Inter",
-      "style": "Medium",
-      "fontSize": 12,
-      "lineHeight": 16,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/label-xs/size",
-        "fontFamily": "@Primitives::font/family/inter",
-        "lineHeight": "@Responsive::typography/label-xs/line-height",
-        "fontWeight": "@Primitives::font/weight/medium"
-      }
-    },
-    {
-      "name": "Component/Button Label",
-      "family": "Inter",
-      "style": "Medium",
-      "fontSize": 16,
-      "lineHeight": 24,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Responsive::typography/body-md/size",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Responsive::typography/body-md/line-height",
-        "fontStyle": "@Primitives::font/weight/medium-style"
-      }
-    },
-    {
-      "name": "Component/Main Navigation Label",
-      "family": "Inter",
-      "style": "Medium",
-      "fontSize": 16,
-      "lineHeight": 24,
-      "letterSpacing": -0.25,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/tight",
-        "fontSize": "@Components::main-navigation/item/font/size",
-        "fontStyle": "@Components::main-navigation/item/font/weight-style",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Components::main-navigation/item/font/line-height"
-      }
-    },
-    {
-      "name": "Component/Main Navigation Section Header",
-      "family": "Inter",
-      "style": "Bold",
-      "fontSize": 14,
-      "lineHeight": 20,
-      "letterSpacing": 0,
-      "bindings": {
-        "letterSpacing": "@Primitives::font/letter-spacing/normal",
-        "fontSize": "@Components::main-navigation/section-header/font/size",
-        "fontStyle": "@Components::main-navigation/section-header/font/weight-style",
-        "fontFamily": "@Brand::brand/font/family/sans",
-        "lineHeight": "@Components::main-navigation/section-header/font/line-height"
-      }
+     "type": "DROP_SHADOW",
+     "color": "#00000012",
+     "x": 0,
+     "y": 1,
+     "blur": 2,
+     "spread": 0
     }
-  ],
-  "effectStyles": [
+   ]
+  },
+  {
+   "name": "Shadow/SM",
+   "layers": [
     {
-      "name": "Shadow/XS",
-      "layers": [
-        {
-          "type": "DROP_SHADOW",
-          "color": "#00000012",
-          "x": 0,
-          "y": 1,
-          "blur": 2,
-          "spread": 0
-        }
-      ]
+     "type": "DROP_SHADOW",
+     "color": "#00000012",
+     "x": 0,
+     "y": 1,
+     "blur": 3,
+     "spread": 0
     },
     {
-      "name": "Shadow/SM",
-      "layers": [
-        {
-          "type": "DROP_SHADOW",
-          "color": "#00000012",
-          "x": 0,
-          "y": 1,
-          "blur": 3,
-          "spread": 0
-        },
-        {
-          "type": "DROP_SHADOW",
-          "color": "#00000012",
-          "x": 0,
-          "y": 1,
-          "blur": 2,
-          "spread": -1
-        }
-      ]
-    },
-    {
-      "name": "Shadow/MD",
-      "layers": [
-        {
-          "type": "DROP_SHADOW",
-          "color": "#00000012",
-          "x": 0,
-          "y": 4,
-          "blur": 6,
-          "spread": -1
-        },
-        {
-          "type": "DROP_SHADOW",
-          "color": "#00000012",
-          "x": 0,
-          "y": 2,
-          "blur": 4,
-          "spread": -2
-        }
-      ]
-    },
-    {
-      "name": "Shadow/LG",
-      "layers": [
-        {
-          "type": "DROP_SHADOW",
-          "color": "#00000012",
-          "x": 0,
-          "y": 10,
-          "blur": 15,
-          "spread": -3
-        },
-        {
-          "type": "DROP_SHADOW",
-          "color": "#00000012",
-          "x": 0,
-          "y": 4,
-          "blur": 6,
-          "spread": -4
-        }
-      ]
-    },
-    {
-      "name": "Shadow/XL",
-      "layers": [
-        {
-          "type": "DROP_SHADOW",
-          "color": "#00000012",
-          "x": 0,
-          "y": 20,
-          "blur": 25,
-          "spread": -5
-        },
-        {
-          "type": "DROP_SHADOW",
-          "color": "#00000012",
-          "x": 0,
-          "y": 8,
-          "blur": 10,
-          "spread": -6
-        }
-      ]
+     "type": "DROP_SHADOW",
+     "color": "#00000012",
+     "x": 0,
+     "y": 1,
+     "blur": 2,
+     "spread": -1
     }
-  ]
+   ]
+  },
+  {
+   "name": "Shadow/MD",
+   "layers": [
+    {
+     "type": "DROP_SHADOW",
+     "color": "#00000012",
+     "x": 0,
+     "y": 4,
+     "blur": 6,
+     "spread": -1
+    },
+    {
+     "type": "DROP_SHADOW",
+     "color": "#00000012",
+     "x": 0,
+     "y": 2,
+     "blur": 4,
+     "spread": -2
+    }
+   ]
+  },
+  {
+   "name": "Shadow/LG",
+   "layers": [
+    {
+     "type": "DROP_SHADOW",
+     "color": "#00000012",
+     "x": 0,
+     "y": 10,
+     "blur": 15,
+     "spread": -3
+    },
+    {
+     "type": "DROP_SHADOW",
+     "color": "#00000012",
+     "x": 0,
+     "y": 4,
+     "blur": 6,
+     "spread": -4
+    }
+   ]
+  },
+  {
+   "name": "Shadow/XL",
+   "layers": [
+    {
+     "type": "DROP_SHADOW",
+     "color": "#00000012",
+     "x": 0,
+     "y": 20,
+     "blur": 25,
+     "spread": -5
+    },
+    {
+     "type": "DROP_SHADOW",
+     "color": "#00000012",
+     "x": 0,
+     "y": 8,
+     "blur": 10,
+     "spread": -6
+    }
+   ]
+  }
+ ]
 }

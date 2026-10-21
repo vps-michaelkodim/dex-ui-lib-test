@@ -3,14 +3,5 @@ import { Icon, type IconProps } from '../Icon';
 
 /** Figma: `ChevronDown_ArrowDown` · Arrow, Down */
 export function ChevronDownIcon(props: IconProps) {
-  return (
-    <Icon {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M3.16272 5.16875C2.96987 5.36874 2.94844 5.67919 3.09843 5.90373L3.16272 5.98353L8 11L12.8373 5.98353C13.0542 5.75853 13.0542 5.39374 12.8373 5.16875C12.6444 4.96875 12.3451 4.94653 12.1285 5.10208L12.0516 5.16875L8 9.37057L3.94839 5.16875C3.75554 4.96875 3.45618 4.94653 3.23966 5.10208L3.16272 5.16875Z"
-        fill="currentColor"
-      />
-    </Icon>
-  );
+  return <Icon {...props}><path d="M3.16272 5.16875C2.96987 5.36874 2.94844 5.67919 3.09843 5.90373L3.16272 5.98353L8 11L12.8373 5.98353C13.0542 5.75853 13.0542 5.39374 12.8373 5.16875C12.6444 4.96875 12.3451 4.94653 12.1285 5.10208L12.0516 5.16875L8 9.37057L3.94839 5.16875C3.75554 4.96875 3.45618 4.94653 3.23966 5.10208L3.16272 5.16875Z" fillRule="evenodd" clipRule="evenodd" fill="currentColor"/></Icon>;
 }

@@ -4,10 +4,15 @@
  */
 
 @source inline("typo-heading-display-normal");
+@source inline("typo-heading-display-bold");
 @source inline("typo-heading-h1-normal");
+@source inline("typo-heading-h1-bold");
 @source inline("typo-heading-h2-normal");
+@source inline("typo-heading-h2-bold");
 @source inline("typo-heading-h3-normal");
+@source inline("typo-heading-h3-bold");
 @source inline("typo-heading-h4-normal");
+@source inline("typo-heading-h4-bold");
 @source inline("typo-body-lg-normal");
 @source inline("typo-body-lg-bold");
 @source inline("typo-body-md-normal");
@@ -16,11 +21,6 @@
 @source inline("typo-body-sm-bold");
 @source inline("typo-body-xs-normal");
 @source inline("typo-body-xs-bold");
-@source inline("typo-heading-display-bold");
-@source inline("typo-heading-h1-bold");
-@source inline("typo-heading-h2-bold");
-@source inline("typo-heading-h3-bold");
-@source inline("typo-heading-h4-bold");
 @source inline("typo-label-md");
 @source inline("typo-label-sm");
 @source inline("typo-label-xs");

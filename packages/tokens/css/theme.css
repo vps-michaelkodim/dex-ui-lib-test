@@ -192,12 +192,30 @@
   letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
 }
 
+/* Heading/Display/Bold */
+@utility typo-heading-display-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-display-size);
+  line-height: var(--dx-typography-display-line-height);
+  font-weight: 700;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
 /* Heading/H1/Normal */
 @utility typo-heading-h1-normal {
   font-family: var(--font-sans);
   font-size: var(--dx-typography-h1-size);
   line-height: var(--dx-typography-h1-line-height);
   font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/H1/Bold */
+@utility typo-heading-h1-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h1-size);
+  line-height: var(--dx-typography-h1-line-height);
+  font-weight: 700;
   letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
 }
 
@@ -210,6 +228,15 @@
   letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
 }
 
+/* Heading/H2/Bold */
+@utility typo-heading-h2-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h2-size);
+  line-height: var(--dx-typography-h2-line-height);
+  font-weight: 700;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
 /* Heading/H3/Normal */
 @utility typo-heading-h3-normal {
   font-family: var(--font-sans);
@@ -219,12 +246,30 @@
   letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
 }
 
+/* Heading/H3/Bold */
+@utility typo-heading-h3-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h3-size);
+  line-height: var(--dx-typography-h3-line-height);
+  font-weight: 700;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
 /* Heading/H4/Normal */
 @utility typo-heading-h4-normal {
   font-family: var(--font-sans);
   font-size: var(--dx-typography-h4-size);
   line-height: var(--dx-typography-h4-line-height);
   font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/H4/Bold */
+@utility typo-heading-h4-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h4-size);
+  line-height: var(--dx-typography-h4-line-height);
+  font-weight: 700;
   letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
 }
 
@@ -297,51 +342,6 @@
   font-size: var(--dx-typography-body-xs-size);
   line-height: var(--dx-typography-body-xs-line-height);
   font-weight: 600;
-  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
-}
-
-/* Heading/Display/Bold */
-@utility typo-heading-display-bold {
-  font-family: var(--font-sans);
-  font-size: var(--dx-typography-display-size);
-  line-height: var(--dx-typography-display-line-height);
-  font-weight: 700;
-  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
-}
-
-/* Heading/H1/Bold */
-@utility typo-heading-h1-bold {
-  font-family: var(--font-sans);
-  font-size: var(--dx-typography-h1-size);
-  line-height: var(--dx-typography-h1-line-height);
-  font-weight: 700;
-  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
-}
-
-/* Heading/H2/Bold */
-@utility typo-heading-h2-bold {
-  font-family: var(--font-sans);
-  font-size: var(--dx-typography-h2-size);
-  line-height: var(--dx-typography-h2-line-height);
-  font-weight: 700;
-  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
-}
-
-/* Heading/H3/Bold */
-@utility typo-heading-h3-bold {
-  font-family: var(--font-sans);
-  font-size: var(--dx-typography-h3-size);
-  line-height: var(--dx-typography-h3-line-height);
-  font-weight: 700;
-  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
-}
-
-/* Heading/H4/Bold */
-@utility typo-heading-h4-bold {
-  font-family: var(--font-sans);
-  font-size: var(--dx-typography-h4-size);
-  line-height: var(--dx-typography-h4-line-height);
-  font-weight: 700;
   letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
 }
 
