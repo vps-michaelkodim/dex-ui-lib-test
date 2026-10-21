@@ -10,7 +10,7 @@ Für Devs, UX-Designer und AI-Tools (Vibe Coding, Gen-AI-Prototypen).
 ```bash
 corepack enable                          # einmalig, aktiviert pnpm
 pnpm install
-pnpm exec playwright install chromium    # einmalig, für Tests
+pnpm test:setup                          # einmalig: Chromium für Tests
 
 pnpm storybook      # http://localhost:6006
 pnpm playground     # http://localhost:5173 — Prototypen bauen

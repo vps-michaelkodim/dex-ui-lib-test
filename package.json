@@ -1,7 +1,7 @@
 {
   "name": "dextinity-ui",
   "private": true,
-  "description": "Dextinity UI — React-Komponenten, Tokens und Icons aus dem DDS-Figma-File",
+  "description": "Dextinity UI \u2014 React-Komponenten, Tokens und Icons aus dem DDS-Figma-File",
   "type": "module",
   "packageManager": "pnpm@10.34.7",
   "engines": {
@@ -12,6 +12,7 @@
     "build-storybook": "pnpm --filter @dextinity/storybook build",
     "playground": "pnpm --filter @dextinity/playground dev",
     "test": "pnpm --filter @dextinity/storybook test",
+    "test:setup": "pnpm --filter @dextinity/storybook exec playwright install chromium",
     "typecheck": "pnpm -r typecheck",
     "lint": "eslint .",
     "format": "prettier --write .",
