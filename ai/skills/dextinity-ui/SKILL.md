@@ -17,6 +17,18 @@ keine eigenen Buttons, keine fremden UI-Kits, keine freien Farben.
 `AGENTS.md` (Regeln, Ablauf) und `ai/manifest.json` (Komponenten, Props, Tokens, Text-Styles, Icons).
 Props, Varianten, Klassen und Icons nie raten — im Manifest nachschlagen. Bei Widerspruch gilt das Manifest.
 
+Wo was im Manifest steht:
+
+| Gesucht                                      | Pfad in `ai/manifest.json`                                                                    |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Komponente, Props, erlaubte Werte, Beispiele | `components[]` → `name`, `props[]`, `examples`                                                |
+| Icon                                         | `icons.items[]` → `name` (= Import), `keywords` (Suchbegriffe, englisch), `figma`             |
+| Farb-Klassen                                 | `tailwind.colors[]` → `class` (z. B. `feedback-danger-subtle` → `bg-…`, `text-…`, `border-…`) |
+| Text-Styles                                  | `textStyles[]` → `class` (z. B. `typo-body-sm-bold`)                                          |
+
+Icon suchen: in `icons.items` über `name` **und** `keywords` filtern (z. B. „user“ → `AccountIcon`).
+Gibt es keins, ein passendes vorhandenes nehmen und dem User sagen — nie eins erfinden.
+
 ## 2. Prototyp bauen (Standardfall)
 
 1. Neue Datei `apps/playground/src/prototypes/<Name>.tsx` — registriert sich selbst, sonst nichts anlegen.
