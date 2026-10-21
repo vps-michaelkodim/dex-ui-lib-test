@@ -1,6 +1,6 @@
 {
   "name": "@dextinity/tokens",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "Design Tokens aus Figma (DTCG) \u2014 CSS-Variablen + Tailwind-Theme",
   "type": "module",

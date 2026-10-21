@@ -6,15 +6,15 @@
   "figma": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1",
   "packages": {
     "@dextinity/ui": {
-      "version": "0.0.0",
+      "version": "0.1.0",
       "path": "packages/ui"
     },
     "@dextinity/tokens": {
-      "version": "0.0.0",
+      "version": "0.1.0",
       "path": "packages/tokens"
     },
     "@dextinity/icons": {
-      "version": "0.0.0",
+      "version": "0.1.0",
       "path": "packages/icons"
     }
   },

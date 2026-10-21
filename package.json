@@ -1,7 +1,7 @@
 {
   "name": "dextinity-ui",
   "private": true,
-  "description": "Dextinity UI \u2014 React-Komponenten, Tokens und Icons aus dem DDS-Figma-File",
+  "description": "Dextinity UI — React-Komponenten, Tokens und Icons aus dem DDS-Figma-File",
   "type": "module",
   "packageManager": "pnpm@10.34.7",
   "engines": {
@@ -23,9 +23,13 @@
     "typecheck": "pnpm -r typecheck",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "changeset": "changeset",
+    "changeset:status": "changeset status --verbose",
+    "release:version": "changeset version && pnpm manifest"
   },
   "devDependencies": {
+    "@changesets/cli": "^3.0.3",
     "@eslint/js": "^10.0.1",
     "eslint": "^10.13.0",
     "eslint-plugin-react-hooks": "^7.1.1",
