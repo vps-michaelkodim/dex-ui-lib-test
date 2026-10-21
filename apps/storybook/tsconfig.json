@@ -8,6 +8,7 @@
     ".storybook",
     "vite.config.ts",
     "vitest.config.ts",
-    "../../packages/*/src/**/*.stories.tsx"
+    "../../packages/*/src/**/*.ts",
+    "../../packages/*/src/**/*.tsx"
   ]
 }

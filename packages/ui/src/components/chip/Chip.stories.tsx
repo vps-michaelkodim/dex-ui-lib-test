@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { useState } from 'react';
 import { expect, fn, userEvent, within } from 'storybook/test';
 import { Chip } from './Chip';
+import { figmaDesign } from '../../lib/figma';
 
 const VARIANTS = ['contained', 'outlined'] as const;
 const COLORS = ['primary', 'secondary', 'info', 'warning', 'error', 'success'] as const;
@@ -19,6 +20,7 @@ const meta = {
     endIcon: { control: false },
   },
   parameters: {
+    design: figmaDesign('857:8838'),
     docs: {
       description: {
         component:

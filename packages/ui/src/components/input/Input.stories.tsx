@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { expect, fn, userEvent, within } from 'storybook/test';
 import { IconButton } from '../icon-button';
 import { Input } from './Input';
+import { figmaDesign } from '../../lib/figma';
 
 const meta = {
   title: 'Components/Input',
@@ -20,6 +21,7 @@ const meta = {
     endAdornment: { control: 'text' },
   },
   parameters: {
+    design: figmaDesign('776:5452'),
     layout: 'padded',
     docs: {
       description: {

@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { meta, tokensOf } from './meta';
 import { Code, Page, Section } from './ui';
+import { figmaDesign } from '../figma';
 
 function Bar({ cssVar }: { cssVar: string | null }) {
   return (
@@ -96,7 +97,7 @@ function SpacingRadius() {
 
 const storyMeta = {
   title: 'Foundations/Spacing, Radius & Elevation',
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: 'fullscreen', design: figmaDesign('128:27') },
   tags: ['!autodocs'],
 } satisfies Meta;
 export default storyMeta;

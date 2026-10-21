@@ -3,6 +3,7 @@ import { iconsMeta } from '@dextinity/icons';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { useState, type ComponentType } from 'react';
 import { Code, Page, Section } from './ui';
+import { figmaDesign } from '../figma';
 
 const registry = Icons as unknown as Record<string, ComponentType<Icons.IconProps>>;
 
@@ -66,7 +67,7 @@ function IconGallery() {
 
 const storyMeta = {
   title: 'Foundations/Icons',
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: 'fullscreen', design: figmaDesign('128:28') },
   tags: ['!autodocs'],
 } satisfies Meta;
 export default storyMeta;
