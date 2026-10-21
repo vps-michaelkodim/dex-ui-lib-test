@@ -161,20 +161,20 @@ Gilt für Variablen, Text-/Effect-Styles und Icons — alles, was der Export aut
 > Claude kann über den Figma-Zugang auch direkt in die Datei schauen und einzelne Tokens übernehmen — eine Abkürzung,
 > kein Ersatz. Danach muss der Stand trotzdem exakt gleich sein (Fingerprint-Check, siehe [TOKEN_SYNC](./docs/TOKEN_SYNC.md)).
 
-| #   | Wer        | Schritt                                                                                                                     |
-| --- | ---------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Design     | In Figma ändern. Nur Variablen/Styles verwenden, keine lokalen Werte. Hilfskomponenten mit `_` beginnen (werden ignoriert). |
-| 2   | Design     | Plugin **Plugins → Development → DDS Export** → `dds-export.json` speichern und an Dev geben (oder selbst weiter).          |
-| 3   | Dev        | Branch: `git switch -c chore/figma-sync-<datum> origin/main`                                                                |
-| 4   | Dev        | Vorschau: `pnpm figma:import dds-export.json --dry-run` — listet neu / geändert / gelöscht je Collection und Icons.         |
-| 5   | Dev        | Unerwartetes (z. B. gelöschtes Icon, neue Collection) mit Design klären, bevor übernommen wird.                             |
-| 6   | Dev        | Übernehmen: `pnpm figma:import dds-export.json` — schreibt Roh-Dateien + SVGs und baut Tokens/Icons neu.                    |
-| 7   | Dev        | Prüfen: `pnpm typecheck && pnpm lint && pnpm test`                                                                          |
-| 8   | Dev        | Optik: `pnpm test:visual`. Gewollte Änderung → `pnpm test:visual:update`, Bilder mitcommitten (auf dem Mac).                |
-| 9   | Dev        | `pnpm contrast` → neue Befunde in `docs/reports/contrast.md` in den Gap-Report übernehmen.                                  |
-| 10  | Dev        | `pnpm manifest` (AI-Dateien aktualisieren) und alles committen.                                                             |
-| 11  | Dev+Design | PR: Design prüft Diff und Vorher/Nachher-Bilder, dann Merge.                                                                |
-| 12  | —          | Danach [Workflow 3](#3-code--claude-design-system), damit das Claude Design System nachzieht.                               |
+| #   | Wer        | Schritt                                                                                                                                                 |
+| --- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Design     | In Figma ändern. Nur Variablen/Styles verwenden, keine lokalen Werte. Hilfskomponenten mit `_` beginnen (werden ignoriert).                             |
+| 2   | Design     | Plugin **Plugins → Development → DDS Export** → `dds-export.json` speichern und an Dev geben (oder selbst weiter).                                      |
+| 3   | Dev        | Branch: `git switch -c chore/figma-sync-<datum> origin/main`                                                                                            |
+| 4   | Dev        | Vorschau: `pnpm figma:import dds-export.json --dry-run` — listet neu / geändert / gelöscht je Collection und Icons.                                     |
+| 5   | Dev        | Unerwartetes (z. B. gelöschtes Icon, neue Collection) mit Design klären, bevor übernommen wird.                                                         |
+| 6   | Dev        | Übernehmen: `pnpm figma:import dds-export.json` — schreibt Roh-Dateien + SVGs, baut Tokens/Icons neu und legt ein Changeset „Sync mit Figma DDS vX“ an. |
+| 7   | Dev        | Prüfen: `pnpm typecheck && pnpm lint && pnpm test`                                                                                                      |
+| 8   | Dev        | Optik: `pnpm test:visual`. Gewollte Änderung → `pnpm test:visual:update`, Bilder mitcommitten (auf dem Mac).                                            |
+| 9   | Dev        | `pnpm contrast` → neue Befunde in `docs/reports/contrast.md` in den Gap-Report übernehmen.                                                              |
+| 10  | Dev        | `pnpm manifest` (AI-Dateien aktualisieren) und alles committen.                                                                                         |
+| 11  | Dev+Design | PR: Design prüft Diff und Vorher/Nachher-Bilder, dann Merge.                                                                                            |
+| 12  | —          | Danach [Workflow 3](#3-code--claude-design-system), damit das Claude Design System nachzieht.                                                           |
 
 Details und Sonderfälle (neue Collection, neuer Mode): [docs/TOKEN_SYNC.md](./docs/TOKEN_SYNC.md).
 
