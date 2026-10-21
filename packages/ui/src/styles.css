@@ -1,6 +1,6 @@
 /*
  * Einstiegspunkt für Apps:  @import '@dextinity/ui/styles.css';
- * Reihenfolge: Tailwind → Tokens (CSS-Variablen) → Tailwind-Theme-Mapping.
+ * Optional Webfonts:        @import '@dextinity/ui/fonts.css';
  */
 @import 'tailwindcss';
 @import '@dextinity/tokens/css';
@@ -8,8 +8,21 @@
 /* Tailwind soll die Komponenten-Sources scannen, egal wo die App liegt. */
 @source './';
 
-/* Theme-Varianten: dark: / hc: reagieren auf data-theme am <html>. */
+/* Theme-Varianten: dark: / hc: reagieren auf data-theme (am <html> oder einem Container). */
 @custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
 @custom-variant hc (&:where([data-theme='high-contrast'], [data-theme='high-contrast'] *));
 
-/* Phase 1: hier kommt das generierte @theme-Mapping auf die Token-Variablen. */
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Einheitlicher Fokus-Ring aus den Semantic-Tokens (focus-ring/*, color/border/focus). */
+  :focus-visible {
+    outline: var(--dx-focus-ring-width) solid var(--color-border-focus);
+    outline-offset: var(--dx-focus-ring-offset);
+  }
+}

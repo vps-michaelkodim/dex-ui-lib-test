@@ -1,0 +1,1516 @@
+{
+  "brand": {
+    "radius": {
+      "control": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.full}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Brand",
+            "mode": "Crimson",
+            "name": "brand/radius/control",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "control-small": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.full}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Brand",
+            "mode": "Crimson",
+            "name": "brand/radius/control-small",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "forms": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.xs}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Brand",
+            "mode": "Crimson",
+            "name": "brand/radius/forms",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "surface": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.sm}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Brand",
+            "mode": "Crimson",
+            "name": "brand/radius/surface",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "card": {
+        "$type": "dimension",
+        "$value": "{brand.radius.surface}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Brand",
+            "mode": "Crimson",
+            "name": "brand/radius/card",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "modal": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.md}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Brand",
+            "mode": "Crimson",
+            "name": "brand/radius/modal",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "drawer": {
+        "$type": "dimension",
+        "$value": "{brand.radius.surface}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Brand",
+            "mode": "Crimson",
+            "name": "brand/radius/drawer",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "table": {
+        "$type": "dimension",
+        "$value": "{brand.radius.surface}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Brand",
+            "mode": "Crimson",
+            "name": "brand/radius/table",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "tooltip": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.xs}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Brand",
+            "mode": "Crimson",
+            "name": "brand/radius/tooltip",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "pill": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.full}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Brand",
+            "mode": "Crimson",
+            "name": "brand/radius/pill",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      }
+    },
+    "font": {
+      "family": {
+        "sans": {
+          "$type": "fontFamily",
+          "$value": "{primitive.font.family.source-sans-pro}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/font/family/sans",
+              "scopes": [
+                "FONT_FAMILY"
+              ]
+            }
+          }
+        },
+        "mono": {
+          "$type": "fontFamily",
+          "$value": "{primitive.font.family.mono}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/font/family/mono",
+              "scopes": [
+                "FONT_FAMILY"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "color": {
+      "primary": {
+        "50": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.50}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.100}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.200}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.300}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.400}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.500}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.600}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.700}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.800}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.900}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.950}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/primary/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "secondary": {
+        "50": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.50}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.100}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.200}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.300}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.400}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.500}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.600}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.700}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.800}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.900}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.950}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/secondary/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "neutral": {
+        "50": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.50}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.100}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.200}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.300}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.400}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.500}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.600}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.700}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.800}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.900}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "{primitive.color.grey.950}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "neutral-tinted": {
+        "50": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.50}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.100}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.200}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.300}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.400}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.500}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.600}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.700}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.800}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.900}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "{primitive.color.midnight.950}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/neutral-tinted/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "success": {
+        "50": {
+          "$type": "color",
+          "$value": "{primitive.color.green.50}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{primitive.color.green.100}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{primitive.color.green.200}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{primitive.color.green.300}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{primitive.color.green.400}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{primitive.color.green.500}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "{primitive.color.green.600}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "{primitive.color.green.700}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "{primitive.color.green.800}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "{primitive.color.green.900}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "{primitive.color.green.950}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/success/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "warning": {
+        "50": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.50}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.100}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.200}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.300}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.400}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.500}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.600}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.700}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.800}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.900}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "{primitive.color.amber.950}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/warning/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "danger": {
+        "50": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.50}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.100}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.200}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.300}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.400}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.500}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.600}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.700}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.800}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.900}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "{primitive.color.coral.950}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/danger/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "info": {
+        "50": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.50}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.100}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.200}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.300}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.400}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.500}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.600}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.700}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.800}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.900}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "{primitive.color.sky.950}",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Brand",
+              "mode": "Crimson",
+              "name": "brand/color/info/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

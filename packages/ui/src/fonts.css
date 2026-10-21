@@ -1,0 +1,11 @@
+/*
+ * Webfonts für die Brand-Schriften (optional — Apps können Fonts auch selbst laden).
+ * Dextinity: Inter · Crimson: Source Sans Pro (hat kein Medium/500 → Gap-Report).
+ */
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/source-sans-pro/400.css';
+@import '@fontsource/source-sans-pro/600.css';
+@import '@fontsource/source-sans-pro/700.css';

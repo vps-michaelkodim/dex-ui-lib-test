@@ -3,7 +3,7 @@ import { useEffect, type ReactNode } from 'react';
 import '../src/storybook.css';
 
 const THEMES = ['light', 'dark', 'high-contrast'] as const;
-const BRANDS = ['default'] as const;
+const BRANDS = ['dextinity', 'crimson'] as const;
 
 /** Setzt data-theme / data-brand am <html>, genau wie in einer echten App. */
 function ThemeRoot({
@@ -26,7 +26,7 @@ function ThemeRoot({
 const withTheme: Decorator = (Story, context) => (
   <ThemeRoot
     theme={(context.globals.theme as string) ?? 'light'}
-    brand={(context.globals.brand as string) ?? 'default'}
+    brand={(context.globals.brand as string) ?? 'dextinity'}
   >
     <Story />
   </ThemeRoot>
@@ -56,7 +56,7 @@ const preview: Preview = {
   },
   initialGlobals: {
     theme: 'light',
-    brand: 'default',
+    brand: 'dextinity',
   },
   parameters: {
     layout: 'centered',

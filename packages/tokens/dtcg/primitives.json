@@ -1,0 +1,4592 @@
+{
+  "primitive": {
+    "breakpoint": {
+      "desktop": {
+        "$type": "dimension",
+        "$value": "1024px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "breakpoint/desktop",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "color": {
+      "indigo": {
+        "50": {
+          "$type": "color",
+          "$value": "#ecebfe",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#d9d8fc",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#b3b0fa",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#8d89f7",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#6662f5",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#403af2",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#332fc2",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#272391",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#1a1761",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#0d0c30",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#070618",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/indigo/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "teal": {
+        "50": {
+          "$type": "color",
+          "$value": "#e6fbf9",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#c2f4f0",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#87e8e3",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#4dddd5",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#0fd1c7",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#0ba89f",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#098a82",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#076964",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#054944",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#032e2b",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#021a18",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/teal/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "grey": {
+        "50": {
+          "$type": "color",
+          "$value": "#f5f6f7",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#e5e6e8",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#caccd1",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#a1a4ab",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#81868f",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#626873",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#4e535c",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#3b3e45",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#27292e",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#141517",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#08090a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/grey/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "midnight": {
+        "50": {
+          "$type": "color",
+          "$value": "#f1f2f5",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#dedfe5",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#c3c4cf",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#9c9dad",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#6f708a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#5c5d78",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#525366",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#36374d",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#1c1d2e",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#11122a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#070812",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/midnight/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "red": {
+        "50": {
+          "$type": "color",
+          "$value": "#fcebe8",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f7cec8",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#efa39a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#e07868",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#c6523f",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#bc3520",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#9d2c1b",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#832617",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#5f1b11",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#3d110a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#220905",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/red/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "amber": {
+        "50": {
+          "$type": "color",
+          "$value": "#fef6e5",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#fbe6b8",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#f8d584",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#f5c15f",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#f3b346",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#d89a36",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#a87d32",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#825f26",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#5d421a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#3b2810",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#221708",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/amber/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "sky": {
+        "50": {
+          "$type": "color",
+          "$value": "#eaf6fd",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#c8e6f8",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#a2d3f4",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#73c1f2",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#5cb4f0",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#4a98ce",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#417da6",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#33627f",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#234659",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#152a36",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#0a1620",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/sky/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "green": {
+        "50": {
+          "$type": "color",
+          "$value": "#eef7ea",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#cde8c2",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#a6d79a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#77d06a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#66c54f",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#55a943",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#488938",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#386b2c",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#274b1f",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#172e12",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#0c1a09",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/green/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "white": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "color/white",
+            "scopes": [
+              "ALL_FILLS",
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
+      "black": {
+        "$type": "color",
+        "$value": "#000000",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "color/black",
+            "scopes": [
+              "ALL_FILLS",
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
+      "transparent": {
+        "$type": "color",
+        "$value": "#00000000",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "color/transparent",
+            "scopes": [
+              "ALL_FILLS",
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
+      "violet": {
+        "50": {
+          "$type": "color",
+          "$value": "#f9faff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#eff1ff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#d8daff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#bdbbff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#9e95ff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#8171ff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#6650e5",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#5039bf",
+          "$description": "User-anchor — Base",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#3b2794",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#281a68",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#1a1346",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/violet/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "coral": {
+        "50": {
+          "$type": "color",
+          "$value": "#f9eae5",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#fcdbd1",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#ffbfa8",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#ff9c7b",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#ee7248",
+          "$description": "User-anchor — Base",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#d14c17",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#ae2900",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#8c1000",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#680000",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#450000",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#2b0100",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/coral/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "ocean": {
+        "50": {
+          "$type": "color",
+          "$value": "#e6f4fc",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#c0e1f3",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#90d0f1",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#55bdee",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#0ba6de",
+          "$description": "Base: Skyline Azure",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#0087cb",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#0067a8",
+          "$description": "Base: Pacific Steel Blue",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#004a90",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#053071",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#0b1b4d",
+          "$description": "Base: Deep Ocean Navy",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#050f2b",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ocean/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "cyan": {
+        "50": {
+          "$type": "color",
+          "$value": "#e6f5f5",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#c5e9e9",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#9adedf",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#66d4d5",
+          "$description": "Base: Crystal Surf",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#12c7e4",
+          "$description": "Base: Tropical Wave",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#00afcc",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#0091a8",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#006f82",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#004e5b",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#032f37",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#011519",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/cyan/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "mint": {
+        "50": {
+          "$type": "color",
+          "$value": "#dafaf3",
+          "$description": "Base: Icy Breeze (geglättet)",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#a8f5e4",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#93e7d4",
+          "$description": "Base: Seafoam Mist (geglättet)",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#54e2c4",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#00d6b0",
+          "$description": "Base: Mint Lagoon (geglättet)",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#00be99",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#009d7e",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#007961",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#005443",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#003228",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#001610",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/mint/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "purple": {
+        "50": {
+          "$type": "color",
+          "$value": "#f2eeff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#dbcfff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#c5aeff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#b18cff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#9e66ff",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#8940fc",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#6e33cc",
+          "$description": "Base: Electric Amethyst",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#4f1fa0",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#341173",
+          "$description": "Base: Midnight Violet",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#211148",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#120a29",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/purple/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "fuchsia": {
+        "50": {
+          "$type": "color",
+          "$value": "#ffeaf8",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f0b9db",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#e382c2",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#db4cb2",
+          "$description": "Base: Candy Magenta",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#af4bce",
+          "$description": "Base: Vivid Orchid",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#9c35bb",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#812d9a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#652479",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#4a1c58",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#301439",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#1a091f",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/fuchsia/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "rose": {
+        "50": {
+          "$type": "color",
+          "$value": "#ffebe5",
+          "$description": "Base: Blush Whisper (geglättet)",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#ffcac6",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#ffa6ad",
+          "$description": "Base: Peach Bloom",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#fd7b98",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#eb548c",
+          "$description": "Base: Neon Rose",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#d03775",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#a92d5f",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#842349",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#601b35",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#3d1322",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#200810",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/rose/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "ruby": {
+        "50": {
+          "$type": "color",
+          "$value": "#ffebed",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f9c4c9",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#f398a1",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#eb687c",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#d73e5e",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#be1e49",
+          "$description": "Ruby-Anker — Bright Scarlet um −14° Hue gedreht (Abgrenzung zu red)",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#a80139",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#93002e",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#770023",
+          "$description": "Ruby-Anker — Crimson Ember um −14° Hue gedreht",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#4c0a18",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#260308",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/ruby/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "orange": {
+        "50": {
+          "$type": "color",
+          "$value": "#fcefe2",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f8dabb",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#f9c287",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#f7a645",
+          "$description": "Base: Amber Horizon",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#ef7a32",
+          "$description": "Base: Solar Ember",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#de542c",
+          "$description": "Base: Spiced Clay",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#b54524",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#8d351c",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#652615",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#40190e",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#200a05",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/orange/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "yellow": {
+        "50": {
+          "$type": "color",
+          "$value": "#f4f3df",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#eae5b5",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#e2d879",
+          "$description": "Base: Lemon Silk (geglättet)",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#dcc827",
+          "$description": "Base: Citrine Light (geglättet)",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#deb126",
+          "$description": "Base: Golden Glow (geglättet)",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#c69900",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#a37f00",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#7e6100",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#584401",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#352804",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#171001",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/yellow/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "emerald": {
+        "50": {
+          "$type": "color",
+          "$value": "#e7f6eb",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#c6ebd1",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#9de3b5",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#6bdb97",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#3dcc7e",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#12b76a",
+          "$description": "Anker-Vorschlag — kühles sattes Grün",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#1c995a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#177746",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#125431",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#0c321d",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#03160a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/emerald/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "lime": {
+        "50": {
+          "$type": "color",
+          "$value": "#ecf6e3",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#d6edbf",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#bee790",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#a3de54",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#8ccf03",
+          "$description": "Anker-Vorschlag — Gelbgrün (geglättet)",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#75b700",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#619700",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#4a7400",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#335100",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#1e3101",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#0a1500",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/lime/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "forest": {
+        "50": {
+          "$type": "color",
+          "$value": "#ebf5ec",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/50",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#cae0cb",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/100",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#a4cda7",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/200",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#7ebb84",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/300",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#5ea667",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/400",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#468f50",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/500",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#3a7542",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/600",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#2e5c34",
+          "$description": "Anker-Vorschlag — dunkel-erdiges Grün",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/700",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#224326",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/800",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#162a19",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/900",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#09150a",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "color/forest/950",
+              "scopes": [
+                "ALL_FILLS",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "unit": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/0",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "1": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/1",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/2",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/3",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/4",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/5",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/6",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/8",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "9": {
+        "$type": "dimension",
+        "$value": "36px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/9",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/10",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/12",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "15": {
+        "$type": "dimension",
+        "$value": "60px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/15",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "64px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/16",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": "80px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/20",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "96px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/24",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": "128px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/32",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": "160px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/40",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": "192px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/48",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "0,5": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/0,5",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "1,5": {
+        "$type": "dimension",
+        "$value": "6px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "unit/1,5",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      }
+    },
+    "radius": {
+      "none": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "radius/none",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "xs": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "radius/xs",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "radius/sm",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "radius/md",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "radius/lg",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "radius/xl",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "radius/2xl",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
+      "full": {
+        "$type": "dimension",
+        "$value": "9999px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitives",
+            "mode": "Default",
+            "name": "radius/full",
+            "scopes": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      }
+    },
+    "font": {
+      "family": {
+        "inter": {
+          "$type": "fontFamily",
+          "$value": "Inter",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/family/inter",
+              "scopes": [
+                "FONT_FAMILY"
+              ]
+            }
+          }
+        },
+        "source-sans-pro": {
+          "$type": "fontFamily",
+          "$value": "Source Sans Pro",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/family/source-sans-pro",
+              "scopes": [
+                "FONT_FAMILY"
+              ]
+            }
+          }
+        },
+        "mono": {
+          "$type": "fontFamily",
+          "$value": "ui-monospace",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/family/mono",
+              "scopes": [
+                "FONT_FAMILY"
+              ]
+            }
+          }
+        }
+      },
+      "weight": {
+        "regular": {
+          "$type": "fontWeight",
+          "$value": 400,
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/weight/regular",
+              "scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          }
+        },
+        "regular-style": {
+          "$type": "string",
+          "$value": "Regular",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/weight/regular-style",
+              "scopes": [
+                "FONT_STYLE"
+              ]
+            }
+          }
+        },
+        "medium": {
+          "$type": "fontWeight",
+          "$value": 500,
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/weight/medium",
+              "scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          }
+        },
+        "medium-style": {
+          "$type": "string",
+          "$value": "Medium",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/weight/medium-style",
+              "scopes": [
+                "FONT_STYLE"
+              ]
+            }
+          }
+        },
+        "semibold": {
+          "$type": "fontWeight",
+          "$value": 600,
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/weight/semibold",
+              "scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          }
+        },
+        "semibold-style": {
+          "$type": "string",
+          "$value": "Semi Bold",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/weight/semibold-style",
+              "scopes": [
+                "FONT_STYLE"
+              ]
+            }
+          }
+        },
+        "bold": {
+          "$type": "fontWeight",
+          "$value": 700,
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/weight/bold",
+              "scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          }
+        },
+        "bold-style": {
+          "$type": "string",
+          "$value": "Bold",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/weight/bold-style",
+              "scopes": [
+                "FONT_STYLE"
+              ]
+            }
+          }
+        }
+      },
+      "letter-spacing": {
+        "tighter": {
+          "$type": "dimension",
+          "$value": "-0.5px",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/letter-spacing/tighter",
+              "scopes": [
+                "LETTER_SPACING"
+              ]
+            }
+          }
+        },
+        "tight": {
+          "$type": "dimension",
+          "$value": "-0.25px",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/letter-spacing/tight",
+              "scopes": [
+                "LETTER_SPACING"
+              ]
+            }
+          }
+        },
+        "normal": {
+          "$type": "dimension",
+          "$value": "0px",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/letter-spacing/normal",
+              "scopes": [
+                "LETTER_SPACING"
+              ]
+            }
+          }
+        },
+        "wide": {
+          "$type": "dimension",
+          "$value": "0.25px",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "font/letter-spacing/wide",
+              "scopes": [
+                "LETTER_SPACING"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "motion": {
+      "easing": {
+        "linear": {
+          "$type": "cubicBezier",
+          "$value": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/easing/linear",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "standard": {
+          "$type": "cubicBezier",
+          "$value": [
+            0.4,
+            0,
+            0.2,
+            1
+          ],
+          "$description": "default in/out",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/easing/standard",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "decelerate": {
+          "$type": "cubicBezier",
+          "$value": [
+            0,
+            0,
+            0.2,
+            1
+          ],
+          "$description": "for enter",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/easing/decelerate",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "accelerate": {
+          "$type": "cubicBezier",
+          "$value": [
+            0.4,
+            0,
+            1,
+            1
+          ],
+          "$description": "for exit/micro",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/easing/accelerate",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "emphasized": {
+          "$type": "cubicBezier",
+          "$value": [
+            0.2,
+            0,
+            0,
+            1
+          ],
+          "$description": "attention",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/easing/emphasized",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      },
+      "duration": {
+        "xs": {
+          "$type": "duration",
+          "$value": "100ms",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/duration/xs",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "sm": {
+          "$type": "duration",
+          "$value": "160ms",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/duration/sm",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "md": {
+          "$type": "duration",
+          "$value": "200ms",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/duration/md",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "lg": {
+          "$type": "duration",
+          "$value": "240ms",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/duration/lg",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "xl": {
+          "$type": "duration",
+          "$value": "300ms",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/duration/xl",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "2xl": {
+          "$type": "duration",
+          "$value": "400ms",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitives",
+              "mode": "Default",
+              "name": "motion/duration/2xl",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

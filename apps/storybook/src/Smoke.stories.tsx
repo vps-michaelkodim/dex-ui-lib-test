@@ -11,7 +11,7 @@ function Counter() {
   return (
     <button
       type="button"
-      className="rounded-md bg-black px-4 py-2 text-white dark:bg-white dark:text-black"
+      className="rounded-control bg-action-primary px-4 py-2 typo-component-button-label text-action-primary-foreground hover:bg-action-primary-hover"
       onClick={() => setCount((c) => c + 1)}
     >
       Clicked {count}×

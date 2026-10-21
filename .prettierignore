@@ -1,3 +1,10 @@
 pnpm-lock.yaml
 storybook-static
 dist
+# generiert / Roh-Export aus Figma
+packages/tokens/css/tokens.css
+packages/tokens/css/theme.css
+packages/tokens/dtcg
+packages/tokens/tokens.meta.json
+packages/tokens/figma/raw
+packages/tokens/css/safelist.css

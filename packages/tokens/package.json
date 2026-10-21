@@ -2,12 +2,22 @@
   "name": "@dextinity/tokens",
   "version": "0.0.0",
   "private": true,
-  "description": "Design Tokens aus Figma (DTCG) — CSS-Variablen + Tailwind-Theme",
+  "description": "Design Tokens aus Figma (DTCG) \u2014 CSS-Variablen + Tailwind-Theme",
   "type": "module",
   "exports": {
-    "./css": "./src/css/index.css"
+    "./css": "./css/index.css",
+    "./tokens.css": "./css/tokens.css",
+    "./theme.css": "./css/theme.css",
+    "./meta": "./tokens.meta.json",
+    "./dtcg/*": "./dtcg/*",
+    "./safelist.css": "./css/safelist.css"
   },
   "scripts": {
-    "typecheck": "echo 'tokens: nothing to typecheck yet'"
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs && git diff --exit-code -- css dtcg tokens.meta.json",
+    "typecheck": "echo 'tokens: nothing to typecheck'"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.7.0"
   }
 }

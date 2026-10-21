@@ -1,4 +1,7 @@
+@import '@dextinity/ui/fonts.css';
 @import '@dextinity/ui/styles.css';
+/* Nur für die Doku: dynamisch gebaute Klassen (Foundations-Stories). */
+@import '@dextinity/tokens/safelist.css';
 
-/* Storybook-eigene Stories (Introduction, Smoke) ebenfalls scannen. */
+/* Storybook-eigene Stories ebenfalls scannen. */
 @source './';

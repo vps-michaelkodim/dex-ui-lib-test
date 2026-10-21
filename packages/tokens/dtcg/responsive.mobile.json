@@ -1,0 +1,458 @@
+{
+  "typography": {
+    "display": {
+      "size": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/display/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/display/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "h1": {
+      "size": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/h1/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/h1/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "h2": {
+      "size": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/h2/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "28px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/h2/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "h3": {
+      "size": {
+        "$type": "dimension",
+        "$value": "18px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/h3/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/h3/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "h4": {
+      "size": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/h4/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "22px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/h4/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "body-lg": {
+      "size": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/body-lg/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "22px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/body-lg/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "body-md": {
+      "size": {
+        "$type": "dimension",
+        "$value": "15px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/body-md/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "22px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/body-md/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "body-sm": {
+      "size": {
+        "$type": "dimension",
+        "$value": "13px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/body-sm/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/body-sm/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "body-xs": {
+      "size": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/body-xs/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "14px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/body-xs/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "label-md": {
+      "size": {
+        "$type": "dimension",
+        "$value": "15px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/label-md/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "22px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/label-md/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "label-sm": {
+      "size": {
+        "$type": "dimension",
+        "$value": "13px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/label-sm/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/label-sm/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    },
+    "label-xs": {
+      "size": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/label-xs/size",
+            "scopes": [
+              "FONT_SIZE"
+            ]
+          }
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "14px",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "typography/label-xs/line-height",
+            "scopes": [
+              "LINE_HEIGHT"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "space": {
+    "layout": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.2}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "space/layout/xs",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.3}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "space/layout/sm",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.4}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "space/layout/md",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.6}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "space/layout/lg",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.8}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "space/layout/xl",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "{primitive.unit.12}",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Responsive",
+            "mode": "Mobile",
+            "name": "space/layout/2xl",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

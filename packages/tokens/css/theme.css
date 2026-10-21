@@ -1,0 +1,400 @@
+/**
+ * GENERIERT von packages/tokens/scripts/build.mjs — nicht von Hand ändern.
+ * Quelle: Figma "DDS – Dextinity Admin UI" (figma/raw/*.json)
+ */
+
+/* Tailwind v4 Theme — mappt Tailwind-Utilities auf die Token-Variablen aus tokens.css.
+ * "inline": Utilities referenzieren direkt var(--dx-…), damit Theme/Brand-Wechsel per
+ * data-Attribut auch in verschachtelten Containern greifen. */
+@theme inline {
+  /* Default-Palette, Radien, Schatten, Typo von Tailwind entfernen → nur DS-Tokens. */
+  --color-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --text-*: initial;
+  --ease-*: initial;
+
+  /* Farben (Semantic) */
+  --color-background: var(--dx-color-background-default); /* color/background/default */
+  --color-background-subtle: var(--dx-color-background-subtle); /* color/background/subtle */
+  --color-background-muted: var(--dx-color-background-muted); /* color/background/muted */
+  --color-background-inverse: var(--dx-color-background-inverse); /* color/background/inverse */
+  --color-background-overlay: var(--dx-color-background-overlay); /* color/background/overlay */
+  --color-foreground: var(--dx-color-foreground-default); /* color/foreground/default */
+  --color-foreground-muted: var(--dx-color-foreground-muted); /* color/foreground/muted */
+  --color-foreground-subtle: var(--dx-color-foreground-subtle); /* color/foreground/subtle */
+  --color-foreground-inverse: var(--dx-color-foreground-inverse); /* color/foreground/inverse */
+  --color-foreground-on-accent: var(--dx-color-foreground-on-accent); /* color/foreground/on-accent */
+  --color-border: var(--dx-color-border-default); /* color/border/default */
+  --color-border-subtle: var(--dx-color-border-subtle); /* color/border/subtle */
+  --color-border-muted: var(--dx-color-border-muted); /* color/border/muted */
+  --color-border-strong: var(--dx-color-border-strong); /* color/border/strong */
+  --color-border-focus: var(--dx-color-border-focus); /* color/border/focus */
+  --color-action-primary: var(--dx-color-action-primary-default); /* color/action/primary/default */
+  --color-action-primary-hover: var(--dx-color-action-primary-hover); /* color/action/primary/hover */
+  --color-action-primary-active: var(--dx-color-action-primary-active); /* color/action/primary/active */
+  --color-action-primary-disabled: var(--dx-color-action-primary-disabled); /* color/action/primary/disabled */
+  --color-action-primary-subtle: var(--dx-color-action-primary-subtle); /* color/action/primary/subtle */
+  --color-action-primary-foreground: var(--dx-color-action-primary-foreground); /* color/action/primary/foreground */
+  --color-action-secondary: var(--dx-color-action-secondary-default); /* color/action/secondary/default */
+  --color-action-secondary-hover: var(--dx-color-action-secondary-hover); /* color/action/secondary/hover */
+  --color-action-secondary-active: var(--dx-color-action-secondary-active); /* color/action/secondary/active */
+  --color-action-secondary-disabled: var(--dx-color-action-secondary-disabled); /* color/action/secondary/disabled */
+  --color-action-secondary-foreground: var(--dx-color-action-secondary-foreground); /* color/action/secondary/foreground */
+  --color-action-error: var(--dx-color-action-error-default); /* color/action/error/default */
+  --color-action-error-hover: var(--dx-color-action-error-hover); /* color/action/error/hover */
+  --color-action-error-active: var(--dx-color-action-error-active); /* color/action/error/active */
+  --color-action-error-disabled: var(--dx-color-action-error-disabled); /* color/action/error/disabled */
+  --color-action-error-subtle: var(--dx-color-action-error-subtle); /* color/action/error/subtle */
+  --color-action-error-foreground: var(--dx-color-action-error-foreground); /* color/action/error/foreground */
+  --color-feedback-success: var(--dx-color-feedback-success-default); /* color/feedback/success/default */
+  --color-feedback-success-subtle: var(--dx-color-feedback-success-subtle); /* color/feedback/success/subtle */
+  --color-feedback-success-foreground: var(--dx-color-feedback-success-foreground); /* color/feedback/success/foreground */
+  --color-feedback-success-border: var(--dx-color-feedback-success-border); /* color/feedback/success/border */
+  --color-feedback-warning: var(--dx-color-feedback-warning-default); /* color/feedback/warning/default */
+  --color-feedback-warning-subtle: var(--dx-color-feedback-warning-subtle); /* color/feedback/warning/subtle */
+  --color-feedback-warning-foreground: var(--dx-color-feedback-warning-foreground); /* color/feedback/warning/foreground */
+  --color-feedback-warning-border: var(--dx-color-feedback-warning-border); /* color/feedback/warning/border */
+  --color-feedback-danger: var(--dx-color-feedback-danger-default); /* color/feedback/danger/default */
+  --color-feedback-danger-subtle: var(--dx-color-feedback-danger-subtle); /* color/feedback/danger/subtle */
+  --color-feedback-danger-foreground: var(--dx-color-feedback-danger-foreground); /* color/feedback/danger/foreground */
+  --color-feedback-danger-border: var(--dx-color-feedback-danger-border); /* color/feedback/danger/border */
+  --color-feedback-info: var(--dx-color-feedback-info-default); /* color/feedback/info/default */
+  --color-feedback-info-subtle: var(--dx-color-feedback-info-subtle); /* color/feedback/info/subtle */
+  --color-feedback-info-foreground: var(--dx-color-feedback-info-foreground); /* color/feedback/info/foreground */
+  --color-feedback-info-border: var(--dx-color-feedback-info-border); /* color/feedback/info/border */
+  --color-action-secondary-subtle: var(--dx-color-action-secondary-subtle); /* color/action/secondary/subtle */
+  --color-background-tinted: var(--dx-color-background-tinted-default); /* color/background-tinted/default */
+  --color-background-tinted-subtle: var(--dx-color-background-tinted-subtle); /* color/background-tinted/subtle */
+  --color-background-tinted-muted: var(--dx-color-background-tinted-muted); /* color/background-tinted/muted */
+  --color-background-tinted-inverse: var(--dx-color-background-tinted-inverse); /* color/background-tinted/inverse */
+  --color-background-tinted-overlay: var(--dx-color-background-tinted-overlay); /* color/background-tinted/overlay */
+  --color-foreground-tinted: var(--dx-color-foreground-tinted-default); /* color/foreground-tinted/default */
+  --color-foreground-tinted-muted: var(--dx-color-foreground-tinted-muted); /* color/foreground-tinted/muted */
+  --color-foreground-tinted-subtle: var(--dx-color-foreground-tinted-subtle); /* color/foreground-tinted/subtle */
+  --color-foreground-tinted-inverse: var(--dx-color-foreground-tinted-inverse); /* color/foreground-tinted/inverse */
+  --color-foreground-tinted-on-accent: var(--dx-color-foreground-tinted-on-accent); /* color/foreground-tinted/on-accent */
+  --color-border-tinted: var(--dx-color-border-tinted-default); /* color/border-tinted/default */
+  --color-border-tinted-subtle: var(--dx-color-border-tinted-subtle); /* color/border-tinted/subtle */
+  --color-border-tinted-muted: var(--dx-color-border-tinted-muted); /* color/border-tinted/muted */
+  --color-border-tinted-strong: var(--dx-color-border-tinted-strong); /* color/border-tinted/strong */
+  --color-border-tinted-focus: var(--dx-color-border-tinted-focus); /* color/border-tinted/focus */
+  --color-action-success: var(--dx-color-action-success-default); /* color/action/success/default */
+  --color-action-success-hover: var(--dx-color-action-success-hover); /* color/action/success/hover */
+  --color-action-success-active: var(--dx-color-action-success-active); /* color/action/success/active */
+  --color-action-success-disabled: var(--dx-color-action-success-disabled); /* color/action/success/disabled */
+  --color-action-success-subtle: var(--dx-color-action-success-subtle); /* color/action/success/subtle */
+  --color-action-success-foreground: var(--dx-color-action-success-foreground); /* color/action/success/foreground */
+  --color-feedback-success-strong: var(--dx-color-feedback-success-strong); /* color/feedback/success/strong */
+  --color-feedback-success-strong-hover: var(--dx-color-feedback-success-strong-hover); /* color/feedback/success/strong-hover */
+  --color-feedback-success-on-strong: var(--dx-color-feedback-success-on-strong); /* color/feedback/success/on-strong */
+  --color-feedback-warning-strong: var(--dx-color-feedback-warning-strong); /* color/feedback/warning/strong */
+  --color-feedback-warning-strong-hover: var(--dx-color-feedback-warning-strong-hover); /* color/feedback/warning/strong-hover */
+  --color-feedback-warning-on-strong: var(--dx-color-feedback-warning-on-strong); /* color/feedback/warning/on-strong */
+  --color-feedback-danger-strong: var(--dx-color-feedback-danger-strong); /* color/feedback/danger/strong */
+  --color-feedback-danger-strong-hover: var(--dx-color-feedback-danger-strong-hover); /* color/feedback/danger/strong-hover */
+  --color-feedback-danger-on-strong: var(--dx-color-feedback-danger-on-strong); /* color/feedback/danger/on-strong */
+  --color-feedback-info-strong: var(--dx-color-feedback-info-strong); /* color/feedback/info/strong */
+  --color-feedback-info-strong-hover: var(--dx-color-feedback-info-strong-hover); /* color/feedback/info/strong-hover */
+  --color-feedback-info-on-strong: var(--dx-color-feedback-info-on-strong); /* color/feedback/info/on-strong */
+  --color-action-primary-standalone: var(--dx-color-action-primary-standalone); /* color/action/primary/standalone */
+  --color-foreground-placeholder: var(--dx-color-foreground-placeholder); /* color/foreground/placeholder */
+  --color-border-field: var(--dx-color-border-field); /* color/border/field */
+  --color-feedback-danger-border-strong: var(--dx-color-feedback-danger-border-strong); /* color/feedback/danger/border-strong */
+  --color-feedback-success-border-strong: var(--dx-color-feedback-success-border-strong); /* color/feedback/success/border-strong */
+  --color-feedback-warning-border-strong: var(--dx-color-feedback-warning-border-strong); /* color/feedback/warning/border-strong */
+  --color-feedback-info-border-strong: var(--dx-color-feedback-info-border-strong); /* color/feedback/info/border-strong */
+  --color-white: var(--dx-primitive-color-white);
+  --color-black: var(--dx-primitive-color-black);
+
+  /* Radius (Primitives + Brand) */
+  --radius-xs: var(--dx-primitive-radius-xs);
+  --radius-sm: var(--dx-primitive-radius-sm);
+  --radius-md: var(--dx-primitive-radius-md);
+  --radius-lg: var(--dx-primitive-radius-lg);
+  --radius-xl: var(--dx-primitive-radius-xl);
+  --radius-2xl: var(--dx-primitive-radius-2xl);
+  --radius-full: var(--dx-primitive-radius-full);
+  --radius-control: var(--dx-brand-radius-control);
+  --radius-control-small: var(--dx-brand-radius-control-small);
+  --radius-forms: var(--dx-brand-radius-forms);
+  --radius-surface: var(--dx-brand-radius-surface);
+  --radius-card: var(--dx-brand-radius-card);
+  --radius-modal: var(--dx-brand-radius-modal);
+  --radius-drawer: var(--dx-brand-radius-drawer);
+  --radius-table: var(--dx-brand-radius-table);
+  --radius-tooltip: var(--dx-brand-radius-tooltip);
+  --radius-pill: var(--dx-brand-radius-pill);
+
+  /* Spacing: Tailwind-Skala (p-4 = 16px) entspricht Primitives unit/N × 4px */
+  --spacing: 0.25rem;
+  --spacing-layout-xs: var(--dx-space-layout-xs);
+  --spacing-layout-sm: var(--dx-space-layout-sm);
+  --spacing-layout-md: var(--dx-space-layout-md);
+  --spacing-layout-lg: var(--dx-space-layout-lg);
+  --spacing-layout-xl: var(--dx-space-layout-xl);
+  --spacing-layout-2xl: var(--dx-space-layout-2xl);
+
+  /* Schrift */
+  --font-sans: var(--dx-brand-font-family-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--dx-brand-font-family-mono), ui-monospace, SFMono-Regular, monospace;
+
+  /* Schriftgrößen (Responsive) */
+  --text-display: var(--dx-typography-display-size);
+  --text-display--line-height: var(--dx-typography-display-line-height);
+  --text-h1: var(--dx-typography-h1-size);
+  --text-h1--line-height: var(--dx-typography-h1-line-height);
+  --text-h2: var(--dx-typography-h2-size);
+  --text-h2--line-height: var(--dx-typography-h2-line-height);
+  --text-h3: var(--dx-typography-h3-size);
+  --text-h3--line-height: var(--dx-typography-h3-line-height);
+  --text-h4: var(--dx-typography-h4-size);
+  --text-h4--line-height: var(--dx-typography-h4-line-height);
+  --text-body-lg: var(--dx-typography-body-lg-size);
+  --text-body-lg--line-height: var(--dx-typography-body-lg-line-height);
+  --text-body-md: var(--dx-typography-body-md-size);
+  --text-body-md--line-height: var(--dx-typography-body-md-line-height);
+  --text-body-sm: var(--dx-typography-body-sm-size);
+  --text-body-sm--line-height: var(--dx-typography-body-sm-line-height);
+  --text-body-xs: var(--dx-typography-body-xs-size);
+  --text-body-xs--line-height: var(--dx-typography-body-xs-line-height);
+  --text-label-md: var(--dx-typography-label-md-size);
+  --text-label-md--line-height: var(--dx-typography-label-md-line-height);
+  --text-label-sm: var(--dx-typography-label-sm-size);
+  --text-label-sm--line-height: var(--dx-typography-label-sm-line-height);
+  --text-label-xs: var(--dx-typography-label-xs-size);
+  --text-label-xs--line-height: var(--dx-typography-label-xs-line-height);
+
+  /* Schatten (Figma Effect Styles) */
+  --shadow-xs: 0px 1px 2px 0px #00000012;
+  --shadow-sm: 0px 1px 3px 0px #00000012, 0px 1px 2px -1px #00000012;
+  --shadow-md: 0px 4px 6px -1px #00000012, 0px 2px 4px -2px #00000012;
+  --shadow-lg: 0px 10px 15px -3px #00000012, 0px 4px 6px -4px #00000012;
+  --shadow-xl: 0px 20px 25px -5px #00000012, 0px 8px 10px -6px #00000012;
+
+  /* Easing */
+  --ease-linear: var(--dx-primitive-motion-easing-linear);
+  --ease-standard: var(--dx-primitive-motion-easing-standard);
+  --ease-decelerate: var(--dx-primitive-motion-easing-decelerate);
+  --ease-accelerate: var(--dx-primitive-motion-easing-accelerate);
+  --ease-emphasized: var(--dx-primitive-motion-easing-emphasized);
+
+  --breakpoint-desktop: 1024px;
+}
+
+/* Text-Styles aus Figma als Utilities */
+/* Heading/Display/Normal */
+@utility typo-heading-display-normal {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-display-size);
+  line-height: var(--dx-typography-display-line-height);
+  font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/H1/Normal */
+@utility typo-heading-h1-normal {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h1-size);
+  line-height: var(--dx-typography-h1-line-height);
+  font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/H2/Normal */
+@utility typo-heading-h2-normal {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h2-size);
+  line-height: var(--dx-typography-h2-line-height);
+  font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/H3/Normal */
+@utility typo-heading-h3-normal {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h3-size);
+  line-height: var(--dx-typography-h3-line-height);
+  font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/H4/Normal */
+@utility typo-heading-h4-normal {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h4-size);
+  line-height: var(--dx-typography-h4-line-height);
+  font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Body/LG – Normal */
+@utility typo-body-lg-normal {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-body-lg-size);
+  line-height: var(--dx-typography-body-lg-line-height);
+  font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Body/LG – Bold */
+@utility typo-body-lg-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-body-lg-size);
+  line-height: var(--dx-typography-body-lg-line-height);
+  font-weight: 600;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Body/MD – Normal */
+@utility typo-body-md-normal {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-body-md-size);
+  line-height: var(--dx-typography-body-md-line-height);
+  font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Body/MD – Bold */
+@utility typo-body-md-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-body-md-size);
+  line-height: var(--dx-typography-body-md-line-height);
+  font-weight: 600;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Body/SM – Normal */
+@utility typo-body-sm-normal {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-body-sm-size);
+  line-height: var(--dx-typography-body-sm-line-height);
+  font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Body/SM – Bold */
+@utility typo-body-sm-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-body-sm-size);
+  line-height: var(--dx-typography-body-sm-line-height);
+  font-weight: 600;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Body/XS – Normal */
+@utility typo-body-xs-normal {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-body-xs-size);
+  line-height: var(--dx-typography-body-xs-line-height);
+  font-weight: 400;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Body/XS – Bold */
+@utility typo-body-xs-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-body-xs-size);
+  line-height: var(--dx-typography-body-xs-line-height);
+  font-weight: 600;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/Display/Bold */
+@utility typo-heading-display-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-display-size);
+  line-height: var(--dx-typography-display-line-height);
+  font-weight: 700;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/H1/Bold */
+@utility typo-heading-h1-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h1-size);
+  line-height: var(--dx-typography-h1-line-height);
+  font-weight: 700;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/H2/Bold */
+@utility typo-heading-h2-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h2-size);
+  line-height: var(--dx-typography-h2-line-height);
+  font-weight: 700;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/H3/Bold */
+@utility typo-heading-h3-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h3-size);
+  line-height: var(--dx-typography-h3-line-height);
+  font-weight: 700;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Heading/H4/Bold */
+@utility typo-heading-h4-bold {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-h4-size);
+  line-height: var(--dx-typography-h4-line-height);
+  font-weight: 700;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Label/MD */
+@utility typo-label-md {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-label-md-size);
+  line-height: var(--dx-typography-label-md-line-height);
+  font-weight: 500;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Label/SM */
+@utility typo-label-sm {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-label-sm-size);
+  line-height: var(--dx-typography-label-sm-line-height);
+  font-weight: 500;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Label/XS */
+@utility typo-label-xs {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-label-xs-size);
+  line-height: var(--dx-typography-label-xs-line-height);
+  font-weight: 500;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Component/Button Label */
+@utility typo-component-button-label {
+  font-family: var(--font-sans);
+  font-size: var(--dx-typography-body-md-size);
+  line-height: var(--dx-typography-body-md-line-height);
+  font-weight: 500;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
+
+/* Component/Main Navigation Label */
+@utility typo-component-main-navigation-label {
+  font-family: var(--font-sans);
+  font-size: var(--dx-main-navigation-item-font-size);
+  line-height: var(--dx-main-navigation-item-font-line-height);
+  font-weight: 500;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-tight);
+}
+
+/* Component/Main Navigation Section Header */
+@utility typo-component-main-navigation-section-header {
+  font-family: var(--font-sans);
+  font-size: var(--dx-main-navigation-section-header-font-size);
+  line-height: var(--dx-main-navigation-section-header-font-line-height);
+  font-weight: 700;
+  letter-spacing: var(--dx-primitive-font-letter-spacing-normal);
+}
