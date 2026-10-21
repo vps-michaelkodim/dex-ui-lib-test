@@ -7,8 +7,8 @@ Stand: 2026-10-21
 | 0     | Monorepo, TypeScript, Lint/Format, Storybook (a11y + Vitest), Playground, AGENTS.md                                                                            | ✅        |
 | 1     | Tokens: Figma-Export → DTCG → Style Dictionary → CSS-Vars + Tailwind-`@theme`; Light/Dark/HC + Multi-Brand; Foundations-Stories; Fingerprint-Check; Gap-Report | ✅        |
 | 2     | Icons: Export aus „Iconography“ → SVGR → `@dextinity/icons`, Icon-Galerie                                                                                      | 🟡 18/300 |
-| 3     | Button + Icon Button                                                                                                                                           | ✅ |
-| 4     | Input (Field-Architektur: Label, Helper, Error)                                                                                                                |           |
+| 3     | Button + Icon Button                                                                                                                                           | ✅        |
+| 4     | Input (Field-Architektur: Label, Helper, Error)                                                                                                                | ✅        |
 | 5     | Chip + Tooltip                                                                                                                                                 |           |
 | 6     | Visual Regression (Screenshot-Baselines) + Figma-vs-Code-Diff fertig verdrahten                                                                                |           |
 | 7     | AI-Schicht: `llms.txt`, Component-Manifest / Storybook MCP, Claude-Skill „Dextinity UI“                                                                        |           |
