@@ -15,6 +15,7 @@ pnpm test:setup                          # einmalig: Chromium für Tests
 pnpm storybook      # http://localhost:6006
 pnpm playground     # http://localhost:5173 — Prototypen bauen
 pnpm test           # alle Stories als Tests (Interaction + a11y)
+pnpm test:visual    # Screenshot-Vergleich (siehe docs/VISUAL_TESTS.md)
 ```
 
 Node ≥ 22 (`.nvmrc`).

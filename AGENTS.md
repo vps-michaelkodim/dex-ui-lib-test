@@ -82,6 +82,9 @@ Komplette Liste: `packages/tokens/tokens.meta.json` oder Storybook → Foundatio
 - Jede Komponente: Story pro relevanter Variante + `play()` für Interaktion (Klick, Keyboard, Fokus).
 - a11y-Verstöße (axe) lassen Tests fehlschlagen (`parameters.a11y.test = 'error'`).
 - Titel-Schema: `Foundations/<Name>`, `Components/<Name>`, `Patterns/<Name>`.
+- Neue Komponente → Matrix-/States-Story in `apps/storybook/visual/visual.test.tsx` (`CASES`) aufnehmen.
+  Gewollte optische Änderung → `pnpm test:visual:update` (auf dem Mac) und Bilder committen. Siehe `docs/VISUAL_TESTS.md`.
+- Story-Exports nie `Error` nennen (überschreibt das globale `Error` im Test) → `WithError` + `name: 'Error'`.
 
 ## Prototypen (Playground)
 
@@ -92,7 +95,7 @@ Komplette Liste: `packages/tokens/tokens.meta.json` oder Storybook → Foundatio
 ## Befehle
 
 ```bash
-pnpm storybook | pnpm playground | pnpm test | pnpm typecheck | pnpm lint | pnpm format
+pnpm storybook | pnpm playground | pnpm test | pnpm test:visual | pnpm typecheck | pnpm lint | pnpm format
 ```
 
 ## Git
