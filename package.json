@@ -1,0 +1,31 @@
+{
+  "name": "dextinity-ui",
+  "private": true,
+  "description": "Dextinity UI — React-Komponenten, Tokens und Icons aus dem DDS-Figma-File",
+  "type": "module",
+  "packageManager": "pnpm@10.34.7",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "storybook": "pnpm --filter @dextinity/storybook dev",
+    "build-storybook": "pnpm --filter @dextinity/storybook build",
+    "playground": "pnpm --filter @dextinity/playground dev",
+    "test": "pnpm --filter @dextinity/storybook test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-storybook": "^10.6.3",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.0"
+  }
+}

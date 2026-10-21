@@ -1,0 +1,4 @@
+@import '@dextinity/ui/styles.css';
+
+/* Storybook-eigene Stories (Introduction, Smoke) ebenfalls scannen. */
+@source './';

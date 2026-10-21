@@ -1,0 +1,12 @@
+/*
+ * @dextinity/tokens — Platzhalter (Phase 0).
+ * Wird in Phase 1 durch den Figma-Export (DTCG → Style Dictionary) generiert.
+ * NICHT von Hand pflegen, sobald der Generator steht.
+ */
+:root {
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+}

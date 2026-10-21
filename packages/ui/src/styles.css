@@ -1,0 +1,15 @@
+/*
+ * Einstiegspunkt für Apps:  @import '@dextinity/ui/styles.css';
+ * Reihenfolge: Tailwind → Tokens (CSS-Variablen) → Tailwind-Theme-Mapping.
+ */
+@import 'tailwindcss';
+@import '@dextinity/tokens/css';
+
+/* Tailwind soll die Komponenten-Sources scannen, egal wo die App liegt. */
+@source './';
+
+/* Theme-Varianten: dark: / hc: reagieren auf data-theme am <html>. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+@custom-variant hc (&:where([data-theme='high-contrast'], [data-theme='high-contrast'] *));
+
+/* Phase 1: hier kommt das generierte @theme-Mapping auf die Token-Variablen. */
