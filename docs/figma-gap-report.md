@@ -27,11 +27,34 @@ Priorität: 🔴 wirkt sich sichtbar aus · 🟡 Konsistenz/Wartbarkeit · ⚪ k
 
 ## Icons (Phase 2)
 
-| # | Prio | Figma-Ort | Problem | Lösung im Code | Status |
-| - | ---- | --------- | ------- | -------------- | ------ |
-| I1 | 🟡 | Iconography › `Comet_DXP`, `CometOutline_DXP` | Alter Produktname (COMET → Dextinity). | Wird zu `CometIcon` — nach Umbenennung in Figma automatisch `DextinityIcon`. | offen |
-| I2 | 🟡 | `lightMode`, `darkMode`, `highContrastMode` | Kleingeschrieben, weicht vom PascalCase-Schema ab. | Generator macht `LightModeIcon` etc. | offen |
-| I3 | ⚪ | `HamburgerClose_Menu_Navigation_`, `DevicePhone_SmallDevice_MiniScreen_` | Unterstrich am Ende. | wird ignoriert | offen |
-| I4 | ⚪ | diverse | Tippfehler in Suchbegriffen: Wizzard, Savety, Allert, Corect, Invisble, Buidling, WasterBin, ChangePostion, Atlassin | landen so in der Icon-Suche | offen |
-| I5 | 🟡 | `_New_* 1` (14 Stück) | Entwürfe/Duplikate auf der Iconography-Page. | übersprungen (`_`-Prefix) | prüfen |
-| I6 | ⚪ | alle | Icons liegen lose in „Frame 1“, ohne Kategorien. Monochrome Icons haben `fill="black"` statt einer Variable. | `black` → `currentColor` im Generator | info |
+| #   | Prio | Figma-Ort                                                                | Problem                                                                                                              | Lösung im Code                                                               | Status |
+| --- | ---- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------ |
+| I1  | 🟡   | Iconography › `Comet_DXP`, `CometOutline_DXP`                            | Alter Produktname (COMET → Dextinity).                                                                               | Wird zu `CometIcon` — nach Umbenennung in Figma automatisch `DextinityIcon`. | offen  |
+| I2  | 🟡   | `lightMode`, `darkMode`, `highContrastMode`                              | Kleingeschrieben, weicht vom PascalCase-Schema ab.                                                                   | Generator macht `LightModeIcon` etc.                                         | offen  |
+| I3  | ⚪   | `HamburgerClose_Menu_Navigation_`, `DevicePhone_SmallDevice_MiniScreen_` | Unterstrich am Ende.                                                                                                 | wird ignoriert                                                               | offen  |
+| I4  | ⚪   | diverse                                                                  | Tippfehler in Suchbegriffen: Wizzard, Savety, Allert, Corect, Invisble, Buidling, WasterBin, ChangePostion, Atlassin | landen so in der Icon-Suche                                                  | offen  |
+| I5  | 🟡   | `_New_* 1` (14 Stück)                                                    | Entwürfe/Duplikate auf der Iconography-Page.                                                                         | übersprungen (`_`-Prefix)                                                    | prüfen |
+| I6  | ⚪   | alle                                                                     | Icons liegen lose in „Frame 1“, ohne Kategorien. Monochrome Icons haben `fill="black"` statt einer Variable.         | `black` → `currentColor` im Generator                                        | info   |
+
+## Kontrast (Phase 3, gefunden durch den a11y-Test der Button-Stories)
+
+Text/Hintergrund im Default-State unter **WCAG AA 4,5:1**. Prüfskript: `packages/tokens/scripts/contrast-buttons.mjs`.
+Im Code unverändert übernommen (Figma ist die Quelle). Stories mit diesen Kombis laufen mit `a11y.test: 'todo'`.
+
+| #   | Prio | Brand · Theme               | Button                              | Kontrast        | Farben                                                          |
+| --- | ---- | --------------------------- | ----------------------------------- | --------------- | --------------------------------------------------------------- |
+| 17  | 🔴   | Dextinity + Crimson · Light | success / contained, outlined, text | 2,94:1          | `#ffffff` ↔ `#55a943` (`brand/color/success/500` → `green/500`) |
+| 18  | 🔴   | Crimson · Light             | primary / contained, outlined, text | 3,15:1          | `#ffffff` ↔ `#4a98ce` (`sky/500`)                               |
+| 19  | 🟡   | Crimson · Light             | error / contained, outlined, text   | 4,41:1          | `#ffffff` ↔ `#d14c17` (`coral/500`)                             |
+| 20  | 🟡   | Dextinity · Dark            | primary / outlined, text            | 4,03:1          | `#6662f5` auf `#141517`                                         |
+| 21  | 🟡   | Dextinity · Dark            | error / outlined, text · contained  | 4,07:1 · 4,44:1 | `#c6523f` auf `#141517` · `#08090a` auf `#c6523f`               |
+
+Vorschlag: `action/success/default` (Light) auf `success/700`, Crimson `primary` auf `sky/600`+; Dark-Varianten eine Stufe heller.
+
+## Komponenten-Properties (Phase 3)
+
+| #   | Prio | Figma-Ort                                     | Problem                                                                  | Lösung im Code                                              | Status |
+| --- | ---- | --------------------------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------- | ------ |
+| C1  | 🟡   | Button, Icon Button › `Disabled`, `Loading`   | Als **Variant** (`No`/`Yes`) angelegt, Convention sagt Boolean-Property. | React: `disabled?: boolean`, `loading?: boolean`            | prüfen |
+| C2  | ⚪   | Button › `_Show Start Icon`, `_Show End Icon` | Interne Booleans (korrekt mit `_`).                                      | Icon wird angezeigt, wenn `startIcon`/`endIcon` gesetzt ist | info   |
+| C3  | 🟡   | Spinner                                       | Spinner ist als 5 Keyframe-Varianten gebaut, keine Tokens.               | Code: CSS-Rotation, `currentColor`, reduced-motion          | info   |
