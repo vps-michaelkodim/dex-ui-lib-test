@@ -30,5 +30,10 @@ export default tseslint.config(
     files: ['**/scripts/**', '**/*.mjs', '**/*.config.{js,ts,mjs}', '**/.storybook/**'],
     languageOptions: { globals: { ...globals.node } },
   },
+  {
+    // Figma-Plugin: läuft in der Figma-Sandbox
+    files: ['tools/figma-plugin/**/*.js'],
+    languageOptions: { globals: { figma: 'readonly', __html__: 'readonly' } },
+  },
   ...storybook.configs['flat/recommended'],
 );

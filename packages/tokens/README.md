@@ -42,4 +42,4 @@ In verschachtelten Containern (z.B. eingebetteter Chatbot) **immer beide** Attri
 
 ## Sync mit Figma
 
-Siehe [`docs/TOKEN_SYNC.md`](../../docs/TOKEN_SYNC.md).
+Figma-Plugin **DDS Export** + `pnpm figma:import`, siehe [`docs/TOKEN_SYNC.md`](../../docs/TOKEN_SYNC.md).

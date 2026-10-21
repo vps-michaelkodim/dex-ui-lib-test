@@ -16,6 +16,7 @@ pnpm storybook      # http://localhost:6006
 pnpm playground     # http://localhost:5173 — Prototypen bauen
 pnpm test           # alle Stories als Tests (Interaction + a11y)
 pnpm test:visual    # Screenshot-Vergleich (siehe docs/VISUAL_TESTS.md)
+pnpm figma:import <dds-export.json>   # Sync aus Figma (siehe docs/TOKEN_SYNC.md)
 ```
 
 Node ≥ 22 (`.nvmrc`).
@@ -30,7 +31,9 @@ packages/
 apps/
   storybook/   Doku, Review, Tests
   playground/  Vite-App zum Prototypen-Bauen
-docs/          Roadmap, Figma-Gap-Report
+docs/          Roadmap, Figma-Gap-Report, Sync, Visual Tests
+tools/         Figma-Plugin „DDS Export“
+scripts/       figma-import
 ```
 
 ## Regeln

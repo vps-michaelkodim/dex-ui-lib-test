@@ -1,39 +1,55 @@
-# Token-Sync Figma → Code
+# Sync Figma → Code
 
-Figma ist die Quelle für Tokens. Der Sync läuft in drei Schritten und ist komplett nachvollziehbar
-(jede Änderung ist ein Git-Diff in `packages/tokens/figma/raw/`).
+Figma ist die Quelle für Tokens, Styles und Icons. Der Sync läuft über das Figma-Plugin
+**DDS Export** ([`tools/figma-plugin`](../tools/figma-plugin/README.md)) und ein Import-Skript.
+Jede Änderung ist danach ein normaler Git-Diff.
 
-## 1. Prüfen, ob sich in Figma etwas geändert hat
-
-Claude (oder jemand mit Figma MCP) führt `packages/tokens/figma/fingerprint.figma.js` im DDS-File aus
-und speichert das Ergebnis als JSON. Dann:
+## Ablauf
 
 ```bash
-node packages/tokens/scripts/fingerprint.mjs /pfad/zu/figma-fingerprint.json
-# ✓ Primitives  ✓ Brand  ✗ Semantic › color/action  …
+# 1. In Figma: Plugins → Development → DDS Export → Export  (→ ~/Downloads/dds-export.json)
+
+# 2. Branch
+git checkout main && git pull && git checkout -b chore/figma-sync-<datum>
+
+# 3. Was hat sich geändert?
+pnpm figma:import ~/Downloads/dds-export.json --dry-run
+#   ✓ Primitives: 300 Variablen — unverändert
+#   ● Semantic: 92 Variablen
+#     neu (1)   color/background/brand
+#   ● Icons: 286
+#     geändert (2) …
+
+# 4. Übernehmen (schreibt raw-Dateien + SVGs, baut Tokens und Icons neu)
+pnpm figma:import ~/Downloads/dds-export.json
+
+# 5. Prüfen
+git diff --stat
+pnpm typecheck           # z.B. wenn ein benutztes Icon in Figma gelöscht/umbenannt wurde
+pnpm test                # Interaktion + a11y
+pnpm test:visual         # optische Auswirkungen; gewollt → pnpm test:visual:update
+
+# 6. PR mit dem Diff (+ ggf. neuen Referenzbildern)
 ```
 
-Zeigt pro Collection und Token-Gruppe, was abweicht.
+## Was wo landet
 
-## 2. Export
+| Aus Figma                  | Roh-Export (Quelle)                           | Generiert                           |
+| -------------------------- | --------------------------------------------- | ----------------------------------- |
+| Variablen (5 Collections)  | `packages/tokens/figma/raw/<collection>.json` | `css/`, `dtcg/`, `tokens.meta.json` |
+| Text- & Effect-Styles      | `packages/tokens/figma/raw/styles.json`       | `typo-*`-Utilities, `shadow-*`      |
+| Icons (Page „Iconography“) | `packages/icons/svg/*.svg`                    | `packages/icons/src/generated/`     |
 
-`packages/tokens/figma/export-variables.figma.js` im DDS-File ausführen (betroffene Collections
-in `COLLECTIONS` eintragen) und das Ergebnis nach `packages/tokens/figma/raw/<collection>.json` schreiben.
-Danach Schritt 1 wiederholen → muss überall ✓ zeigen.
+Nie die generierten Dateien von Hand ändern. `pnpm tokens:check` prüft, ob sie zum Roh-Export passen.
 
-Text- und Effect-Styles (`raw/styles.json`) werden aktuell manuell nachgezogen.
+## Neue Collection / neuer Mode in Figma
 
-## 3. Build + Review
+Der Import meldet neue Collections als Warnung. Dann in `scripts/figma-import.mjs` (`COLLECTION_FILES`)
+und `packages/tokens/scripts/build.mjs` (`COLLECTIONS`, Selektoren) eintragen. Neue Modes einer
+bestehenden Collection brauchen einen CSS-Selektor in `build.mjs`.
 
-```bash
-pnpm --filter @dextinity/tokens build
-git diff packages/tokens          # Review: was ändert sich wirklich?
-pnpm test                         # Stories inkl. a11y
-```
+## Für Claude / Figma MCP
 
-PR mit dem Diff aufmachen. Neue Inkonsistenzen in `docs/figma-gap-report.md` eintragen.
-
-## Später (Phase 6)
-
-- Visueller Diff (Screenshots) für geänderte Tokens
-- Figma-Dev-Plugin für Designer: Export per Klick ohne Claude/MCP
+`packages/tokens/figma/fingerprint.figma.js` per `use_figma` ausführen und das Ergebnis mit
+`node packages/tokens/scripts/fingerprint.mjs <datei.json>` vergleichen → zeigt, welche
+Token-Gruppen abweichen, ohne kompletten Export.
