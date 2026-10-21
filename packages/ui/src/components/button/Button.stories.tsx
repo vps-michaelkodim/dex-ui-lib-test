@@ -2,6 +2,7 @@ import { AddNoCircleIcon, ChevronDownIcon, DeleteIcon, EditIcon } from '@dextini
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { expect, fn, userEvent, within } from 'storybook/test';
 import { Button } from './Button';
+import { figmaDesign } from '../../lib/figma';
 
 const VARIANTS = ['contained', 'outlined', 'text'] as const;
 const COLORS = ['primary', 'secondary', 'error', 'success'] as const;
@@ -21,6 +22,7 @@ const meta = {
     endIcon: { control: false },
   },
   parameters: {
+    design: figmaDesign('25:2'),
     docs: {
       description: {
         component:

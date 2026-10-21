@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { meta, tokensOf } from './meta';
 import { Code, Page, Section } from './ui';
+import { figmaDesign } from '../figma';
 
 function TextStyles() {
   return (
@@ -49,7 +50,7 @@ function TextStyles() {
 
 const storyMeta = {
   title: 'Foundations/Typography',
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: 'fullscreen', design: figmaDesign('128:26') },
   tags: ['!autodocs'],
 } satisfies Meta;
 export default storyMeta;

@@ -2,6 +2,7 @@ import { CloseIcon, EditIcon, MoreVerticalIcon, SettingsIcon } from '@dextinity/
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { expect, fn, userEvent, within } from 'storybook/test';
 import { IconButton } from './IconButton';
+import { figmaDesign } from '../../lib/figma';
 
 const VARIANTS = ['contained', 'outlined', 'text'] as const;
 const COLORS = ['primary', 'secondary', 'error', 'success'] as const;
@@ -21,6 +22,7 @@ const meta = {
     children: { control: false },
   },
   parameters: {
+    design: figmaDesign('702:2354'),
     docs: {
       description: {
         component:

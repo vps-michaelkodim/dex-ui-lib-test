@@ -4,6 +4,7 @@ import { expect, userEvent, waitFor, within } from 'storybook/test';
 import { Button } from '../button';
 import { IconButton } from '../icon-button';
 import { Tooltip } from './Tooltip';
+import { figmaDesign } from '../../lib/figma';
 
 const COLORS = ['light', 'dark', 'success', 'error', 'warning'] as const;
 
@@ -21,6 +22,7 @@ const meta = {
     children: { control: false },
   },
   parameters: {
+    design: figmaDesign('849:2583'),
     layout: 'centered',
     docs: {
       description: {

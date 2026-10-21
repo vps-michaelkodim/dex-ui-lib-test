@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { groupBy, meta, tokensOf, twColorFor, type TokenMeta } from './meta';
 import { Code, Page, Section } from './ui';
+import { figmaDesign } from '../figma';
 
 function Swatch({ cssVar }: { cssVar: string | null }) {
   return (
@@ -128,7 +129,7 @@ function Palette({
 
 const storyMeta = {
   title: 'Foundations/Colors',
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: 'fullscreen', design: figmaDesign('128:25') },
   tags: ['!autodocs'],
 } satisfies Meta;
 export default storyMeta;
