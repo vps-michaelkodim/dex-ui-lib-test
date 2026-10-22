@@ -18,6 +18,10 @@ Stack: React 19, Base UI, Tailwind v4 (nur Token-Klassen), Storybook 10. Themes:
 
 ## Komponenten (`@dextinity/ui`)
 
+- LogoPlaceholder: Platzhalter-Logo aus Figma (LogosHeader › Variante=Example). Props: className
+- AppBar: App Bar — Figma: `04 Patterns / App Shell › App Bar` (Device=Desktop | Mobile). Props: appName, logo, navigationToggleLabel, onNavigationToggle, onSearchClick, ref, scope, search, theme, user
+- AppShell: App Shell — Figma: `04 Patterns / App Shell` (Templates Desktop, Sidebar eingeklappt, Mobile, Navigation offen). Props: appBar, children, navigation, className, closeLabel, collapsed, defaultCollapsed, navigationLabel, onCollapsedChange
+- Sidebar: Figma: `04 Patterns / App Shell › Sidebar` (Collapsed=No | Yes, Close Button). Props: children, closeLabel, collapsed, navigationLabel, onClose, ref
 - Button: Figma: `03 Components / Button`. Props: children, className, color, disabled, endIcon, focusableWhenDisabled, loading, nativeButton, render, size, startIcon, style, variant
 - Checkbox: Figma: `03 Components / Form – Checkbox`. Props: checked, children, className, defaultChecked, disabled, helperText, indeterminate, name, nativeButton, onCheckedChange, parent, readOnly, required, status, value
 - CheckboxGroup: Mehrere Checkboxen mit gemeinsamer Überschrift (`<fieldset>` + `<legend>`) und Hinweis. Props: allValues, className, defaultValue, disabled, helperText, label, name, onValueChange, orientation, required, status, value
@@ -31,7 +35,7 @@ Stack: React 19, Base UI, Tailwind v4 (nur Token-Klassen), Storybook 10. Themes:
 - FormLabel: Figma: `03 Components / Form / Form Label`. Props: children, className, error, helperIcon, mandatory, render, style
 - IconButton: Figma: `03 Components / Icon Button`. Gleiche Farb-Tokens wie Button. Props: aria-label, children, className, color, disabled, focusableWhenDisabled, loading, nativeButton, render, size, style, variant
 - Input: Figma: `03 Components / Form – Input` (+ Form Label, Form Helper Text). Props: className, disabled, endAdornment, helperText, label, layout, loading, readOnly, render, required, showCount, startAdornment, status, style, wrapperClassName
-- MainNavigation: Main Navigation — Figma: `03 Components / Main navigation` (Item + Menu Section Header). Props: aria-label
+- MainNavigation: Main Navigation — Figma: `03 Components / Main navigation` (Item + Menu Section Header). Props: aria-label, collapsed
 - NavSection: Abschnitt mit Überschrift (Figma: Menu Section Header). Props: title, addLabel, className, defaultOpen, expandable, onAdd
 - NavItem: Ein Navigationspunkt (Figma: Main Navigation Item). Ebene ergibt sich aus der Verschachtelung. Props: label, active, children, className, defaultOpen, href, icon, onClick, render
 - Radio: Radio Button — Figma: `03 Components / Form – Radiobutton`. Immer in einer `RadioGroup`. Props: value, children, className, disabled, nativeButton, required

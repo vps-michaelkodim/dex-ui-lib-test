@@ -4,24 +4,23 @@ import {
   DashboardIcon,
   DownloadIcon,
   FilterIcon,
-  NotificationBellIcon,
   SettingsIcon,
 } from '@dextinity/icons';
 import {
+  AppBar,
   Button,
-  IconButton,
-  MainNavigation,
   NavItem,
   NavSection,
   Search,
+  AppShell as Shell,
   Text,
   Toolbar,
 } from '@dextinity/ui';
 import { useState } from 'react';
 
 /**
- * Prototyp: App-Shell (Roadmap Phase 13) — Main Navigation links, Kopfzeile mit Suche, Inhalt rechts.
- * Nur @dextinity/ui + Token-Klassen.
+ * Prototyp: App-Shell (Roadmap Phase 17) — `AppShell` mit `AppBar`, Sidebar (Main Navigation) und `Toolbar`.
+ * Vorlage für neue Prototypen mit App-Gerüst. Nur @dextinity/ui + Token-Klassen.
  */
 export const title = 'App-Shell';
 
@@ -45,14 +44,18 @@ export function AppShell() {
     ].find((p) => p.id === page)?.label ?? '';
 
   return (
-    <div className="flex min-h-screen bg-background-subtle">
-      <aside className="w-70 shrink-0 border-r border-border bg-background p-2">
-        <div className="px-3 py-4">
-          <Text variant="heading" size="h4" weight="bold" as="span">
-            Dextinity
-          </Text>
-        </div>
-        <MainNavigation>
+    <Shell
+      appBar={
+        <AppBar
+          appName="Dextinity"
+          search={<Search placeholder="Im Workspace suchen" wrapperClassName="w-60" />}
+          onSearchClick={() => {}}
+          scope={{ label: 'Vivid Planet' }}
+          user={{ name: 'Maria Muster' }}
+        />
+      }
+      navigation={
+        <>
           <NavSection title="Main">
             {PAGES.map((p) => (
               <NavItem
@@ -82,37 +85,25 @@ export function AppShell() {
               onClick={go('settings')}
             />
           </NavSection>
-        </MainNavigation>
-      </aside>
-      <div className="flex min-w-0 flex-1 flex-col">
-        <header className="flex items-center gap-4 border-b border-border bg-background px-8 py-3">
-          <Search placeholder="Im Workspace suchen" wrapperClassName="max-w-md" />
-          <div className="ml-auto flex items-center gap-2">
-            <IconButton aria-label="Benachrichtigungen" variant="text" color="secondary">
-              <NotificationBellIcon />
-            </IconButton>
-            <Button variant="outlined" color="secondary" size="small">
-              Hilfe
+        </>
+      }
+    >
+      <Toolbar
+        title={current}
+        breadcrumb={[{ label: 'Workspace', href: '#dashboard' }, { label: current }]}
+        supportText="Hier steht eine kurze Beschreibung der Seite."
+        actions={
+          <>
+            <Button variant="outlined" startIcon={<FilterIcon />}>
+              Filter
             </Button>
-          </div>
-        </header>
-        <Toolbar
-          title={current}
-          breadcrumb={[{ label: 'Workspace', href: '#dashboard' }, { label: current }]}
-          supportText="Hier steht eine kurze Beschreibung der Seite."
-          actions={
-            <>
-              <Button variant="outlined" startIcon={<FilterIcon />}>
-                Filter
-              </Button>
-              <Button startIcon={<DownloadIcon />}>Exportieren</Button>
-            </>
-          }
-        />
-        <main className="p-layout-md">
-          <Text color="muted">Hier steht der Inhalt der Seite.</Text>
-        </main>
+            <Button startIcon={<DownloadIcon />}>Exportieren</Button>
+          </>
+        }
+      />
+      <div className="p-layout-md">
+        <Text color="muted">Hier steht der Inhalt der Seite.</Text>
       </div>
-    </div>
+    </Shell>
   );
 }

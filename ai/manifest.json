@@ -74,6 +74,236 @@
   ],
   "components": [
     {
+      "name": "LogoPlaceholder",
+      "import": "import { LogoPlaceholder } from '@dextinity/ui';",
+      "summary": "Platzhalter-Logo aus Figma (LogosHeader › Variante=Example).",
+      "figma": null,
+      "source": "packages/ui/src/components/app-shell/AppBar.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "examples": []
+    },
+    {
+      "name": "AppBar",
+      "import": "import { AppBar } from '@dextinity/ui';",
+      "summary": "App Bar — Figma: `04 Patterns / App Shell › App Bar` (Device=Desktop | Mobile).\nKopfzeile der Dextinity-Apps (dunkel): links Navigation-Toggle + Branding, rechts Suche, Scope, Benutzer.\nUnter 1024px automatisch Mobile: Hamburger, Logo, Such-Button, Avatar.",
+      "figma": null,
+      "source": "packages/ui/src/components/app-shell/AppBar.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "appName",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Branding › Application Title. Auf Mobile ausgeblendet."
+        },
+        {
+          "name": "logo",
+          "type": "ReactNode",
+          "required": false,
+          "default": "Platzhalter „Example Project“ wie in Figma",
+          "description": "Figma: Branding › Application Logo."
+        },
+        {
+          "name": "navigationToggleLabel",
+          "type": "string",
+          "required": false,
+          "default": "Navigation umschalten",
+          "description": "Zugänglicher Name des Navigation-Toggles."
+        },
+        {
+          "name": "onNavigationToggle",
+          "type": "(() => void)",
+          "required": false,
+          "description": "Klick auf den Navigation-Toggle. In `AppShell` automatisch (Desktop: ein-/ausklappen, Mobile: Drawer).\nOhne beides wird kein Toggle gezeigt."
+        },
+        {
+          "name": "onSearchClick",
+          "type": "(() => void)",
+          "required": false,
+          "description": "Mobile: Such-Button statt Suchfeld (Figma: Device=Mobile › Search Button)."
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLElement>",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "scope",
+          "type": "AppBarScope",
+          "required": false,
+          "description": "Figma: Scope (`Show Scope`). Nur ab Desktop."
+        },
+        {
+          "name": "search",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Search (`Show Search`). Suchfeld ab Desktop, z.B. `<Search placeholder=\"Suchen …\" />`."
+        },
+        {
+          "name": "theme",
+          "type": "enum",
+          "values": [
+            "dark",
+            "inherit"
+          ],
+          "required": false,
+          "default": "dark",
+          "description": "Figma: App Bar ist dunkel. `'inherit'` übernimmt das Theme der Seite."
+        },
+        {
+          "name": "user",
+          "type": "AppBarUser",
+          "required": false,
+          "description": "Figma: User."
+        }
+      ],
+      "examples": [
+        "<AppBar\n  appName=\"Content Hub\"\n  search={<Search placeholder=\"Suchen …\" />}\n  scope={{ label: 'Vivid Planet', onClick: openScopes }}\n  user={{ name: 'Maria Muster', onClick: openUserMenu }}\n/>"
+      ]
+    },
+    {
+      "name": "AppShell",
+      "import": "import { AppShell } from '@dextinity/ui';",
+      "summary": "App Shell — Figma: `04 Patterns / App Shell` (Templates Desktop, Sidebar eingeklappt, Mobile, Navigation offen).\nGerüst einer Dextinity-App: App Bar oben, Sidebar links, Inhalt rechts.\nDesktop: Toggle klappt die Sidebar ein (nur Icons). Mobile (< 1024px): Sidebar als Drawer über dem Inhalt,\nschließt mit Escape, Klick daneben, Schließen-Button oder Klick auf einen Link.",
+      "figma": {
+        "node": "1450:266",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1450-266"
+      },
+      "source": "packages/ui/src/components/app-shell/AppShell.tsx",
+      "storybook": {
+        "title": "Patterns/App Shell",
+        "stories": [
+          "Playground",
+          "Collapsed",
+          "AppBarOnly",
+          "SidebarStates"
+        ]
+      },
+      "props": [
+        {
+          "name": "appBar",
+          "type": "ReactNode",
+          "required": true,
+          "description": "Figma: App Bar — `<AppBar … />`. Der Navigation-Toggle wird automatisch verdrahtet."
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "description": "Seiteninhalt (Figma: Main › Toolbar + Content)."
+        },
+        {
+          "name": "navigation",
+          "type": "ReactNode",
+          "required": true,
+          "description": "Inhalt der Sidebar / Main Navigation: `NavSection` / `NavItem`."
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "closeLabel",
+          "type": "string",
+          "required": false,
+          "default": "Navigation schließen",
+          "description": "Zugänglicher Name des Schließen-Buttons im Mobile-Drawer."
+        },
+        {
+          "name": "collapsed",
+          "type": "boolean",
+          "required": false,
+          "description": "Figma: Sidebar Collapsed (kontrolliert, nur Desktop)."
+        },
+        {
+          "name": "defaultCollapsed",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Anfangs eingeklappt (nur Desktop)."
+        },
+        {
+          "name": "navigationLabel",
+          "type": "string",
+          "required": false,
+          "default": "'Hauptnavigation'",
+          "description": "Zugänglicher Name der Navigation."
+        },
+        {
+          "name": "onCollapsedChange",
+          "type": "((collapsed: boolean) => void)",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "examples": [
+        "<AppShell\n  appBar={<AppBar appName=\"Content Hub\" user={{ name: 'Maria Muster' }} />}\n  navigation={\n    <NavSection title=\"Main\">\n      <NavItem icon={<DashboardIcon />} label=\"Dashboard\" href=\"/\" active />\n    </NavSection>\n  }\n>\n  <Toolbar title=\"Dashboard\" />\n  <div className=\"p-layout-md\">…</div>\n</AppShell>"
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "import": "import { Sidebar } from '@dextinity/ui';",
+      "summary": "Figma: `04 Patterns / App Shell › Sidebar` (Collapsed=No | Yes, Close Button).\nHüllt die `MainNavigation` ein. In `AppShell` automatisch: Desktop links, Mobile als Drawer.",
+      "figma": null,
+      "source": "packages/ui/src/components/app-shell/Sidebar.tsx",
+      "storybook": null,
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "description": "Inhalt der Main Navigation: `NavSection` / `NavItem`."
+        },
+        {
+          "name": "closeLabel",
+          "type": "string",
+          "required": false,
+          "default": "Navigation schließen",
+          "description": "Zugänglicher Name des Schließen-Buttons."
+        },
+        {
+          "name": "collapsed",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Collapsed — nur Icons (56px), Name als Tooltip."
+        },
+        {
+          "name": "navigationLabel",
+          "type": "string",
+          "required": false,
+          "default": "'Hauptnavigation'",
+          "description": "Zugänglicher Name der Navigation."
+        },
+        {
+          "name": "onClose",
+          "type": "(() => void)",
+          "required": false,
+          "description": "Figma: Close Button (Drawer auf Mobile). Zeigt den Schließen-Button oben."
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLElement>",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "examples": [
+        "<Sidebar collapsed={collapsed}>\n  <NavSection title=\"Main\">\n    <NavItem icon={<DashboardIcon />} label=\"Dashboard\" href=\"/\" active />\n  </NavSection>\n</Sidebar>"
+      ]
+    },
+    {
       "name": "Button",
       "import": "import { Button } from '@dextinity/ui';",
       "summary": "Figma: `03 Components / Button`.",
@@ -1212,6 +1442,13 @@
           "required": false,
           "default": "Hauptnavigation",
           "description": "Zugänglicher Name."
+        },
+        {
+          "name": "collapsed",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Figma: Sidebar Collapsed=Yes — nur Icons (Main Navigation Item (Collapsed)), Name als Tooltip."
         }
       ],
       "examples": [

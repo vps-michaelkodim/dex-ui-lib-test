@@ -11,8 +11,11 @@ import {
   type ReactNode,
 } from 'react';
 import { cn } from '../../lib/cn';
+import { Tooltip } from '../tooltip';
 
 const LevelContext = createContext(1);
+/** Eingeklappte Sidebar (Figma: Sidebar Collapsed=Yes) — nur Icons, Name als Tooltip. */
+const CollapsedContext = createContext(false);
 
 /** Einrückung je Ebene (Figma: `Level 1–3`, Tokens `main-navigation/item/indent/level-*`). Statisch für Tailwind. */
 const INDENT = [
@@ -24,6 +27,8 @@ const INDENT = [
 export interface MainNavigationProps extends ComponentPropsWithoutRef<'nav'> {
   /** Zugänglicher Name. @default 'Hauptnavigation' */
   'aria-label'?: string;
+  /** Figma: Sidebar Collapsed=Yes — nur Icons (Main Navigation Item (Collapsed)), Name als Tooltip. */
+  collapsed?: boolean;
   children: ReactNode;
 }
 
@@ -43,14 +48,22 @@ export interface MainNavigationProps extends ComponentPropsWithoutRef<'nav'> {
  */
 export function MainNavigation({
   'aria-label': ariaLabel = 'Hauptnavigation',
+  collapsed = false,
   children,
   className,
   ...props
 }: MainNavigationProps) {
   return (
-    <nav {...props} aria-label={ariaLabel} className={cn('flex flex-col font-sans', className)}>
-      {children}
-    </nav>
+    <CollapsedContext.Provider value={collapsed}>
+      <nav
+        {...props}
+        aria-label={ariaLabel}
+        data-collapsed={collapsed ? '' : undefined}
+        className={cn('flex flex-col font-sans', collapsed && 'items-center', className)}
+      >
+        {children}
+      </nav>
+    </CollapsedContext.Provider>
   );
 }
 
@@ -91,6 +104,18 @@ export function NavSection({
   className,
 }: NavSectionProps) {
   const headingId = useId();
+  const collapsed = useContext(CollapsedContext);
+  if (collapsed) {
+    // Figma: eingeklappte Sidebar zeigt keine Abschnitts-Überschriften, nur die Icons.
+    return (
+      <ul
+        aria-label={typeof title === 'string' ? title : undefined}
+        className={cn('flex flex-col gap-1', className)}
+      >
+        {children}
+      </ul>
+    );
+  }
   const add = onAdd ? (
     <button
       type="button"
@@ -171,6 +196,16 @@ const content = [
   '[&_svg]:size-(--dx-main-navigation-item-icon-size) [&_svg]:shrink-0',
 ].join(' ');
 
+/** Figma: Main Navigation Item (Collapsed) — 40×40, nur Icon, gleiche Tokens wie das Item. */
+const collapsedItem = [
+  'inline-flex size-(--dx-primitive-unit-10) shrink-0 cursor-pointer items-center justify-center rounded-(--dx-main-navigation-item-radius) outline-none select-none',
+  'bg-(--dx-main-navigation-item-default-background) text-(color:--dx-main-navigation-item-default-icon)',
+  'hover:bg-(--dx-main-navigation-item-hover-background) hover:text-(color:--dx-main-navigation-item-hover-foreground)',
+  'data-active:bg-(--dx-main-navigation-item-active-background) data-active:text-(color:--dx-main-navigation-item-active-icon)',
+  'transition-colors duration-(--dx-primitive-motion-duration-sm) ease-standard',
+  '[&_svg]:size-(--dx-main-navigation-item-icon-size)',
+].join(' ');
+
 const indicator =
   'h-(--dx-main-navigation-item-indicator-height) w-(--dx-main-navigation-item-indicator-width) shrink-0 rounded-full bg-(--dx-main-navigation-item-default-indicator) group-data-active/item:bg-(--dx-main-navigation-item-active-indicator)';
 
@@ -187,6 +222,18 @@ export function NavItem({
   className,
 }: NavItemProps) {
   const level = Math.min(useContext(LevelContext), 3);
+  const collapsed = useContext(CollapsedContext);
+  const collapsedLink = useRender({
+    render: render ?? (children ? <button type="button" /> : <a href={href} />),
+    props: {
+      className: cn(collapsedItem, className),
+      'aria-label': typeof label === 'string' ? label : undefined,
+      'aria-current': active ? 'page' : undefined,
+      'data-active': active ? '' : undefined,
+      onClick,
+      children: icon,
+    } as Record<string, unknown>,
+  });
   const inner = (
     <>
       <span aria-hidden className={indicator} />
@@ -218,6 +265,17 @@ export function NavItem({
     } as Record<string, unknown>,
   });
 
+  if (collapsed) {
+    // Eingeklappt: nur Ebene 1 mit Icon (Figma: Main Navigation Item (Collapsed)), Unterpunkte erst ausgeklappt.
+    if (level > 1) return null;
+    return (
+      <li className="flex">
+        <Tooltip content={label} side="right" delay={300}>
+          {collapsedLink}
+        </Tooltip>
+      </li>
+    );
+  }
   if (!children) return <li>{link}</li>;
 
   return (

@@ -13,6 +13,7 @@ import { beforeAll, describe, expect, test } from 'vitest';
 import { page } from 'vitest/browser';
 import { render } from 'vitest-browser-react';
 import '../src/storybook.css';
+import * as AppShellStories from '../../../packages/ui/src/components/app-shell/AppShell.stories';
 import * as ButtonStories from '../../../packages/ui/src/components/button/Button.stories';
 import * as CheckboxStories from '../../../packages/ui/src/components/checkbox/Checkbox.stories';
 import * as ChipStories from '../../../packages/ui/src/components/chip/Chip.stories';
@@ -46,6 +47,7 @@ const mainNavigation = composeStories(MainNavigationStories);
 const dialog = composeStories(DialogStories);
 const snackbar = composeStories(SnackbarStories);
 const toolbar = composeStories(ToolbarStories);
+const appShell = composeStories(AppShellStories);
 
 /** Welche Stories fotografiert werden. `page: true` = ganze Seite (z.B. Tooltips im Portal). */
 const CASES: { name: string; Story: ComponentType; page?: boolean }[] = [
@@ -78,6 +80,25 @@ const CASES: { name: string; Story: ComponentType; page?: boolean }[] = [
   { name: 'dialog-open', Story: dialog.Open, page: true },
   { name: 'snackbar-colors', Story: snackbar.Colors },
   { name: 'toolbar-matrix', Story: toolbar.Matrix },
+  {
+    name: 'app-shell',
+    Story: () => (
+      <div className="w-[1240px]">
+        <appShell.Playground />
+      </div>
+    ),
+    page: true,
+  },
+  {
+    name: 'app-shell-collapsed',
+    Story: () => (
+      <div className="w-[1240px]">
+        <appShell.Collapsed />
+      </div>
+    ),
+    page: true,
+  },
+  { name: 'app-shell-sidebar', Story: appShell.SidebarStates },
 ];
 
 const MODES = [
