@@ -8,6 +8,10 @@
  * Liest die Fälle (`CASES`) und Modi (`MODES`) aus apps/storybook/visual/visual.test.tsx und erzeugt nur
  * Bilder für Fälle, bei denen mindestens ein `-chromium-darwin.png` fehlt. Bestehende Bilder anderer
  * Fälle werden nicht angefasst (gewollte Änderungen weiter mit `pnpm test:visual:update`).
+ *
+ * Ausnahme Figma-Sync: Ändert der Branch (gegenüber origin/main) den Roh-Export aus Figma
+ * (Tokens, Styles, Icons, Logos) und noch kein Referenzbild, werden im Hook ALLE Bilder neu erzeugt —
+ * ein Sync ist per Definition eine gewollte optische Änderung.
  */
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
@@ -33,29 +37,61 @@ const modes = [...modesBlock.matchAll(/theme:\s*'([^']+)',\s*brand:\s*'([^']+)'/
   (m) => `${m[1]}-${m[2]}`,
 );
 
+const git = (...args) => execFileSync('git', args, { cwd: ROOT }).toString().trim();
+const FIGMA_SOURCES = /^packages\/(tokens\/figma\/raw|icons\/svg|icons\/logos)\//;
+let figmaSync = false;
+if (commit) {
+  try {
+    const files = git('diff', '--name-only', 'origin/main...HEAD').split('\n');
+    figmaSync =
+      files.some((f) => FIGMA_SOURCES.test(f)) &&
+      !files.some((f) => f.startsWith('apps/storybook/visual/__screenshots__/'));
+  } catch {
+    // kein origin/main (z.B. frischer Clone ohne fetch) → nur fehlende Bilder
+  }
+}
+
 const missing = names.filter((name) =>
   modes.some((mode) => !existsSync(join(SHOTS, `${name}-${mode}-chromium-darwin.png`))),
 );
-if (!missing.length) process.exit(0);
-
-console.log(`\n📸 Fehlende Mac-Referenzbilder: ${missing.join(', ')} — werden jetzt erzeugt …\n`);
-const pattern = `(^|\\s)(${missing.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})$`;
-execFileSync(
-  'pnpm',
-  [
-    '--filter',
-    '@dextinity/storybook',
-    'exec',
-    'vitest',
-    'run',
-    '-c',
-    'vitest.visual.config.ts',
-    '--update',
-    '-t',
-    pattern,
-  ],
-  { cwd: ROOT, stdio: 'inherit' },
-);
+if (figmaSync) {
+  console.log('\n📸 Figma-Sync im Branch, Referenzbilder noch alt — alle werden neu erzeugt …\n');
+  execFileSync(
+    'pnpm',
+    [
+      '--filter',
+      '@dextinity/storybook',
+      'exec',
+      'vitest',
+      'run',
+      '-c',
+      'vitest.visual.config.ts',
+      '--update',
+    ],
+    { cwd: ROOT, stdio: 'inherit' },
+  );
+  missing.splice(0, missing.length, 'alle (Figma-Sync)');
+} else if (!missing.length) process.exit(0);
+else {
+  console.log(`\n📸 Fehlende Mac-Referenzbilder: ${missing.join(', ')} — werden jetzt erzeugt …\n`);
+  const pattern = `(^|\\s)(${missing.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})$`;
+  execFileSync(
+    'pnpm',
+    [
+      '--filter',
+      '@dextinity/storybook',
+      'exec',
+      'vitest',
+      'run',
+      '-c',
+      'vitest.visual.config.ts',
+      '--update',
+      '-t',
+      pattern,
+    ],
+    { cwd: ROOT, stdio: 'inherit' },
+  );
+}
 
 if (!commit) process.exit(0);
 

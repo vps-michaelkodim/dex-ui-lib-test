@@ -12,7 +12,9 @@ pnpm test:visual:update   # alle Referenzbilder neu erzeugen
 **Automatisch beim Push:** Der `pre-push`-Hook (`.githooks/pre-push`, aktiv nach `pnpm install`) prüft auf dem Mac,
 ob für einen Fall in `CASES` Mac-Referenzbilder fehlen. Wenn ja: Bilder erzeugen, als eigenen Commit
 `test(visual): …` committen und den Push einmal abbrechen → einfach nochmal pushen. Geänderte Bilder
-(gewollte Design-Änderungen) bleiben bewusst Handarbeit mit `pnpm test:visual:update`.
+(gewollte Design-Änderungen) bleiben bewusst Handarbeit mit `pnpm test:visual:update` — außer nach einem
+**Figma-Sync**: Ändert der Branch den Roh-Export (`packages/tokens/figma/raw`, `packages/icons/svg|logos`) und noch
+kein Referenzbild, erzeugt der Hook alle Bilder neu und committet sie.
 Überspringen: `git push --no-verify`.
 
 ## Ablauf
