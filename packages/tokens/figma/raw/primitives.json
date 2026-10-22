@@ -90,7 +90,7 @@
 ["color/green/950","C",["#0c1a09"],"ALL_FILLS,STROKE_COLOR"],
 ["color/white","C",["#ffffff"],"ALL_FILLS,STROKE_COLOR"],
 ["color/black","C",["#000000"],"ALL_FILLS,STROKE_COLOR"],
-["version","S",["DDS v0.1.1"]],
+["version","S",["DDS v0.1.2"]],
 ["unit/0","F",[0],"WIDTH_HEIGHT,GAP"],
 ["unit/0,5","F",[2],"WIDTH_HEIGHT,GAP"],
 ["unit/1","F",[4],"WIDTH_HEIGHT,GAP"],

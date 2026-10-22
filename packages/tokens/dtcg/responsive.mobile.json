@@ -227,7 +227,7 @@
       },
       "line-height": {
         "$type": "dimension",
-        "$value": "20px",
+        "$value": "18px",
         "$extensions": {
           "com.figma": {
             "collection": "Responsive",
@@ -243,7 +243,7 @@
     "body-xs": {
       "size": {
         "$type": "dimension",
-        "$value": "12px",
+        "$value": "11px",
         "$extensions": {
           "com.figma": {
             "collection": "Responsive",
@@ -317,7 +317,7 @@
       },
       "line-height": {
         "$type": "dimension",
-        "$value": "20px",
+        "$value": "18px",
         "$extensions": {
           "com.figma": {
             "collection": "Responsive",
@@ -333,7 +333,7 @@
     "label-xs": {
       "size": {
         "$type": "dimension",
-        "$value": "12px",
+        "$value": "11px",
         "$extensions": {
           "com.figma": {
             "collection": "Responsive",
