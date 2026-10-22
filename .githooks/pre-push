@@ -1,0 +1,8 @@
+#!/bin/sh
+# Erzeugt fehlende Mac-Referenzbilder für die Screenshot-Tests und committet sie (siehe docs/VISUAL_TESTS.md).
+# Bricht den Push dann einmal ab, damit der neue Commit mitkommt. Überspringen: git push --no-verify
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-push: node nicht gefunden – Check für Mac-Referenzbilder übersprungen (pnpm test:visual:new)." >&2
+  exit 0
+fi
+node "$(git rev-parse --show-toplevel)/scripts/visual-baselines.mjs" --commit

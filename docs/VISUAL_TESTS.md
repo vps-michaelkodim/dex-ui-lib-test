@@ -5,8 +5,15 @@ und mit Referenzbildern verglichen. Eine Abweichung, auch eine kleine Farbänder
 
 ```bash
 pnpm test:visual          # vergleichen
-pnpm test:visual:update   # Referenzbilder neu erzeugen
+pnpm test:visual:new      # nur fehlende Referenzbilder erzeugen (z.B. neue Komponente)
+pnpm test:visual:update   # alle Referenzbilder neu erzeugen
 ```
+
+**Automatisch beim Push:** Der `pre-push`-Hook (`.githooks/pre-push`, aktiv nach `pnpm install`) prüft auf dem Mac,
+ob für einen Fall in `CASES` Mac-Referenzbilder fehlen. Wenn ja: Bilder erzeugen, als eigenen Commit
+`test(visual): …` committen und den Push einmal abbrechen → einfach nochmal pushen. Geänderte Bilder
+(gewollte Design-Änderungen) bleiben bewusst Handarbeit mit `pnpm test:visual:update`.
+Überspringen: `git push --no-verify`.
 
 ## Ablauf
 
