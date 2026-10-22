@@ -1,8 +1,8 @@
 import {
   AccountIcon,
   ChevronDownIcon,
+  DextinityLogo,
   DomainIcon,
-  HamburgerIcon,
   SearchIcon,
   SidebarIcon,
 } from '@dextinity/icons';
@@ -28,9 +28,12 @@ export interface AppBarUser {
 }
 
 export interface AppBarProps extends ComponentPropsWithoutRef<'header'> {
-  /** Figma: Branding › Application Logo. @default Platzhalter „Example Project“ wie in Figma */
+  /**
+   * Figma: Branding › Dextinity Logos. @default Dextinity AI Hub (Desktop ganzes Logo, Mobile nur Zeichen)
+   * — z.B. `<DextinityLogo brand="ai-cms" color="negative" />`.
+   */
   logo?: ReactNode;
-  /** Figma: Branding › Application Title. Auf Mobile ausgeblendet. */
+  /** Figma: Branding › Application Title (`Label/SM`), mit Trennlinie zum Logo ab Desktop. */
   appName?: ReactNode;
   /** Figma: Search (`Show Search`). Suchfeld ab Desktop, z.B. `<Search placeholder="Suchen …" />`. */
   search?: ReactNode;
@@ -58,34 +61,10 @@ const segment = 'flex h-full items-center gap-2 px-4 border-l border-solid borde
 const trigger =
   'inline-flex cursor-pointer items-center gap-2 rounded-control typo-body-md-normal text-foreground-muted hover:text-foreground [&_svg]:size-4';
 
-/** Platzhalter-Logo aus Figma (LogosHeader › Variante=Example). */
-export function LogoPlaceholder({ className }: { className?: string }) {
-  return (
-    <span
-      aria-label="Example Project"
-      role="img"
-      className={cn(
-        'inline-flex h-10 w-30 items-center justify-between rounded-xs border border-solid border-foreground/30 px-2.5 text-foreground',
-        className,
-      )}
-    >
-      <span aria-hidden className="size-0.75 rounded-full bg-current" />
-      <span
-        aria-hidden
-        className="flex flex-col items-center text-[11px] leading-[13px] tracking-[0.2em]"
-      >
-        <span className="font-medium">EXAMPLE</span>
-        <span className="font-light italic">PROJECT</span>
-      </span>
-      <span aria-hidden className="size-0.75 rounded-full bg-current" />
-    </span>
-  );
-}
-
 /**
  * App Bar — Figma: `04 Patterns / App Shell › App Bar` (Device=Desktop | Mobile).
  * Kopfzeile der Dextinity-Apps (dunkel): links Navigation-Toggle + Branding, rechts Suche, Scope, Benutzer.
- * Unter 1024px automatisch Mobile: Hamburger, Logo, Such-Button, Avatar.
+ * Unter 1024px automatisch Mobile: Toggle, Logo-Zeichen + App-Name, Such-Button, Avatar.
  *
  * ```tsx
  * <AppBar
@@ -121,35 +100,35 @@ export function AppBar({
         className,
       )}
     >
-      <div className="flex h-full min-w-0 items-center gap-2 px-4">
+      <div className="flex h-full min-w-0 items-center gap-2 px-4 desktop:gap-4">
         {toggle ? (
-          <>
-            <IconButton
-              aria-label={navigationToggleLabel}
-              aria-expanded={shell ? shell.navigationOpen : undefined}
-              variant="outlined"
-              color="secondary"
-              className="max-desktop:hidden"
-              onClick={toggle}
-            >
-              <SidebarIcon />
-            </IconButton>
-            <IconButton
-              aria-label={navigationToggleLabel}
-              aria-expanded={shell ? shell.navigationOpen : undefined}
-              variant="text"
-              color="secondary"
-              className="desktop:hidden"
-              onClick={toggle}
-            >
-              <HamburgerIcon />
-            </IconButton>
-          </>
+          <IconButton
+            aria-label={navigationToggleLabel}
+            aria-expanded={shell ? shell.navigationOpen : undefined}
+            variant="text"
+            color="secondary"
+            onClick={toggle}
+          >
+            <SidebarIcon />
+          </IconButton>
         ) : null}
-        <div className="flex min-w-0 items-center gap-5">
-          {logo ?? <LogoPlaceholder />}
+        {/* Figma: Branding — Logo · Trennlinie · App-Name (Gap unit/3, Mobile unit/2) */}
+        <div className="flex min-w-0 items-center gap-2 desktop:gap-3">
+          {logo ?? (
+            <>
+              <DextinityLogo
+                brand="ai-hub"
+                color={theme === 'dark' ? 'negative' : 'positive'}
+                className="shrink-0 max-desktop:hidden"
+              />
+              <DextinityLogo brand="ai-hub" signOnly className="shrink-0 desktop:hidden" />
+            </>
+          )}
           {appName ? (
-            <span className="truncate typo-body-md-normal max-desktop:hidden">{appName}</span>
+            <>
+              <span aria-hidden className="h-5 w-px shrink-0 bg-border-muted max-desktop:hidden" />
+              <span className="truncate typo-label-sm">{appName}</span>
+            </>
           ) : null}
         </div>
       </div>

@@ -1,9 +1,11 @@
 /**
  * DDS Export — Figma-Plugin (Development).
- * Exportiert Variablen, Text-/Effect-Styles und Icons des DDS-Files als JSON für `pnpm figma:import`.
+ * Exportiert Variablen, Text-/Effect-Styles, Icons und Logos des DDS-Files als JSON für `pnpm figma:import`.
  * Format = packages/tokens/figma/raw/*.json + styles.json + Icons als SVG-Strings.
  */
 const ICON_PAGE_MATCH = 'Iconography';
+const LOGO_PAGE_MATCH = 'Logos';
+const LOGO_SET = 'Dextinity Logos';
 
 const hex = (x) =>
   Math.round(x * 255)
@@ -94,6 +96,24 @@ async function exportIcons() {
   return { page: page.name, icons };
 }
 
+/** Logos: ComponentSet „Dextinity Logos“ (Page „Logos“) — jede Variante als SVG, Schlüssel = Variantenname. */
+async function exportLogos() {
+  const page = figma.root.children.find((p) => p.name.includes(LOGO_PAGE_MATCH));
+  if (!page) return null;
+  await page.loadAsync();
+  const set = page
+    .findAllWithCriteria({ types: ['COMPONENT_SET'] })
+    .find((s) => s.name === LOGO_SET);
+  if (!set) return null;
+  const logos = {};
+  for (const v of set.children) {
+    if (v.type !== 'COMPONENT') continue;
+    logos[v.name] = (await v.exportAsync({ format: 'SVG_STRING' })).replace(/\n/g, '');
+    figma.ui.postMessage({ type: 'progress', text: `Logos: ${Object.keys(logos).length}` });
+  }
+  return { page: page.name, set: set.name, logos };
+}
+
 figma.showUI(__html__, { width: 360, height: 260 });
 
 figma.ui.onmessage = async (msg) => {
@@ -104,6 +124,7 @@ figma.ui.onmessage = async (msg) => {
     figma.ui.postMessage({ type: 'progress', text: 'Styles …' });
     const styles = await exportStyles(refName);
     const icons = msg.icons ? await exportIcons() : null;
+    const logos = msg.icons ? await exportLogos() : null;
     const data = {
       format: 'dds-export@1',
       file: figma.root.name,
@@ -112,6 +133,7 @@ figma.ui.onmessage = async (msg) => {
       collections,
       styles,
       icons,
+      logos,
     };
     figma.ui.postMessage({ type: 'done', json: JSON.stringify(data) });
   } catch (e) {

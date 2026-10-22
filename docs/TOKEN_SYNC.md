@@ -38,11 +38,12 @@ pnpm manifest            # ai/manifest.json + llms.txt aktualisieren
 
 ## Was wo landet
 
-| Aus Figma                  | Roh-Export (Quelle)                           | Generiert                           |
-| -------------------------- | --------------------------------------------- | ----------------------------------- |
-| Variablen (5 Collections)  | `packages/tokens/figma/raw/<collection>.json` | `css/`, `dtcg/`, `tokens.meta.json` |
-| Text- & Effect-Styles      | `packages/tokens/figma/raw/styles.json`       | `typo-*`-Utilities, `shadow-*`      |
-| Icons (Page „Iconography“) | `packages/icons/svg/*.svg`                    | `packages/icons/src/generated/`     |
+| Aus Figma                                   | Roh-Export (Quelle)                           | Generiert                                        |
+| ------------------------------------------- | --------------------------------------------- | ------------------------------------------------ |
+| Variablen (5 Collections)                   | `packages/tokens/figma/raw/<collection>.json` | `css/`, `dtcg/`, `tokens.meta.json`              |
+| Text- & Effect-Styles                       | `packages/tokens/figma/raw/styles.json`       | `typo-*`-Utilities, `shadow-*`                   |
+| Icons (Page „Iconography“)                  | `packages/icons/svg/*.svg`                    | `packages/icons/src/generated/`                  |
+| Logos (Set „Dextinity Logos“, Page „Logos“) | `packages/icons/logos/*.svg`                  | `packages/icons/src/generated/DextinityLogo.tsx` |
 
 Nie die generierten Dateien von Hand ändern. `pnpm tokens:check` prüft, ob sie zum Roh-Export passen.
 

@@ -2,6 +2,7 @@
  * @dextinity/icons — Generator
  *
  *   svg/<FigmaName>.svg  ──►  src/generated/<Name>Icon.tsx + src/generated/index.ts + icons.meta.json
+ *   logos/<brand>--<color>[--sign].svg  ──►  src/generated/DextinityLogo.tsx (Figma: „Dextinity Logos“)
  *
  * Figma-Name "Search_Finding_Loupe" → Komponente SearchIcon, Suchbegriffe ["Finding", "Loupe"].
  * Namen mit "_"-Prefix (Figma-Konvention: intern/Entwurf) werden übersprungen.
@@ -9,13 +10,14 @@
  *
  * Aufruf: pnpm --filter @dextinity/icons generate
  */
-import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { basename, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SVG_DIR = join(ROOT, 'svg');
 const OUT = join(ROOT, 'src', 'generated');
+const LOGO_DIR = join(ROOT, 'logos');
 
 const pascal = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const splitWords = (s) =>
@@ -100,9 +102,106 @@ ${body}
   );
 }
 
+// ── Logos ─────────────────────────────────────────────────────────────────────────────────
+// Datei „dextinity-ai-hub--negative--sign.svg“ → brand 'ai-hub', color 'negative', signOnly.
+const brandOf = (slug) => slug.replace(/^dextinity-/, '').replace(/-brand$/, '');
+const brandLabel = (slug) =>
+  slug
+    .replace(/-main-brand$/, '')
+    .replace(/-brand$/, '')
+    .split('-')
+    .map((w) => (w.length <= 2 ? w.toUpperCase() : pascal(w)))
+    .join(' ');
+const logoFiles = existsSync(LOGO_DIR)
+  ? readdirSync(LOGO_DIR)
+      .filter((f) => f.endsWith('.svg'))
+      .sort()
+  : [];
+const logos = logoFiles.map((file) => {
+  const key = basename(file, '.svg');
+  const [brandSlug, color, sign] = key.split('--');
+  const svg = readFileSync(join(LOGO_DIR, file), 'utf8');
+  const [, w, h] = svg.match(/viewBox="0 0 ([\d.]+) ([\d.]+)"/) ?? [];
+  const { inner } = toJsx(svg, { colored: true });
+  return {
+    id: `${brandOf(brandSlug)}--${color}${sign ? '--sign' : ''}`,
+    brand: brandOf(brandSlug),
+    label: brandLabel(brandSlug),
+    w,
+    h,
+    inner,
+  };
+});
+const brands = [...new Set(logos.map((l) => l.brand))];
+const brandType = brands.length ? brands.map((b) => `'${b}'`).join(' | ') : 'string';
+const defaultBrand = brands.includes('main') ? 'main' : (brands[0] ?? 'main');
+writeFileSync(
+  join(OUT, 'DextinityLogo.tsx'),
+  `${HEADER}import { useId, type ReactNode, type SVGProps } from 'react';
+
+export type DextinityLogoBrand = ${brandType};
+
+export interface DextinityLogoProps extends Omit<SVGProps<SVGSVGElement>, 'color'> {
+  /** Figma: Brand. @default '${defaultBrand}' */
+  brand?: DextinityLogoBrand;
+  /** Figma: Color — \`positive\` für helle, \`negative\` für dunkle Flächen. @default 'positive' */
+  color?: 'positive' | 'negative';
+  /** Figma: onlySign — nur das Zeichen (z.B. Mobile). */
+  signOnly?: boolean;
+  /** Zugänglicher Name. @default Markenname, z.B. „Dextinity AI Hub“ */
+  title?: string;
+}
+
+const LOGOS: Record<string, { label: string; w: number; h: number; render: (uid: string) => ReactNode }> = {
+${logos
+  .map(
+    (l) => `  '${l.id}': {
+    label: '${l.label}',
+    w: ${l.w},
+    h: ${l.h},
+    render: (uid) => (
+      <>${l.inner}</>
+    ),
+  },`,
+  )
+  .join('\n')}
+};
+
+/**
+ * Dextinity-Logo — Figma: \`Dextinity Logos\` (Brand × Color × onlySign).
+ * Für \`signOnly\` gibt es nur die Positive-Variante; sie wird dann auch für \`negative\` verwendet.
+ */
+export function DextinityLogo({
+  brand = '${defaultBrand}',
+  color = 'positive',
+  signOnly = false,
+  title,
+  ...props
+}: DextinityLogoProps) {
+  const uid = useId().replace(/[^a-zA-Z0-9_-]/g, '');
+  const sign = signOnly ? '--sign' : '';
+  const logo = LOGOS[\`\${brand}--\${color}\${sign}\`] ?? LOGOS[\`\${brand}--positive\${sign}\`];
+  if (!logo) return null;
+  return (
+    <svg
+      viewBox={\`0 0 \${logo.w} \${logo.h}\`}
+      width={logo.w}
+      height={logo.h}
+      fill="none"
+      role="img"
+      aria-label={title ?? logo.label}
+      {...props}
+    >
+      {logo.render(uid)}
+    </svg>
+  );
+}
+`,
+);
+
 writeFileSync(
   join(OUT, 'index.ts'),
-  `${HEADER}${icons.map((i) => `export { ${i.name} } from './${i.name}';`).join('\n')}\n`,
+  `${HEADER}${icons.map((i) => `export { ${i.name} } from './${i.name}';`).join('\n')}\nexport { DextinityLogo, type DextinityLogoBrand, type DextinityLogoProps } from './DextinityLogo';\n`,
 );
 
 const meta = icons.map(({ name, figma, keywords, colored }) => ({
@@ -118,5 +217,5 @@ writeFileSync(
 writeFileSync(join(ROOT, 'icons.meta.json'), JSON.stringify(meta, null, 2) + '\n');
 
 console.log(
-  `✓ ${icons.length} Icons generiert${skipped.length ? ` · ${skipped.length} übersprungen (_-Prefix)` : ''}`,
+  `✓ ${icons.length} Icons · ${logos.length} Logos generiert${skipped.length ? ` · ${skipped.length} übersprungen (_-Prefix)` : ''}`,
 );
