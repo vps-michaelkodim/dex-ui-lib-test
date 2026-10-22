@@ -27,6 +27,7 @@ import * as SelectStories from '../../../packages/ui/src/components/select/Selec
 import * as SnackbarStories from '../../../packages/ui/src/components/snackbar/Snackbar.stories';
 import * as SwitchStories from '../../../packages/ui/src/components/switch/Switch.stories';
 import * as TextStories from '../../../packages/ui/src/components/text/Text.stories';
+import * as ToolbarStories from '../../../packages/ui/src/components/toolbar/Toolbar.stories';
 import * as TooltipStories from '../../../packages/ui/src/components/tooltip/Tooltip.stories';
 
 const button = composeStories(ButtonStories);
@@ -44,6 +45,7 @@ const text = composeStories(TextStories);
 const mainNavigation = composeStories(MainNavigationStories);
 const dialog = composeStories(DialogStories);
 const snackbar = composeStories(SnackbarStories);
+const toolbar = composeStories(ToolbarStories);
 
 /** Welche Stories fotografiert werden. `page: true` = ganze Seite (z.B. Tooltips im Portal). */
 const CASES: { name: string; Story: ComponentType; page?: boolean }[] = [
@@ -75,6 +77,7 @@ const CASES: { name: string; Story: ComponentType; page?: boolean }[] = [
   { name: 'main-navigation', Story: mainNavigation.Default },
   { name: 'dialog-open', Story: dialog.Open, page: true },
   { name: 'snackbar-colors', Story: snackbar.Colors },
+  { name: 'toolbar-matrix', Story: toolbar.Matrix },
 ];
 
 const MODES = [

@@ -28,6 +28,7 @@ Muster wie Input, in fast jedem Screen nötig), danach App-Gerüst, zuletzt was 
 | 13    | **Main Navigation** (Item 3 Ebenen, Section Header) + App-Shell-Pattern im Playground | Main Navigation Item `301:58` · Menu Section Header `548:7693`                   | Collapsible (+ Links)                              | ✅ `main-navigation/*`                        | ✅     |
 | 14    | **Dialog** (Container SM–XL, Header, Actions, Slot)                                   | Dialog `829:4250` · Container `192:355` · Header `829:2396` · Actions `829:2435` | Dialog, AlertDialog                                | ✅ `dialog/*` (neu)                           | ✅     |
 | 15    | **Snackbar** (Color, Title, Aktion, Schließen)                                        | Snackbar `1428:163`                                                              | Toast                                              | ✅ `snackbar/*` (neu)                         | ✅     |
+| 16    | **Toolbar** (Pattern: Breadcrumb, Zurück, Titel + Info, Support Text, Actions-Slot)   | Toolbar `1462:20277` (`04 Patterns / Toolbar`)                                   | —                                                  | ✅ `toolbar/*` (neu)                          | ✅     |
 
 ### Pro Phase (Definition of Done)
 
