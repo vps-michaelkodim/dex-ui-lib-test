@@ -7,15 +7,15 @@
   "figmaVersion": "DDS v0.1.1",
   "packages": {
     "@dextinity/ui": {
-      "version": "0.1.0",
+      "version": "0.1.1",
       "path": "packages/ui"
     },
     "@dextinity/tokens": {
-      "version": "0.1.0",
+      "version": "0.1.1",
       "path": "packages/tokens"
     },
     "@dextinity/icons": {
-      "version": "0.1.0",
+      "version": "0.1.1",
       "path": "packages/icons"
     }
   },

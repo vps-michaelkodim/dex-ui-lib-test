@@ -2,7 +2,7 @@
 
 > React-Komponenten, Design Tokens und Icons für Dextinity (Admin + Chatbot), generiert aus dem Figma-Design-System „DDS – Dextinity Admin UI“. Das Repo ist die Quelle; dieses Manifest wird aus dem Code erzeugt.
 
-Version: Code 0.1.0 · Stand Figma: DDS v0.1.1
+Version: Code 0.1.1 · Stand Figma: DDS v0.1.1
 
 Stack: React 19, Base UI, Tailwind v4 (nur Token-Klassen), Storybook 10. Themes: light, dark, high-contrast · Brands: dextinity, crimson (`data-theme`, `data-brand` am `<html>`).
 
