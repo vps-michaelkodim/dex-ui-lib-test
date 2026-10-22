@@ -3767,7 +3767,7 @@
     },
     "version": {
       "$type": "string",
-      "$value": "DDS v0.1.1",
+      "$value": "DDS v0.1.2",
       "$extensions": {
         "com.figma": {
           "collection": "Primitives",

@@ -154,7 +154,7 @@
    "name": "Body/LG – Normal",
    "family": "Inter",
    "style": "Regular",
-   "fontSize": 18,
+   "fontSize": 17,
    "lineHeight": 24,
    "letterSpacing": 0,
    "bindings": {
@@ -169,7 +169,7 @@
    "name": "Body/LG – Bold",
    "family": "Inter",
    "style": "Semi Bold",
-   "fontSize": 18,
+   "fontSize": 17,
    "lineHeight": 24,
    "letterSpacing": 0,
    "bindings": {
@@ -184,7 +184,7 @@
    "name": "Body/MD – Normal",
    "family": "Inter",
    "style": "Regular",
-   "fontSize": 16,
+   "fontSize": 15,
    "lineHeight": 24,
    "letterSpacing": 0,
    "bindings": {
@@ -199,7 +199,7 @@
    "name": "Body/MD – Bold",
    "family": "Inter",
    "style": "Semi Bold",
-   "fontSize": 16,
+   "fontSize": 15,
    "lineHeight": 24,
    "letterSpacing": 0,
    "bindings": {
@@ -214,7 +214,7 @@
    "name": "Body/SM – Normal",
    "family": "Inter",
    "style": "Regular",
-   "fontSize": 14,
+   "fontSize": 13,
    "lineHeight": 20,
    "letterSpacing": 0,
    "bindings": {
@@ -229,7 +229,7 @@
    "name": "Body/SM – Bold",
    "family": "Inter",
    "style": "Semi Bold",
-   "fontSize": 14,
+   "fontSize": 13,
    "lineHeight": 20,
    "letterSpacing": 0,
    "bindings": {
@@ -244,7 +244,7 @@
    "name": "Body/XS – Normal",
    "family": "Inter",
    "style": "Regular",
-   "fontSize": 12,
+   "fontSize": 11,
    "lineHeight": 16,
    "letterSpacing": 0,
    "bindings": {
@@ -259,7 +259,7 @@
    "name": "Body/XS – Bold",
    "family": "Inter",
    "style": "Semi Bold",
-   "fontSize": 12,
+   "fontSize": 11,
    "lineHeight": 16,
    "letterSpacing": 0,
    "bindings": {
@@ -274,7 +274,7 @@
    "name": "Label/MD",
    "family": "Inter",
    "style": "Medium",
-   "fontSize": 16,
+   "fontSize": 15,
    "lineHeight": 24,
    "letterSpacing": 0,
    "bindings": {
@@ -289,7 +289,7 @@
    "name": "Label/SM",
    "family": "Inter",
    "style": "Medium",
-   "fontSize": 14,
+   "fontSize": 13,
    "lineHeight": 20,
    "letterSpacing": 0,
    "bindings": {
@@ -305,7 +305,7 @@
    "family": "Inter",
    "style": "Medium",
    "fontSize": 12,
-   "lineHeight": 16,
+   "lineHeight": 15,
    "letterSpacing": 0,
    "bindings": {
     "letterSpacing": "@Primitives::font/letter-spacing/normal",
@@ -319,7 +319,7 @@
    "name": "Component/Button Label",
    "family": "Inter",
    "style": "Medium",
-   "fontSize": 16,
+   "fontSize": 15,
    "lineHeight": 24,
    "letterSpacing": 0,
    "bindings": {
@@ -334,7 +334,7 @@
    "name": "Component/Main Navigation Label",
    "family": "Inter",
    "style": "Medium",
-   "fontSize": 16,
+   "fontSize": 15,
    "lineHeight": 24,
    "letterSpacing": -0.25,
    "bindings": {
@@ -349,7 +349,7 @@
    "name": "Component/Main Navigation Section Header",
    "family": "Inter",
    "style": "Bold",
-   "fontSize": 14,
+   "fontSize": 13,
    "lineHeight": 20,
    "letterSpacing": 0,
    "bindings": {

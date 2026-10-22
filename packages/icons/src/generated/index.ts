@@ -285,3 +285,4 @@ export { ZipFileIcon } from './ZipFileIcon';
 export { DarkModeIcon } from './DarkModeIcon';
 export { HighContrastModeIcon } from './HighContrastModeIcon';
 export { LightModeIcon } from './LightModeIcon';
+export { DextinityLogo, type DextinityLogoBrand, type DextinityLogoProps } from './DextinityLogo';

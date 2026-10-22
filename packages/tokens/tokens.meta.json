@@ -863,7 +863,7 @@
       "type": "string",
       "cssVar": null,
       "values": {
-        "Default": "DDS v0.1.1"
+        "Default": "DDS v0.1.2"
       }
     },
     {
@@ -5746,7 +5746,7 @@
       "type": "dimension",
       "cssVar": "--dx-typography-body-lg-size",
       "values": {
-        "Desktop": "18px",
+        "Desktop": "17px",
         "Mobile": "16px"
       }
     },
@@ -5766,7 +5766,7 @@
       "type": "dimension",
       "cssVar": "--dx-typography-body-md-size",
       "values": {
-        "Desktop": "16px",
+        "Desktop": "15px",
         "Mobile": "15px"
       }
     },
@@ -5786,7 +5786,7 @@
       "type": "dimension",
       "cssVar": "--dx-typography-body-sm-size",
       "values": {
-        "Desktop": "14px",
+        "Desktop": "13px",
         "Mobile": "13px"
       }
     },
@@ -5797,7 +5797,7 @@
       "cssVar": "--dx-typography-body-sm-line-height",
       "values": {
         "Desktop": "20px",
-        "Mobile": "20px"
+        "Mobile": "18px"
       }
     },
     {
@@ -5806,8 +5806,8 @@
       "type": "dimension",
       "cssVar": "--dx-typography-body-xs-size",
       "values": {
-        "Desktop": "12px",
-        "Mobile": "12px"
+        "Desktop": "11px",
+        "Mobile": "11px"
       }
     },
     {
@@ -5910,7 +5910,7 @@
       "type": "dimension",
       "cssVar": "--dx-typography-label-md-size",
       "values": {
-        "Desktop": "16px",
+        "Desktop": "15px",
         "Mobile": "15px"
       }
     },
@@ -5930,7 +5930,7 @@
       "type": "dimension",
       "cssVar": "--dx-typography-label-sm-size",
       "values": {
-        "Desktop": "14px",
+        "Desktop": "13px",
         "Mobile": "13px"
       }
     },
@@ -5941,7 +5941,7 @@
       "cssVar": "--dx-typography-label-sm-line-height",
       "values": {
         "Desktop": "20px",
-        "Mobile": "20px"
+        "Mobile": "18px"
       }
     },
     {
@@ -5951,7 +5951,7 @@
       "cssVar": "--dx-typography-label-xs-size",
       "values": {
         "Desktop": "12px",
-        "Mobile": "12px"
+        "Mobile": "11px"
       }
     },
     {
@@ -5960,7 +5960,7 @@
       "type": "dimension",
       "cssVar": "--dx-typography-label-xs-line-height",
       "values": {
-        "Desktop": "16px",
+        "Desktop": "15px",
         "Mobile": "14px"
       }
     },
@@ -6039,7 +6039,7 @@
       "type": "dimension",
       "cssVar": "--dx-button-type-button-default-font-size",
       "values": {
-        "Default": "16px"
+        "Default": "15px"
       },
       "aliases": {
         "Default": "Responsive::typography/body-md/size"
@@ -6131,14 +6131,437 @@
     },
     {
       "collection": "Components",
-      "name": "main-navigation/item/height",
+      "name": "checkbox/size",
       "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-height",
+      "cssVar": "--dx-checkbox-size",
       "values": {
-        "Default": "48px"
+        "Default": "20px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/radius",
+      "type": "dimension",
+      "cssVar": "--dx-checkbox-radius",
+      "values": {
+        "Default": "4px"
       },
       "aliases": {
-        "Default": "Primitives::unit/12"
+        "Default": "Primitives::radius/sm"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/border-width",
+      "type": "dimension",
+      "cssVar": "--dx-checkbox-border-width",
+      "values": {
+        "Default": "1px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/icon-size",
+      "type": "dimension",
+      "cssVar": "--dx-checkbox-icon-size",
+      "values": {
+        "Default": "14px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/touch-target",
+      "type": "dimension",
+      "cssVar": "--dx-checkbox-touch-target",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/6"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/gap",
+      "type": "dimension",
+      "cssVar": "--dx-checkbox-gap",
+      "values": {
+        "Default": "8px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/2"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/label-font/size",
+      "type": "dimension",
+      "cssVar": "--dx-checkbox-label-font-size",
+      "values": {
+        "Default": "15px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-md/size"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/label-font/line-height",
+      "type": "dimension",
+      "cssVar": "--dx-checkbox-label-font-line-height",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-md/line-height"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/label-font/weight",
+      "type": "fontWeight",
+      "cssVar": "--dx-checkbox-label-font-weight",
+      "values": {
+        "Default": 400
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/regular"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/label-font/weight-style",
+      "type": "string",
+      "cssVar": null,
+      "values": {
+        "Default": "Regular"
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/regular-style"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/unchecked/default/background",
+      "type": "color",
+      "cssVar": "--dx-checkbox-unchecked-default-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/unchecked/default/border",
+      "type": "color",
+      "cssVar": "--dx-checkbox-unchecked-default-border",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/unchecked/hover/background",
+      "type": "color",
+      "cssVar": "--dx-checkbox-unchecked-hover-background",
+      "values": {
+        "Default": "#ecebfe"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/unchecked/hover/border",
+      "type": "color",
+      "cssVar": "--dx-checkbox-unchecked-hover-border",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/unchecked/error/background",
+      "type": "color",
+      "cssVar": "--dx-checkbox-unchecked-error-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/unchecked/error/border",
+      "type": "color",
+      "cssVar": "--dx-checkbox-unchecked-error-border",
+      "values": {
+        "Default": "#c6523f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/unchecked/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-checkbox-unchecked-disabled-background",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/unchecked/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-checkbox-unchecked-disabled-border",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/unchecked/read-only/background",
+      "type": "color",
+      "cssVar": "--dx-checkbox-unchecked-read-only-background",
+      "values": {
+        "Default": "#f5f6f7"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/unchecked/read-only/border",
+      "type": "color",
+      "cssVar": "--dx-checkbox-unchecked-read-only-border",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/default/background",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-default-background",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/default/border",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-default-border",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/default/check",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-default-check",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/hover/background",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-hover-background",
+      "values": {
+        "Default": "#332fc2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/hover/border",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-hover-border",
+      "values": {
+        "Default": "#332fc2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/hover/check",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-hover-check",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/error/background",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-error-background",
+      "values": {
+        "Default": "#bc3520"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/error/border",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-error-border",
+      "values": {
+        "Default": "#bc3520"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/error/check",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-error-check",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/on-strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-disabled-background",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/disabled"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-disabled-border",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/disabled"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/disabled/check",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-disabled-check",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/read-only/background",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-read-only-background",
+      "values": {
+        "Default": "#f5f6f7"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/read-only/border",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-read-only-border",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/checked/read-only/check",
+      "type": "color",
+      "cssVar": "--dx-checkbox-checked-read-only-check",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/label-foreground/default",
+      "type": "color",
+      "cssVar": "--dx-checkbox-label-foreground-default",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "checkbox/label-foreground/disabled",
+      "type": "color",
+      "cssVar": "--dx-checkbox-label-foreground-disabled",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
       }
     },
     {
@@ -6149,6 +6572,238 @@
       "values": {
         "Default": "1px"
       }
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/background",
+      "type": "color",
+      "cssVar": "--dx-dialog-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      },
+      "description": "Fläche des Dialogs"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/border",
+      "type": "color",
+      "cssVar": "--dx-dialog-border",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/default"
+      },
+      "description": "Rahmen des Dialogs"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/radius",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-radius",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Brand::brand/radius/modal"
+      },
+      "description": "Eckenradius des Dialogs (je Brand)"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/overlay",
+      "type": "color",
+      "cssVar": "--dx-dialog-overlay",
+      "values": {
+        "Default": "#14151780"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/overlay"
+      },
+      "description": "Abdunkelung hinter dem Dialog"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/overlay-padding",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-overlay-padding",
+      "values": {
+        "Default": "48px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/12"
+      },
+      "description": "Mindestabstand Dialog ↔ Viewport"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/divider",
+      "type": "color",
+      "cssVar": "--dx-dialog-divider",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/subtle"
+      },
+      "description": "Trennlinie unter Header / über Actions"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/header/padding-horizontal",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-header-padding-horizontal",
+      "values": {
+        "Default": "32px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/8"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/header/padding-vertical",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-header-padding-vertical",
+      "values": {
+        "Default": "20px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/5"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/header/gap",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-header-gap",
+      "values": {
+        "Default": "12px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/3"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/header/title-color",
+      "type": "color",
+      "cssVar": "--dx-dialog-header-title-color",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      },
+      "description": "Titel (Text-Style Body/LG – Bold)"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/header/icon/background",
+      "type": "color",
+      "cssVar": "--dx-dialog-header-icon-background",
+      "values": {
+        "Default": "#6662f5"
+      },
+      "aliases": {
+        "Default": "Brand::brand/color/primary/400"
+      },
+      "description": "Icon-Kreis innen"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/header/icon/ring",
+      "type": "color",
+      "cssVar": "--dx-dialog-header-icon-ring",
+      "values": {
+        "Default": "#8d89f7"
+      },
+      "aliases": {
+        "Default": "Brand::brand/color/primary/300"
+      },
+      "description": "Icon-Kreis außen"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/header/icon/foreground",
+      "type": "color",
+      "cssVar": "--dx-dialog-header-icon-foreground",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/on-accent"
+      },
+      "description": "Icon im Kreis"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/actions/padding-horizontal",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-actions-padding-horizontal",
+      "values": {
+        "Default": "32px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/8"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/actions/padding-vertical",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-actions-padding-vertical",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/6"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/actions/gap",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-actions-gap",
+      "values": {
+        "Default": "16px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/4"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/size/sm/width",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-size-sm-width",
+      "values": {
+        "Default": "640px"
+      },
+      "description": "Breite Size=SM"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/size/md/width",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-size-md-width",
+      "values": {
+        "Default": "1024px"
+      },
+      "description": "Breite Size=MD"
+    },
+    {
+      "collection": "Components",
+      "name": "dialog/size/lg/width",
+      "type": "dimension",
+      "cssVar": "--dx-dialog-size-lg-width",
+      "values": {
+        "Default": "1280px"
+      },
+      "description": "Breite Size=LG (XL = volle Breite)"
     },
     {
       "collection": "Components",
@@ -7941,7 +8596,7 @@
       "type": "dimension",
       "cssVar": "--dx-chip-size-default-font-size",
       "values": {
-        "Default": "14px"
+        "Default": "13px"
       },
       "aliases": {
         "Default": "Responsive::typography/body-sm/size"
@@ -8046,7 +8701,7 @@
       "type": "dimension",
       "cssVar": "--dx-chip-size-small-font-size",
       "values": {
-        "Default": "12px"
+        "Default": "11px"
       },
       "aliases": {
         "Default": "Responsive::typography/body-xs/size"
@@ -8090,434 +8745,11 @@
     },
     {
       "collection": "Components",
-      "name": "main-navigation/item/padding-horizontal",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-padding-horizontal",
-      "values": {
-        "Default": "12px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/3"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/gap",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-gap",
-      "values": {
-        "Default": "8px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/2"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/radius",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-radius",
-      "values": {
-        "Default": "8px"
-      },
-      "aliases": {
-        "Default": "Primitives::radius/md"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/icon-size",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-icon-size",
-      "values": {
-        "Default": "16px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/indicator/width",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-indicator-width",
-      "values": {
-        "Default": "3px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/indicator/height",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-indicator-height",
-      "values": {
-        "Default": "24px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/indent/level-1",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-indent-level-1",
-      "values": {
-        "Default": "12px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/3"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/indent/level-2",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-indent-level-2",
-      "values": {
-        "Default": "36px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/9"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/indent/level-3",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-indent-level-3",
-      "values": {
-        "Default": "60px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/15"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/font/size",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-font-size",
-      "values": {
-        "Default": "16px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-md/size"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/font/line-height",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-item-font-line-height",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-md/line-height"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/font/weight",
-      "type": "fontWeight",
-      "cssVar": "--dx-main-navigation-item-font-weight",
-      "values": {
-        "Default": 500
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/medium"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/font/weight-style",
-      "type": "string",
-      "cssVar": null,
-      "values": {
-        "Default": "Medium"
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/medium-style"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/default/background",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-default-background",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-default-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/default/icon",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-default-icon",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/default/indicator",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-default-indicator",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/hover/background",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-hover-background",
-      "values": {
-        "Default": "#f5f6f7"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-hover-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/hover/icon",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-hover-icon",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/hover/indicator",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-hover-indicator",
-      "values": {
-        "Default": "#00000000"
-      },
-      "aliases": {
-        "Default": "Primitives::color/transparent"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/active/background",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-active-background",
-      "values": {
-        "Default": "#ecebfe"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/active/foreground",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-active-foreground",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/active/icon",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-active-icon",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/item/active/indicator",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-item-active-indicator",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/padding-horizontal",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-section-header-padding-horizontal",
-      "values": {
-        "Default": "12px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/3"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/padding-vertical",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-section-header-padding-vertical",
-      "values": {
-        "Default": "8px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/2"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/gap",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-section-header-gap",
-      "values": {
-        "Default": "4px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/1"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/font/size",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-section-header-font-size",
-      "values": {
-        "Default": "14px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-sm/size"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/font/line-height",
-      "type": "dimension",
-      "cssVar": "--dx-main-navigation-section-header-font-line-height",
-      "values": {
-        "Default": "20px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-sm/line-height"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/font/weight",
-      "type": "fontWeight",
-      "cssVar": "--dx-main-navigation-section-header-font-weight",
-      "values": {
-        "Default": 700
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/bold"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/font/weight-style",
-      "type": "string",
-      "cssVar": null,
-      "values": {
-        "Default": "Bold"
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/bold-style"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-section-header-default-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/default/icon",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-section-header-default-icon",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-section-header-hover-foreground",
-      "values": {
-        "Default": "#4e535c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "main-navigation/section-header/hover/icon",
-      "type": "color",
-      "cssVar": "--dx-main-navigation-section-header-hover-icon",
-      "values": {
-        "Default": "#4e535c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/muted"
-      }
-    },
-    {
-      "collection": "Components",
       "name": "button/type/button/small/font/size",
       "type": "dimension",
       "cssVar": "--dx-button-type-button-small-font-size",
       "values": {
-        "Default": "14px"
+        "Default": "13px"
       },
       "aliases": {
         "Default": "Responsive::typography/body-sm/size"
@@ -11297,6 +11529,18 @@
     },
     {
       "collection": "Components",
+      "name": "form-helper-text/gap",
+      "type": "dimension",
+      "cssVar": "--dx-form-helper-text-gap",
+      "values": {
+        "Default": "4px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/1"
+      }
+    },
+    {
+      "collection": "Components",
       "name": "form-label/gap",
       "type": "dimension",
       "cssVar": "--dx-form-label-gap",
@@ -11313,7 +11557,7 @@
       "type": "dimension",
       "cssVar": "--dx-form-label-font-size",
       "values": {
-        "Default": "14px"
+        "Default": "13px"
       },
       "aliases": {
         "Default": "Responsive::typography/label-sm/size"
@@ -11414,9 +11658,348 @@
     },
     {
       "collection": "Components",
-      "name": "form-helper-text/gap",
+      "name": "input/height",
       "type": "dimension",
-      "cssVar": "--dx-form-helper-text-gap",
+      "cssVar": "--dx-input-height",
+      "values": {
+        "Default": "40px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/10"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/height",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-height",
+      "values": {
+        "Default": "48px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/12"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/padding-horizontal",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-padding-horizontal",
+      "values": {
+        "Default": "12px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/3"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/gap",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-gap",
+      "values": {
+        "Default": "8px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/2"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/radius",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-radius",
+      "values": {
+        "Default": "8px"
+      },
+      "aliases": {
+        "Default": "Primitives::radius/md"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/icon-size",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-icon-size",
+      "values": {
+        "Default": "16px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/indicator/width",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-indicator-width",
+      "values": {
+        "Default": "3px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/indicator/height",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-indicator-height",
+      "values": {
+        "Default": "24px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/indent/level-1",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-indent-level-1",
+      "values": {
+        "Default": "12px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/3"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/indent/level-2",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-indent-level-2",
+      "values": {
+        "Default": "36px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/9"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/indent/level-3",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-indent-level-3",
+      "values": {
+        "Default": "60px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/15"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/font/size",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-font-size",
+      "values": {
+        "Default": "15px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-md/size"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/font/line-height",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-item-font-line-height",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-md/line-height"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/font/weight",
+      "type": "fontWeight",
+      "cssVar": "--dx-main-navigation-item-font-weight",
+      "values": {
+        "Default": 500
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/medium"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/font/weight-style",
+      "type": "string",
+      "cssVar": null,
+      "values": {
+        "Default": "Medium"
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/medium-style"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/default/background",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-default-background",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-default-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/default/icon",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-default-icon",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/default/indicator",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-default-indicator",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/hover/background",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-hover-background",
+      "values": {
+        "Default": "#f5f6f7"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-hover-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/hover/icon",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-hover-icon",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/hover/indicator",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-hover-indicator",
+      "values": {
+        "Default": "#00000000"
+      },
+      "aliases": {
+        "Default": "Primitives::color/transparent"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/active/background",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-active-background",
+      "values": {
+        "Default": "#ecebfe"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/active/foreground",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-active-foreground",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/active/icon",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-active-icon",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/item/active/indicator",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-item-active-indicator",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/section-header/padding-horizontal",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-section-header-padding-horizontal",
+      "values": {
+        "Default": "12px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/3"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/section-header/padding-vertical",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-section-header-padding-vertical",
+      "values": {
+        "Default": "8px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/2"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/section-header/gap",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-section-header-gap",
       "values": {
         "Default": "4px"
       },
@@ -11426,14 +12009,98 @@
     },
     {
       "collection": "Components",
-      "name": "input/height",
+      "name": "main-navigation/section-header/font/size",
       "type": "dimension",
-      "cssVar": "--dx-input-height",
+      "cssVar": "--dx-main-navigation-section-header-font-size",
       "values": {
-        "Default": "40px"
+        "Default": "13px"
       },
       "aliases": {
-        "Default": "Primitives::unit/10"
+        "Default": "Responsive::typography/body-sm/size"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/section-header/font/line-height",
+      "type": "dimension",
+      "cssVar": "--dx-main-navigation-section-header-font-line-height",
+      "values": {
+        "Default": "20px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-sm/line-height"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/section-header/font/weight",
+      "type": "fontWeight",
+      "cssVar": "--dx-main-navigation-section-header-font-weight",
+      "values": {
+        "Default": 600
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/semibold"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/section-header/font/weight-style",
+      "type": "string",
+      "cssVar": null,
+      "values": {
+        "Default": "Bold"
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/bold-style"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/section-header/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-section-header-default-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/section-header/default/icon",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-section-header-default-icon",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/section-header/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-section-header-hover-foreground",
+      "values": {
+        "Default": "#4e535c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "main-navigation/section-header/hover/icon",
+      "type": "color",
+      "cssVar": "--dx-main-navigation-section-header-hover-icon",
+      "values": {
+        "Default": "#4e535c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/muted"
       }
     },
     {
@@ -11508,7 +12175,7 @@
       "type": "dimension",
       "cssVar": "--dx-input-font-size",
       "values": {
-        "Default": "16px"
+        "Default": "15px"
       },
       "aliases": {
         "Default": "Responsive::typography/body-md/size"
@@ -12008,6 +12675,831 @@
     },
     {
       "collection": "Components",
+      "name": "radio-button/size",
+      "type": "dimension",
+      "cssVar": "--dx-radio-button-size",
+      "values": {
+        "Default": "20px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/dot-size",
+      "type": "dimension",
+      "cssVar": "--dx-radio-button-dot-size",
+      "values": {
+        "Default": "10px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/border-width",
+      "type": "dimension",
+      "cssVar": "--dx-radio-button-border-width",
+      "values": {
+        "Default": "1px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/touch-target",
+      "type": "dimension",
+      "cssVar": "--dx-radio-button-touch-target",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/6"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/gap",
+      "type": "dimension",
+      "cssVar": "--dx-radio-button-gap",
+      "values": {
+        "Default": "8px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/2"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/label-font/size",
+      "type": "dimension",
+      "cssVar": "--dx-radio-button-label-font-size",
+      "values": {
+        "Default": "15px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-md/size"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/label-font/line-height",
+      "type": "dimension",
+      "cssVar": "--dx-radio-button-label-font-line-height",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-md/line-height"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/label-font/weight",
+      "type": "fontWeight",
+      "cssVar": "--dx-radio-button-label-font-weight",
+      "values": {
+        "Default": 400
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/regular"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/label-font/weight-style",
+      "type": "string",
+      "cssVar": null,
+      "values": {
+        "Default": "Regular"
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/regular-style"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/unchecked/default/background",
+      "type": "color",
+      "cssVar": "--dx-radio-button-unchecked-default-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/unchecked/default/border",
+      "type": "color",
+      "cssVar": "--dx-radio-button-unchecked-default-border",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/unchecked/hover/background",
+      "type": "color",
+      "cssVar": "--dx-radio-button-unchecked-hover-background",
+      "values": {
+        "Default": "#ecebfe"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/unchecked/hover/border",
+      "type": "color",
+      "cssVar": "--dx-radio-button-unchecked-hover-border",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/unchecked/error/background",
+      "type": "color",
+      "cssVar": "--dx-radio-button-unchecked-error-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/unchecked/error/border",
+      "type": "color",
+      "cssVar": "--dx-radio-button-unchecked-error-border",
+      "values": {
+        "Default": "#c6523f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/unchecked/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-radio-button-unchecked-disabled-background",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/unchecked/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-radio-button-unchecked-disabled-border",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/unchecked/read-only/background",
+      "type": "color",
+      "cssVar": "--dx-radio-button-unchecked-read-only-background",
+      "values": {
+        "Default": "#f5f6f7"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/unchecked/read-only/border",
+      "type": "color",
+      "cssVar": "--dx-radio-button-unchecked-read-only-border",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/default/background",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-default-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/default/border",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-default-border",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/default/dot",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-default-dot",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/hover/background",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-hover-background",
+      "values": {
+        "Default": "#ecebfe"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/hover/border",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-hover-border",
+      "values": {
+        "Default": "#332fc2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/hover/dot",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-hover-dot",
+      "values": {
+        "Default": "#332fc2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/error/background",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-error-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/error/border",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-error-border",
+      "values": {
+        "Default": "#c6523f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/error/dot",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-error-dot",
+      "values": {
+        "Default": "#c6523f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/feedback/danger/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-disabled-background",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-disabled-border",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/disabled/dot",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-disabled-dot",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/read-only/background",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-read-only-background",
+      "values": {
+        "Default": "#f5f6f7"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/read-only/border",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-read-only-border",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/checked/read-only/dot",
+      "type": "color",
+      "cssVar": "--dx-radio-button-checked-read-only-dot",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/label-foreground/default",
+      "type": "color",
+      "cssVar": "--dx-radio-button-label-foreground-default",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "radio-button/label-foreground/disabled",
+      "type": "color",
+      "cssVar": "--dx-radio-button-label-foreground-disabled",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/height",
+      "type": "dimension",
+      "cssVar": "--dx-search-height",
+      "values": {
+        "Default": "40px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/10"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/border-width",
+      "type": "dimension",
+      "cssVar": "--dx-search-border-width",
+      "values": {
+        "Default": "1px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/radius",
+      "type": "dimension",
+      "cssVar": "--dx-search-radius",
+      "values": {
+        "Default": "8px"
+      },
+      "aliases": {
+        "Default": "Brand::brand/radius/forms"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/padding-horizontal",
+      "type": "dimension",
+      "cssVar": "--dx-search-padding-horizontal",
+      "values": {
+        "Default": "12px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/3"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/icon-size",
+      "type": "dimension",
+      "cssVar": "--dx-search-icon-size",
+      "values": {
+        "Default": "16px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/gap",
+      "type": "dimension",
+      "cssVar": "--dx-search-gap",
+      "values": {
+        "Default": "8px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/2"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/font/size",
+      "type": "dimension",
+      "cssVar": "--dx-search-font-size",
+      "values": {
+        "Default": "15px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-md/size"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/font/line-height",
+      "type": "dimension",
+      "cssVar": "--dx-search-font-line-height",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-md/line-height"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/font/weight",
+      "type": "fontWeight",
+      "cssVar": "--dx-search-font-weight",
+      "values": {
+        "Default": 400
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/regular"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/font/weight-style",
+      "type": "string",
+      "cssVar": null,
+      "values": {
+        "Default": "Regular"
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/regular-style"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/default/background",
+      "type": "color",
+      "cssVar": "--dx-search-state-default-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/default/foreground",
+      "type": "color",
+      "cssVar": "--dx-search-state-default-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/default/foreground-placeholder",
+      "type": "color",
+      "cssVar": "--dx-search-state-default-foreground-placeholder",
+      "values": {
+        "Default": "#626873"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/placeholder"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/default/border",
+      "type": "color",
+      "cssVar": "--dx-search-state-default-border",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/field"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/hover/background",
+      "type": "color",
+      "cssVar": "--dx-search-state-hover-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/hover/foreground",
+      "type": "color",
+      "cssVar": "--dx-search-state-hover-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/hover/foreground-placeholder",
+      "type": "color",
+      "cssVar": "--dx-search-state-hover-foreground-placeholder",
+      "values": {
+        "Default": "#626873"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/placeholder"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/hover/border",
+      "type": "color",
+      "cssVar": "--dx-search-state-hover-border",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/focus/background",
+      "type": "color",
+      "cssVar": "--dx-search-state-focus-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/focus/foreground",
+      "type": "color",
+      "cssVar": "--dx-search-state-focus-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/focus/foreground-placeholder",
+      "type": "color",
+      "cssVar": "--dx-search-state-focus-foreground-placeholder",
+      "values": {
+        "Default": "#626873"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/placeholder"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/focus/border",
+      "type": "color",
+      "cssVar": "--dx-search-state-focus-border",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/focus"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/loading/background",
+      "type": "color",
+      "cssVar": "--dx-search-state-loading-background",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/loading/foreground",
+      "type": "color",
+      "cssVar": "--dx-search-state-loading-foreground",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/loading/foreground-placeholder",
+      "type": "color",
+      "cssVar": "--dx-search-state-loading-foreground-placeholder",
+      "values": {
+        "Default": "#626873"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/placeholder"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/loading/border",
+      "type": "color",
+      "cssVar": "--dx-search-state-loading-border",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/field"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/loading/spinner",
+      "type": "color",
+      "cssVar": "--dx-search-state-loading-spinner",
+      "values": {
+        "Default": "#4e535c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/disabled/background",
+      "type": "color",
+      "cssVar": "--dx-search-state-disabled-background",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/disabled/foreground",
+      "type": "color",
+      "cssVar": "--dx-search-state-disabled-foreground",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/disabled/foreground-placeholder",
+      "type": "color",
+      "cssVar": "--dx-search-state-disabled-foreground-placeholder",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/state/disabled/border",
+      "type": "color",
+      "cssVar": "--dx-search-state-disabled-border",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/search-icon/color",
+      "type": "color",
+      "cssVar": "--dx-search-search-icon-color",
+      "values": {
+        "Default": "#4e535c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/clear/color",
+      "type": "color",
+      "cssVar": "--dx-search-clear-color",
+      "values": {
+        "Default": "#4e535c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "search/clear/hit-area",
+      "type": "dimension",
+      "cssVar": "--dx-search-clear-hit-area",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/6"
+      }
+    },
+    {
+      "collection": "Components",
       "name": "select/height",
       "type": "dimension",
       "cssVar": "--dx-select-height",
@@ -12078,7 +13570,7 @@
       "type": "dimension",
       "cssVar": "--dx-select-font-size",
       "values": {
-        "Default": "16px"
+        "Default": "15px"
       },
       "aliases": {
         "Default": "Responsive::typography/body-md/size"
@@ -12806,441 +14298,6 @@
     },
     {
       "collection": "Components",
-      "name": "checkbox/size",
-      "type": "dimension",
-      "cssVar": "--dx-checkbox-size",
-      "values": {
-        "Default": "20px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/radius",
-      "type": "dimension",
-      "cssVar": "--dx-checkbox-radius",
-      "values": {
-        "Default": "4px"
-      },
-      "aliases": {
-        "Default": "Primitives::radius/sm"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/border-width",
-      "type": "dimension",
-      "cssVar": "--dx-checkbox-border-width",
-      "values": {
-        "Default": "1px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/icon-size",
-      "type": "dimension",
-      "cssVar": "--dx-checkbox-icon-size",
-      "values": {
-        "Default": "14px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/touch-target",
-      "type": "dimension",
-      "cssVar": "--dx-checkbox-touch-target",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/6"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/gap",
-      "type": "dimension",
-      "cssVar": "--dx-checkbox-gap",
-      "values": {
-        "Default": "8px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/2"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/label-font/size",
-      "type": "dimension",
-      "cssVar": "--dx-checkbox-label-font-size",
-      "values": {
-        "Default": "16px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-md/size"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/label-font/line-height",
-      "type": "dimension",
-      "cssVar": "--dx-checkbox-label-font-line-height",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-md/line-height"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/label-font/weight",
-      "type": "fontWeight",
-      "cssVar": "--dx-checkbox-label-font-weight",
-      "values": {
-        "Default": 400
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/regular"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/label-font/weight-style",
-      "type": "string",
-      "cssVar": null,
-      "values": {
-        "Default": "Regular"
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/unchecked/default/background",
-      "type": "color",
-      "cssVar": "--dx-checkbox-unchecked-default-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/unchecked/default/border",
-      "type": "color",
-      "cssVar": "--dx-checkbox-unchecked-default-border",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/unchecked/hover/background",
-      "type": "color",
-      "cssVar": "--dx-checkbox-unchecked-hover-background",
-      "values": {
-        "Default": "#ecebfe"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/unchecked/hover/border",
-      "type": "color",
-      "cssVar": "--dx-checkbox-unchecked-hover-border",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/unchecked/error/background",
-      "type": "color",
-      "cssVar": "--dx-checkbox-unchecked-error-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/unchecked/error/border",
-      "type": "color",
-      "cssVar": "--dx-checkbox-unchecked-error-border",
-      "values": {
-        "Default": "#c6523f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/unchecked/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-checkbox-unchecked-disabled-background",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/unchecked/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-checkbox-unchecked-disabled-border",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/unchecked/read-only/background",
-      "type": "color",
-      "cssVar": "--dx-checkbox-unchecked-read-only-background",
-      "values": {
-        "Default": "#f5f6f7"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/unchecked/read-only/border",
-      "type": "color",
-      "cssVar": "--dx-checkbox-unchecked-read-only-border",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/default/background",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-default-background",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/default/border",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-default-border",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/default/check",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-default-check",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/hover/background",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-hover-background",
-      "values": {
-        "Default": "#332fc2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/hover/border",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-hover-border",
-      "values": {
-        "Default": "#332fc2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/hover/check",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-hover-check",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/error/background",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-error-background",
-      "values": {
-        "Default": "#bc3520"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/error/border",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-error-border",
-      "values": {
-        "Default": "#bc3520"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/error/check",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-error-check",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/on-strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-disabled-background",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/disabled"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-disabled-border",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/disabled"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/disabled/check",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-disabled-check",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/read-only/background",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-read-only-background",
-      "values": {
-        "Default": "#f5f6f7"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/read-only/border",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-read-only-border",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/checked/read-only/check",
-      "type": "color",
-      "cssVar": "--dx-checkbox-checked-read-only-check",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/label-foreground/default",
-      "type": "color",
-      "cssVar": "--dx-checkbox-label-foreground-default",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "checkbox/label-foreground/disabled",
-      "type": "color",
-      "cssVar": "--dx-checkbox-label-foreground-disabled",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
       "name": "form-helper-text/gap-internal",
       "type": "dimension",
       "cssVar": "--dx-form-helper-text-gap-internal",
@@ -13257,7 +14314,7 @@
       "type": "dimension",
       "cssVar": "--dx-form-helper-text-font-size",
       "values": {
-        "Default": "14px"
+        "Default": "13px"
       },
       "aliases": {
         "Default": "Responsive::typography/body-sm/size"
@@ -13334,1399 +14391,6 @@
       "aliases": {
         "Default": "Semantic::color/foreground/muted"
       }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/size",
-      "type": "dimension",
-      "cssVar": "--dx-radio-button-size",
-      "values": {
-        "Default": "20px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/dot-size",
-      "type": "dimension",
-      "cssVar": "--dx-radio-button-dot-size",
-      "values": {
-        "Default": "10px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/border-width",
-      "type": "dimension",
-      "cssVar": "--dx-radio-button-border-width",
-      "values": {
-        "Default": "1px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/touch-target",
-      "type": "dimension",
-      "cssVar": "--dx-radio-button-touch-target",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/6"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/gap",
-      "type": "dimension",
-      "cssVar": "--dx-radio-button-gap",
-      "values": {
-        "Default": "8px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/2"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/label-font/size",
-      "type": "dimension",
-      "cssVar": "--dx-radio-button-label-font-size",
-      "values": {
-        "Default": "16px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-md/size"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/label-font/line-height",
-      "type": "dimension",
-      "cssVar": "--dx-radio-button-label-font-line-height",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-md/line-height"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/label-font/weight",
-      "type": "fontWeight",
-      "cssVar": "--dx-radio-button-label-font-weight",
-      "values": {
-        "Default": 400
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/regular"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/label-font/weight-style",
-      "type": "string",
-      "cssVar": null,
-      "values": {
-        "Default": "Regular"
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/unchecked/default/background",
-      "type": "color",
-      "cssVar": "--dx-radio-button-unchecked-default-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/unchecked/default/border",
-      "type": "color",
-      "cssVar": "--dx-radio-button-unchecked-default-border",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/unchecked/hover/background",
-      "type": "color",
-      "cssVar": "--dx-radio-button-unchecked-hover-background",
-      "values": {
-        "Default": "#ecebfe"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/unchecked/hover/border",
-      "type": "color",
-      "cssVar": "--dx-radio-button-unchecked-hover-border",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/unchecked/error/background",
-      "type": "color",
-      "cssVar": "--dx-radio-button-unchecked-error-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/unchecked/error/border",
-      "type": "color",
-      "cssVar": "--dx-radio-button-unchecked-error-border",
-      "values": {
-        "Default": "#c6523f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/unchecked/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-radio-button-unchecked-disabled-background",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/unchecked/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-radio-button-unchecked-disabled-border",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/default/background",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-default-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/default/border",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-default-border",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/default/dot",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-default-dot",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/hover/background",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-hover-background",
-      "values": {
-        "Default": "#ecebfe"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/hover/border",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-hover-border",
-      "values": {
-        "Default": "#332fc2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/hover/dot",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-hover-dot",
-      "values": {
-        "Default": "#332fc2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/error/background",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-error-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/error/border",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-error-border",
-      "values": {
-        "Default": "#c6523f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/error/dot",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-error-dot",
-      "values": {
-        "Default": "#c6523f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/feedback/danger/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-disabled-background",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-disabled-border",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/disabled/dot",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-disabled-dot",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/label-foreground/default",
-      "type": "color",
-      "cssVar": "--dx-radio-button-label-foreground-default",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/label-foreground/disabled",
-      "type": "color",
-      "cssVar": "--dx-radio-button-label-foreground-disabled",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/height",
-      "type": "dimension",
-      "cssVar": "--dx-search-height",
-      "values": {
-        "Default": "40px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/10"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/border-width",
-      "type": "dimension",
-      "cssVar": "--dx-search-border-width",
-      "values": {
-        "Default": "1px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/radius",
-      "type": "dimension",
-      "cssVar": "--dx-search-radius",
-      "values": {
-        "Default": "8px"
-      },
-      "aliases": {
-        "Default": "Brand::brand/radius/forms"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/padding-horizontal",
-      "type": "dimension",
-      "cssVar": "--dx-search-padding-horizontal",
-      "values": {
-        "Default": "12px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/3"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/icon-size",
-      "type": "dimension",
-      "cssVar": "--dx-search-icon-size",
-      "values": {
-        "Default": "16px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/gap",
-      "type": "dimension",
-      "cssVar": "--dx-search-gap",
-      "values": {
-        "Default": "8px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/2"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/font/size",
-      "type": "dimension",
-      "cssVar": "--dx-search-font-size",
-      "values": {
-        "Default": "16px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-md/size"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/font/line-height",
-      "type": "dimension",
-      "cssVar": "--dx-search-font-line-height",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-md/line-height"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/font/weight",
-      "type": "fontWeight",
-      "cssVar": "--dx-search-font-weight",
-      "values": {
-        "Default": 400
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/regular"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/font/weight-style",
-      "type": "string",
-      "cssVar": null,
-      "values": {
-        "Default": "Regular"
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/default/background",
-      "type": "color",
-      "cssVar": "--dx-search-state-default-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/default/foreground",
-      "type": "color",
-      "cssVar": "--dx-search-state-default-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/default/foreground-placeholder",
-      "type": "color",
-      "cssVar": "--dx-search-state-default-foreground-placeholder",
-      "values": {
-        "Default": "#626873"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/placeholder"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/default/border",
-      "type": "color",
-      "cssVar": "--dx-search-state-default-border",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/field"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/hover/background",
-      "type": "color",
-      "cssVar": "--dx-search-state-hover-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/hover/foreground",
-      "type": "color",
-      "cssVar": "--dx-search-state-hover-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/hover/foreground-placeholder",
-      "type": "color",
-      "cssVar": "--dx-search-state-hover-foreground-placeholder",
-      "values": {
-        "Default": "#626873"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/placeholder"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/hover/border",
-      "type": "color",
-      "cssVar": "--dx-search-state-hover-border",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/focus/background",
-      "type": "color",
-      "cssVar": "--dx-search-state-focus-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/focus/foreground",
-      "type": "color",
-      "cssVar": "--dx-search-state-focus-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/focus/foreground-placeholder",
-      "type": "color",
-      "cssVar": "--dx-search-state-focus-foreground-placeholder",
-      "values": {
-        "Default": "#626873"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/placeholder"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/focus/border",
-      "type": "color",
-      "cssVar": "--dx-search-state-focus-border",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/focus"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/loading/background",
-      "type": "color",
-      "cssVar": "--dx-search-state-loading-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/loading/foreground",
-      "type": "color",
-      "cssVar": "--dx-search-state-loading-foreground",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/loading/foreground-placeholder",
-      "type": "color",
-      "cssVar": "--dx-search-state-loading-foreground-placeholder",
-      "values": {
-        "Default": "#626873"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/placeholder"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/loading/border",
-      "type": "color",
-      "cssVar": "--dx-search-state-loading-border",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/field"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/loading/spinner",
-      "type": "color",
-      "cssVar": "--dx-search-state-loading-spinner",
-      "values": {
-        "Default": "#4e535c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/disabled/background",
-      "type": "color",
-      "cssVar": "--dx-search-state-disabled-background",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/disabled/foreground",
-      "type": "color",
-      "cssVar": "--dx-search-state-disabled-foreground",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/disabled/foreground-placeholder",
-      "type": "color",
-      "cssVar": "--dx-search-state-disabled-foreground-placeholder",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/state/disabled/border",
-      "type": "color",
-      "cssVar": "--dx-search-state-disabled-border",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/search-icon/color",
-      "type": "color",
-      "cssVar": "--dx-search-search-icon-color",
-      "values": {
-        "Default": "#4e535c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/clear/color",
-      "type": "color",
-      "cssVar": "--dx-search-clear-color",
-      "values": {
-        "Default": "#4e535c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "search/clear/hit-area",
-      "type": "dimension",
-      "cssVar": "--dx-search-clear-hit-area",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/6"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/track-width",
-      "type": "dimension",
-      "cssVar": "--dx-switch-track-width",
-      "values": {
-        "Default": "36px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/track-height",
-      "type": "dimension",
-      "cssVar": "--dx-switch-track-height",
-      "values": {
-        "Default": "20px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/radius",
-      "type": "dimension",
-      "cssVar": "--dx-switch-radius",
-      "values": {
-        "Default": "9999px"
-      },
-      "aliases": {
-        "Default": "Primitives::radius/full"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/thumb-size",
-      "type": "dimension",
-      "cssVar": "--dx-switch-thumb-size",
-      "values": {
-        "Default": "16px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/thumb-inset",
-      "type": "dimension",
-      "cssVar": "--dx-switch-thumb-inset",
-      "values": {
-        "Default": "2px"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/touch-target",
-      "type": "dimension",
-      "cssVar": "--dx-switch-touch-target",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/6"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/gap",
-      "type": "dimension",
-      "cssVar": "--dx-switch-gap",
-      "values": {
-        "Default": "8px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/2"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/label-font/size",
-      "type": "dimension",
-      "cssVar": "--dx-switch-label-font-size",
-      "values": {
-        "Default": "16px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-md/size"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/label-font/line-height",
-      "type": "dimension",
-      "cssVar": "--dx-switch-label-font-line-height",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Responsive::typography/body-md/line-height"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/label-font/weight",
-      "type": "fontWeight",
-      "cssVar": "--dx-switch-label-font-weight",
-      "values": {
-        "Default": 400
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/regular"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/label-font/weight-style",
-      "type": "string",
-      "cssVar": null,
-      "values": {
-        "Default": "Regular"
-      },
-      "aliases": {
-        "Default": "Primitives::font/weight/regular-style"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/off/default/track",
-      "type": "color",
-      "cssVar": "--dx-switch-off-default-track",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/off/default/thumb",
-      "type": "color",
-      "cssVar": "--dx-switch-off-default-thumb",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/off/hover/track",
-      "type": "color",
-      "cssVar": "--dx-switch-off-hover-track",
-      "values": {
-        "Default": "#4e535c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/off/hover/thumb",
-      "type": "color",
-      "cssVar": "--dx-switch-off-hover-thumb",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/off/disabled/track",
-      "type": "color",
-      "cssVar": "--dx-switch-off-disabled-track",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/off/disabled/thumb",
-      "type": "color",
-      "cssVar": "--dx-switch-off-disabled-thumb",
-      "values": {
-        "Default": "#f5f6f7"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/on/default/track",
-      "type": "color",
-      "cssVar": "--dx-switch-on-default-track",
-      "values": {
-        "Default": "#403af2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/on/default/thumb",
-      "type": "color",
-      "cssVar": "--dx-switch-on-default-thumb",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/on/hover/track",
-      "type": "color",
-      "cssVar": "--dx-switch-on-hover-track",
-      "values": {
-        "Default": "#332fc2"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/hover"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/on/hover/thumb",
-      "type": "color",
-      "cssVar": "--dx-switch-on-hover-thumb",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/foreground"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/on/disabled/track",
-      "type": "color",
-      "cssVar": "--dx-switch-on-disabled-track",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/action/primary/disabled"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/on/disabled/thumb",
-      "type": "color",
-      "cssVar": "--dx-switch-on-disabled-thumb",
-      "values": {
-        "Default": "#f5f6f7"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/label-foreground/default",
-      "type": "color",
-      "cssVar": "--dx-switch-label-foreground-default",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/label-foreground/disabled",
-      "type": "color",
-      "cssVar": "--dx-switch-label-foreground-disabled",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/unchecked/read-only/background",
-      "type": "color",
-      "cssVar": "--dx-radio-button-unchecked-read-only-background",
-      "values": {
-        "Default": "#f5f6f7"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/unchecked/read-only/border",
-      "type": "color",
-      "cssVar": "--dx-radio-button-unchecked-read-only-border",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/read-only/background",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-read-only-background",
-      "values": {
-        "Default": "#f5f6f7"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/read-only/border",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-read-only-border",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "radio-button/checked/read-only/dot",
-      "type": "color",
-      "cssVar": "--dx-radio-button-checked-read-only-dot",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/off/read-only/track",
-      "type": "color",
-      "cssVar": "--dx-switch-off-read-only-track",
-      "values": {
-        "Default": "#81868f"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/strong"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/off/read-only/thumb",
-      "type": "color",
-      "cssVar": "--dx-switch-off-read-only-thumb",
-      "values": {
-        "Default": "#f5f6f7"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/on/read-only/track",
-      "type": "color",
-      "cssVar": "--dx-switch-on-read-only-track",
-      "values": {
-        "Default": "#4e535c"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/muted"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "switch/on/read-only/thumb",
-      "type": "color",
-      "cssVar": "--dx-switch-on-read-only-thumb",
-      "values": {
-        "Default": "#f5f6f7"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/subtle"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/background",
-      "type": "color",
-      "cssVar": "--dx-dialog-background",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/default"
-      },
-      "description": "Fläche des Dialogs"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/border",
-      "type": "color",
-      "cssVar": "--dx-dialog-border",
-      "values": {
-        "Default": "#caccd1"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/default"
-      },
-      "description": "Rahmen des Dialogs"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/radius",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-radius",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Brand::brand/radius/modal"
-      },
-      "description": "Eckenradius des Dialogs (je Brand)"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/overlay",
-      "type": "color",
-      "cssVar": "--dx-dialog-overlay",
-      "values": {
-        "Default": "#14151780"
-      },
-      "aliases": {
-        "Default": "Semantic::color/background/overlay"
-      },
-      "description": "Abdunkelung hinter dem Dialog"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/overlay-padding",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-overlay-padding",
-      "values": {
-        "Default": "48px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/12"
-      },
-      "description": "Mindestabstand Dialog ↔ Viewport"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/divider",
-      "type": "color",
-      "cssVar": "--dx-dialog-divider",
-      "values": {
-        "Default": "#e5e6e8"
-      },
-      "aliases": {
-        "Default": "Semantic::color/border/subtle"
-      },
-      "description": "Trennlinie unter Header / über Actions"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/header/padding-horizontal",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-header-padding-horizontal",
-      "values": {
-        "Default": "32px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/8"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/header/padding-vertical",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-header-padding-vertical",
-      "values": {
-        "Default": "20px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/5"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/header/gap",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-header-gap",
-      "values": {
-        "Default": "12px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/3"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/header/title-color",
-      "type": "color",
-      "cssVar": "--dx-dialog-header-title-color",
-      "values": {
-        "Default": "#27292e"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/default"
-      },
-      "description": "Titel (Text-Style Body/LG – Bold)"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/header/icon/background",
-      "type": "color",
-      "cssVar": "--dx-dialog-header-icon-background",
-      "values": {
-        "Default": "#6662f5"
-      },
-      "aliases": {
-        "Default": "Brand::brand/color/primary/400"
-      },
-      "description": "Icon-Kreis innen"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/header/icon/ring",
-      "type": "color",
-      "cssVar": "--dx-dialog-header-icon-ring",
-      "values": {
-        "Default": "#8d89f7"
-      },
-      "aliases": {
-        "Default": "Brand::brand/color/primary/300"
-      },
-      "description": "Icon-Kreis außen"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/header/icon/foreground",
-      "type": "color",
-      "cssVar": "--dx-dialog-header-icon-foreground",
-      "values": {
-        "Default": "#ffffff"
-      },
-      "aliases": {
-        "Default": "Semantic::color/foreground/on-accent"
-      },
-      "description": "Icon im Kreis"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/actions/padding-horizontal",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-actions-padding-horizontal",
-      "values": {
-        "Default": "32px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/8"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/actions/padding-vertical",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-actions-padding-vertical",
-      "values": {
-        "Default": "24px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/6"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/actions/gap",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-actions-gap",
-      "values": {
-        "Default": "16px"
-      },
-      "aliases": {
-        "Default": "Primitives::unit/4"
-      }
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/size/sm/width",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-size-sm-width",
-      "values": {
-        "Default": "640px"
-      },
-      "description": "Breite Size=SM"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/size/md/width",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-size-md-width",
-      "values": {
-        "Default": "1024px"
-      },
-      "description": "Breite Size=MD"
-    },
-    {
-      "collection": "Components",
-      "name": "dialog/size/lg/width",
-      "type": "dimension",
-      "cssVar": "--dx-dialog-size-lg-width",
-      "values": {
-        "Default": "1280px"
-      },
-      "description": "Breite Size=LG (XL = volle Breite)"
     },
     {
       "collection": "Components",
@@ -15033,6 +14697,342 @@
       },
       "aliases": {
         "Default": "Semantic::color/feedback/danger/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/track-width",
+      "type": "dimension",
+      "cssVar": "--dx-switch-track-width",
+      "values": {
+        "Default": "36px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/track-height",
+      "type": "dimension",
+      "cssVar": "--dx-switch-track-height",
+      "values": {
+        "Default": "20px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/radius",
+      "type": "dimension",
+      "cssVar": "--dx-switch-radius",
+      "values": {
+        "Default": "9999px"
+      },
+      "aliases": {
+        "Default": "Primitives::radius/full"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/thumb-size",
+      "type": "dimension",
+      "cssVar": "--dx-switch-thumb-size",
+      "values": {
+        "Default": "16px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/thumb-inset",
+      "type": "dimension",
+      "cssVar": "--dx-switch-thumb-inset",
+      "values": {
+        "Default": "2px"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/touch-target",
+      "type": "dimension",
+      "cssVar": "--dx-switch-touch-target",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/6"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/gap",
+      "type": "dimension",
+      "cssVar": "--dx-switch-gap",
+      "values": {
+        "Default": "8px"
+      },
+      "aliases": {
+        "Default": "Primitives::unit/2"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/label-font/size",
+      "type": "dimension",
+      "cssVar": "--dx-switch-label-font-size",
+      "values": {
+        "Default": "15px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-md/size"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/label-font/line-height",
+      "type": "dimension",
+      "cssVar": "--dx-switch-label-font-line-height",
+      "values": {
+        "Default": "24px"
+      },
+      "aliases": {
+        "Default": "Responsive::typography/body-md/line-height"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/label-font/weight",
+      "type": "fontWeight",
+      "cssVar": "--dx-switch-label-font-weight",
+      "values": {
+        "Default": 400
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/regular"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/label-font/weight-style",
+      "type": "string",
+      "cssVar": null,
+      "values": {
+        "Default": "Regular"
+      },
+      "aliases": {
+        "Default": "Primitives::font/weight/regular-style"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/off/default/track",
+      "type": "color",
+      "cssVar": "--dx-switch-off-default-track",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/off/default/thumb",
+      "type": "color",
+      "cssVar": "--dx-switch-off-default-thumb",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/off/hover/track",
+      "type": "color",
+      "cssVar": "--dx-switch-off-hover-track",
+      "values": {
+        "Default": "#4e535c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/off/hover/thumb",
+      "type": "color",
+      "cssVar": "--dx-switch-off-hover-thumb",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/off/disabled/track",
+      "type": "color",
+      "cssVar": "--dx-switch-off-disabled-track",
+      "values": {
+        "Default": "#e5e6e8"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/off/disabled/thumb",
+      "type": "color",
+      "cssVar": "--dx-switch-off-disabled-thumb",
+      "values": {
+        "Default": "#f5f6f7"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/on/default/track",
+      "type": "color",
+      "cssVar": "--dx-switch-on-default-track",
+      "values": {
+        "Default": "#403af2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/on/default/thumb",
+      "type": "color",
+      "cssVar": "--dx-switch-on-default-thumb",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/on/hover/track",
+      "type": "color",
+      "cssVar": "--dx-switch-on-hover-track",
+      "values": {
+        "Default": "#332fc2"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/hover"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/on/hover/thumb",
+      "type": "color",
+      "cssVar": "--dx-switch-on-hover-thumb",
+      "values": {
+        "Default": "#ffffff"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/foreground"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/on/disabled/track",
+      "type": "color",
+      "cssVar": "--dx-switch-on-disabled-track",
+      "values": {
+        "Default": "#caccd1"
+      },
+      "aliases": {
+        "Default": "Semantic::color/action/primary/disabled"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/on/disabled/thumb",
+      "type": "color",
+      "cssVar": "--dx-switch-on-disabled-thumb",
+      "values": {
+        "Default": "#f5f6f7"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/label-foreground/default",
+      "type": "color",
+      "cssVar": "--dx-switch-label-foreground-default",
+      "values": {
+        "Default": "#27292e"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/default"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/label-foreground/disabled",
+      "type": "color",
+      "cssVar": "--dx-switch-label-foreground-disabled",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/off/read-only/track",
+      "type": "color",
+      "cssVar": "--dx-switch-off-read-only-track",
+      "values": {
+        "Default": "#81868f"
+      },
+      "aliases": {
+        "Default": "Semantic::color/border/strong"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/off/read-only/thumb",
+      "type": "color",
+      "cssVar": "--dx-switch-off-read-only-thumb",
+      "values": {
+        "Default": "#f5f6f7"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/subtle"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/on/read-only/track",
+      "type": "color",
+      "cssVar": "--dx-switch-on-read-only-track",
+      "values": {
+        "Default": "#4e535c"
+      },
+      "aliases": {
+        "Default": "Semantic::color/foreground/muted"
+      }
+    },
+    {
+      "collection": "Components",
+      "name": "switch/on/read-only/thumb",
+      "type": "color",
+      "cssVar": "--dx-switch-on-read-only-thumb",
+      "values": {
+        "Default": "#f5f6f7"
+      },
+      "aliases": {
+        "Default": "Semantic::color/background/subtle"
       }
     }
   ],
@@ -15712,7 +15712,7 @@
       "name": "Body/LG – Normal",
       "family": "Inter",
       "style": "Regular",
-      "fontSize": 18,
+      "fontSize": 17,
       "lineHeight": 24,
       "letterSpacing": 0,
       "bindings": {
@@ -15727,7 +15727,7 @@
       "name": "Body/LG – Bold",
       "family": "Inter",
       "style": "Semi Bold",
-      "fontSize": 18,
+      "fontSize": 17,
       "lineHeight": 24,
       "letterSpacing": 0,
       "bindings": {
@@ -15742,7 +15742,7 @@
       "name": "Body/MD – Normal",
       "family": "Inter",
       "style": "Regular",
-      "fontSize": 16,
+      "fontSize": 15,
       "lineHeight": 24,
       "letterSpacing": 0,
       "bindings": {
@@ -15757,7 +15757,7 @@
       "name": "Body/MD – Bold",
       "family": "Inter",
       "style": "Semi Bold",
-      "fontSize": 16,
+      "fontSize": 15,
       "lineHeight": 24,
       "letterSpacing": 0,
       "bindings": {
@@ -15772,7 +15772,7 @@
       "name": "Body/SM – Normal",
       "family": "Inter",
       "style": "Regular",
-      "fontSize": 14,
+      "fontSize": 13,
       "lineHeight": 20,
       "letterSpacing": 0,
       "bindings": {
@@ -15787,7 +15787,7 @@
       "name": "Body/SM – Bold",
       "family": "Inter",
       "style": "Semi Bold",
-      "fontSize": 14,
+      "fontSize": 13,
       "lineHeight": 20,
       "letterSpacing": 0,
       "bindings": {
@@ -15802,7 +15802,7 @@
       "name": "Body/XS – Normal",
       "family": "Inter",
       "style": "Regular",
-      "fontSize": 12,
+      "fontSize": 11,
       "lineHeight": 16,
       "letterSpacing": 0,
       "bindings": {
@@ -15817,7 +15817,7 @@
       "name": "Body/XS – Bold",
       "family": "Inter",
       "style": "Semi Bold",
-      "fontSize": 12,
+      "fontSize": 11,
       "lineHeight": 16,
       "letterSpacing": 0,
       "bindings": {
@@ -15832,7 +15832,7 @@
       "name": "Label/MD",
       "family": "Inter",
       "style": "Medium",
-      "fontSize": 16,
+      "fontSize": 15,
       "lineHeight": 24,
       "letterSpacing": 0,
       "bindings": {
@@ -15847,7 +15847,7 @@
       "name": "Label/SM",
       "family": "Inter",
       "style": "Medium",
-      "fontSize": 14,
+      "fontSize": 13,
       "lineHeight": 20,
       "letterSpacing": 0,
       "bindings": {
@@ -15863,7 +15863,7 @@
       "family": "Inter",
       "style": "Medium",
       "fontSize": 12,
-      "lineHeight": 16,
+      "lineHeight": 15,
       "letterSpacing": 0,
       "bindings": {
         "letterSpacing": "@Primitives::font/letter-spacing/normal",
@@ -15877,7 +15877,7 @@
       "name": "Component/Button Label",
       "family": "Inter",
       "style": "Medium",
-      "fontSize": 16,
+      "fontSize": 15,
       "lineHeight": 24,
       "letterSpacing": 0,
       "bindings": {
@@ -15892,7 +15892,7 @@
       "name": "Component/Main Navigation Label",
       "family": "Inter",
       "style": "Medium",
-      "fontSize": 16,
+      "fontSize": 15,
       "lineHeight": 24,
       "letterSpacing": -0.25,
       "bindings": {
@@ -15907,7 +15907,7 @@
       "name": "Component/Main Navigation Section Header",
       "family": "Inter",
       "style": "Bold",
-      "fontSize": 14,
+      "fontSize": 13,
       "lineHeight": 20,
       "letterSpacing": 0,
       "bindings": {

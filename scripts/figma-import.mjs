@@ -9,13 +9,14 @@
  * Danach: git diff prüfen, pnpm test + pnpm test:visual, PR.
  */
 import { execFileSync } from 'node:child_process';
-import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = join(ROOT, 'packages/tokens/figma/raw');
 const SVG = join(ROOT, 'packages/icons/svg');
+const LOGOS = join(ROOT, 'packages/icons/logos');
 const COLLECTION_FILES = {
   Primitives: 'primitives',
   Brand: 'brand',
@@ -177,6 +178,51 @@ if (data.icons) {
   console.log(c.y('– Icons nicht im Export (Checkbox im Plugin) — übersprungen'));
 }
 
+// ── Logos (ComponentSet „Dextinity Logos“) ───────────────────────────────────────────────────
+// Variantenname „Brand=Dextinity AI Hub, Color=Negative, onlySign=False“ → logos/dextinity-ai-hub--negative.svg
+const logoKey = (variant) => {
+  const p = Object.fromEntries(variant.split(',').map((kv) => kv.split('=').map((x) => x.trim())));
+  const slug = (x) =>
+    x
+      .toLowerCase()
+      .replace(/\(.*?\)/g, '')
+      .trim()
+      .replace(/[^a-z0-9]+/g, '-');
+  return `${slug(p.Brand)}--${slug(p.Color)}${p.onlySign === 'True' ? '--sign' : ''}`;
+};
+if (data.logos) {
+  mkdirSync(LOGOS, { recursive: true });
+  const existing = new Set(
+    readdirSync(LOGOS)
+      .filter((f) => f.endsWith('.svg'))
+      .map((f) => f.slice(0, -4)),
+  );
+  const incoming = Object.fromEntries(
+    Object.entries(data.logos.logos).map(([k, v]) => [logoKey(k), v]),
+  );
+  const added = Object.keys(incoming).filter((k) => !existing.has(k));
+  const removed = [...existing].filter((k) => !(k in incoming));
+  const changed = Object.keys(incoming).filter(
+    (k) =>
+      existing.has(k) &&
+      readFileSync(join(LOGOS, `${k}.svg`), 'utf8').trim() !== incoming[k].trim(),
+  );
+  const n = added.length + removed.length + changed.length;
+  changes += n;
+  summary.icons += n;
+  console.log(
+    `${n ? '●' : c.g('✓')} Logos: ${Object.keys(incoming).length}${n ? '' : ' — unverändert'}`,
+  );
+  list('neu', added, c.g);
+  list('entfernt', removed, c.r);
+  list('geändert', changed, c.y);
+  for (const [k, svg] of Object.entries(incoming))
+    writes.push([join(LOGOS, `${k}.svg`), svg.trim() + '\n']);
+  iconDeletes.push(...removed.map((k) => join(LOGOS, `${k}.svg`)));
+} else if (data.icons) {
+  console.log(c.y('– Logos nicht im Export (Plugin-Version ohne Logos?) — übersprungen'));
+}
+
 console.log(`\n${changes ? c.b(`${changes} Änderung(en)`) : c.g('Figma und Code sind synchron.')}`);
 if (dryRun) {
   console.log(c.y('--dry-run: nichts geschrieben.'));
@@ -202,7 +248,7 @@ if (changes) {
   const parts = [
     vars.length && `Variablen ${vars.join(', ')}`,
     summary.styles && `${summary.styles} Style-Änderungen`,
-    summary.icons && `${summary.icons} Icon-Änderungen`,
+    summary.icons && `${summary.icons} Icon-/Logo-Änderungen`,
   ].filter(Boolean);
   const from = oldVersion && oldVersion !== newVersion ? ` (vorher ${oldVersion})` : '';
   // Stufe nach AGENTS.md → „Versionen & Changesets“: vor 1.0 Breaking (entfernt) → minor, sonst patch;
