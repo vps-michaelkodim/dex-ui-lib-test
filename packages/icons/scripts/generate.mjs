@@ -105,12 +105,13 @@ ${body}
 // ── Logos ─────────────────────────────────────────────────────────────────────────────────
 // Datei „dextinity-ai-hub--negative--sign.svg“ → brand 'ai-hub', color 'negative', signOnly.
 const brandOf = (slug) => slug.replace(/^dextinity-/, '').replace(/-brand$/, '');
+const ACRONYMS = new Set(['ai', 'cms']);
 const brandLabel = (slug) =>
   slug
     .replace(/-main-brand$/, '')
     .replace(/-brand$/, '')
     .split('-')
-    .map((w) => (w.length <= 2 ? w.toUpperCase() : pascal(w)))
+    .map((w) => (ACRONYMS.has(w) ? w.toUpperCase() : pascal(w)))
     .join(' ');
 const logoFiles = existsSync(LOGO_DIR)
   ? readdirSync(LOGO_DIR)

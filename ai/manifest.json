@@ -74,26 +74,9 @@
   ],
   "components": [
     {
-      "name": "LogoPlaceholder",
-      "import": "import { LogoPlaceholder } from '@dextinity/ui';",
-      "summary": "Platzhalter-Logo aus Figma (LogosHeader › Variante=Example).",
-      "figma": null,
-      "source": "packages/ui/src/components/app-shell/AppBar.tsx",
-      "storybook": null,
-      "props": [
-        {
-          "name": "className",
-          "type": "string",
-          "required": false,
-          "description": ""
-        }
-      ],
-      "examples": []
-    },
-    {
       "name": "AppBar",
       "import": "import { AppBar } from '@dextinity/ui';",
-      "summary": "App Bar — Figma: `04 Patterns / App Shell › App Bar` (Device=Desktop | Mobile).\nKopfzeile der Dextinity-Apps (dunkel): links Navigation-Toggle + Branding, rechts Suche, Scope, Benutzer.\nUnter 1024px automatisch Mobile: Hamburger, Logo, Such-Button, Avatar.",
+      "summary": "App Bar — Figma: `04 Patterns / App Shell › App Bar` (Device=Desktop | Mobile).\nKopfzeile der Dextinity-Apps (dunkel): links Navigation-Toggle + Branding, rechts Suche, Scope, Benutzer.\nUnter 1024px automatisch Mobile: Toggle, Logo-Zeichen + App-Name, Such-Button, Avatar.",
       "figma": null,
       "source": "packages/ui/src/components/app-shell/AppBar.tsx",
       "storybook": null,
@@ -102,14 +85,14 @@
           "name": "appName",
           "type": "ReactNode",
           "required": false,
-          "description": "Figma: Branding › Application Title. Auf Mobile ausgeblendet."
+          "description": "Figma: Branding › Application Title (`Label/SM`), mit Trennlinie zum Logo ab Desktop."
         },
         {
           "name": "logo",
           "type": "ReactNode",
           "required": false,
-          "default": "Platzhalter „Example Project“ wie in Figma",
-          "description": "Figma: Branding › Application Logo."
+          "default": "Dextinity AI Hub (Desktop ganzes Logo, Mobile nur Zeichen)\n— z.B. `<DextinityLogo brand=\"ai-cms\" color=\"negative\" />`.",
+          "description": "Figma: Branding › Dextinity Logos."
         },
         {
           "name": "navigationToggleLabel",

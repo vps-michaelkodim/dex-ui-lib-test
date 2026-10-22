@@ -18,7 +18,6 @@ Stack: React 19, Base UI, Tailwind v4 (nur Token-Klassen), Storybook 10. Themes:
 
 ## Komponenten (`@dextinity/ui`)
 
-- LogoPlaceholder: Platzhalter-Logo aus Figma (LogosHeader › Variante=Example). Props: className
 - AppBar: App Bar — Figma: `04 Patterns / App Shell › App Bar` (Device=Desktop | Mobile). Props: appName, logo, navigationToggleLabel, onNavigationToggle, onSearchClick, ref, scope, search, theme, user
 - AppShell: App Shell — Figma: `04 Patterns / App Shell` (Templates Desktop, Sidebar eingeklappt, Mobile, Navigation offen). Props: appBar, children, navigation, className, closeLabel, collapsed, defaultCollapsed, navigationLabel, onCollapsedChange
 - Sidebar: Figma: `04 Patterns / App Shell › Sidebar` (Collapsed=No | Yes, Close Button). Props: children, closeLabel, collapsed, navigationLabel, onClose, ref
