@@ -1,6 +1,6 @@
 {
   "name": "@dextinity/icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Icons aus Figma (Page \u201eIconography\u201c) als React-Komponenten",
   "type": "module",
