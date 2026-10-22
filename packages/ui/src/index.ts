@@ -1,5 +1,6 @@
 export { cn } from './lib/cn';
 
+export * from './components/app-shell';
 export * from './components/button';
 export * from './components/checkbox';
 export * from './components/chip';

@@ -96,7 +96,7 @@ Komplette Liste: `packages/tokens/tokens.meta.json` oder Storybook → Foundatio
 - Nur Komponenten aus `@dextinity/ui` + Token-Klassen. Fehlt eine Komponente: im Prototyp lokal bauen
   und als Kandidat notieren, nicht in `packages/ui` hacken.
 - Der Playground ist in `SnackbarProvider` gewickelt → in Prototypen direkt `useSnackbar().show({...})`.
-- App-Gerüst (Navigation links, Kopfzeile, Inhalt): Vorlage `apps/playground/src/prototypes/AppShell.tsx`.
+- App-Gerüst: `AppShell` + `AppBar` + `Toolbar` aus `@dextinity/ui`, Vorlage `apps/playground/src/prototypes/AppShell.tsx`.
 
 ## Manifest für AI-Tools / Claude Design System
 
