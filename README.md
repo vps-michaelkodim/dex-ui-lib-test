@@ -19,6 +19,7 @@ statt im Code still „korrigiert“ zu werden.
 | **Spacing, Radius, Schatten** | 4px-Raster, Layout-Abstände, Radius-Rollen je Brand, 5 Schatten                                                                                                                 |
 | **Icons**                     | 286 Icons aus Figma als React-Komponenten                                                                                                                                       |
 | **Komponenten**               | Button, IconButton, Input, Select, Search, Checkbox, Radio, Switch, Form-Layout (Form, FormField, FormDivider), Text, Main Navigation, Dialog, Snackbar, Chip, Tooltip, Spinner |
+| **Patterns**                  | Toolbar (Seitenkopf: Breadcrumb, Zurück, Titel, Info, Support Text, Aktionen)                                                                                                   |
 | **Storybook**                 | Doku, Live-Props, Figma-Frame daneben, a11y-Check, Theme-/Brand-Umschalter                                                                                                      |
 | **Playground**                | Klickbare Prototypen mit der echten Library — ein Prototyp = eine Datei                                                                                                         |
 | **Figma-Sync**                | Plugin „DDS Export“ + `pnpm figma:import` mit Änderungsbericht                                                                                                                  |

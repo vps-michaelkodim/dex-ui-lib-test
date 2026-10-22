@@ -2064,6 +2064,106 @@
       ]
     },
     {
+      "name": "Toolbar",
+      "import": "import { Toolbar } from '@dextinity/ui';",
+      "summary": "Figma: `04 Patterns / Toolbar` (Device=Desktop | Mobile).\nKopf einer Admin-Seite: Breadcrumb, Zurück-Button, Titel mit Info-Icon, Support Text, Aktionen rechts.\nBewusst kein `<header>`-Landmark (das ist die App Bar) — der Titel ist die Seitenüberschrift.\nAbstände und Schriftgrößen wechseln über die Responsive-Tokens automatisch auf Mobile —\nauf schmalen Screens Aktionen am besten in ein Overflow-Menü (`IconButton` mit `MoreVerticalIcon`) packen.",
+      "figma": {
+        "node": "1462:20277",
+        "url": "https://www.figma.com/design/xAe7acdpccDSRCrfeOdAg3/DDS---Dextinity-Admin-UI---V-0.1?node-id=1462-20277"
+      },
+      "source": "packages/ui/src/components/toolbar/Toolbar.tsx",
+      "storybook": {
+        "title": "Patterns/Toolbar",
+        "stories": [
+          "Playground",
+          "DetailPage",
+          "TitleOnly",
+          "Mobile",
+          "Matrix"
+        ]
+      },
+      "props": [
+        {
+          "name": "title",
+          "type": "ReactNode",
+          "required": true,
+          "description": "Figma: Title."
+        },
+        {
+          "name": "actions",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Slot „Actions“ (`_Show Actions`), rechts. Primäre Aktion zuletzt."
+        },
+        {
+          "name": "backLabel",
+          "type": "string",
+          "required": false,
+          "default": "Zurück",
+          "description": "Zugänglicher Name des Zurück-Buttons."
+        },
+        {
+          "name": "breadcrumb",
+          "type": "ToolbarBreadcrumbItem[]",
+          "required": false,
+          "description": "Figma: Breadcrumb (`_Show Breadcrumb`). Letzter Eintrag = aktuelle Seite."
+        },
+        {
+          "name": "breadcrumbLabel",
+          "type": "string",
+          "required": false,
+          "default": "Breadcrumb",
+          "description": "Zugänglicher Name der Breadcrumb-Navigation."
+        },
+        {
+          "name": "info",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Info Icon (`_Show Info Icon`). Inhalt des Tooltips am Info-Icon neben dem Titel."
+        },
+        {
+          "name": "infoLabel",
+          "type": "string",
+          "required": false,
+          "default": "Mehr Informationen",
+          "description": "Zugänglicher Name des Info-Icons."
+        },
+        {
+          "name": "onBack",
+          "type": "(() => void)",
+          "required": false,
+          "description": "Figma: Back Button (`_Show Back Button`). Wird gezeigt, sobald `onBack` gesetzt ist."
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLDivElement>",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "supportText",
+          "type": "ReactNode",
+          "required": false,
+          "description": "Figma: Support Text (`_Show Support Text`) — Zeile unter dem Titel."
+        },
+        {
+          "name": "titleAs",
+          "type": "enum",
+          "values": [
+            "h1",
+            "h2",
+            "h3"
+          ],
+          "required": false,
+          "default": "h1",
+          "description": "Überschrift-Ebene des Titels."
+        }
+      ],
+      "examples": [
+        "<Toolbar\n  title=\"Kampagnen\"\n  breadcrumb={[{ label: 'Marketing', href: '/marketing' }, { label: 'Kampagnen' }]}\n  actions={<><Button variant=\"outlined\">Filter</Button><Button>Exportieren</Button></>}\n/>"
+      ]
+    },
+    {
       "name": "Tooltip",
       "import": "import { Tooltip } from '@dextinity/ui';",
       "summary": "Figma: `03 Components / Tooltip`. Auf Base UI Tooltip (Hover + Tastaturfokus, Escape schließt).\nNur ergänzende Infos — nichts, was man zum Bedienen zwingend braucht.",

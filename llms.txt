@@ -43,6 +43,7 @@ Stack: React 19, Base UI, Tailwind v4 (nur Token-Klassen), Storybook 10. Themes:
 - Spinner: Lade-Indikator, Farbe = Textfarbe. Figma: „Spinner“ (vorerst vereinfachte Umsetzung). Props: label, size
 - Switch: Figma: `03 Components / Form – Switch`. Für Einstellungen, die sofort wirken. Props: checked, children, className, defaultChecked, disabled, helperText, name, nativeButton, onCheckedChange, readOnly, required, value
 - Text: Figma: `03 Components / Typography`. Setzt die Figma-Text-Styles (`typo-*`) mit passendem Element. Props: as, className, color, size, variant, weight
+- Toolbar: Figma: `04 Patterns / Toolbar` (Device=Desktop | Mobile). Props: title, actions, backLabel, breadcrumb, breadcrumbLabel, info, infoLabel, onBack, ref, supportText, titleAs
 - Tooltip: Figma: `03 Components / Tooltip`. Auf Base UI Tooltip (Hover + Tastaturfokus, Escape schließt). Props: children, content, align, className, color, defaultOpen, delay, onOpenChange, open, side, title
 - TooltipProvider: Teilt Öffnungs-Verzögerung zwischen benachbarten Tooltips (z.B. in Toolbars).
 

@@ -17,4 +17,5 @@ export * from './components/snackbar';
 export * from './components/spinner';
 export * from './components/switch';
 export * from './components/text';
+export * from './components/toolbar';
 export * from './components/tooltip';

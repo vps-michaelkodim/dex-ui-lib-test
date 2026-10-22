@@ -2,6 +2,7 @@ import {
   AccountIcon,
   CalendarIcon,
   DashboardIcon,
+  DownloadIcon,
   FilterIcon,
   NotificationBellIcon,
   SettingsIcon,
@@ -14,6 +15,7 @@ import {
   NavSection,
   Search,
   Text,
+  Toolbar,
 } from '@dextinity/ui';
 import { useState } from 'react';
 
@@ -94,13 +96,21 @@ export function AppShell() {
             </Button>
           </div>
         </header>
-        <main className="p-8">
-          <Text variant="heading" size="h2" weight="bold">
-            {current}
-          </Text>
-          <Text color="muted" className="mt-1">
-            Hier steht der Inhalt der Seite.
-          </Text>
+        <Toolbar
+          title={current}
+          breadcrumb={[{ label: 'Workspace', href: '#dashboard' }, { label: current }]}
+          supportText="Hier steht eine kurze Beschreibung der Seite."
+          actions={
+            <>
+              <Button variant="outlined" startIcon={<FilterIcon />}>
+                Filter
+              </Button>
+              <Button startIcon={<DownloadIcon />}>Exportieren</Button>
+            </>
+          }
+        />
+        <main className="p-layout-md">
+          <Text color="muted">Hier steht der Inhalt der Seite.</Text>
         </main>
       </div>
     </div>
