@@ -8,6 +8,7 @@
     "node": ">=22"
   },
   "scripts": {
+    "prepare": "git config core.hooksPath .githooks || true",
     "storybook": "pnpm --filter @dextinity/storybook dev",
     "build-storybook": "pnpm --filter @dextinity/storybook build",
     "playground": "pnpm --filter @dextinity/playground dev",
@@ -20,6 +21,7 @@
     "test:setup": "pnpm --filter @dextinity/storybook exec playwright install chromium",
     "test:visual": "pnpm --filter @dextinity/storybook test:visual",
     "test:visual:update": "pnpm --filter @dextinity/storybook test:visual:update",
+    "test:visual:new": "node scripts/visual-baselines.mjs",
     "typecheck": "pnpm -r typecheck",
     "lint": "eslint .",
     "format": "prettier --write .",
